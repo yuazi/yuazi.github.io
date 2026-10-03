@@ -11,7 +11,7 @@ date: 2026-03-25
 
 > **Inspired by:** [PPPANIK - IMAGE TO POPs: POINTCLOUD / LINE GRID](https://www.youtube.com/watch?v=GJMIXo8pwSY)
 
-This tutorial covers the "Image to POPs" workflow for high-performance conversion of 2D textures into 3D point clouds and structured line grids. This specific technique, popularized by **PPPANIK**, excels at creating clean, "holographic" digital blueprints and organic, high-density generative visuals.
+This tutorial covers the "Image to POPs" workflow shown by **PPPANIK**: converting a 2D texture into a 3D point cloud or a structured line grid on the GPU. It suits clean, "holographic" blueprint looks and dense generative visuals.
 
 > [!info] Operator Families in this Recipe
 >
@@ -70,13 +70,13 @@ There are two main ways to achieve the "Grid" look:
 1.  **Join POP:** Connect your point cloud to a **Join POP**.
     - Set the **Maximum Join Distance** to a small value.
     - This connects neighboring points with line primitives, creating a structured mesh/grid.
-2.  **Line MAT:** Apply a **Line Material**. Since the Join POP creates actual line primitives, the Line MAT will render them as a sleek, wireframe grid.
+2.  **Line MAT:** Apply a **Line Material**. Since the Join POP creates actual line primitives, the Line MAT renders them as a wireframe grid.
 
 ---
 
 ## Part 4: Rendering & Post-Processing (The "Pro" Look)
 
-PPPANIK often uses a specific composite trick to make the visuals "pop":
+PPPANIK often finishes with a composite trick:
 
 1.  **Render TOP:** Standard setup with a Camera and Light.
 2.  **The Glow (Feedback):**
@@ -85,7 +85,7 @@ PPPANIK often uses a specific composite trick to make the visuals "pop":
     - Create two versions of your render: one clean (Pointcloud) and one with the Line Grid.
     - **Composite TOP:** Combine both versions.
     - **Operation** → `Softlight`.
-    - This blends the sharp lines with the soft point cloud glow, creating a high-end, cinematic look.
+    - Softlight blends the sharp lines into the soft glow of the point cloud.
 
 ---
 

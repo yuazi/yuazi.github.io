@@ -17,7 +17,7 @@ date: 2026-06-13
 - Perception is sensory input plus interpretation. Two viewers can stare at the same scene and see different things because attention, prior knowledge, and gestalt grouping shape what reaches awareness.
 - In VR and AR the rules from 2D visualization research (Cleveland and McGill, preattentive features, gestalt laws) do not transfer directly. Depth and size are underestimated. Colour fights real or synthetic backgrounds. New cues like binocular disparity become available.
 - Attention is the bottleneck. Designers can either work with it (preattentive features, gestalt grouping) or guide it deliberately (highlights, blur, motion, dichoptic disparity), trading naturalness against effectiveness.
-- VR and AR are not only a display technology but a psychological intervention: the same property that fools depth perception can also be used therapeutically for anxiety, OCD, or negative thought patterns.
+- VR and AR also work as psychological interventions: the same property that fools depth perception can also be used therapeutically for anxiety, OCD, or negative thought patterns.
 
 ## 1. What Is Perception
 
@@ -202,8 +202,6 @@ Two practical pay-offs for a VR/AR designer:
 - Attention guidance: deliberately steer the user's gaze toward a target.
 - Interaction with scattered attention: build experiences that survive an audience whose attention is partial or split (passers-by in a museum, drivers glancing at an AR HUD).
 
-The rest of section 6 unpacks the factors that determine where attention goes.
-
 ### 6.1 Subjective Goals, Tasks, And Depicted Content
 
 ![[pictures/virtualaugmentedreality/09/Lecture09_Pg020_Attention_Guidance_Goals.png]]
@@ -242,7 +240,7 @@ Preattentive features (orientation, colour, motion) are the most reliable lever 
 
 <p class="image-caption">A non-photorealistic painted rendering of a street scene. Reducing detail outside the target region, or rendering it in a different style, steers attention to the target.</p>
 
-Level of detail and rendering type matter. Reducing detail in non-target regions (selective abstraction, NPR styling) is a quiet way to highlight a target without overlaying any new graphics.
+Level of detail and rendering type matter. Reducing detail in non-target regions (selective abstraction, NPR styling) highlights a target without overlaying any new graphics.
 
 ### 6.6 Motion And Flickering
 
@@ -274,15 +272,13 @@ Three reasons to be careful when porting 2D attention guidance into AR/VR:
 - They can have negative implications (breaking immersion, masking adjacent content).
 - They feel unnatural in an immersive environment (a flat arrow in a 3D world is jarring).
 
-The next slides walk through the AR/VR-specific techniques.
-
 ### 7.1 Adding Additional Elements
 
 ![[pictures/virtualaugmentedreality/09/Lecture09_Pg028_Attention_Guidance_Arvr_Adding_Elements.png]]
 
 <p class="image-caption">An arrow pointing at an apple in a tree (Lange et al., HiveFive 2020); a yellow ring around the same apple (Doerr et al., Bees Birds and Butterflies, CHI EA 2023).</p>
 
-Add a graphical element near the target: arrow, halo, ring, label. Simple, effective, and visible. The cost is exactly the warning above: a new element is overlaid on the scene, immersion suffers, and the target is altered.
+Add a graphical element near the target: arrow, halo, ring, label. It is simple and hard to miss. The cost is exactly the warning above: a new element is overlaid on the scene, immersion suffers, and the target is altered.
 
 ### 7.2 Blurring
 
@@ -394,7 +390,7 @@ AR and VR have been used in mental health and illness as a therapeutic tool and 
 
 <p class="image-caption">Grieger, Klapperich, Hassenzahl (CHI EA 2021): VR scenes in which the user trashes, punches, or burns text representations of negative thoughts as a coping mechanism. A positivity condition replaces them with positive statements.</p>
 
-A VR coping mechanism: the user encounters a textual representation of a negative thought (a critical comment, a bad memory) and physically destroys it (trash, punch, burn) or replaces it with a positive statement. The embodied action provides closure that pure introspection does not, and the body owns the gesture in a way that a typed reply would not.
+A VR coping mechanism: the user encounters a textual representation of a negative thought (a critical comment, a bad memory) and physically destroys it (trash, punch, burn) or replaces it with a positive statement. The physical action gives a sense of closure that introspection alone does not.
 
 ### 9.3 Embodied Avatars And Body Awareness
 
@@ -402,7 +398,7 @@ A VR coping mechanism: the user encounters a textual representation of a negativ
 
 <p class="image-caption">Doellinger, Wolf, Botsch, Latoschik, Wienrich (CHI 2023): the user sees a virtual body from behind and from a mirror. Embodiment can shift body awareness in measurable ways.</p>
 
-Embodied avatars affect the user's self-experience. Seeing one's body as someone else's (different gender, different build, different age) changes body awareness and can be deployed both for awareness-raising and as a therapy adjunct. The same effect raises a risk: virtual embodiment is not a neutral mirror.
+Embodied avatars affect the user's self-experience. Seeing one's body as someone else's (different gender, different build, different age) changes body awareness and can be deployed both for awareness-raising and as a therapy adjunct. The same effect is a risk, because the avatar changes how users see themselves whether or not that was the goal.
 
 ### 9.4 OCD Exposure Therapy
 
@@ -422,7 +418,7 @@ A different use: rather than treat sufferers, simulate the experience for others
 
 ### 💡 Intuition
 
-Perception is the ceiling on what VR and AR can do. The display can be perfect and the tracking sub-millimetre and depth will still be underestimated, colour will still fight the background, gestalt grouping will still group whatever shares motion or proximity, and a salient gorilla can still walk through the field of view unnoticed. Design for the visual system you have, not the one the spec sheet implies.
+The display can be perfect and the tracking sub-millimetre, and depth will still be underestimated, colour will still fight the background, gestalt grouping will still group whatever shares motion or proximity, and a salient gorilla can still walk through the field of view unnoticed. These limits come from the viewer, so better hardware does not remove them.
 
 ### 🧠 Deep Dive
 
@@ -432,7 +428,7 @@ First, the 2D-to-3D translation problem. Cleveland and McGill's ranking, the pre
 
 Second, attention as a bottleneck. Post-attentive amnesia, change blindness, and inattentional blindness collectively say that the brain processes far less of the visual field than introspection suggests. Designers therefore cannot rely on the user to notice information just because it is in the field of view. Either work with attention (preattentive features, gestalt grouping) or guide it actively (highlights, blur, motion, dichoptic disparity), accepting that each technique trades naturalness for effectiveness.
 
-Third, VR and AR are not only display technologies but also psychological interventions. The same depth misperception that makes a chart misleading is, in another framing, an embodied illusion that can be used therapeutically. Trash-It, embodied avatars, OCD exposure, Hopohopo: in each case the technology's perceptual peculiarity is the mechanism rather than a side effect.
+Third, VR and AR also work as psychological interventions. The same depth misperception that makes a chart misleading is, in another framing, an embodied illusion that can be used therapeutically. Trash-It, embodied avatars, OCD exposure, Hopohopo: in each case the technology's perceptual peculiarity is the mechanism rather than a side effect.
 
 ## Exam Focus
 

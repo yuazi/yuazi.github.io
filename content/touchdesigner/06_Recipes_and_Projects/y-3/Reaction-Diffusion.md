@@ -11,7 +11,7 @@ tags:
 date: 2026-05-26
 ---
 
-Reaction-diffusion simulates how two chemicals interact and spread across a surface. The result - spots, stripes, worm trails, and coral growths - are the same patterns that emerge on animal skins, seashells, and biological membranes. This recipe implements the classic **Gray-Scott model** entirely inside a GLSL feedback loop.
+Reaction-diffusion simulates how two chemicals interact and spread across a surface. The spots, stripes, worm trails, and coral shapes it produces are the same kinds of patterns found on animal skins, seashells, and biological membranes. This recipe implements the classic **Gray-Scott model** entirely inside a GLSL feedback loop.
 
 > [!info] Operator Families in this Recipe
 >
@@ -23,13 +23,13 @@ Reaction-diffusion simulates how two chemicals interact and spread across a surf
 
 ## How It Works
 
-Two chemicals - A (red channel) and B (green channel) - interact every frame:
+Two chemicals, A (red channel) and B (green channel), interact every frame:
 
 - A flows in from outside (the "feed" rate) and gets consumed by B.
 - B is created when A and B collide and is slowly removed (the "kill" rate).
 - Both chemicals diffuse outward across the texture.
 
-By tuning the feed and kill rates, wildly different patterns emerge.
+Small changes to the feed and kill rates produce very different patterns.
 
 ---
 
@@ -104,7 +104,7 @@ void main()
 ```
 
 > [!info] The Blue Channel Trick
-> The blue channel acts as an "initialized" flag. On the very first frame the Feedback TOP outputs zero - so `center.b < 0.5` is true, and the shader seeds the simulation (A=1 everywhere, a spot of B in the center). On every subsequent frame, blue is written as `1.0`, so the full Gray-Scott equations run instead.
+> The blue channel acts as an "initialized" flag. On the very first frame the Feedback TOP outputs zero, so `center.b < 0.5` is true, and the shader seeds the simulation (A=1 everywhere, a spot of B in the center). On every subsequent frame, blue is written as `1.0`, so the full Gray-Scott equations run instead.
 
 ---
 
@@ -154,10 +154,10 @@ Start with Coral and slowly drag `uKill` up to watch spots morph into stripes an
 
 ## Troubleshooting
 
-- **"Simulation goes all white or all black."** - `uFeed` and `uKill` are outside a stable zone. Reset to the Coral preset (`0.055`, `0.062`) and adjust from there.
-- **"Nothing ever appears."** - Check that the Feedback TOP's Target TOP parameter is exactly the name of your GLSL TOP. A mismatch means no loop.
-- **"Shader compile errors (green uniform color)."** - Open the GLSL TOP's Info OP and read the error. The most common cause is a uniform name mismatch between the shader code and the Custom Parameter names.
-- **"Simulation starts but resets every few seconds."** - The Feedback TOP is losing its target reference. Confirm the GLSL TOP has not been renamed.
+- **"Simulation goes all white or all black."** `uFeed` and `uKill` are outside a stable zone. Reset to the Coral preset (`0.055`, `0.062`) and adjust from there.
+- **"Nothing ever appears."** Check that the Feedback TOP's Target TOP parameter is exactly the name of your GLSL TOP. A mismatch means no loop.
+- **"Shader compile errors (green uniform color)."** Open the GLSL TOP's Info OP and read the error. The most common cause is a uniform name mismatch between the shader code and the Custom Parameter names.
+- **"Simulation starts but resets every few seconds."** The Feedback TOP is losing its target reference. Confirm the GLSL TOP has not been renamed.
 
 ---
 

@@ -25,9 +25,9 @@ date: 2026-07-11
 
 ![[pictures/realtimegraphics/15/L15_Pg-03.jpg]]
 
-<p class="image-caption">L15_Pg-03: Lots of detail needs lots of memory, but at any moment only the red parts of the mip pyramid are actually needed  -  high detail close to the viewer, low detail far away.</p>
+<p class="image-caption">L15_Pg-03: Lots of detail needs lots of memory, but at any moment only the red parts of the mip pyramid are actually needed: high detail close to the viewer, low detail far away.</p>
 
-Recall the **mipmap**: an image pyramid ("mip" from _multum in parvo_, much in little) for fast minification filtering. The problem it does not solve: lots of detail needs lots of memory. A high-resolution texture over a large world would need its full pyramid in memory, yet the view needs **high detail only for close objects and low detail for far objects**. Only a small subset of each mip level (the red regions on the slide) is actually required at any time. Keeping everything else resident is pure waste.
+Recall the **mipmap**: an image pyramid ("mip" from _multum in parvo_, much in little) for fast minification filtering. The problem it does not solve: lots of detail needs lots of memory. A high-resolution texture over a large world would need its full pyramid in memory, yet the view needs **high detail only for close objects and low detail for far objects**. Only a small subset of each mip level (the red regions on the slide) is actually required at any time, so keeping the rest resident wastes memory.
 
 ## 2. Clipmaps
 
@@ -39,7 +39,7 @@ For terrain textures the needed subset has a predictable shape: a window **surro
 
 ![[pictures/realtimegraphics/15/L15_Pg-07.jpg]]
 
-<p class="image-caption">L15_Pg-07: Wrap-around updates  -  as the viewer moves, the old region is invalidated and the newly exposed region is streamed from disk, with whole levels validated or invalidated as needed.</p>
+<p class="image-caption">L15_Pg-07: Wrap-around updates. As the viewer moves, the old region is invalidated and the newly exposed region is streamed from disk, with whole levels validated or invalidated as needed.</p>
 
 When the viewer moves, the clipmap is refreshed with **wrap-around updates**: invalidate the old region, update the newly exposed region from disk, and invalidate or validate whole levels if required. The wrap-around (toroidal) addressing means the window never has to be physically scrolled in memory.
 
@@ -47,7 +47,7 @@ When the viewer moves, the clipmap is refreshed with **wrap-around updates**: in
 
 ![[pictures/realtimegraphics/15/L15_Pg-05.jpg]]
 
-<p class="image-caption">L15_Pg-05: The three components of virtual memory  -  pages (the actual memory), a page table (virtual-to-real address translation), and a page fault function that triggers loading of missing pages.</p>
+<p class="image-caption">L15_Pg-05: The three components of virtual memory: pages (the actual memory), a page table (virtual-to-real address translation), and a page fault function that triggers loading of missing pages.</p>
 
 Clipmaps are terrain-specific. The general solution copies the operating system's **virtual memory** design, which has three components:
 
@@ -57,7 +57,7 @@ Clipmaps are terrain-specific. The general solution copies the operating system'
 
 ![[pictures/realtimegraphics/15/L15_Pg-06.jpg]]
 
-<p class="image-caption">L15_Pg-06: Tiled virtual textures  -  a sparsely resident texture pyramid managed as a quadtree, a lookup texture as page table, and a physical page texture holding the resident tiles.</p>
+<p class="image-caption">L15_Pg-06: Tiled virtual textures, with a sparsely resident texture pyramid managed as a quadtree, a lookup texture as page table, and a physical page texture holding the resident tiles.</p>
 
 **Tiled virtual textures** map these components one-to-one:
 
@@ -79,13 +79,13 @@ id Software's megatexture in Rage is the canonical shipped example: the whole ga
 
 ![[pictures/realtimegraphics/15/L15_Pg-10.jpg]]
 
-<p class="image-caption">L15_Pg-10: Geometry clipmaps (Losasso et al. 04)  -  height values are looked up from textures and triangles are created on the fly in the geometry or tessellation shader.</p>
+<p class="image-caption">L15_Pg-10: Geometry clipmaps (Losasso et al. 04). Height values are looked up from textures and triangles are created on the fly in the geometry or tessellation shader.</p>
 
 The clipmap idea transfers from texels to vertices. **Geometry clipmaps** [Losasso et al. 04] store the terrain **height map in textures** and perform **tessellation on the GPU**: triangles are created on the fly in the geometry or tessellation shader, at a density that follows the clipmap rings around the viewer. Geometry stops being a stored mesh and becomes a decoded, viewer-centered representation of a texture.
 
 ![[pictures/realtimegraphics/15/L15_Pg-12.jpg]]
 
-<p class="image-caption">L15_Pg-12: Adding high-resolution detail on top of the streamed terrain patches  -  the coarse patch structure carries the far field while procedural or streamed detail refines the near field.</p>
+<p class="image-caption">L15_Pg-12: Adding high-resolution detail on top of the streamed terrain patches. The coarse patch structure carries the far field while procedural or streamed detail refines the near field.</p>
 
 The terrain is organized in **patches**, with high-resolution detail added near the viewer on top of the streamed coarse structure, mirroring how the texture clipmap layers its windows.
 
@@ -93,7 +93,7 @@ The terrain is organized in **patches**, with high-resolution detail added near 
 
 ![[pictures/realtimegraphics/15/L15_Pg-13.jpg]]
 
-<p class="image-caption">L15_Pg-13: Unreal Engine 5 Nanite combines every performance technique of the last three lectures  -  virtualized textures, view-dependent LOD, last-frame occlusion culling, visibility buffer shading, compute-shader rasterization of small triangles, and DirectStorage streaming with GPU decompression.</p>
+<p class="image-caption">L15_Pg-13: Unreal Engine 5 Nanite combines every performance technique of the last three lectures: virtualized textures, view-dependent LOD, last-frame occlusion culling, visibility buffer shading, compute-shader rasterization of small triangles, and DirectStorage streaming with GPU decompression.</p>
 
 Unreal Engine 5's **Nanite** is the synthesis of lectures 13 through 15, a combination of performance techniques for very large scenes:
 

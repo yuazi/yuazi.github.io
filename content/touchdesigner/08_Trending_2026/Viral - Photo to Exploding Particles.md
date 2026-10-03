@@ -10,7 +10,7 @@ tags:
 date: 2026-06-18
 ---
 
-The scroll-stopper that is everywhere on TikTok and Reels right now: a photo or video clip shatters into a living 3D cloud of points, drifts, then snaps back. This tutorial recreates the viral version end to end, including the vertical export so you can post it.
+This effect is all over TikTok and Reels right now: a photo or video clip shatters into a 3D cloud of points, drifts, then snaps back. This tutorial recreates the viral version end to end, including the vertical export so you can post it.
 
 > [!info] Watch the trend
 >
@@ -34,8 +34,6 @@ The scroll-stopper that is everywhere on TikTok and Reels right now: a photo or 
 
 ## 2. The Explode
 
-This is the viral move.
-
 1.  Add a **Noise POP** that outputs a 3D vector per point (turbulent, smooth).
 2.  Push each point's position along that vector. Multiply by an **EXPLODE** amount.
 3.  Animate `EXPLODE` from 0 (image intact) up to a big value (full cloud) and back, with an ease.
@@ -58,15 +56,15 @@ This is the viral move.
 3.  Render to a movie with **Movie File Out TOP**, then drop it over a trending audio clip in your editor.
 
 > [!tip] The personal version
-> Use a photo of the two of you. Time the burst to the beat of a song that means something. That is the whole magic: a familiar image becoming light.
+> Use a photo of the two of you. Time the burst to the beat of a song that means something to both of you.
 
 ---
 
 ## Troubleshooting
 
-- **"It just looks like floating dots, not my image."** - Lower the explode amount and reduce noise so the image reads at rest before it bursts.
-- **"Too slow."** - Drop the source resolution (fewer points) and keep everything in POPs on the GPU.
-- **"The burst looks mechanical."** - Ease the `EXPLODE` curve and add a slight per-point delay so points scatter in a wave, not all at once.
+- **"It just looks like floating dots, not my image."** Lower the explode amount and reduce noise so the image reads at rest before it bursts.
+- **"Too slow."** Drop the source resolution (fewer points) and keep everything in POPs on the GPU.
+- **"The burst looks mechanical."** Ease the `EXPLODE` curve and add a slight per-point delay so points scatter in a wave, not all at once.
 
 ---
 

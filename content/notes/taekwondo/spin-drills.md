@@ -9,13 +9,13 @@ tags:
 date: 2026-08-03
 ---
 
-The spinning kicks in [[notes/taekwondo/spinning-kicks|(y-) the guide]] all run on the same engine: single-leg balance, a clean spot, and rotational power. This page is the off-target conditioning that builds that engine, so the kicks themselves have something to stand on. None of this needs a partner or a bag.
+The spinning kicks in [[notes/taekwondo/spinning-kicks|(y-) the guide]] all run on the same engine: single-leg balance, a clean spot, and rotational power. The drills below build that engine away from a target, and none of them needs a partner or a bag.
 
 ---
 
 ## (y-) 1. Balance: The Standing Leg
 
-A spinning kick is only as good as the leg you are standing on. If your base wobbles, everything above it falls apart.
+If the standing leg wobbles, everything above it wobbles too, and the kick goes wide.
 
 - **Single-leg stand.** Stand on one foot, other knee raised (hakdari seogi). Hold 60 seconds each side. Then close your eyes, which removes vision and forces the ankle and hip to do the stabilizing. Brutal at first.
 - **Slow-motion kick holds.** Perform a spinning kick at 10% speed and freeze at the moment of extension. Hold 5 seconds. This exposes exactly where you lose balance and trains the stabilizers to fix it.
@@ -25,7 +25,7 @@ A spinning kick is only as good as the leg you are standing on. If your base wob
 
 ## (y-) 2. Spotting: Killing the Dizziness
 
-Spotting is the dancer's trick of snapping your eyes to a fixed point through a turn. It is the single biggest fix for both dizziness and kicking blind.
+Spotting is the dancer's trick of snapping your eyes to a fixed point through a turn. It fixes most of the dizziness and stops you kicking blind.
 
 - **Slow spot turns.** Pick a spot on the wall at eye height. Turn your body slowly while keeping your eyes glued to that spot for as long as possible, then snap your head around to find it again. Do sets of 10 each direction.
 - **Progressive speed.** Once the slow version is smooth, speed the turns up. The eyes should always beat the body to the spot.
@@ -45,9 +45,9 @@ Power in a spin comes from throwing the hips and shoulders around a straight axi
 
 ## (y-) 4. Speed and Explosiveness
 
-- **Chamber snaps.** From a spin, focus only on how fast you can pull the knee into a tight chamber. A fast chamber is a fast, hidden kick.
+- **Chamber snaps.** From a spin, focus only on how fast you can pull the knee into a tight chamber. The faster the chamber, the less time the opponent has to see the kick coming.
 - **Plyometric pivots.** Small explosive pivot-jumps on the ball of the foot, spinning 90 to 180 degrees and sticking the landing. Trains a sharp, un-telegraphed entry.
-- **Shadow spins for reps.** Throw 50 spinning kicks in the air per session with full intent. Volume grooves the neural pattern faster than anything.
+- **Shadow spins for reps.** Throw 50 spinning kicks in the air per session with full intent. The volume is what grooves the movement pattern.
 
 ---
 
@@ -63,13 +63,13 @@ Power in a spin comes from throwing the hips and shoulders around a straight axi
 | Sat | Full spinning-kick practice on target/bag             |
 | Sun | Rest                                                  |
 
-Ten focused minutes a day beats one long weekend session. The nervous system learns spins through frequent repetition, not through occasional grinding.
+Ten focused minutes a day beats one long weekend session, because spins are learned through frequent repetition.
 
 ---
 
 ## (y-) The Flexibility Link
 
-None of this matters if your leg cannot get to head height for a [[notes/taekwondo/spinning-hook-kick|(y-) spinning hook kick]]. Balance and power get the leg moving; flexibility decides how high it goes. Pair every one of these sessions with the [[notes/taekwondo/splits-progression|(y-) splits progression]] and the [[notes/taekwondo/stretching|(y-) mobility work]].
+A [[notes/taekwondo/spinning-hook-kick|(y-) spinning hook kick]] also needs a leg that reaches head height. Balance and power get the leg moving; flexibility decides how high it goes. Pair every one of these sessions with the [[notes/taekwondo/splits-progression|(y-) splits progression]] and the [[notes/taekwondo/stretching|(y-) mobility work]].
 
 ---
 

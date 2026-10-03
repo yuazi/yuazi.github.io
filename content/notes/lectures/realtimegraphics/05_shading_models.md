@@ -14,7 +14,7 @@ date: 2026-05-12
 ## Mental Model First: Where Does the Pixel Colour Come From?
 
 - **Rasterisation gives us _which_ pixel, shading decides _what colour_.** Every shading model is an answer to one integral: how much of the incoming light from every direction is reflected toward the camera.
-- **A BRDF is a recipe, not a law.** Empirical models (Lambert, Phong, Blinn-Phong) approximate the look. Physically-based models (Cook-Torrance, Disney) derive the recipe from microscale geometry and the Fresnel split.
+- **BRDFs range from empirical fits to physical derivations.** Empirical models (Lambert, Phong, Blinn-Phong) approximate the look. Physically-based models (Cook-Torrance, Disney) derive the recipe from microscale geometry and the Fresnel split.
 - **Energy conservation matters.** A material that reflects more than 100% of the light it receives looks wrong on screen and breaks global illumination further down the pipeline.
 
 ---
@@ -330,17 +330,17 @@ $$ f_r(\mathbf{l}, \mathbf{v}) = \frac{D(\mathbf{h})\, F(\mathbf{l}, \mathbf{v})
 6. State and interpret the three properties any physical BRDF must satisfy.
 
 > [!success]- Answer
-> (1) **Reciprocity**: $f_r(\mathbf{x}, \boldsymbol{\omega}_1, \boldsymbol{\omega}_2) = f_r(\mathbf{x}, \boldsymbol{\omega}_2, \boldsymbol{\omega}_1)$ - swapping light and view gives the same reflectance, which Helmholtz's principle of reversibility requires. (2) **Energy conservation**: $\int_\Omega f_r(\mathbf{x}, \boldsymbol{\omega}_i, \boldsymbol{\omega}_o) \cos\theta_i \, d\boldsymbol{\omega}_i \le 1$ - no surface reflects more energy than it receives. (3) **Positivity**: $f_r \ge 0$ - negative radiance is unphysical. Any BRDF that breaks these (e.g. unnormalized Phong as the specular power grows) produces wrong-looking results and breaks global illumination further down the pipeline.
+> (1) **Reciprocity**: $f_r(\mathbf{x}, \boldsymbol{\omega}_1, \boldsymbol{\omega}_2) = f_r(\mathbf{x}, \boldsymbol{\omega}_2, \boldsymbol{\omega}_1)$: swapping light and view gives the same reflectance, which Helmholtz's principle of reversibility requires. (2) **Energy conservation**: $\int_\Omega f_r(\mathbf{x}, \boldsymbol{\omega}_i, \boldsymbol{\omega}_o) \cos\theta_i \, d\boldsymbol{\omega}_i \le 1$: no surface reflects more energy than it receives. (3) **Positivity**: $f_r \ge 0$: negative radiance is unphysical. Any BRDF that breaks these (e.g. unnormalized Phong as the specular power grows) produces wrong-looking results and breaks global illumination further down the pipeline.
 
 7. What is anisotropic reflection, and why can Cook-Torrance with a single roughness parameter not represent it?
 
 > [!success]- Answer
-> Anisotropic reflection means the BRDF depends on the _in-plane_ viewing direction, not just the angle between view and normal. Brushed metal is the canonical example: the highlight stretches along the grain direction and tightens perpendicular to it. A single roughness $m$ gives an isotropic Beckmann distribution that only depends on $\theta_h$ - the angle between normal and half-vector - so it cannot distinguish "along the grain" from "across the grain". Anisotropic BRDFs introduce two roughness parameters (tangent and bitangent) and a tangent frame per pixel.
+> Anisotropic reflection means the BRDF depends on the _in-plane_ viewing direction, not just the angle between view and normal. Brushed metal is the canonical example: the highlight stretches along the grain direction and tightens perpendicular to it. A single roughness $m$ gives an isotropic Beckmann distribution that only depends on $\theta_h$ (the angle between normal and half-vector), so it cannot distinguish "along the grain" from "across the grain". Anisotropic BRDFs introduce two roughness parameters (tangent and bitangent) and a tangent frame per pixel.
 
 8. What does the Disney BRDF combine, and why has it become a real-time standard?
 
 > [!success]- Answer
-> Disney's "principled" BRDF was originally designed for _Wreck-It Ralph_ and bundles a small number of artist-controllable parameters (base colour, metallic, roughness, specular, anisotropy, clearcoat, sheen, subsurface) that interpolate between dielectric and metallic responses with a single energy-conserving model. It became standard in real-time engines (Unreal, Unity, Frostbite) because it gives artists physically plausible results without exposing the underlying $D$, $F$, $G$, BRDF maths - the engine handles the layered specular, diffuse, and subsurface terms, while the artist works with a handful of slider parameters that map cleanly to real-world material properties.
+> Disney's "principled" BRDF was originally designed for _Wreck-It Ralph_ and bundles a small number of artist-controllable parameters (base colour, metallic, roughness, specular, anisotropy, clearcoat, sheen, subsurface) that interpolate between dielectric and metallic responses with a single energy-conserving model. It became standard in real-time engines (Unreal, Unity, Frostbite) because it gives artists physically plausible results without exposing the underlying $D$, $F$, $G$, BRDF maths: the engine handles the layered specular, diffuse, and subsurface terms, while the artist works with a handful of slider parameters that map cleanly to real-world material properties.
 
 ---
 

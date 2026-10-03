@@ -12,8 +12,8 @@ date: 2026-05-22
 
 ## Mental Model for Ultimate Referee
 
-- **Double-Checking Proofs**: Deriving Hoare triples and loop invariants is hard and error-prone. **Ultimate Referee** is a tool that takes your code and candidate invariants and checks if they actually form a valid proof.
-- **Verification of Verifiers**: It is not just for students. If a powerful verifier says code is correct, Ultimate Referee can check its "witness" (the invariants it found) to ensure the verifier did not make a mistake.
+- **Double-Checking Proofs**: Deriving Hoare triples and loop invariants is hard and error-prone. **Ultimate Referee** is a tool that takes your code and candidate invariants and checks whether they form a valid proof.
+- **Verification of Verifiers**: It is also useful outside teaching. If another verifier says code is correct, Ultimate Referee can check its "witness" (the invariants it found) to confirm the verifier did not make a mistake.
 - **Focus on the Hard Part**: By using the tool, you can focus on the "guesswork" (finding the invariant) while the tool handles the "mechanical" part (checking the Hoare rules).
 
 ## Guide for Finding a Derivation in the Hoare Proof System
@@ -28,7 +28,7 @@ Finding a derivation in the Hoare proof system follows a systematic path. The sl
 4. **Strengthen preconditions** strictly only before loop invariants.
 5. Apart from that, use the (strepre) and (weakpos) rules only for equivalence transformations.
 
-Finding a derivation usually involves a lot of backtracking, and you often discover late that your loop invariants were not sufficient. The motivation for the next subsection is to automate the mechanical parts so the human can focus on the guesswork.
+Finding a derivation usually involves a lot of backtracking, and you often discover late that your loop invariants were not sufficient. Ultimate Referee automates the mechanical parts so the human can focus on the guesswork.
 
 ## Ultimate Referee
 
@@ -77,7 +77,7 @@ The counterexample tells you exactly which part of the Hoare proof failed (initi
 
 ![[pictures/programverification/09/Lecture09_Pg243_Ultimate_Referee_Outlook.png]]
 
-Ultimate Referee was not built only to help students construct derivations:
+Ultimate Referee is also meant for more than helping students construct derivations:
 
 - It can check the results of other verification tools.
 - If verification tool XYZ claims your code is correct, ask XYZ to output the loop invariants it found, then double-check that witness with Ultimate Referee.
@@ -124,9 +124,7 @@ Ultimate Referee helps you debug your proof by pointing out where the Hoare logi
 
 ## Why use it?
 
-1. **Educational**: Helps students learn what makes a "good" invariant.
-2. **Reliability**: Allows us to check the results of complex, non-transparent verifiers.
-3. **Efficiency**: Reduces the time spent on manual proof checking.
+Students use it to learn what makes a "good" invariant. It also checks the results of complex, opaque verifiers, and it saves the time that manual proof checking would take.
 
 ## Self-Check
 

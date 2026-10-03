@@ -16,7 +16,7 @@ github: https://github.com/yuazi/keyboard-AI
 
 [View on GitHub](https://github.com/yuazi/keyboard-AI)
 
-**Keyboard AI** is a Python CLI that learns character patterns from a text corpus and searches for keyboard layouts with lower ergonomic cost. The goal is not to claim a universal best layout, but to explore how corpus statistics and a scoring model can drive layout search.
+**Keyboard AI** is a Python CLI that learns character patterns from a text corpus and searches for keyboard layouts with lower ergonomic cost. It explores how corpus statistics and a scoring model can drive layout search, so the layouts it finds depend on the corpus you give it.
 
 ---
 

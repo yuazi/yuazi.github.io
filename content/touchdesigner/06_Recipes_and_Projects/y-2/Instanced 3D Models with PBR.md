@@ -12,9 +12,7 @@ tags:
 date: 2026-03-16
 ---
 
-This document details the implementation of high-performance instanced rendering in TouchDesigner using Geometry COMP instances in conjunction with Physically Based Rendering (PBR) materials. The system enables efficient visualization of large numbers of 3D objects while maintaining physically accurate light interaction and material properties.
-
-> **Based on:** Combining TouchDesigner's official instancing tutorials, PBR workflow guides, and community best practices
+This recipe uses Geometry COMP instancing to render large numbers of 3D objects in TouchDesigner, and Physically Based Rendering (PBR) materials so they react to light the way real materials do.
 
 ## What You'll Build
 
@@ -22,7 +20,7 @@ We're putting together a system that lets you:
 
 - Render tons of 3D models efficiently using Geometry COMP instancing (think forests, cities, particle systems made of actual geometry)
 - Use PBR materials for lighting that behaves like it does in the real world
-- Give each instance its own personality with variations in position, rotation, scale, and even color
+- Vary each instance's position, rotation, scale, and color
 - Keep everything running smoothly on Apple Silicon (we've got specific optimizations for M1 Pro)
 - Handle large instance counts without choking your GPU
 
@@ -41,11 +39,11 @@ For best performance with instancing:
 
 TouchDesigner supports:
 
-- **FBX** (.fbx) - Best for animations and complex hierarchies
-- **OBJ** (.obj) - Simple static models
-- **GLTF/GLB** (.gltf, .glb) - Modern, efficient format
-- **3DS** (.3ds) - Legacy format
-- **DAE** (.dae) - Collada format
+- **FBX** (.fbx): Best for animations and complex hierarchies
+- **OBJ** (.obj): Simple static models
+- **GLTF/GLB** (.gltf, .glb): Modern, efficient format
+- **3DS** (.3ds): Legacy format
+- **DAE** (.dae): Collada format
 
 For instancing, static models (OBJ, GLTF) work best as they avoid animation overhead.
 
@@ -93,7 +91,7 @@ Best for audio-reactive or animated instances:
 #### Position Generation
 
 1. Create a `Noise TOP` (for spatial distribution)
-   - **Resolution:** 64×64 (4096 instances - good start)
+   - **Resolution:** 64×64 (4096 instances, a good start)
    - **Type:** Sparse or Hermite
    - **Period:** 0.5
    - **Amplitude:** 1.0
@@ -293,12 +291,12 @@ TouchDesigner instancing limits:
 
 ## 9. Related Techniques
 
-- [[5 Ways To Make Particles|(y-) 5 Ways To Make Particles]] - Alternative for point-based rendering
-- [[Particle System with POPs|(y-) Particle System with POPs]] - GPU particle systems
-- [[GLSL Feedback Effect|(y-) GLSL Feedback Effect]] - Adding trails to instances
-- [[Audio Reactive Geometry|(y-) Audio Reactive Geometry]] - Simpler audio-reactive instancing
-- [[Hand Tracking Tutorial|(y-) Hand Tracking Tutorial]] - Interactive instance control
-- [[Real-time Audio Visualizer|(y-) Real-time Audio Visualizer]] - Audio-driven visuals
+- [[5 Ways To Make Particles|(y-) 5 Ways To Make Particles]]: Alternative for point-based rendering
+- [[Particle System with POPs|(y-) Particle System with POPs]]: GPU particle systems
+- [[GLSL Feedback Effect|(y-) GLSL Feedback Effect]]: Adding trails to instances
+- [[Audio Reactive Geometry|(y-) Audio Reactive Geometry]]: Simpler audio-reactive instancing
+- [[Hand Tracking Tutorial|(y-) Hand Tracking Tutorial]]: Interactive instance control
+- [[Real-time Audio Visualizer|(y-) Real-time Audio Visualizer]]: Audio-driven visuals
 
 ---
 
@@ -314,7 +312,7 @@ TouchDesigner instancing limits:
 
 ## Network Architecture
 
-To visualize how the 3D models and instancing data flow, here is the final network map:
+The final network:
 
 ```text
 [ INSTANCE DATA (CHOPs) ]        [ 3D GEOMETRY ]

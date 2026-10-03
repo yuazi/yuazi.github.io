@@ -32,7 +32,7 @@ User evaluation serves two goals:
 - **Understand the fundamentals**: How can AR/VR be used? When and where does it become more effective or efficient than other technologies?
 - **Gain insights**: What makes one immersive system work better than another? Do we really need to make this immersive? Which design guidelines can be inferred from an empirical study?
 
-There are also pragmatic reasons: head-mounted displays can cause **more stress** than 2D technologies, and since the devices are still new, it is important to know how users actually behave with them. And in general, it is simply good practice.
+There are also pragmatic reasons: head-mounted displays can cause **more stress** than 2D technologies, and since the devices are still new, it is important to know how users actually behave with them. Evaluating is also good practice in general.
 
 ## 2. Experiments on Human Subjects
 
@@ -213,7 +213,7 @@ Other trend lines:
 
 - **Brain-machine interfaces**: EEG systems (skull caps measuring up to a few dozen signals, wireless Emotiv devices) as a possible long-term input channel.
 - **Software**: toolkits are much needed to improve the usability of VR/AR development (e.g. RagRug for situated analytics, Fleck et al., TVCG 2023; usable tracking, Haischt et al., AutoUI 2023). Meanwhile **ML/AI has turned computer graphics and computer vision upside down**: video inpainting, SLAM, merging the real and the virtual.
-- **Semantic understanding of the world**: **ConceptGraphs** (ICRA 2024) builds open-vocabulary 3D scene graphs for perception and planning, giving AR systems a semantic model of the scene, not just its geometry.
+- **Semantic understanding of the world**: **ConceptGraphs** (ICRA 2024) builds open-vocabulary 3D scene graphs for perception and planning, which gives AR systems a semantic model of the scene on top of its geometry.
 
 ![[pictures/virtualaugmentedreality/13/Lecture13_Pg051_Applications_And_Interfaces.png]]
 

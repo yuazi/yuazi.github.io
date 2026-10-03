@@ -11,7 +11,7 @@ Hey, I'm **Yusuf Abdul Aziz**.
 
 I'm an M.Sc. Information Systems student at the University of Stuttgart, focused on Python tooling, data/ML workflows, and TypeScript web projects. I am currently looking for Werkstudent or junior software engineering roles in web development, data, BI, or applied ML.
 
-This site, the **(y)usage Garden**, is where I publish project notes, technical references, and longer writeups around what I am learning and building.
+This site, the **(y)usage Garden**, is where I publish project notes, technical references, and longer writeups on what I am learning and building.
 
 ---
 

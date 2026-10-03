@@ -11,7 +11,7 @@ tags:
 date: 2026-05-26
 ---
 
-Build a living, breathing 3D landscape where the mountains rise and fall with the bass, and the whole terrain scrolls endlessly forward. A staple of live concert backdrops and music video aesthetics.
+Build a 3D landscape whose mountains rise and fall with the volume of the music while the terrain scrolls forward. The look shows up a lot in concert backdrops and music videos.
 
 > [!info] Operator Families in this Recipe
 >
@@ -86,16 +86,16 @@ Instead of overall volume driving uniform height, make each column of terrain re
    - **SOP input** → Grid SOP.
    - **Texture** input → CHOP to TOP output.
    - **Direction** → `Normal`, **Scale** → `0.5`.
-4. Each of the 50 grid columns now rises to the height of its corresponding frequency band - a true 3D equalizer.
+4. Each of the 50 grid columns now rises to the height of its frequency band, so the terrain works as a 3D equalizer.
 
 ---
 
 ## Troubleshooting
 
-- **"The terrain doesn't react to music."** - Check that `AUDIO_AMP` is active and the CHOP Reference is properly set on the Noise SOP's Amplitude parameter. Open the Noise SOP parameters and confirm the Amplitude field shows an expression rather than a plain number.
-- **"Terrain moves but barely."** - Increase the Multiply on the Math CHOP (try `10` or `20`).
-- **"Wireframe renders as a solid blob."** - Make sure the Wire Frame SOP is inside the Geo COMP and is the last SOP connected to `out1`.
-- **"Noise pattern does not scroll."** - Confirm the `absTime.seconds * 0.5` expression is on **Offset Z** of the Noise SOP (not on the Grid SOP).
+- **"The terrain doesn't react to music."** Check that `AUDIO_AMP` is active and the CHOP Reference is properly set on the Noise SOP's Amplitude parameter. Open the Noise SOP parameters and confirm the Amplitude field shows an expression rather than a plain number.
+- **"Terrain moves but barely."** Increase the Multiply on the Math CHOP (try `10` or `20`).
+- **"Wireframe renders as a solid blob."** Make sure the Wire Frame SOP is inside the Geo COMP and is the last SOP connected to `out1`.
+- **"Noise pattern does not scroll."** Confirm the `absTime.seconds * 0.5` expression is on **Offset Z** of the Noise SOP (not on the Grid SOP).
 
 ---
 

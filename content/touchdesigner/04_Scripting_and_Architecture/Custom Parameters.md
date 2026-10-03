@@ -7,7 +7,7 @@ tags:
 date: 2026-02-21
 ---
 
-Custom parameters let you expose a clean control surface on a COMP. Instead of digging into a nested network to tweak a noise frequency or a blur radius, you wrap the network in a Base COMP and expose just the settings that matter as new parameters on the wrapper. This is how every reusable module in TouchDesigner is built.
+Custom parameters let you expose a clean control surface on a COMP. Instead of digging into a nested network to tweak a noise frequency or a blur radius, you wrap the network in a Base COMP and expose just the settings that matter as new parameters on the wrapper. Most reusable TouchDesigner modules are built this way.
 
 ## Why
 
@@ -24,7 +24,7 @@ The simplest path:
 2. Name a page (e.g. `Settings`) and click **Add Page**.
 3. Type a parameter label, pick the style (Float, Int, Toggle, Menu, RGB, ...), set the size (1-4), click **Add Par**.
 
-> [!note] **Naming rule:** the label gets converted to a valid parameter name automatically: first letter capitalized, no spaces or special characters. So a label `Speed factor` becomes the parameter `Speedfactor` accessed as `op.par.Speedfactor`.
+> [!note] Naming rule: the label gets converted to a valid parameter name automatically: first letter capitalized, no spaces or special characters. So a label `Speed factor` becomes the parameter `Speedfactor` accessed as `op.par.Speedfactor`.
 
 In the dialog you can also drag to reorder, drag between pages, double-click to rename, and `x` to delete. RMB or `Ctrl+C` / `Ctrl+V` copies parameters between components.
 

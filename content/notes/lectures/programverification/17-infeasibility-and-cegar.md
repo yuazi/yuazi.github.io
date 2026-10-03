@@ -14,7 +14,7 @@ date: 2025-07-07
 ## Mental Model for CEGAR
 
 - **Automated Refinement**: We don't know the best predicates $B$ for a program. **CEGAR (CounterExample-Guided Abstraction Refinement)** starts with nothing and learns the predicates it needs automatically.
-- **Trace Analysis**: If our simplified (abstract) model finds an "error," we check if it's a real bug or just a **False Counterexample**.
+- **Trace Analysis**: If our simplified (abstract) model finds an "error," we check whether it is a real bug or a **False Counterexample**.
 - **Infeasibility Proofs**: If the error is a false alarm, we find an **Infeasibility Proof** (a sequence of formulas that prove the trace is impossible).
 - **Learning**: We add the formulas from that proof to our set $B$, making our model more precise so it won't make that same mistake again.
 
@@ -71,7 +71,7 @@ Imagine trying to find a path in a dark room.
 2.  **Traces** are paths through the program.
 3.  **Infeasibility Proofs** are the source of new knowledge for the verifier.
 4.  **Progress Property**: Once an error trace is proven infeasible, the verifier will never encounter it again in future iterations.
-5.  **Power of Abstraction**: CEGAR allows us to verify complex programs without manually guessing invariants.
+5.  **Abstraction**: CEGAR verifies complex programs without anyone guessing invariants by hand.
 
 ## Self-Check
 

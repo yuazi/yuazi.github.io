@@ -29,7 +29,7 @@ Represents inner strength and a bright, joyful mind.
 
 ## Taegeuk 3: Sam Jang (Fire and Sun)
 
-Represents passion, enthusiasm, and the warmth of the sun.
+Represents passion and the warmth of the sun.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ksSqKt0UkWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -53,7 +53,7 @@ Represents the flexibility and power of the wind.
 
 ## Taegeuk 6: Yuk Jang (Water)
 
-Represents flow, flexibility, and persistence, like water.
+Represents the flow and persistence of water.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jcBwWo4wN7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
