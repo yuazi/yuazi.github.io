@@ -42,14 +42,14 @@ I picked it up because it felt less like a choreography contest and more like a 
 
 ## (y-) Notable Modern Épéeists
 
-| Fencer            | Country | Style Notes                                                                                       |
-| ----------------- | ------- | ------------------------------------------------------------------------------------------------- |
+| Fencer            | Country | Style Notes                                                                                                               |
+| ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Koki Kano         | JPN     | Paris 2024 Olympic gold, 2025 world champion. Compact stance, fast hand, precise toe touches. The benchmark of the cycle. |
-| Lucas Malcotti    | SUI     | 2026 world champion. Cool under pressure, won the Hong Kong final 13-12. New name at the very top.  |
-| Davide Di Veroli  | ITA     | 2026 Worlds silver. Spearhead of the deepest program in the sport.                                 |
-| Mohamed El-Sayed  | EGY     | Most consistent man on the 2025-26 World Cup circuit, two legs. Épée's spread beyond Europe.        |
-| Yannick Borel     | FRA     | Tall, patient, dominant blade work. Picks the wrist apart with measured prises de fer.             |
-| Andrea Santarelli | ITA     | Wrist sniper. Counter-attacks and point-in-line specialist.                                        |
+| Lucas Malcotti    | SUI     | 2026 world champion. Cool under pressure, won the Hong Kong final 13-12. New name at the very top.                        |
+| Davide Di Veroli  | ITA     | 2026 Worlds silver. Spearhead of the deepest program in the sport.                                                        |
+| Mohamed El-Sayed  | EGY     | Most consistent man on the 2025-26 World Cup circuit, two legs. Épée's spread beyond Europe.                              |
+| Yannick Borel     | FRA     | Tall, patient, dominant blade work. Picks the wrist apart with measured prises de fer.                                    |
+| Andrea Santarelli | ITA     | Wrist sniper. Counter-attacks and point-in-line specialist.                                                               |
 
 For the full 2026 results and the current circuit, see [[notes/fencing/2026-season|(y-) 2026 Season]].
 
@@ -64,7 +64,7 @@ For the full 2026 results and the current circuit, see [[notes/fencing/2026-seas
 
 ---
 
-[[notes/fencing/stances|(y-) Stances]] | [[notes/fencing/footwork|(y-) Footwork]] | [[notes/fencing/parries|(y-) Parries]] | [[notes/fencing/bladework|(y-) Bladework]] | [[notes/fencing/tactics|(y-) Tactics]] | [[notes/fencing/equipment|(y-) Equipment]] | [[notes/fencing/2026-season|(y-) 2026 Season]] | [[notes/fencing/workout|(y-) Workout]] | [[notes/fencing/stretching|(y-) Stretching]] | [[notes/fencing/glossary|(y-) Glossary]]
+[[notes/fencing/stances|(y-) Stances]] | [[notes/fencing/footwork|(y-) Footwork]] | [[notes/fencing/parries|(y-) Parries]] | [[notes/fencing/bladework|(y-) Bladework]] | [[notes/fencing/point-control|(y-) Point Control]] | [[notes/fencing/tactics|(y-) Tactics]] | [[notes/fencing/left-handers|(y-) Fencing Lefties]] | [[notes/fencing/equipment|(y-) Equipment]] | [[notes/fencing/2026-season|(y-) 2026 Season]] | [[notes/fencing/workout|(y-) Workout]] | [[notes/fencing/stretching|(y-) Stretching]] | [[notes/fencing/glossary|(y-) Glossary]]
 
 ---
 

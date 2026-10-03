@@ -42,8 +42,11 @@ Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
 > What I'm working on in the dojang, from stances up to sparring.
 
 - [[notes/taekwondo/stances|(y-) Stances]]: foot positions and how they shape balance and power.
+- [[notes/taekwondo/roundhouse-kick|(y-) Roundhouse Kick]]: the main scoring kick in sparring, step by step.
+- [[notes/taekwondo/axe-kick|(y-) Axe Kick]]: the head kick that drops over the guard.
 - [[notes/taekwondo/combinations|(y-) Combinations]]: chaining strikes, transitions, and pressure tactics.
 - [[notes/taekwondo/sparring|(y-) Sparring]]: front-leg cancel style, inspired by CJ Nickolas.
+- [[notes/taekwondo/footwork|(y-) Footwork]]: moving between distance bands and using the boundary.
 - [[notes/taekwondo/spinning-kicks|(y-) Spinning Kicks]]: the complete guide to the spins, phase by phase.
 - [[notes/taekwondo/spinning-back-kick|(y-) Spinning Back Kick]]: the highest-percentage spin, step by step.
 - [[notes/taekwondo/spinning-hook-kick|(y-) Spinning Hook Kick]]: the head-hunter that hooks around the guard.
@@ -63,7 +66,9 @@ Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
 - [[notes/fencing/footwork|(y-) Footwork]]: advance, retreat, lunge, fleche, balestra, passata-sotto.
 - [[notes/fencing/parries|(y-) Parries]]: the numbered parries, circular parries, prises de fer.
 - [[notes/fencing/bladework|(y-) Bladework]]: simple and compound attacks, taking the blade, counter-offense.
+- [[notes/fencing/point-control|(y-) Point Control]]: the grip, angulated hits, and drills for hitting a wrist on purpose.
 - [[notes/fencing/tactics|(y-) Tactics]]: distance, tempo, second intention, and modern competitive styles.
+- [[notes/fencing/left-handers|(y-) Fencing Lefties]]: why left-handers are hard to fence and how to retrain for them.
 - [[notes/fencing/equipment|(y-) Equipment]]: the weapon, electric scoring, the 750g tip, and the 40ms lockout.
 - [[notes/fencing/2026-season|(y-) 2026 Season]]: Hong Kong Worlds, the World Cup circuit, and who's fencing well now.
 - [[notes/fencing/workout|(y-) Workout]]: no-equipment conditioning grouped by purpose.

@@ -58,6 +58,8 @@ These are the kicks I have been drilling. Some feel natural, some still feel lik
 The base everything else is built on.
 
 - [[notes/taekwondo/stances|(y-) Stances]]: the poomsae and sparring stances, what each one is for.
+- [[notes/taekwondo/roundhouse-kick|(y-) Roundhouse Kick]]: dollyo chagi, the kick that does most of the scoring in sparring.
+- [[notes/taekwondo/axe-kick|(y-) Axe Kick]]: naeryeo chagi, the head kick that comes down over the guard.
 - [[notes/taekwondo/combinations|(y-) Combination Kicks]]: chaining kicks together, which is where it starts to feel like the real thing.
 - [[notes/taekwondo/taeguk|(y-) Taegeuk Poomsae]]: the eight foundational WT forms and the philosophy behind each.
 - [[notes/taekwondo/philosophy|(y-) Philosophy]]: the "Do", the tenets, and why any of this is more than kicking.
@@ -99,6 +101,7 @@ The whole reason I started. Full breakdowns of the spins, plus the training that
 ## (y-) Sparring
 
 - [[notes/taekwondo/sparring|(y-) Sparring (Gyeorugi)]]: distance, timing, footwork, and the business of not getting hit.
+- [[notes/taekwondo/footwork|(y-) Sparring Footwork (Bal-gisul)]]: the bounce, slide, switch, and cut step, plus how to use the boundary.
 - [[notes/taekwondo/rules|(y-) Modern Competition Rules (2026)]]: what actually scores under PSS electronic scoring.
 
 ---
@@ -140,25 +143,28 @@ Poomsae (patterns / forms) practice has its own vocabulary. Knowing what the ins
 
 ## (y-) Every Page
 
-| Page                                                                | What It Covers                         |
-| ------------------------------------------------------------------- | -------------------------------------- |
-| [[notes/taekwondo/stances\|(y-) Stances]]                           | Poomsae and sparring stances           |
-| [[notes/taekwondo/combinations\|(y-) Combinations]]                 | Chaining kicks together                |
-| [[notes/taekwondo/taeguk\|(y-) Taegeuk Poomsae]]                    | The eight WT forms                     |
-| [[notes/taekwondo/philosophy\|(y-) Philosophy]]                     | The "Do" and the tenets                |
-| [[notes/taekwondo/warmup-routine\|(y-) Flexibility Warm-Up]]        | RAMP protocol before every session     |
-| [[notes/taekwondo/stretching\|(y-) Stretching & Mobility]]          | When and how to stretch, PNF           |
-| [[notes/taekwondo/splits-progression\|(y-) Splits Progression]]     | The 12-week flexibility program        |
-| [[notes/taekwondo/front-splits\|(y-) Front Splits]]                 | Hamstrings and hip flexors             |
-| [[notes/taekwondo/side-splits\|(y-) Side Splits]]                   | Adductors and hip rotation             |
-| [[notes/taekwondo/flexibility-plateaus\|(y-) Flexibility Plateaus]] | Troubleshooting a stalled split        |
-| [[notes/taekwondo/spinning-kicks\|(y-) Spinning Kicks Guide]]       | The universal mechanics of every spin  |
-| [[notes/taekwondo/spinning-back-kick\|(y-) Spinning Back Kick]]     | Dwi chagi, the highest-percentage spin |
-| [[notes/taekwondo/spinning-hook-kick\|(y-) Spinning Hook Kick]]     | Dwi huryeo chagi, the showstopper      |
-| [[notes/taekwondo/spin-drills\|(y-) Spin Drills]]                   | Balance, spotting, rotational power    |
-| [[notes/taekwondo/sparring\|(y-) Sparring]]                         | Distance, timing, not getting hit      |
-| [[notes/taekwondo/rules\|(y-) Rules (2026)]]                        | PSS scoring and the 2026 rule changes  |
-| [[notes/taekwondo/2026-season\|(y-) 2026 Season]]                   | Rankings and the road to LA 2028       |
+| Page                                                                | What It Covers                           |
+| ------------------------------------------------------------------- | ---------------------------------------- |
+| [[notes/taekwondo/stances\|(y-) Stances]]                           | Poomsae and sparring stances             |
+| [[notes/taekwondo/roundhouse-kick\|(y-) Roundhouse Kick]]           | Dollyo chagi, the main scoring kick      |
+| [[notes/taekwondo/axe-kick\|(y-) Axe Kick]]                         | Naeryeo chagi, over the top of the guard |
+| [[notes/taekwondo/combinations\|(y-) Combinations]]                 | Chaining kicks together                  |
+| [[notes/taekwondo/taeguk\|(y-) Taegeuk Poomsae]]                    | The eight WT forms                       |
+| [[notes/taekwondo/philosophy\|(y-) Philosophy]]                     | The "Do" and the tenets                  |
+| [[notes/taekwondo/warmup-routine\|(y-) Flexibility Warm-Up]]        | RAMP protocol before every session       |
+| [[notes/taekwondo/stretching\|(y-) Stretching & Mobility]]          | When and how to stretch, PNF             |
+| [[notes/taekwondo/splits-progression\|(y-) Splits Progression]]     | The 12-week flexibility program          |
+| [[notes/taekwondo/front-splits\|(y-) Front Splits]]                 | Hamstrings and hip flexors               |
+| [[notes/taekwondo/side-splits\|(y-) Side Splits]]                   | Adductors and hip rotation               |
+| [[notes/taekwondo/flexibility-plateaus\|(y-) Flexibility Plateaus]] | Troubleshooting a stalled split          |
+| [[notes/taekwondo/spinning-kicks\|(y-) Spinning Kicks Guide]]       | The universal mechanics of every spin    |
+| [[notes/taekwondo/spinning-back-kick\|(y-) Spinning Back Kick]]     | Dwi chagi, the highest-percentage spin   |
+| [[notes/taekwondo/spinning-hook-kick\|(y-) Spinning Hook Kick]]     | Dwi huryeo chagi, the showstopper        |
+| [[notes/taekwondo/spin-drills\|(y-) Spin Drills]]                   | Balance, spotting, rotational power      |
+| [[notes/taekwondo/sparring\|(y-) Sparring]]                         | Distance, timing, not getting hit        |
+| [[notes/taekwondo/footwork\|(y-) Footwork]]                         | Movement, distance bands, the boundary   |
+| [[notes/taekwondo/rules\|(y-) Rules (2026)]]                        | PSS scoring and the 2026 rule changes    |
+| [[notes/taekwondo/2026-season\|(y-) 2026 Season]]                   | Rankings and the road to LA 2028         |
 
 ---
 
