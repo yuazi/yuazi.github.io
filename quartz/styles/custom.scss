@@ -1,3 +1,37 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// Film page (content/film.md): seamless Instagram-style collages.
+// Slides sit edge to edge so frames run across the cuts. Desktop shows two
+// slides per view, phones one, and both snap per slide.
+.film-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin: 1.5rem 0 2rem;
+  background: #000;
+  scrollbar-width: thin;
+
+  img {
+    display: block;
+    flex: 0 0 auto;
+    width: calc(100% / min(var(--slides, 2), 2));
+    min-width: 0;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+    scroll-snap-align: start;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+
+  @media #{$mobile} {
+    img {
+      width: 100%;
+    }
+  }
+}

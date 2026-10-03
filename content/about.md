@@ -33,6 +33,12 @@ This site, the **(y)usage Garden**, is where I publish project notes, technical 
 
 ---
 
+## Film
+
+Outside of code I shoot 35mm film. Collages from my rolls are on the [[film|Film]] page.
+
+---
+
 ## Contact
 
 - **GitHub:** [yuazi](https://github.com/yuazi)
