@@ -11,6 +11,34 @@ A running log of what I've been working on, learning, and building, ordered by t
 
 ## 2026
 
+### October
+
+- Added more technique pages to the [[notes/taekwondo/index|Taekwondo]] and [[notes/fencing/index|Fencing]] notes.
+
+### August
+
+- Started writing up taekwondo and fencing notes, mostly spinning kicks and flexibility.
+
+### July
+
+- Started as a PIM working student (Werkstudent) at BTS GmbH.
+- Sat the Virtual & Augmented Reality and Program Verification exams.
+- Finished the semester's lecture notes: RTG 13 to 15 (level of detail, visibility, virtual textures) and VR/AR 12 to 13 (haptics, evaluation and future trends).
+- Added a [[touchdesigner/Projects/index|Ready-to-Open Projects]] page with three small `.toe` files that run with no external assets.
+
+### June
+
+- Exam prep for VR/AR: new lectures on visual coherence, perception, adverse health effects, and immersive analytics, plus longer self-check sections and an exam focus section on the notes.
+- Redid [[notes/lectures/realtimegraphics/index|Real-Time Graphics]] lectures 07 onward for the new slides and added global illumination, GPU ray tracing, and HDR.
+- Rebuilt [[notes/lectures/programverification/index|Program Verification]] notes 10 to 13 from the official 2026 slide deck.
+- Wrote 16 tutorials for [[touchdesigner/08_Trending_2026/index|trending TouchDesigner projects in 2026]], from Gaussian splatting to hand-tracked metaballs.
+- Added a [[touchdesigner/Learning Path|Learning Path]] through the TouchDesigner wiki: nine stages in reading order, with previous and next links on every page in the track.
+
+### May
+
+- Migrated the garden from Quartz 4 to Quartz 5, porting the Lorenz background and boot overlay as custom components and updating the GitHub Actions deploy.
+- Rewrote the [[work/index|portfolio pages]] (Keyboard AI, SlideLink, Sudoku Solver) and the about page to read better for recruiters.
+
 ### April
 
 - Won **2nd place (🥈)** at **LIC8 (Legal Innovation Challenge 8)** in Stuttgart.
