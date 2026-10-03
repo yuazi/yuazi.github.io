@@ -42,11 +42,16 @@ Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
 > What I'm working on in the dojang, from stances up to sparring.
 
 - [[notes/taekwondo/stances|(y-) Stances]]: foot positions and how they shape balance and power.
+- [[notes/taekwondo/front-kick|(y-) Front Kick]]: the straight-line kick, snap and push versions.
+- [[notes/taekwondo/side-kick|(y-) Side Kick]]: the linear kick that stops an opponent walking in.
 - [[notes/taekwondo/roundhouse-kick|(y-) Roundhouse Kick]]: the main scoring kick in sparring, step by step.
 - [[notes/taekwondo/axe-kick|(y-) Axe Kick]]: the head kick that drops over the guard.
 - [[notes/taekwondo/combinations|(y-) Combinations]]: chaining strikes, transitions, and pressure tactics.
 - [[notes/taekwondo/sparring|(y-) Sparring]]: front-leg cancel style, inspired by CJ Nickolas.
 - [[notes/taekwondo/footwork|(y-) Footwork]]: moving between distance bands and using the boundary.
+- [[notes/taekwondo/cut-kick|(y-) Cut & Push Kick]]: jamming an attack with the front leg.
+- [[notes/taekwondo/defense|(y-) Defense]]: distance, movement, the guard, and the counter.
+- [[notes/taekwondo/conditioning|(y-) Conditioning]]: training for three two-minute rounds.
 - [[notes/taekwondo/spinning-kicks|(y-) Spinning Kicks]]: the complete guide to the spins, phase by phase.
 - [[notes/taekwondo/spinning-back-kick|(y-) Spinning Back Kick]]: the highest-percentage spin, step by step.
 - [[notes/taekwondo/spinning-hook-kick|(y-) Spinning Hook Kick]]: the head-hunter that hooks around the guard.
@@ -67,8 +72,13 @@ Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
 - [[notes/fencing/parries|(y-) Parries]]: the numbered parries, circular parries, prises de fer.
 - [[notes/fencing/bladework|(y-) Bladework]]: simple and compound attacks, taking the blade, counter-offense.
 - [[notes/fencing/point-control|(y-) Point Control]]: the grip, angulated hits, and drills for hitting a wrist on purpose.
+- [[notes/fencing/toe-touch|(y-) Toe Touch]]: dropping the point onto the front foot without getting hit on the mask.
+- [[notes/fencing/distance-drills|(y-) Distance Drills]]: finding your lunge distance and staying at its edge.
 - [[notes/fencing/tactics|(y-) Tactics]]: distance, tempo, second intention, and modern competitive styles.
 - [[notes/fencing/left-handers|(y-) Fencing Lefties]]: why left-handers are hard to fence and how to retrain for them.
+- [[notes/fencing/score-and-clock|(y-) Doubles, Priority & the Clock]]: how doubles, the priority minute, and the 2026 non-combativity cards decide bouts.
+- [[notes/fencing/bout-analysis|(y-) Bout Analysis]]: a one-line-per-touch log and short scouting notes.
+- [[notes/fencing/competition-day|(y-) Competition Day]]: pools, seeding, what to pack, and the hours in between.
 - [[notes/fencing/equipment|(y-) Equipment]]: the weapon, electric scoring, the 750g tip, and the 40ms lockout.
 - [[notes/fencing/2026-season|(y-) 2026 Season]]: Hong Kong Worlds, the World Cup circuit, and who's fencing well now.
 - [[notes/fencing/workout|(y-) Workout]]: no-equipment conditioning grouped by purpose.

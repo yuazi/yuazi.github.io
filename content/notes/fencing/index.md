@@ -64,7 +64,7 @@ For the full 2026 results and the current circuit, see [[notes/fencing/2026-seas
 
 ---
 
-[[notes/fencing/stances|(y-) Stances]] | [[notes/fencing/footwork|(y-) Footwork]] | [[notes/fencing/parries|(y-) Parries]] | [[notes/fencing/bladework|(y-) Bladework]] | [[notes/fencing/point-control|(y-) Point Control]] | [[notes/fencing/tactics|(y-) Tactics]] | [[notes/fencing/left-handers|(y-) Fencing Lefties]] | [[notes/fencing/equipment|(y-) Equipment]] | [[notes/fencing/2026-season|(y-) 2026 Season]] | [[notes/fencing/workout|(y-) Workout]] | [[notes/fencing/stretching|(y-) Stretching]] | [[notes/fencing/glossary|(y-) Glossary]]
+[[notes/fencing/stances|(y-) Stances]] | [[notes/fencing/footwork|(y-) Footwork]] | [[notes/fencing/parries|(y-) Parries]] | [[notes/fencing/bladework|(y-) Bladework]] | [[notes/fencing/point-control|(y-) Point Control]] | [[notes/fencing/toe-touch|(y-) Toe Touch]] | [[notes/fencing/distance-drills|(y-) Distance Drills]] | [[notes/fencing/tactics|(y-) Tactics]] | [[notes/fencing/score-and-clock|(y-) Doubles, Priority & the Clock]] | [[notes/fencing/bout-analysis|(y-) Bout Analysis]] | [[notes/fencing/competition-day|(y-) Competition Day]] | [[notes/fencing/left-handers|(y-) Fencing Lefties]] | [[notes/fencing/equipment|(y-) Equipment]] | [[notes/fencing/2026-season|(y-) 2026 Season]] | [[notes/fencing/workout|(y-) Workout]] | [[notes/fencing/stretching|(y-) Stretching]] | [[notes/fencing/glossary|(y-) Glossary]]
 
 ---
 

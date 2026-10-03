@@ -58,6 +58,8 @@ These are the kicks I have been drilling. Some feel natural, some still feel lik
 The base everything else is built on.
 
 - [[notes/taekwondo/stances|(y-) Stances]]: the poomsae and sparring stances, what each one is for.
+- [[notes/taekwondo/front-kick|(y-) Front Kick]]: ap chagi, the straight-line kick and the chamber every other kick hides behind.
+- [[notes/taekwondo/side-kick|(y-) Side Kick]]: yeop chagi, head, hip, and heel on one line, used in sparring as a jab with the foot.
 - [[notes/taekwondo/roundhouse-kick|(y-) Roundhouse Kick]]: dollyo chagi, the kick that does most of the scoring in sparring.
 - [[notes/taekwondo/axe-kick|(y-) Axe Kick]]: naeryeo chagi, the head kick that comes down over the guard.
 - [[notes/taekwondo/combinations|(y-) Combination Kicks]]: chaining kicks together, which is where it starts to feel like the real thing.
@@ -102,6 +104,9 @@ The whole reason I started. Full breakdowns of the spins, plus the training that
 
 - [[notes/taekwondo/sparring|(y-) Sparring (Gyeorugi)]]: distance, timing, footwork, and the business of not getting hit.
 - [[notes/taekwondo/footwork|(y-) Sparring Footwork (Bal-gisul)]]: the bounce, slide, switch, and cut step, plus how to use the boundary.
+- [[notes/taekwondo/cut-kick|(y-) Cut & Push Kick (Mireo Chagi)]]: the front-leg lift that jams an attack, and the follow-ups off it.
+- [[notes/taekwondo/defense|(y-) Sparring Defense (Bangeo)]]: distance, movement, the guard, and the counter that should follow every block.
+- [[notes/taekwondo/conditioning|(y-) Sparring Conditioning]]: plyometrics, round-shaped intervals, and single-leg strength for three two-minute rounds.
 - [[notes/taekwondo/rules|(y-) Modern Competition Rules (2026)]]: what actually scores under PSS electronic scoring.
 
 ---
@@ -146,6 +151,8 @@ Poomsae (patterns / forms) practice has its own vocabulary. Knowing what the ins
 | Page                                                                | What It Covers                           |
 | ------------------------------------------------------------------- | ---------------------------------------- |
 | [[notes/taekwondo/stances\|(y-) Stances]]                           | Poomsae and sparring stances             |
+| [[notes/taekwondo/front-kick\|(y-) Front Kick]]                     | Ap chagi, the straight-line kick         |
+| [[notes/taekwondo/side-kick\|(y-) Side Kick]]                       | Yeop chagi, the linear power kick        |
 | [[notes/taekwondo/roundhouse-kick\|(y-) Roundhouse Kick]]           | Dollyo chagi, the main scoring kick      |
 | [[notes/taekwondo/axe-kick\|(y-) Axe Kick]]                         | Naeryeo chagi, over the top of the guard |
 | [[notes/taekwondo/combinations\|(y-) Combinations]]                 | Chaining kicks together                  |
@@ -163,6 +170,9 @@ Poomsae (patterns / forms) practice has its own vocabulary. Knowing what the ins
 | [[notes/taekwondo/spin-drills\|(y-) Spin Drills]]                   | Balance, spotting, rotational power      |
 | [[notes/taekwondo/sparring\|(y-) Sparring]]                         | Distance, timing, not getting hit        |
 | [[notes/taekwondo/footwork\|(y-) Footwork]]                         | Movement, distance bands, the boundary   |
+| [[notes/taekwondo/cut-kick\|(y-) Cut & Push Kick]]                  | Jamming attacks with the front leg       |
+| [[notes/taekwondo/defense\|(y-) Defense]]                           | Distance, movement, guard, counter       |
+| [[notes/taekwondo/conditioning\|(y-) Conditioning]]                 | Fitness for three two-minute rounds      |
 | [[notes/taekwondo/rules\|(y-) Rules (2026)]]                        | PSS scoring and the 2026 rule changes    |
 | [[notes/taekwondo/2026-season\|(y-) 2026 Season]]                   | Rankings and the road to LA 2028         |
 
