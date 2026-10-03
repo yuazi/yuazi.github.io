@@ -9,7 +9,7 @@ date: 2026-03-18
 
 Hey, I'm **Yusuf Abdul Aziz**.
 
-I'm an M.Sc. Information Systems student at the University of Stuttgart, focused on Python tooling, data/ML workflows, and TypeScript web projects. I am currently looking for Werkstudent or junior software engineering roles in web development, data, BI, or applied ML.
+I'm an M.Sc. Information Systems student at the University of Stuttgart, focused on Python tooling, data/ML workflows, and TypeScript web projects. Since July 2026 I have been working as a PIM working student (Werkstudent) at BTS GmbH.
 
 This site, the **(y)usage Garden**, is where I publish project notes, technical references, and longer writeups on what I am learning and building.
 
