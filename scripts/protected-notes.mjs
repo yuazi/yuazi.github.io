@@ -65,6 +65,20 @@ function decrypt(blob, password) {
   return Buffer.concat([decipher.update(blob.subarray(48)), decipher.final()])
 }
 
+// Keeps plaintext bundles out of commits on this machine. .gitignore cannot be used for this,
+// because Quartz drops every content file that .gitignore matches from the build.
+function excludeLocally() {
+  const exclude = path.join(ROOT, ".git", "info", "exclude")
+  if (!fs.existsSync(path.dirname(exclude))) return
+  const current = fs.existsSync(exclude) ? fs.readFileSync(exclude, "utf8") : ""
+  const missing = BUNDLES.flatMap((bundle) => bundle.paths.map((dir) => `/${dir}/`)).filter(
+    (line) => !current.split("\n").includes(line),
+  )
+  if (missing.length === 0) return
+  const prefix = current === "" || current.endsWith("\n") ? "" : "\n"
+  fs.appendFileSync(exclude, prefix + missing.join("\n") + "\n")
+}
+
 function bundleFile(bundle) {
   return path.join(ROOT, "protected", `${bundle.name}.enc`)
 }
@@ -82,7 +96,15 @@ function lock(password) {
     }
     const count = Object.keys(files).length
     if (count === 0) throw new Error(`bundle ${bundle.name} has no files to lock`)
-    const packed = zlib.gzipSync(JSON.stringify({ version: 1, files }))
+    const json = JSON.stringify({ version: 1, files })
+    if (fs.existsSync(bundleFile(bundle))) {
+      const previous = zlib.gunzipSync(decrypt(fs.readFileSync(bundleFile(bundle)), password))
+      if (previous.toString("utf8") === json) {
+        console.log(`unchanged ${bundle.name}: ${count} files`)
+        continue
+      }
+    }
+    const packed = zlib.gzipSync(json)
     fs.mkdirSync(path.dirname(bundleFile(bundle)), { recursive: true })
     fs.writeFileSync(bundleFile(bundle), encrypt(packed, password))
     console.log(
@@ -149,6 +171,10 @@ if (!password) {
   console.error("set PROTECTED_NOTES_PASSWORD or create .protected-notes-password")
   process.exit(1)
 }
-if (command === "lock") lock(password)
-else if (command === "unlock") unlock(password)
-else publish(password)
+if (command === "lock") {
+  excludeLocally()
+  lock(password)
+} else if (command === "unlock") {
+  excludeLocally()
+  unlock(password)
+} else publish(password)

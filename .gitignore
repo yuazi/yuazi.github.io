@@ -16,7 +16,6 @@ AGENTS.md
 content/**/*.pdf
 .claude/
 
-# Password-protected lecture notes (plaintext stays local; protected/*.enc is committed)
+# Password for protected/*.enc. The plaintext bundle paths are excluded via .git/info/exclude
+# (written by scripts/protected-notes.mjs) because Quartz skips anything .gitignore matches.
 .protected-notes-password
-content/notes/lectures/infovis/
-content/pictures/infovis/
