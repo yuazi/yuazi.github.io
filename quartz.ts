@@ -2,12 +2,15 @@ import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/conf
 import { componentRegistry } from "./quartz/components/registry"
 import LorenzBackground from "./quartz/components/LorenzBackground"
 import GardenBootOverlay from "./quartz/components/GardenBootOverlay"
+import ProtectedImages from "./quartz/components/ProtectedImages"
 
 // Register custom components so their CSS/JS is injected into every page.
 // They render nothing (empty fragments) but inject the Lorenz canvas and
-// BIOS-style boot overlay via their afterDOMLoaded scripts.
+// BIOS-style boot overlay via their afterDOMLoaded scripts. ProtectedImages decrypts the
+// images of password-protected notes once encrypted-pages has unlocked the page.
 componentRegistry.register("LorenzBackground", LorenzBackground, "local")
 componentRegistry.register("GardenBootOverlay", GardenBootOverlay, "local")
+componentRegistry.register("ProtectedImages", ProtectedImages, "local")
 
 const config = await loadQuartzConfig()
 export default config

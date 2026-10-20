@@ -1,0 +1,5 @@
+// Encrypted images stay hidden until protectedImages.inline.ts swaps in a blob: URL,
+// so the browser's failed attempt to show the ciphertext never flashes a broken image.
+img[src*="pictures/protected/"] {
+  visibility: hidden;
+}
