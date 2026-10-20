@@ -1,0 +1,31 @@
+---
+title: (y) Management von IT-Unternehmen
+tags:
+  - notes
+  - mitun
+  - it-management
+  - master
+date: 2026-10-20
+---
+
+> [!abstract] Kursüberblick
+> Management von IT-Unternehmen (WIUS, Prof. Herzwurm, gelesen von Dr. Lars Oliver Mautsch) behandelt Anbieter software-intensiver Produkte und Dienstleistungen entlang ihres Lebenszyklus: von den ökonomischen Besonderheiten von Software und den Strategien im IT-Markt über Vorgründung, Geschäftsmodell, Team und Business Plan bis zu Skalierung und Vermarktung.
+
+## Vorlesungsnotizen
+
+- [[/notes/lectures/mitun/00-kickoff|(y-00) Kick-Off des Moduls]]  
+   Das WIUS und das Modulteam, die Motivation (wertvollste Marken, Händler und Autobauer auf dem Weg zum Softwarekonzern, scheiternde Innovationseinheiten, Temu und Amazon als Angreifer, die "SaaSpocalypse"), Lernziele, Literatur, der Lebenszyklus als Aufbau, Blended Learning mit Übungsklausur und Peer-Feedback, Terminplan und Prüfung.
+
+- [[/notes/lectures/mitun/01-grundlagen|(y-01) Einführung und Grundlagen]]  
+   Der Lebenszyklus von IT-Unternehmen mit allen fünf Phasen, Apple, Twitter und Yahoo als Beispiele, Software als ökonomisches Gut (Immaterialität, Netzeffekte, Skalenerträge, Wechselkosten, kritische Masse, Lock-in), Plattformen und Softwareökosysteme (Gawer, Rollen, Co-Creation, Koopkurrenz), der IT-Markt nach Lünendonk und Wettbewerbsstrategien (Market-based und Resource-based View, Five Forces, Wertnetz, Delta-Modell, Dynamic Capabilities).
+
+## Prüfungsübersicht
+
+| Bestandteil        | Gewicht       | Hinweise                                                                                                |
+| :----------------- | :------------ | :------------------------------------------------------------------------------------------------------ |
+| Übungsklausur (ÜK) | Vorbereitung  | Drei Iterationen mit Lösung und Peer-Feedback in ILIAS (Fristen 20.11., 11.12. und 08.01.).             |
+| Klausur            | 100% der Note | 90 Minuten, 6 LP, meist auf Basis einer kleinen Fallstudie; alles aus Vorlesung und Übung ist relevant. |
+
+---
+
+[[notes/index|(y) Zurück zu den Notizen]]

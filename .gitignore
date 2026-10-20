@@ -15,3 +15,8 @@ CLAUDE.md
 AGENTS.md
 content/**/*.pdf
 .claude/
+
+# Password-protected lecture notes (plaintext stays local; protected/*.enc is committed)
+.protected-notes-password
+content/notes/lectures/infovis/
+content/pictures/infovis/

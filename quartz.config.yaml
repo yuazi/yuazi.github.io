@@ -225,7 +225,8 @@ plugins:
         - description
         - tags
         - aliases
-      excludedProperties: []
+      excludedProperties:
+        - password
       hidePropertiesView: true
       delimiters: ---
       language: yaml

@@ -49,6 +49,11 @@ jobs:
       - name: Install Quartz plugins
         run: npx quartz plugin install
 
+      - name: Unlock password-protected notes
+        env:
+          PROTECTED_NOTES_PASSWORD: ${{ secrets.PROTECTED_NOTES_PASSWORD }}
+        run: node scripts/protected-notes.mjs publish
+
       - name: Build Quartz
         run: npx quartz build
 
