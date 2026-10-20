@@ -98,8 +98,13 @@ function lock(password) {
     if (count === 0) throw new Error(`bundle ${bundle.name} has no files to lock`)
     const json = JSON.stringify({ version: 1, files })
     if (fs.existsSync(bundleFile(bundle))) {
-      const previous = zlib.gunzipSync(decrypt(fs.readFileSync(bundleFile(bundle)), password))
-      if (previous.toString("utf8") === json) {
+      let previous = null
+      try {
+        previous = zlib.gunzipSync(decrypt(fs.readFileSync(bundleFile(bundle)), password))
+      } catch {
+        // The bundle was locked with a different password, so re-encrypt it.
+      }
+      if (previous?.toString("utf8") === json) {
         console.log(`unchanged ${bundle.name}: ${count} files`)
         continue
       }
