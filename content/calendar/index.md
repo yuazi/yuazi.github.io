@@ -13,8 +13,10 @@ A running log of what I've been working on, learning, and building, ordered by t
 
 ### October
 
-- Started a [[notes/kickboxing/index|Kickboxing]] section: hand wrapping (with a video tutorial), stance, punches, kicks, low kicks, defense, combinations, pad work, the switch over from taekwondo, and Glory's 2026 rules.
-- Added more technique pages to the [[notes/taekwondo/index|Taekwondo]] and [[notes/fencing/index|Fencing]] notes.
+- Released [[work/lumadisplay|LumaDisplay]], a macOS app for display resolution, brightness, warmth and presets, with HDR brightness above 100%.
+- Grouped taekwondo, fencing and kickboxing under a new [[notes/sports/index|Sports]] section, and reordered the sidebar explorer to follow each hub page.
+- Started a [[notes/sports/kickboxing/index|Kickboxing]] section: hand wrapping (with a video tutorial), stance, punches, kicks, low kicks, defense, combinations, pad work, the switch over from taekwondo, and Glory's 2026 rules.
+- Added more technique pages to the [[notes/sports/taekwondo/index|Taekwondo]] and [[notes/sports/fencing/index|Fencing]] notes.
 - Added a [[film|Film]] page with collages from my 35mm rolls, laid out like my Instagram carousels.
 
 ### August

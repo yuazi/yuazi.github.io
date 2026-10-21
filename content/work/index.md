@@ -11,6 +11,7 @@ A focused index of projects I have built, shipped, or used as technical learning
 
 ## Selected Software Projects
 
+- **[[lumadisplay|LumaDisplay]]**: native macOS app for display resolution, brightness, warmth and presets, with Metal HDR brightness above 100% and automatic rollback of display changes. ([GitHub](https://github.com/yuazi/LumaDisplay))
 - **[[slidelink|SlideLink]]**: offline Python CLI for aligning Markdown lecture notes with PDF slides using TF-IDF, visual slide signals, review flags, and revert support. ([GitHub](https://github.com/yuazi/SlideLink))
 - **[[keyboardai|Keyboard AI]]**: Python package/CLI that learns n-gram statistics from text and evolves keyboard layouts against an ergonomic scoring model. ([GitHub](https://github.com/yuazi/keyboard-AI))
 - **[[sudokusolver|Sudoku Solver]]**: PyTorch graph neural network experiment with CLI validation, model training, visual output, and regression tests. ([GitHub](https://github.com/yuazi/sudoku_solver))
