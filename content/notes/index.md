@@ -36,71 +36,76 @@ Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
 - [[notes/tools/macos-terminal|(y-) macOS Terminal]]: built-in commands worth knowing.
 - [[notes/tools/modern-cli|(y-) Modern CLI Tools]]: drop-in replacements for ls, cat, grep, find.
 
-## Taekwondo
+## Sports
 
-> [!abstract] [[notes/taekwondo/index|(y) Taekwondo Hub]]
+> [!abstract] [[notes/sports/index|(y) Sports Hub]]
+> Taekwondo, épée fencing and kickboxing, each with its own guides.
+
+### Taekwondo
+
+> [!abstract] [[notes/sports/taekwondo/index|(y) Taekwondo Hub]]
 > What I'm working on in the dojang, from stances up to sparring.
 
-- [[notes/taekwondo/stances|(y-) Stances]]: foot positions and how they shape balance and power.
-- [[notes/taekwondo/front-kick|(y-) Front Kick]]: the straight-line kick, snap and push versions.
-- [[notes/taekwondo/side-kick|(y-) Side Kick]]: the linear kick that stops an opponent walking in.
-- [[notes/taekwondo/roundhouse-kick|(y-) Roundhouse Kick]]: the main scoring kick in sparring, step by step.
-- [[notes/taekwondo/axe-kick|(y-) Axe Kick]]: the head kick that drops over the guard.
-- [[notes/taekwondo/combinations|(y-) Combinations]]: chaining strikes, transitions, and pressure tactics.
-- [[notes/taekwondo/sparring|(y-) Sparring]]: front-leg cancel style, inspired by CJ Nickolas.
-- [[notes/taekwondo/footwork|(y-) Footwork]]: moving between distance bands and using the boundary.
-- [[notes/taekwondo/cut-kick|(y-) Cut & Push Kick]]: jamming an attack with the front leg.
-- [[notes/taekwondo/defense|(y-) Defense]]: distance, movement, the guard, and the counter.
-- [[notes/taekwondo/conditioning|(y-) Conditioning]]: training for three two-minute rounds.
-- [[notes/taekwondo/spinning-kicks|(y-) Spinning Kicks]]: the complete guide to the spins, phase by phase.
-- [[notes/taekwondo/spinning-back-kick|(y-) Spinning Back Kick]]: the highest-percentage spin, step by step.
-- [[notes/taekwondo/spinning-hook-kick|(y-) Spinning Hook Kick]]: the head-hunter that hooks around the guard.
-- [[notes/taekwondo/spin-drills|(y-) Spin Drills]]: balance, spotting, and power work that builds the engine.
-- [[notes/taekwondo/stretching|(y-) Stretching]]: PNF protocols and the mobility work that actually moved my range.
-- [[notes/taekwondo/splits-progression|(y-) Splits Progression]]: the flexibility project for head-height kicks.
-- [[notes/taekwondo/philosophy|(y-) Philosophy]]: the five tenets and what they mean off the mat.
-- [[notes/taekwondo/rules|(y-) Rules (2026)]]: PSS electronic scoring, point values, and the new-for-2026 rule changes.
-- [[notes/taekwondo/2026-season|(y-) 2026 Season]]: Wuxi 2025 Worlds, the Roma Grand Prix, and the road to LA 2028.
+- [[notes/sports/taekwondo/stances|(y-) Stances]]: foot positions and how they shape balance and power.
+- [[notes/sports/taekwondo/front-kick|(y-) Front Kick]]: the straight-line kick, snap and push versions.
+- [[notes/sports/taekwondo/side-kick|(y-) Side Kick]]: the linear kick that stops an opponent walking in.
+- [[notes/sports/taekwondo/roundhouse-kick|(y-) Roundhouse Kick]]: the main scoring kick in sparring, step by step.
+- [[notes/sports/taekwondo/axe-kick|(y-) Axe Kick]]: the head kick that drops over the guard.
+- [[notes/sports/taekwondo/combinations|(y-) Combinations]]: chaining strikes, transitions, and pressure tactics.
+- [[notes/sports/taekwondo/sparring|(y-) Sparring]]: front-leg cancel style, inspired by CJ Nickolas.
+- [[notes/sports/taekwondo/footwork|(y-) Footwork]]: moving between distance bands and using the boundary.
+- [[notes/sports/taekwondo/cut-kick|(y-) Cut & Push Kick]]: jamming an attack with the front leg.
+- [[notes/sports/taekwondo/defense|(y-) Defense]]: distance, movement, the guard, and the counter.
+- [[notes/sports/taekwondo/conditioning|(y-) Conditioning]]: training for three two-minute rounds.
+- [[notes/sports/taekwondo/spinning-kicks|(y-) Spinning Kicks]]: the complete guide to the spins, phase by phase.
+- [[notes/sports/taekwondo/spinning-back-kick|(y-) Spinning Back Kick]]: the highest-percentage spin, step by step.
+- [[notes/sports/taekwondo/spinning-hook-kick|(y-) Spinning Hook Kick]]: the head-hunter that hooks around the guard.
+- [[notes/sports/taekwondo/spin-drills|(y-) Spin Drills]]: balance, spotting, and power work that builds the engine.
+- [[notes/sports/taekwondo/stretching|(y-) Stretching]]: PNF protocols and the mobility work that actually moved my range.
+- [[notes/sports/taekwondo/splits-progression|(y-) Splits Progression]]: the flexibility project for head-height kicks.
+- [[notes/sports/taekwondo/philosophy|(y-) Philosophy]]: the five tenets and what they mean off the mat.
+- [[notes/sports/taekwondo/rules|(y-) Rules (2026)]]: PSS electronic scoring, point values, and the new-for-2026 rule changes.
+- [[notes/sports/taekwondo/2026-season|(y-) 2026 Season]]: Wuxi 2025 Worlds, the Roma Grand Prix, and the road to LA 2028.
 
-## Fencing (Épée)
+### Fencing (Épée)
 
-> [!abstract] [[notes/fencing/index|(y) Fencing (Épée) Hub]]
+> [!abstract] [[notes/sports/fencing/index|(y) Fencing (Épée) Hub]]
 > Notes on épée, the slowest and most tactical of the three weapons. No right of way, whole-body target, wrist sniping galore.
 
-- [[notes/fencing/stances|(y-) Stances]]: classical and modern en garde variants.
-- [[notes/fencing/footwork|(y-) Footwork]]: advance, retreat, lunge, fleche, balestra, passata-sotto.
-- [[notes/fencing/parries|(y-) Parries]]: the numbered parries, circular parries, prises de fer.
-- [[notes/fencing/bladework|(y-) Bladework]]: simple and compound attacks, taking the blade, counter-offense.
-- [[notes/fencing/point-control|(y-) Point Control]]: the grip, angulated hits, and drills for hitting a wrist on purpose.
-- [[notes/fencing/toe-touch|(y-) Toe Touch]]: dropping the point onto the front foot without getting hit on the mask.
-- [[notes/fencing/distance-drills|(y-) Distance Drills]]: finding your lunge distance and staying at its edge.
-- [[notes/fencing/tactics|(y-) Tactics]]: distance, tempo, second intention, and modern competitive styles.
-- [[notes/fencing/left-handers|(y-) Fencing Lefties]]: why left-handers are hard to fence and how to retrain for them.
-- [[notes/fencing/score-and-clock|(y-) Doubles, Priority & the Clock]]: how doubles, the priority minute, and the 2026 non-combativity cards decide bouts.
-- [[notes/fencing/bout-analysis|(y-) Bout Analysis]]: a one-line-per-touch log and short scouting notes.
-- [[notes/fencing/competition-day|(y-) Competition Day]]: pools, seeding, what to pack, and the hours in between.
-- [[notes/fencing/equipment|(y-) Equipment]]: the weapon, electric scoring, the 750g tip, and the 40ms lockout.
-- [[notes/fencing/2026-season|(y-) 2026 Season]]: Hong Kong Worlds, the World Cup circuit, and who's fencing well now.
-- [[notes/fencing/workout|(y-) Workout]]: no-equipment conditioning grouped by purpose.
-- [[notes/fencing/stretching|(y-) Stretching]]: mobility for the lunge, the wrist, and the asymmetric fencer's body.
-- [[notes/fencing/glossary|(y-) Glossary]]: the French (mostly) vocabulary you need to read a coaching book.
+- [[notes/sports/fencing/stances|(y-) Stances]]: classical and modern en garde variants.
+- [[notes/sports/fencing/footwork|(y-) Footwork]]: advance, retreat, lunge, fleche, balestra, passata-sotto.
+- [[notes/sports/fencing/parries|(y-) Parries]]: the numbered parries, circular parries, prises de fer.
+- [[notes/sports/fencing/bladework|(y-) Bladework]]: simple and compound attacks, taking the blade, counter-offense.
+- [[notes/sports/fencing/point-control|(y-) Point Control]]: the grip, angulated hits, and drills for hitting a wrist on purpose.
+- [[notes/sports/fencing/toe-touch|(y-) Toe Touch]]: dropping the point onto the front foot without getting hit on the mask.
+- [[notes/sports/fencing/distance-drills|(y-) Distance Drills]]: finding your lunge distance and staying at its edge.
+- [[notes/sports/fencing/tactics|(y-) Tactics]]: distance, tempo, second intention, and modern competitive styles.
+- [[notes/sports/fencing/left-handers|(y-) Fencing Lefties]]: why left-handers are hard to fence and how to retrain for them.
+- [[notes/sports/fencing/score-and-clock|(y-) Doubles, Priority & the Clock]]: how doubles, the priority minute, and the 2026 non-combativity cards decide bouts.
+- [[notes/sports/fencing/bout-analysis|(y-) Bout Analysis]]: a one-line-per-touch log and short scouting notes.
+- [[notes/sports/fencing/competition-day|(y-) Competition Day]]: pools, seeding, what to pack, and the hours in between.
+- [[notes/sports/fencing/equipment|(y-) Equipment]]: the weapon, electric scoring, the 750g tip, and the 40ms lockout.
+- [[notes/sports/fencing/2026-season|(y-) 2026 Season]]: Hong Kong Worlds, the World Cup circuit, and who's fencing well now.
+- [[notes/sports/fencing/workout|(y-) Workout]]: no-equipment conditioning grouped by purpose.
+- [[notes/sports/fencing/stretching|(y-) Stretching]]: mobility for the lunge, the wrist, and the asymmetric fencer's body.
+- [[notes/sports/fencing/glossary|(y-) Glossary]]: the French (mostly) vocabulary you need to read a coaching book.
 
-## Kickboxing
+### Kickboxing
 
-> [!abstract] [[notes/kickboxing/index|(y) Kickboxing Hub]]
+> [!abstract] [[notes/sports/kickboxing/index|(y) Kickboxing Hub]]
 > K-1 and Glory-style kickboxing: punches, shin kicks, low kicks, and a guard that stays up.
 
-- [[notes/kickboxing/hand-wrapping|(y-) Hand Wrapping]]: step-by-step wrapping with a video tutorial to follow along.
-- [[notes/kickboxing/gear|(y-) Gear]]: what to buy in what order, glove weights, shin guards, mouthguard.
-- [[notes/kickboxing/stance-and-guard|(y-) Stance & Guard]]: the square stance, the high guard, and footwork.
-- [[notes/kickboxing/punches|(y-) Punches]]: the six numbered punches and how each one loads the next strike.
-- [[notes/kickboxing/kicks|(y-) Kicks & Knees]]: the shin roundhouse, teep, switch kick, and knees.
-- [[notes/kickboxing/low-kicks|(y-) Low Kicks & Checking]]: attacking the legs and stopping it happening to you.
-- [[notes/kickboxing/defense|(y-) Defense]]: blocking, parrying, catching kicks, and countering.
-- [[notes/kickboxing/combinations|(y-) Combinations]]: Dutch-style punches into kicks.
-- [[notes/kickboxing/bag-and-pads|(y-) Bag, Pads & Shadowboxing]]: training in rounds and holding pads well.
-- [[notes/kickboxing/from-taekwondo|(y-) Coming from Taekwondo]]: what transfers and what to unlearn.
-- [[notes/kickboxing/rules|(y-) Rulesets & Scoring]]: WAKO, Glory's 2026 rules, and how rounds are judged.
+- [[notes/sports/kickboxing/hand-wrapping|(y-) Hand Wrapping]]: step-by-step wrapping with a video tutorial to follow along.
+- [[notes/sports/kickboxing/gear|(y-) Gear]]: what to buy in what order, glove weights, shin guards, mouthguard.
+- [[notes/sports/kickboxing/stance-and-guard|(y-) Stance & Guard]]: the square stance, the high guard, and footwork.
+- [[notes/sports/kickboxing/punches|(y-) Punches]]: the six numbered punches and how each one loads the next strike.
+- [[notes/sports/kickboxing/kicks|(y-) Kicks & Knees]]: the shin roundhouse, teep, switch kick, and knees.
+- [[notes/sports/kickboxing/low-kicks|(y-) Low Kicks & Checking]]: attacking the legs and stopping it happening to you.
+- [[notes/sports/kickboxing/defense|(y-) Defense]]: blocking, parrying, catching kicks, and countering.
+- [[notes/sports/kickboxing/combinations|(y-) Combinations]]: Dutch-style punches into kicks.
+- [[notes/sports/kickboxing/bag-and-pads|(y-) Bag, Pads & Shadowboxing]]: training in rounds and holding pads well.
+- [[notes/sports/kickboxing/from-taekwondo|(y-) Coming from Taekwondo]]: what transfers and what to unlearn.
+- [[notes/sports/kickboxing/rules|(y-) Rulesets & Scoring]]: WAKO, Glory's 2026 rules, and how rounds are judged.
 
 ## Random
 

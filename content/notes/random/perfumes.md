@@ -1,4 +1,5 @@
 ---
+title: Perfumes
 tags:
   - random
   - perfume

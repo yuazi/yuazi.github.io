@@ -1,5 +1,5 @@
 ---
-title: Machine Perception & Learning (MPL)
+title: (y) Machine Perception & Learning (MPL)
 tags:
   - mlp
   - machine-learning

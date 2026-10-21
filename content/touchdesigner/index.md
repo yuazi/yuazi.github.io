@@ -92,6 +92,7 @@ External I/O, protocols, and GPU programming.
 
 Practical examples and projects categorized by difficulty.
 
+- **[[touchdesigner/06_Recipes_and_Projects/index|(y) Index: Recipes & Projects]]**: Chapter hub and navigation.
 - **[[touchdesigner/06_Recipes_and_Projects/y-1/index|(y-1) Fundamentals]]**: Core UI, Binding, and basic audio-reactive 3D.
 - **[[touchdesigner/06_Recipes_and_Projects/y-2/index|(y-2) Intermediate]]**: Shaders, PBR Materials, and basic MediaPipe tracking.
 - **[[touchdesigner/06_Recipes_and_Projects/y-3/index|(y-3) Advanced]]**: Fluid simulations, advanced gesture recognition, and fractal math.
