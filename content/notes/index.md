@@ -85,6 +85,23 @@ Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
 - [[notes/fencing/stretching|(y-) Stretching]]: mobility for the lunge, the wrist, and the asymmetric fencer's body.
 - [[notes/fencing/glossary|(y-) Glossary]]: the French (mostly) vocabulary you need to read a coaching book.
 
+## Kickboxing
+
+> [!abstract] [[notes/kickboxing/index|(y) Kickboxing Hub]]
+> K-1 and Glory-style kickboxing: punches, shin kicks, low kicks, and a guard that stays up.
+
+- [[notes/kickboxing/hand-wrapping|(y-) Hand Wrapping]]: step-by-step wrapping with a video tutorial to follow along.
+- [[notes/kickboxing/gear|(y-) Gear]]: what to buy in what order, glove weights, shin guards, mouthguard.
+- [[notes/kickboxing/stance-and-guard|(y-) Stance & Guard]]: the square stance, the high guard, and footwork.
+- [[notes/kickboxing/punches|(y-) Punches]]: the six numbered punches and how each one loads the next strike.
+- [[notes/kickboxing/kicks|(y-) Kicks & Knees]]: the shin roundhouse, teep, switch kick, and knees.
+- [[notes/kickboxing/low-kicks|(y-) Low Kicks & Checking]]: attacking the legs and stopping it happening to you.
+- [[notes/kickboxing/defense|(y-) Defense]]: blocking, parrying, catching kicks, and countering.
+- [[notes/kickboxing/combinations|(y-) Combinations]]: Dutch-style punches into kicks.
+- [[notes/kickboxing/bag-and-pads|(y-) Bag, Pads & Shadowboxing]]: training in rounds and holding pads well.
+- [[notes/kickboxing/from-taekwondo|(y-) Coming from Taekwondo]]: what transfers and what to unlearn.
+- [[notes/kickboxing/rules|(y-) Rulesets & Scoring]]: WAKO, Glory's 2026 rules, and how rounds are judged.
+
 ## Random
 
 > [!abstract] [[notes/random/index|(y) Random Hub]]
