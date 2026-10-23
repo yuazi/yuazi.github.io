@@ -28,7 +28,7 @@ A central hub for course-based lecture notes - structured study material from ma
 > The marketing strategy simulation: eight periods of segmentation, positioning, marketing mix and digital channels, scored by the Share Price Index (notes in German).
 
 > [!abstract] [[notes/lectures/supplychainmanagement/index|(y) Supply Chain Management]]
-> Planning, steering, control and sustainability in supply chains, taught in five Saturday blocks; lecture plan now, notes from 24 October (in German).
+> Planning, steering, control and sustainability in supply chains: definitions and theory of the supply chain, SCM next to logistics and procurement, planning levels and strategic fit (notes in German).
 
 ## Earlier Courses
 
