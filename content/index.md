@@ -14,20 +14,17 @@ This is where I write things down while I'm learning them. Some notes are polish
 
 ## What's growing here
 
-- [[touchdesigner/index|(y) TouchDesigner Wiki]]: reference for real-time visual programming.
-- [[calendar/index|(y) Calendar]]: running log of what I've been learning and building.
-- [[notes/index|(y) Notes]]: short notes on research, courses, and hobbies.
+- [[touchdesigner/index|(y) TouchDesigner Wiki]]: reference for real-time visual programming, with a learning path from zero.
+- [[notes/index|(y) Notes]]: lecture notes, terminal tools, taekwondo, fencing and kickboxing, and a few random topics.
 - [[work/index|(y) Work]]: projects and experiments.
+- [[calendar/index|(y) Calendar]]: a month-by-month log of what I've been learning and building.
+- [[film|Film]]: collages from my 35mm rolls.
 
 ---
 
 ## How to navigate
 
-- **Search** (top right) jumps you to any topic.
-- **Wikilinks** in notes show what else is connected.
-- The **graph view** lays out those connections visually.
-- **[[tags/index|Tags]]** group notes by topic.
-- A **table of contents** sits at the top of longer notes.
+Search, in the sidebar, finds any page, and the explorer under it follows the same order as the hub pages. Wikilinks inside notes point to related pages, and the graph view draws those connections. [[tags/index|Tags]] group notes by topic, and longer notes have a table of contents.
 
 ---
 

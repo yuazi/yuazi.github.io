@@ -2,7 +2,7 @@
 title: (y) Notes
 tags:
   - notes
-date: 2026-01-01
+date: 2026-10-24
 ---
 
 Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
@@ -11,17 +11,24 @@ Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
 
 ## Courses
 
-> [!abstract] [[notes/lectures/realtimegraphics/index|(y) Real-Time Graphics (RTG)]]
-> Rendering pipeline study notes: rasterization, GPU architecture, shading models, textures, deferred shading.
+> [!abstract] [[notes/lectures/index|(y) Lectures Hub]]
+> Lecture notes from my master's courses, grouped by semester.
 
-> [!abstract] [[/notes/lectures/virtualaugmentedreality/index|(y) Virtual & Augmented Reality]]
-> Lecture notes on immersive systems: displays, tracking, interaction, computer vision, and human-centered design.
+### Winter semester 2026/27
 
-> [!abstract] [[/notes/lectures/mlp/index|(y) Machine Perception & Learning (MPL)]]
-> Deep learning lecture notes, from CNNs and transformers through VAEs, GANs, and diffusion models.
+- [[notes/lectures/infovis/index|(y) Information Visualization and Visual Analytics]]: perception, visual encoding, graphs, multivariate data, interaction and evaluation. Password-protected, since the slides can't be published.
+- [[notes/lectures/foundationmodels/index|(y) Foundation Models]]: pretraining, adaptation, LLMs, VLMs and VLAs, evaluation, reasoning and agents.
+- [[notes/lectures/mitun/index|(y) Management von IT-Unternehmen]]: network effects, platforms and ecosystems, and competitive strategy for software companies (in German).
+- [[notes/lectures/ai4iot/index|(y) AI4IoT]]: AI in the industrial Internet of Things from a business angle, with a remote maintenance case study (in German).
+- [[notes/lectures/markstrat/index|(y) Digital Markstrat]]: the marketing strategy simulation, eight periods scored by the Share Price Index (in German).
+- [[notes/lectures/supplychainmanagement/index|(y) Supply Chain Management]]: planning, steering, control and sustainability in supply chains (in German).
 
-> [!abstract] [[/notes/lectures/programverification/index|(y) Program Verification]]
-> Hoare logic, predicate transformers, SMT, Boogie/Boostan, and proving programs correct.
+### Earlier courses
+
+- [[notes/lectures/realtimegraphics/index|(y) Real-Time Graphics (RTG)]]: the rendering pipeline in Vulkan, from rasterization and GPU architecture to deferred shading, ray tracing and virtual textures.
+- [[notes/lectures/virtualaugmentedreality/index|(y) Virtual & Augmented Reality]]: displays, tracking, interaction, computer vision, perception and evaluation of immersive systems.
+- [[notes/lectures/mlp/index|(y) Machine Perception & Learning (MPL)]]: deep learning from CNNs and transformers through VAEs, GANs and diffusion models.
+- [[notes/lectures/programverification/index|(y) Program Verification]]: Hoare logic, predicate transformers, SMT, Boogie and Boostan.
 
 ## CLI & Tools
 
@@ -63,7 +70,12 @@ Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
 - [[notes/sports/taekwondo/spin-drills|(y-) Spin Drills]]: balance, spotting, and power work that builds the engine.
 - [[notes/sports/taekwondo/stretching|(y-) Stretching]]: PNF protocols and the mobility work that actually moved my range.
 - [[notes/sports/taekwondo/splits-progression|(y-) Splits Progression]]: the flexibility project for head-height kicks.
+- [[notes/sports/taekwondo/warmup-routine|(y-) Flexibility Warm-Up]]: the RAMP protocol I run before every session.
+- [[notes/sports/taekwondo/front-splits|(y-) Front Splits]]: hamstrings and hip flexors, and the back leg everyone forgets.
+- [[notes/sports/taekwondo/side-splits|(y-) Side Splits]]: adductors, hip rotation, and the bone geometry that sets your ceiling.
+- [[notes/sports/taekwondo/flexibility-plateaus|(y-) Flexibility Plateaus]]: what to check when nothing has moved in two months.
 - [[notes/sports/taekwondo/philosophy|(y-) Philosophy]]: the five tenets and what they mean off the mat.
+- [[notes/sports/taekwondo/taeguk|(y-) Taegeuk Poomsae]]: the eight foundational WT forms and the ideas behind each.
 - [[notes/sports/taekwondo/rules|(y-) Rules (2026)]]: PSS electronic scoring, point values, and the new-for-2026 rule changes.
 - [[notes/sports/taekwondo/2026-season|(y-) 2026 Season]]: Wuxi 2025 Worlds, the Roma Grand Prix, and the road to LA 2028.
 

@@ -2,40 +2,42 @@
 title: Now
 tags:
   - me
-date: 2026-05-05
+date: 2026-10-24
 ---
 
 A snapshot of what I'm working on right now. This page changes often; the rest of the garden moves slower.
 
-_Last updated: May 5, 2026_
+_Last updated: October 24, 2026_
 
 ---
 
-## Recent Highlights
+## Work
 
-Took 2nd place at **LIC8** recently. It was my first competition that leaned on legal frameworks instead of code, and getting through the proceedings without a law background was harder than I expected. Worth the effort.
+Since July I've been a PIM working student (Werkstudent) at BTS GmbH, next to the master's.
 
 ## What I'm Building
 
-Mostly tending the garden. Pruning old notes, linking new ones together, trying to make this site feel like a connected whole instead of a pile of markdown. The latest addition is an expanded [[notes/random/perfumes|perfume collection]].
+[[work/lumadisplay|LumaDisplay]] is out as a v1.1.1 preview. It's a native macOS app for display resolution, brightness, warmth and presets, and it can push brightness past 100% on HDR displays through Metal.
+
+The garden keeps growing too: a [[notes/sports/index|Sports]] section that groups the taekwondo, fencing and kickboxing notes, and a [[film|Film]] page with collages from my 35mm rolls.
 
 ## In the Lab (Academic)
 
-Master's in Wirtschaftsinformatik at the University of Stuttgart. This semester is the technical-heavy one:
+Master's in Wirtschaftsinformatik at the University of Stuttgart, now in the winter semester 2026/27. Two courses are technical and four are business modules taught in German:
 
-- **Real-Time Graphics**: the math under rendering pipelines, from rasterization to deferred shading.
-- **Program Verification**: proving code actually does what it claims with Hoare logic and friends.
-- **VR & AR**: how we build and inhabit immersive spaces.
+- [[notes/lectures/infovis/index|Information Visualization and Visual Analytics]]: perception, visual encoding, and interactive views of data.
+- [[notes/lectures/foundationmodels/index|Foundation Models]]: pretraining, adaptation, LLMs, VLMs and agents.
+- [[notes/lectures/mitun/index|Management von IT-Unternehmen]], [[notes/lectures/ai4iot/index|AI4IoT]], [[notes/lectures/markstrat/index|Digital Markstrat]] and [[notes/lectures/supplychainmanagement/index|Supply Chain Management]].
+
+The summer semester's notes (Real-Time Graphics, Program Verification, VR & AR) are finished and stay up in the [[notes/lectures/index|Lectures]] hub.
 
 ## Moving (Physical)
 
-Daily mobility work at home to keep the hips and shoulders honest. Still training Taekwondo, mostly sparring and technical drills. I've also been dropping in on a Pencak Silat gym occasionally for something different. The flow is completely opposite, and it keeps me from getting too tuned to one style.
+Still training Taekwondo, mostly sparring and technical drills, and still working through the [[notes/sports/taekwondo/splits-progression|splits progression]] for head-height kicks. Épée fencing is the second sport, and [[notes/sports/kickboxing/index|kickboxing]] is the new one. Most of the kicks carry over from taekwondo, but keeping my hands up is new.
 
 ## Everything Else
 
-Weather is finally good, so the Husqvarna Vitpilen 701 is getting weekend miles again.
-
-For evenings I'm in and out of Ready or Not and Halo MCC. Slow, tactical, and a useful antidote to a day spent in lecture notes.
+Still riding the Husqvarna Vitpilen 701. For evenings it's whatever is on the [[notes/random/games|games]] page.
 
 ---
 

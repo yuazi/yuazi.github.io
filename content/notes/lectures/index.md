@@ -3,20 +3,20 @@ title: (y) Lectures
 tags:
   - notes
   - lectures
-date: 2026-05-09
+date: 2026-10-24
 ---
 
-A central hub for course-based lecture notes - structured study material from master's coursework.
+Lecture notes from my master's courses, one hub per course.
 
 ---
 
-## Winter Semester 2026/27
+## Winter semester 2026/27
 
 > [!abstract] [[notes/lectures/infovis/index|(y) Information Visualization and Visual Analytics]]
-> Turning abstract data into interactive visual representations: perception, visual encoding, graphs, multivariate data, interaction, evaluation and visual analytics.
+> Turning abstract data into interactive visual representations: perception, visual encoding, graphs, multivariate data, interaction, evaluation and visual analytics. The notes are password-protected because the slides can't be published.
 
 > [!abstract] [[notes/lectures/foundationmodels/index|(y) Foundation Models]]
-> Models trained once on broad data and reused everywhere: pretraining, adaptation, LLMs, VLMs and VLAs, evaluation, reasoning, agents and generative models.
+> Models trained once on broad data and reused across tasks: pretraining, adaptation, LLMs, VLMs and VLAs, evaluation, reasoning, agents and generative models.
 
 > [!abstract] [[notes/lectures/mitun/index|(y) Management von IT-Unternehmen]]
 > Running providers of software-intensive products along the company lifecycle: network effects, platforms and ecosystems, IT market structure and competitive strategy (notes in German).
@@ -30,19 +30,19 @@ A central hub for course-based lecture notes - structured study material from ma
 > [!abstract] [[notes/lectures/supplychainmanagement/index|(y) Supply Chain Management]]
 > Planning, steering, control and sustainability in supply chains: definitions and theory of the supply chain, SCM next to logistics and procurement, planning levels and strategic fit (notes in German).
 
-## Earlier Courses
+## Earlier courses
 
 > [!abstract] [[notes/lectures/realtimegraphics/index|(y) Real-Time Graphics (RTG)]]
-> Study hub for the RTG master's course, focusing on real-time CGI, the Vulkan API, and advanced rendering techniques.
+> Real-time rendering with the Vulkan API, from rasterization and GPU architecture to deferred shading, global illumination, ray tracing, level of detail and virtual textures.
 
 > [!abstract] [[notes/lectures/virtualaugmentedreality/index|(y) Virtual & Augmented Reality]]
-> Explore the intersection of hardware, software, and human perception in immersive VR/AR environments.
+> How VR and AR systems work: displays, tracking, interaction, computer vision, perception, haptics and evaluation.
 
 > [!abstract] [[notes/lectures/mlp/index|(y) Machine Perception & Learning (MPL)]]
-> Study hub for the MPL master's course, covering deep learning from CNNs to Diffusion models.
+> Deep learning from CNNs and transformers through VAEs, GANs and diffusion models.
 
 > [!abstract] [[notes/lectures/programverification/index|(y) Program Verification]]
-> Bridge the gap between source code and mathematical proofs using logic and SMT solvers.
+> Proving programs correct with Hoare logic, predicate transformers, SMT solvers, Boogie and Boostan.
 
 ---
 

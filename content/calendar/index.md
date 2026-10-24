@@ -13,6 +13,7 @@ A running log of what I've been working on, learning, and building, ordered by t
 
 ### October
 
+- Started the winter semester 2026/27 and its lecture notes: [[notes/lectures/infovis/index|Information Visualization]] (password-protected, since the slides can't be published), [[notes/lectures/foundationmodels/index|Foundation Models]], [[notes/lectures/mitun/index|Management von IT-Unternehmen]], [[notes/lectures/ai4iot/index|AI4IoT]], [[notes/lectures/markstrat/index|Digital Markstrat]] and [[notes/lectures/supplychainmanagement/index|Supply Chain Management]] (lectures 00 to 03 so far).
 - Released [[work/lumadisplay|LumaDisplay]], a macOS app for display resolution, brightness, warmth and presets, with HDR brightness above 100%.
 - Grouped taekwondo, fencing and kickboxing under a new [[notes/sports/index|Sports]] section, and reordered the sidebar explorer to follow each hub page.
 - Started a [[notes/sports/kickboxing/index|Kickboxing]] section: hand wrapping (with a video tutorial), stance, punches, kicks, low kicks, defense, combinations, pad work, the switch over from taekwondo, and Glory's 2026 rules.
@@ -45,21 +46,19 @@ A running log of what I've been working on, learning, and building, ordered by t
 
 ### April
 
-- Won **2nd place (🥈)** at **LIC8 (Legal Innovation Challenge 8)** in Stuttgart.
-  - Developed **[[work/mbclient|MB Client]]**, a digital onboarding portal for the law firm Menold Bezler.
-  - Focused on streamlining client collaboration through smart imports, real-time tracking, and automated scheduling to replace email chaos.
+- Won 2nd place at LIC8 (Legal Innovation Challenge 8) in Stuttgart with [[work/mbclient|MB Client]], a digital onboarding portal for the law firm Menold Bezler. It replaces email back-and-forth with smart imports, real-time tracking and automated scheduling.
 
 ### March
 
-- Completed major updates across the work portfolio.
-  - **[[work/attractormediapipe|AttractorMediaPipe]]**: Expanded to 9 chaotic systems with a new hybrid rendering engine (ModernGL + Datashader) and snapshot-only CLI mode.
-  - **[[work/sudokusolver|Sudoku Solver]]**: Finalized the Graph Neural Network (GNN) implementation for solving puzzles via node classification.
-  - **[[work/keyboardai|Keyboard AI]]**: Refined the evolutionary algorithm and scoring model for ergonomic layout optimization.
-  - **Digital Garden**: Synced all project pages with latest GitHub updates and refined the internal linking structure.
+- Updated the work portfolio:
+  - [[work/attractormediapipe|AttractorMediaPipe]]: expanded to 9 chaotic systems, with a hybrid renderer (ModernGL + Datashader) and a snapshot-only CLI mode.
+  - [[work/sudokusolver|Sudoku Solver]]: finished the graph neural network that solves puzzles through node classification.
+  - [[work/keyboardai|Keyboard AI]]: refined the evolutionary algorithm and the ergonomic scoring model.
+  - Digital Garden: synced every project page with its GitHub repo and tidied the internal links.
 - Restructured this digital garden: moved TouchDesigner notes into their own subfolder, created the new homepage.
 - Set up Quartz 4 with a custom theme, Lorenz background, and graph view.
 - Added a BIOS-style boot sequence overlay so the garden opens with a short startup intro once per session.
-- Made a simple Sudoku AI Trainer that uses GNN to learn
+- Made a simple Sudoku trainer that uses a GNN to learn to solve puzzles.
 - Added a live settings panel to the Lorenz attractor background: a gear button in the bottom right corner lets you tune σ, ρ, β, trail length, particle count, and the Halvorsen _a_ parameter in real time.
 
   | Parameter    | Attractor | What it does                                                             |
@@ -76,7 +75,7 @@ A running log of what I've been working on, learning, and building, ordered by t
 
 ## How I use this
 
-Each entry is a brief note on what I shipped, read, or explored that week. It isn't a diary. It's more like a changelog for my brain.
+Each entry is a line on something I shipped, read, or explored. Think of it as a changelog for my brain.
 
 ---
 
