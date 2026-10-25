@@ -15,6 +15,36 @@ github: https://github.com/yuazi/sudoku_solver
 
 **Sudoku Solver** is a PyTorch experiment that models Sudoku boards as graphs and trains a graph neural network to predict digits through message passing. A command-line solver wraps the model. It validates the puzzle, can plot the board step by step, and falls back to exact backtracking when the network's answer isn't a valid solution.
 
+On 1,000 held-out test puzzles, the network alone solves **99.4%**, and the fallback finishes the rest.
+
+---
+
+## Results
+
+I trained the default configuration (30 epochs, 7 message-passing rounds, hidden size 64, 79,753 parameters) on an M1 Pro, which took about 22 minutes. I then evaluated it on the 1,000 test puzzles of the SATNet Sudoku dataset, which the model never sees during training.
+
+| Metric                                 | Result                      |
+| -------------------------------------- | --------------------------- |
+| Puzzles solved by the GNN alone        | 994 / 1,000 (99.4%)         |
+| Blank cells filled correctly           | 99.96%                      |
+| Puzzles solved with the exact fallback | 1,000 / 1,000               |
+| Inference on the M1 Pro CPU            | ~1.7 ms per puzzle, batched |
+
+The test puzzles have 32 to 41 givens each (36.2 on average). I haven't tested harder puzzles with fewer clues yet.
+
+### Rounds of message passing
+
+Constraints have to travel across the board, so one round is not enough:
+
+| Rounds at test time | Blank cells correct | Puzzles solved |
+| ------------------- | ------------------- | -------------- |
+| 1                   | 58.3%               | 0%             |
+| 3                   | 98.4%               | 60.3%          |
+| 7 (as trained)      | 99.96%              | 99.4%          |
+| 16                  | 20.1%               | 0%             |
+
+Running more rounds than it was trained with makes it worse. The update adds the GRU's output back onto the hidden state (`h = h + gru(...)`), and a GRU's output already contains the previous state, so the hidden state roughly doubles every round. Its average size grows from about 200 at round 7 to about 95,000 at round 16. Accuracy holds up to round 9 and then collapses. Dropping that extra residual should let the model run more rounds on harder puzzles, which is the next experiment.
+
 ---
 
 ## What It Demonstrates
