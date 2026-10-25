@@ -20,7 +20,7 @@ This is the only operator family with two structural shapes: a Text DAT is a sin
 | **Text DAT**  | "free-form, multi-line ASCII text"                      | `op('script1').text` (read), `.text = '...'` (write) |
 | **Table DAT** | "rows and columns of cells, each containing one string" | `op('table1')[r,c]`, `op('table1')[2,'select']`      |
 
-Both expose the exact same node interface and connect to the same downstream ops. The shape just changes how you address content.
+Both have the same node interface and connect to the same downstream ops. Only the way you address the content differs.
 
 ## Sweet 16 DATs
 
@@ -64,7 +64,7 @@ The `.val` is needed because cells are strings; cast to int/float when you need 
 
 **Script as a Python module.** Any Text DAT containing Python can be imported as a module via the `mod()` global, e.g. `mod('utils').my_helper(arg)`. The first call parses and caches the module; subsequent calls hit the cache. Edit the DAT contents and the cache invalidates, so iteration is fast.
 
-**Reactive callback.** A CHOP Execute DAT pointed at a slider's output channel runs `onValueChange()` only when the channel changes. Cleaner than polling in `onFrameStart`.
+**Reactive callback.** A CHOP Execute DAT pointed at a slider's output channel runs `onValueChange()` only when the channel changes, so nothing has to poll in `onFrameStart`.
 
 ```python
 # CHOP Execute DAT, monitoring channel "Volume0"
@@ -76,7 +76,7 @@ def onValueChange(channel, sampleIndex, val, prev):
 
 - **Cells are strings.** A Table DAT cell is always a string until you cast it. `op('config')['rate', 1] + 1` raises a TypeError; `int(op('config')['rate', 1].val) + 1` works.
 - **`mod()` caches.** A `mod('utils')` call uses a cached parse. If you're editing the module DAT and the change doesn't take effect, the cache might be stale; restarting the DAT or saving the project re-parses.
-- **Web DAT pulse vs Web Client.** Web DAT issues one HTTP request per pulse; Web Client DAT keeps a persistent connection open. Different tools, similar names.
+- **Web DAT pulse vs Web Client.** Despite the similar names, Web DAT issues one HTTP request per pulse, while Web Client DAT keeps a persistent connection open.
 - **`appendRow()` cooks downstream.** Mutating a Table DAT from inside a callback that itself fires from a downstream op can cause re-entrant cooks. Restructure to write outside the cook chain or use `run()` to defer.
 
 ## Related Nodes

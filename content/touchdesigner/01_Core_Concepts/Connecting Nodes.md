@@ -59,7 +59,7 @@ Some ops accept a variable number of inputs and stack them in order. **Order mat
 
 To turn a Base/Container COMP into a reusable module with its own inputs and outputs, drop **In** and **Out** ops _inside_ it:
 
-```
+```text
 project1/
   myEffect/         ← Base COMP
     in1   (In TOP)  ← becomes left connector on myEffect
@@ -67,11 +67,11 @@ project1/
     out1  (Out TOP) ← becomes right connector on myEffect
 ```
 
-After this, `myEffect` shows up in the parent network with one TOP input and one TOP output, just like a built-in operator. Same pattern works with In/Out CHOP, In/Out SOP, In/Out DAT.
+After this, `myEffect` shows up in the parent network with one TOP input and one TOP output, just like a built-in operator. The same pattern works with In/Out CHOP, In/Out SOP and In/Out DAT.
 
 ## Wiring Diagram Example
 
-```
+```text
 movie1 ──┐
          ├─→ composite1 ──→ blur1 ──→ out1
 noise1 ──┘                    ↑
@@ -91,7 +91,7 @@ n.inputConnectors            # all input connectors (wired or not)
 n.outputConnectors           # all output connectors
 ```
 
-`.inputs` / `.outputs` return only the _connected_ upstream/downstream operators. `.inputConnectors` / `.outputConnectors` return every connector slot, wired or not. Useful when iterating to find an empty input.
+`.inputs` / `.outputs` return only the _connected_ upstream/downstream operators. `.inputConnectors` / `.outputConnectors` return every connector slot, wired or not, which is what you iterate over to find an empty input.
 
 ---
 

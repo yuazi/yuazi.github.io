@@ -10,7 +10,7 @@ tags:
 date: 2026-05-26
 ---
 
-Turn live microphone or system audio into a glowing 3D waveform that pulses in real time with every beat, pluck, and breath. This is the visual equivalent of a hardware oscilloscope, and it takes about ten minutes to build.
+This recipe turns live microphone or system audio into a glowing waveform line that moves with the sound, like a hardware oscilloscope. It takes about ten minutes to build.
 
 > [!info] Operator Families in this Recipe
 >
@@ -30,7 +30,7 @@ Turn live microphone or system audio into a glowing 3D waveform that pulses in r
 
 ## Part 2: Generate X Positions
 
-`CHOP to SOP` needs a separate channel to spread points horizontally. We create one with a ramp.
+`CHOP to SOP` needs a separate channel to spread points horizontally. A ramp provides it.
 
 1. Add a **Pattern CHOP**.
    - **Type** → `Ramp`.
@@ -38,7 +38,6 @@ Turn live microphone or system audio into a glowing 3D waveform that pulses in r
    - **Channels** → type `tx`.
    - **Samples** → `1024`.
 2. Add a **Resample CHOP** after your **Audio Device In CHOP**.
-   - Connect the Resample CHOP to the Audio Device In.
    - Right-click **End** → Expression → `op('pattern1').end`. This syncs the audio length to the Pattern CHOP automatically.
 
 ---
@@ -59,9 +58,9 @@ You now have a live polyline tracing the waveform shape.
 
 ## Part 4: Render It
 
-1. Create a **Geo COMP**. Set its SOP path to your `CHOP to SOP` node (e.g., `../choptoSOP1`).
+1. Create a **Geo COMP**, go inside, and delete the default torus. Add an **Object Merge SOP** pointing at your `CHOP to SOP` (e.g., `../choptoSOP1`) and give it the render and display flags. A Geo COMP draws the SOP flagged inside it; it has no SOP path parameter of its own.
 2. Create a **Line MAT** and drag it onto the Geo COMP.
-   - **Line Width** → `0.003` for a thin elegant line, or `0.01` for a thick neon stroke.
+   - **Line Width** → `0.003` for a thin line, or `0.01` for a thick neon stroke.
    - **Color** → a bright saturated color (e.g., cyan `0, 1, 1`).
    - **Lighting** → Off.
 3. Add a **Camera COMP** (Translate Z = `2`).
@@ -72,16 +71,16 @@ You now have a live polyline tracing the waveform shape.
 ## Part 5: Polish
 
 - Add a **Bloom TOP** (Threshold: `0.4`, Intensity: `0.8`) for a glow effect.
-- Add an **HSV Adjust TOP** and animate **Hue** → `absTime.seconds * 10` for a slow color shift.
+- Add an **HSV Adjust TOP** and set **Hue** to the expression `absTime.seconds * 10` for a slow color shift.
 
 ---
 
 ## Troubleshooting
 
-- **"Flat line - nothing moves."** - Check microphone permissions and ensure **Device** is set correctly on the Audio Device In CHOP.
-- **"Points are stacked vertically, not spread horizontally."** - Check that the Pattern CHOP's channel name is `tx` and that CHOP to SOP's TX field is set to `tx`.
-- **"Waveform disappears when quiet."** - Add a **Lag CHOP** between the Resample CHOP and the Merge CHOP to add a decaying trail after sound stops.
-- **"Geometry is too tall/clips off screen."** - Add a **Math CHOP** before the Merge (multiply the audio by `0.3`) to scale the amplitude down.
+- **"Flat line, nothing moves."** Check microphone permissions and ensure **Device** is set correctly on the Audio Device In CHOP.
+- **"Points are stacked vertically, not spread horizontally."** Check that the Pattern CHOP's channel name is `tx` and that CHOP to SOP's TX field is set to `tx`.
+- **"Waveform disappears when quiet."** Add a **Lag CHOP** between the Resample CHOP and the Merge CHOP to add a decaying trail after sound stops.
+- **"Geometry is too tall/clips off screen."** Add a **Math CHOP** before the Merge (multiply the audio by `0.3`) to scale the amplitude down.
 
 ---
 
@@ -89,7 +88,7 @@ You now have a live polyline tracing the waveform shape.
 
 - **Spectrum Mode:** Replace the raw audio with an **Audio Spectrum CHOP** to show the frequency spectrum (like a 3D EQ bar chart) instead of the waveform.
 - **Reactive Color:** Bind an **Analyze CHOP** (RMS Power) to the Line MAT color so the line brightens on loud hits.
-- **3D Depth:** Add a second waveform at a different Z position and composite them together for a stereo display.
+- **3D Depth:** Add a second waveform for the other audio channel at a different Z position for a stereo display.
 
 ---
 

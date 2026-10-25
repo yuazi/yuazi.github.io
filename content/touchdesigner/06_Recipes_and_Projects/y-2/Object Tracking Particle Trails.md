@@ -11,7 +11,7 @@ tags:
 date: 2026-05-26
 ---
 
-MediaPipe detects everyday objects - cups, phones, bottles, people - and reports their bounding boxes each frame. This recipe extracts the centroid of each detected object and leaves a glowing comet trail behind it as it moves.
+MediaPipe detects everyday objects (cups, phones, bottles, people) and reports their bounding boxes each frame. This recipe extracts the centroid of each detected object and leaves a glowing comet trail behind it as it moves.
 
 > [!info] Operator Families in this Recipe
 >
@@ -25,7 +25,7 @@ MediaPipe detects everyday objects - cups, phones, bottles, people - and reports
 
 You need the free MediaPipe plugin (`mediapipe.tox`) from [github.com/torinmb/mediapipe-touchdesigner](https://github.com/torinmb/mediapipe-touchdesigner).
 
-This recipe uses a small Python Script CHOP to compute the centroid. The script is provided in full below.
+A small Python Script CHOP computes the centroid.
 
 ---
 
@@ -45,34 +45,24 @@ Click the **Detections** table output. With an object in frame, rows appear with
 1. Add a **Script CHOP**. Set its **DAT** to a new **Text DAT** and paste:
 
 ```python
-import td
-
-def cook(scriptOp):
+def onCook(scriptOp):
     scriptOp.clear()
-    scriptOp.appendChan('cx')
-    scriptOp.appendChan('cy')
-    scriptOp.appendChan('detected')
+    scriptOp.numSamples = 1
+    cx, cy, detected = 0.5, 0.5, 0.0  # fallback: centre of frame, nothing found
 
     det = op('mediapipe1').op('Detections')
-
     if det is not None and det.numRows > 1:
         try:
-            x_min = float(det[1, 'x_min'])
-            x_max = float(det[1, 'x_max'])
-            y_min = float(det[1, 'y_min'])
-            y_max = float(det[1, 'y_max'])
-            scriptOp['cx'][0] = (x_min + x_max) * 0.5
-            scriptOp['cy'][0] = (y_min + y_max) * 0.5
-            scriptOp['detected'][0] = 1.0
-        except:
-            scriptOp['cx'][0] = 0.5
-            scriptOp['cy'][0] = 0.5
-            scriptOp['detected'][0] = 0.0
-    else:
-        scriptOp['cx'][0] = 0.5
-        scriptOp['cy'][0] = 0.5
-        scriptOp['detected'][0] = 0.0
+            x0, x1, y0, y1 = [float(det[1, c]) for c in ('x_min', 'x_max', 'y_min', 'y_max')]
+            cx, cy, detected = (x0 + x1) / 2, (y0 + y1) / 2, 1.0
+        except (TypeError, ValueError):  # missing column or non-numeric cell
+            pass
+
+    for name, val in (('cx', cx), ('cy', cy), ('detected', detected)):
+        scriptOp.appendChan(name)[0] = val
 ```
+
+The callback must be named `onCook`, because a Script CHOP doesn't call a function under any other name. The `td` module is auto-imported, so the script needs no imports.
 
 2. Connect to a **Null CHOP** named `OBJ_POS`.
 
@@ -87,7 +77,7 @@ def cook(scriptOp):
    - **Radius** → `0.03`, **Fill Color** `1, 1, 1`, **Background** `0, 0, 0`.
    - Right-click **Center X** → Expression → `op('OBJ_POS')['cx'] - 0.5`.
    - Right-click **Center Y** → Expression → `-(op('OBJ_POS')['cy'] - 0.5)`.
-   - Right-click **Radius** → Expression → `op('OBJ_POS')['detected'] * 0.03`. Circle vanishes when nothing is detected.
+   - Right-click **Radius** → Expression → `op('OBJ_POS')['detected'] * 0.03`. The circle vanishes when nothing is detected.
 
 2. Build the feedback trail:
    - **Feedback TOP** (Target set at the end).
@@ -109,7 +99,7 @@ def cook(scriptOp):
 
 ## Part 5: Composite Over Webcam
 
-Add the trails directly onto the webcam with an **Add TOP**: Input 0 = `TRAILS_COLOR`, Input 1 = `CAM`. The trail layer is already black outside the glowing marks so no mask is needed.
+Add the trails directly onto the webcam with an **Add TOP**: Input 0 = `TRAILS_COLOR`, Input 1 = `CAM`. The trail layer is already black outside the glowing marks, so no mask is needed.
 
 > [!tip] Over vs. Add
 > `Add TOP` works cleanly here because `TRAILS_COLOR` is black outside the trails. Switch to an `Over TOP` if you want proper alpha blending and the trail to be semi-transparent.
@@ -121,15 +111,11 @@ Add the trails directly onto the webcam with an **Add TOP**: Input 0 = `TRAILS_C
 1. Add a **Script DAT**:
 
 ```python
-import td
-
-def cook(dat):
-    dat.clear()
+def onCook(scriptOp):
+    scriptOp.clear()
     det = op('mediapipe1').op('Detections')
-    if det is not None and det.numRows > 1:
-        dat.appendRow([str(det[1, 'label'])])
-    else:
-        dat.appendRow(['No detection'])
+    found = det is not None and det.numRows > 1
+    scriptOp.appendRow([str(det[1, 'label']) if found else 'No detection'])
 ```
 
 2. Connect to a **Text TOP** (Font Size `24`, Color white) positioned at the bottom of frame.
@@ -140,10 +126,10 @@ def cook(dat):
 
 ## Troubleshooting
 
-- **"Detections table is always empty."** - Hold a clear object (phone, bottle, cup) in good light. The COCO model covers 80 classes. Confirm ObjectDetection is selected and enabled in `mediapipe1`.
-- **"Trails sit in center at (0.5, 0.5)."** - That's the fallback when nothing is detected. Get an object in front of the camera.
-- **"NoneType error in Script CHOP."** - The path `op('mediapipe1').op('Detections')` doesn't match your plugin version. Click inside `mediapipe1` to find the correct DAT name.
-- **"Trails too faint."** - Raise Level TOP Brightness 1 to `0.98` or reduce Blur filter size to `1`.
+- **"Detections table is always empty."** Hold a clear object (phone, bottle, cup) in good light. The COCO model covers 80 classes. Confirm ObjectDetection is selected and enabled in `mediapipe1`.
+- **"Trails sit in center at (0.5, 0.5)."** That's the fallback when nothing is detected. Get an object in front of the camera.
+- **"NoneType error in Script CHOP."** The path `op('mediapipe1').op('Detections')` doesn't match your plugin version. Click inside `mediapipe1` to find the correct DAT name.
+- **"Trails too faint."** Raise Level TOP Brightness 1 to `0.98` or reduce Blur filter size to `1`.
 
 ---
 
@@ -151,7 +137,7 @@ def cook(dat):
 
 - **Multi-object tracking:** Loop through all rows in the Detections table and paint a differently-colored circle per object using a `Script TOP`.
 - **Bounding box outline:** Extract all four corners and drive a `Rectangle TOP` for a live bounding box overlay.
-- **Object-specific effects:** Check `det[1, 'label']` in the Script CHOP and branch into different visuals per class - phone triggers a burst, cup triggers a ripple.
+- **Object-specific effects:** Check `det[1, 'label']` in the Script CHOP and branch into different visuals per class, e.g. a phone triggers a burst and a cup triggers a ripple.
 
 ---
 

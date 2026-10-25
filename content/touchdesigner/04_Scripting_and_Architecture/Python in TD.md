@@ -8,17 +8,17 @@ tags:
 date: 2026-02-21
 ---
 
-TouchDesigner ships with Python 3 baked in. Almost every parameter, callback, and DAT can run Python, and a handful of objects (`op`, `me`, `parent`, `absTime`, ...) are auto-imported into every script and expression so you never need to import the `td` module yourself.
+TouchDesigner ships with Python 3 built in. Almost every parameter, callback and DAT can run Python, and a handful of objects (`op`, `me`, `parent`, `absTime`, ...) are auto-imported into every script and expression so you never need to import the `td` module yourself.
 
 ## Where Python Lives
 
-Python shows up in five places. Pick the one that matches what you're doing:
+Python shows up in six places:
 
 | Location                  | When to use it                                                                                                                                                                                               |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Parameter expressions** | A single one-liner that recalculates each cook. Click a parameter's mode button to blue, type the expression. See [[touchdesigner/01_Core_Concepts/Expressions and Parameters\|Expressions and Parameters]]. |
 | **Text DATs**             | Reusable scripts and modules. Run with the `Run Script` pulse, or import as a module.                                                                                                                        |
-| **Callback DATs**         | React to TouchDesigner events. Four flavors: `Execute DAT`, `OP Execute DAT`, `CHOP Execute DAT`, `Parameter Execute DAT`.                                                                                   |
+| **Callback DATs**         | React to TouchDesigner events. The common ones: `Execute DAT`, `OP Execute DAT`, `CHOP Execute DAT`, `Parameter Execute DAT`.                                                                                |
 | **Script OPs**            | Define an operator's own behavior via `onCook(scriptOp)` callback. Used in `Script CHOP`, `Script TOP`, `Script SOP`, `Script DAT`.                                                                          |
 | **Extensions**            | Custom Python classes attached to a COMP that add methods callable as `op('myComp').MyMethod()`.                                                                                                             |
 | **Textport**              | Live REPL for testing snippets and inspecting state. Open with `Alt+T`.                                                                                                                                      |
@@ -45,18 +45,18 @@ Every Python context in TouchDesigner has these names available without import:
 | `run`                                          | Schedule deferred execution.                                                                      |
 | `debug`                                        | Like `print()` but prefixes with op + line info.                                                  |
 
-See [[touchdesigner/04_Scripting_and_Architecture/The op and me objects|The op and me objects]] for a deeper dive on the most-used three.
+See [[touchdesigner/04_Scripting_and_Architecture/The op and me objects|The op and me objects]] for more on the three you'll use most.
 
 ## DAT Callback Types
 
 Every callback DAT exposes a different set of functions you implement. Drop one and it scaffolds the function signatures for you.
 
-| Callback DAT            | Fires on                                                                       |
-| ----------------------- | ------------------------------------------------------------------------------ |
-| `Execute DAT`           | Project lifecycle (`onStart`, `onCreate`, `onExit`, frame events)              |
-| `OP Execute DAT`        | Watch one or many ops for events: `onCook`, `onPanelExecute`, `onChange`       |
-| `CHOP Execute DAT`      | A specific CHOP's channels changing: `onValueChange`, `onOffToOn`, `onWhileOn` |
-| `Parameter Execute DAT` | A specific parameter's value, expression, or mode changing                     |
+| Callback DAT            | Fires on                                                                         |
+| ----------------------- | -------------------------------------------------------------------------------- |
+| `Execute DAT`           | Project lifecycle (`onStart`, `onCreate`, `onExit`, frame events)                |
+| `OP Execute DAT`        | Watch one or many ops: `onPreCook`, `onPostCook`, `onNameChange`, `onFlagChange` |
+| `CHOP Execute DAT`      | A specific CHOP's channels changing: `onValueChange`, `onOffToOn`, `onWhileOn`   |
+| `Parameter Execute DAT` | A specific parameter's value, expression, or mode changing                       |
 
 Example: a Parameter Execute DAT watching a Pulse parameter to trigger an action.
 
@@ -65,7 +65,6 @@ Example: a Parameter Execute DAT watching a Pulse parameter to trigger an action
 def onPulse(par):
     print(f'reset fired on {par.owner}')
     op('feedback1').par.reset.pulse()
-    return
 ```
 
 ## Common Patterns

@@ -9,7 +9,7 @@ tags:
 date: 2026-03-02
 ---
 
-In this recipe, we'll create a classic 3D "Equalizer" visualization. You'll learn how to take a sound wave, break it into frequencies, and use those numbers to drive the height of thousands of 3D boxes.
+This recipe builds a classic 3D equalizer. You split a sound into frequency bands and use each band to drive the height of a box.
 
 > [!important] Key Concept: Instancing
 > **Instancing** is a way to render hundreds or thousands of copies of a single shape (like a box) very efficiently. Instead of creating 100 separate nodes, we create _one_ box and tell TouchDesigner: "Put a copy of this box at every point in this list of numbers."
@@ -18,11 +18,9 @@ In this recipe, we'll create a classic 3D "Equalizer" visualization. You'll lear
 
 ## 1. The Audio Analysis
 
-First, we need to turn sound into data.
-
 1.  **Audio In:** Create an **Audio File In CHOP**. It comes with a default song.
 2.  **Break it down:** Connect it to an **Audio Spectrum CHOP**.
-    - _What it does:_ It performs an "FFT" (Fast Fourier Transform). It turns the sound wave into a graph where the left side is the **Bass** and the right side is the **Treble**.
+    - _What it does:_ It runs an FFT (Fast Fourier Transform), which turns the sound wave into a graph with the bass on the left and the treble on the right.
 3.  **Smooth it out:** Connect the spectrum to a **Resample CHOP**. Set the "Method" to `New Rate, New Interval` and "End" to `40`.
     - _Why?_ This reduces the hundreds of frequency bars down to just 40, which is easier to see.
 4.  **Finalize:** Connect to a **Null CHOP** and name it `OUT_AUDIO`.
@@ -31,8 +29,6 @@ First, we need to turn sound into data.
 
 ## 2. The 3D Scene
 
-We need a "World" for our geometry to live in.
-
 1.  **The Shape:** Create a **Box SOP**.
 2.  **The Container:** Connect the Box SOP to a **Geometry COMP**.
 3.  **The View:** Add a **Camera COMP**, a **Light COMP**, and a **Render TOP**.
@@ -40,14 +36,14 @@ We need a "World" for our geometry to live in.
 
 ---
 
-## 3. The Instancing Magic
+## 3. Instancing
 
-Now we tell the Geometry COMP to multiply that box.
+Now the Geometry COMP needs to copy that box.
 
 1.  Select the **Geometry COMP**. Go to the **Instance** tab in the parameters.
 2.  Turn **Instancing** → `On`.
 3.  **Define the Data:** Drag your `OUT_AUDIO` Null CHOP into the **Instance CHOP/DAT** field.
-    - _Wait!_ The box disappeared or looks weird. This is because we haven't told TD _where_ to put them yet.
+    - The box may disappear or look wrong at this point. TD doesn't know _where_ to put the copies yet.
 
 ---
 
@@ -55,13 +51,13 @@ Now we tell the Geometry COMP to multiply that box.
 
 We want the boxes to sit in a row, but our audio data only has "Height" (Y) values. We need "Position" (X) values.
 
-1.  **Generate X positions:** Branch off from your `OUT_AUDIO` node and add a **Pattern CHOP**.
+1.  **Generate X positions:** Add a **Pattern CHOP**. It is a generator, so it needs no input.
     - Set **Type** to `Ramp`.
     - Set **Number of Samples** to `40` (to match our audio).
     - Set **Amplitude** to `20` and **Offset** to `-10`. This spreads the values from -10 to +10.
-2.  **Merge them:** Use a **Merge CHOP** to combine the original audio channel (`chan1`) and your new pattern channel (`ramp1`).
-3.  **Update the Geo:** Connect this Merge CHOP to your `OUT_AUDIO` Null.
-4.  **Map the Channels:**
+    - Set **Channel Names** to `ramp1` so it doesn't clash with the audio's `chan1`.
+2.  **Merge them:** Insert a **Merge CHOP** between the Resample CHOP and the `OUT_AUDIO` Null, and wire the Pattern CHOP into its second input. `OUT_AUDIO` now carries both the audio channel (`chan1`) and the ramp (`ramp1`).
+3.  **Map the Channels:**
     - On the Geometry COMP **Instance** page, find **Translate X**. Select `ramp1` from the dropdown.
     - Find **Scale Y** (to make them grow tall). Select `chan1` from the dropdown.
 
@@ -72,9 +68,9 @@ We want the boxes to sit in a row, but our audio data only has "Height" (Y) valu
 
 ## Troubleshooting
 
-- **"The bars are too small/too big"** - Use a **Math CHOP** before the Null to multiply the audio values.
-- **"The bars are jittery"** - Add a **Lag CHOP** or **Filter CHOP** before the Null to smooth the movement.
-- **"I only see one bar"** - Check that your **Pattern CHOP** has the same "Number of Samples" as your audio spectrum.
+- **"The bars are too small/too big"** Use a **Math CHOP** before the Null to multiply the audio values.
+- **"The bars are jittery"** Add a **Lag CHOP** or **Filter CHOP** before the Null to smooth the movement.
+- **"I only see one bar"** Check that your **Pattern CHOP** has the same "Number of Samples" as your audio spectrum.
 
 ---
 
@@ -97,20 +93,17 @@ We want the boxes to sit in a row, but our audio data only has "Height" (Y) valu
 
 ## Network Architecture
 
-To visualize how the data flows, here is a map of the final network:
-
 ```text
-[ AUDIO PROCESSING ]            [ 3D SCENE ]
-Audio File In CHOP             Box SOP
-       │                          │
-       ▼                          ▼
-Audio Spectrum CHOP (FFT)      Geometry COMP (Instancing On)
-       │                          │
-       ▼                 ┌────────┘
-Resample CHOP (40 pts) ──┤ Map chan1 to Scale Y
-       │                 └─ Map ramp1 to Translate X
-       ▼
-Pattern CHOP (Ramp) ──▶ Merge CHOP ──▶ Null (OUT_AUDIO)
+[ AUDIO PROCESSING ]                 [ 3D SCENE ]
+Audio File In CHOP                   Box SOP
+       │                                │
+       ▼                                ▼
+Audio Spectrum CHOP (FFT)            Geometry COMP (Instancing On)
+       │                                ▲  chan1 → Scale Y
+       ▼                                │  ramp1 → Translate X
+Resample CHOP (40 pts) ──┐              │
+                         ▼              │
+Pattern CHOP (ramp1) ──▶ Merge CHOP ──▶ Null (OUT_AUDIO)
 ```
 
 > [!tip]- 📚 Learning Path · Stage 2 - Your First Visuals · step 10 of 44

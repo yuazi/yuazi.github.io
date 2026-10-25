@@ -22,7 +22,7 @@ The dialog always shows one operator at a time. Selecting a different node updat
 
 ## The Four Parameter Modes
 
-This is the most important concept on this page. Every parameter sits in one of four modes, indicated by a colored mode button on the left of the parameter row. **All four mode values persist simultaneously**, so you can flip between modes without losing data.
+Every parameter sits in one of four modes, indicated by a colored mode button on the left of the parameter row. **All four mode values persist simultaneously**, so you can flip between modes without losing data.
 
 | Mode           | Color  | What it does                                                            |
 | -------------- | ------ | ----------------------------------------------------------------------- |
@@ -33,7 +33,8 @@ This is the most important concept on this page. Every parameter sits in one of 
 
 Click the colored button to switch modes. Right-click it to access mode-specific options (set expression, remove export, reset, etc.).
 
-> [!tip] **Constant for setup, Export for performance, Bind for UI.** If you have many channels driving many parameters, Export is faster than Expression because it skips per-cook Python eval.
+> [!tip] Rule of thumb
+> Use Constant for setup values, Export to drive parameters live, and Bind for UI controls. When many channels drive many parameters, Export is faster than Expression because it skips the per-cook Python evaluation.
 
 ## Parameter Types
 
@@ -80,7 +81,7 @@ RMB any parameter row to get common operations: reset to default, copy/paste val
 
 ## What's Next
 
-- [[touchdesigner/01_Core_Concepts/Expressions and Parameters|Expressions and Parameters]]: deep dive on the expression language
+- [[touchdesigner/01_Core_Concepts/Expressions and Parameters|Expressions and Parameters]]: more on the expression language
 - [[touchdesigner/04_Scripting_and_Architecture/Custom Parameters|Custom Parameters]]: how to add your own parameters to a COMP
 
 ---

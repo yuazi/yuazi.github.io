@@ -10,7 +10,7 @@ date: 2026-02-11
 
 # Timer CHOP
 
-The **Timer CHOP** is a state machine for time. Use it any time you'd reach for "do X after N seconds," "play through these phases," or "loop this for 10 cycles." It outputs a current fraction, a current state (running, done, ready), and fires Python callbacks at the right moments. Building this by hand with Constant CHOPs and counters works briefly, then breaks the moment you need cycling, segments, or pause.
+The **Timer CHOP** is a state machine for time. Use it whenever you'd reach for "do X after N seconds," "play through these phases," or "loop this for 10 cycles." It outputs the current fraction and state (running, done, ready) and fires Python callbacks as it goes. Hand-built timers made of Constant CHOPs and counters tend to break once you need cycling, segments or pausing.
 
 ## Output Channels
 
@@ -68,18 +68,18 @@ Navigation pulses: **Go to Previous Segment**, **Go to Next Segment**, **Exit Se
 
 The Timer CHOP creates a Text DAT full of Python skeletons. Fill in the methods you need.
 
-| Method              | Fires when                                                                   |
-| ------------------- | ---------------------------------------------------------------------------- |
-| `onInitialize()`    | Initialize is pulsed; "prepare any part of your setup prior to starting"     |
-| `onStart()`         | "the frame that the Start parameter is pulsed"                               |
-| `onTimerActive()`   | "every frame that the timer is running and there is no Delay or Play is off" |
-| `onCycleStart()`    | "if the timer is set to cycle"                                               |
-| `onCycleEndAlert()` | Configurable preview window before each cycle ends (use for crossfades)      |
-| `onSegmentEnter()`  | A segment becomes active (segment-mode timers)                               |
-| `onSegmentExit()`   | A segment finishes (segment-mode timers)                                     |
-| `onDone()`          | "the timer reaches its finished state"                                       |
+| Method               | Fires when                                                                   |
+| -------------------- | ---------------------------------------------------------------------------- |
+| `onInitialize()`     | Initialize is pulsed; "prepare any part of your setup prior to starting"     |
+| `onStart()`          | "the frame that the Start parameter is pulsed"                               |
+| `whileTimerActive()` | "every frame that the timer is running and there is no Delay or Play is off" |
+| `onCycleStart()`     | "if the timer is set to cycle"                                               |
+| `onCycleEndAlert()`  | Configurable preview window before each cycle ends (use for crossfades)      |
+| `onSegmentEnter()`   | A segment becomes active (segment-mode timers)                               |
+| `onSegmentExit()`    | A segment finishes (segment-mode timers)                                     |
+| `onDone()`           | "the timer reaches its finished state"                                       |
 
-In a segment callback, `print(help(segment))` lists what's available on the segment object, including any custom columns.
+In a segment callback, `help(segment)` lists what's available on the segment object, including any custom columns.
 
 ## Python Control
 
@@ -103,7 +103,7 @@ op('timer1').par.cuepulse.pulse()
 
 Drop a Table DAT with this content:
 
-```
+```text
 length	cycle	cyclelimit	maxcycles
 2	off	off	0
 4	off	off	0
@@ -113,15 +113,13 @@ length	cycle	cyclelimit	maxcycles
 Set Timer CHOP Length Units to Seconds, point Segments DAT at this table, and define the callback:
 
 ```python
-def onSegmentEnter(segment, prev, info):
-    constant = op('phase_constant')
-    if segment.index == 0:
-        constant.par.value0 = 0.0   # intro
-    elif segment.index == 1:
-        constant.par.value0 = 1.0   # main
-    elif segment.index == 2:
-        constant.par.value0 = 0.5   # outro
+PHASES = (0.0, 1.0, 0.5)  # intro, main, outro
+
+def onSegmentEnter(timerOp, segment, interrupt):
+    op('phase_constant').par.value0 = PHASES[segment.index]
 ```
+
+Every Timer callback receives the Timer CHOP as its first argument (`timerOp`). Indexing a tuple by `segment.index` replaces an `if`/`elif` chain, and adding a segment means adding one value.
 
 The Timer cycles through 2 + 4 + 1 = 7 seconds total, switching the Constant CHOP at each segment boundary.
 
@@ -129,7 +127,7 @@ The Timer cycles through 2 + 4 + 1 = 7 seconds total, switching the Constant CHO
 
 - **Length Units matters.** "5" means 5 samples, 5 frames, or 5 seconds depending on Length Units. Misreading this is the most common Timer mistake.
 - **Initialize is not Start.** Initialize zeros the counters and arms the timer (sets `ready` to 1); Start kicks off the run. You usually pulse both, in that order.
-- **Pulse on the parameter, not the channel.** `op('timer1').par.start.pulse()` works; trying to "set" `op('timer1').par.start = 1` doesn't trigger the pulse.
+- **Use `.pulse()`, not assignment.** `op('timer1').par.start.pulse()` works; trying to "set" `op('timer1').par.start = 1` doesn't trigger the pulse.
 - **Segments table needs the right column names.** A typo like `lenght` instead of `length` is silently ignored; the timer just uses defaults.
 - **Callbacks need the Callbacks DAT parameter set.** The auto-created callback DAT is wired by default, but if you copy/paste a Timer CHOP, double-check the parameter still points at a DAT that exists.
 

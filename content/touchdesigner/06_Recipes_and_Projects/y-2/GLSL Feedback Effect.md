@@ -10,9 +10,9 @@ tags:
 date: 2026-03-02
 ---
 
-This document details the implementation of recursive texture processing systems in TouchDesigner using Feedback TOP operators in conjunction with custom GLSL shaders. Such configurations enable the generation of complex temporal visual phenomena including trajectory trails, recursive diffusion patterns, and evolving procedural textures - all executed with full GPU acceleration for real-time performance capabilities.
+A Feedback TOP hands a GLSL TOP its own previous frame, so the shader can transform last frame's image and draw new content on top of it. Loops like this produce trails, recursive diffusion patterns and slowly evolving textures, all on the GPU.
 
-The specific implementation described herein focuses on a compound transformation feedback system incorporating spatial scaling, rotational transformation, and temporal decay parameters, establishing a foundational framework for advanced real-time visual synthesis applications.
+The shader in this recipe zooms, rotates, shifts and fades the previous frame on every pass. Most feedback effects are variations on those four moves.
 
 ---
 
@@ -20,7 +20,7 @@ The specific implementation described herein focuses on a compound transformatio
 
 A feedback loop in TouchDesigner is built with a **Feedback TOP**:
 
-```
+```text
 [Source TOP]
      ↓
   GLSL TOP  ←──────────────┐
@@ -33,7 +33,7 @@ A feedback loop in TouchDesigner is built with a **Feedback TOP**:
 Step by step:
 
 1. Create a **`Noise TOP`** as your seed texture (or any visual source).
-2. Create a **`GLSL TOP`** - this is where the effect lives.
+2. Create a **`GLSL TOP`**. The effect lives in its shader.
 3. Create a **`Feedback TOP`**.
    - Set its **Target TOP** parameter to the path of the **GLSL TOP** (e.g. `glsl1`).
    - This makes the Feedback TOP read from the GLSL TOP's _previous_ frame.
@@ -51,7 +51,7 @@ Open the `GLSL TOP`, go to its DAT and replace the pixel shader with:
 ```glsl
 uniform sampler2D sTD2DInputs[TD_NUM_2D_INPUTS];  // [0] = fresh source, [1] = feedback
 
-// Uniforms (add these as Custom Parameters on the GLSL TOP)
+// Uniforms (set these on the GLSL TOP's Vectors page)
 uniform float uZoom;       // e.g. 1.002
 uniform float uRotation;   // e.g. 0.001 (radians per frame)
 uniform float uDecay;      // e.g. 0.97 (how fast trails fade)
@@ -63,89 +63,72 @@ void main()
 {
     vec2 uv = vUV.st;
 
-    // Centre the UV so transforms are around the middle
-    vec2 centred = uv - 0.5;
-
-    // Apply rotation
+    // Rotate and zoom around the centre, shift, then return to 0-1 UV space
     float c = cos(uRotation);
     float s = sin(uRotation);
-    centred = vec2(c * centred.x - s * centred.y,
-                   s * centred.x + c * centred.y);
+    vec2 feedbackUV = mat2(c, s, -s, c) * (uv - 0.5) / uZoom + uOffset + 0.5;
 
-    // Apply zoom (scale back toward centre)
-    centred /= uZoom;
-
-    // Apply translate offset
-    centred += uOffset;
-
-    // Return to 0-1 UV space
-    vec2 feedbackUV = centred + 0.5;
-
-    // Sample last frame's output, apply decay to fade trails
+    // Last frame's output, faded so trails die out
     vec4 feedback = texture(sTD2DInputs[1], feedbackUV) * uDecay;
-
-    // Sample fresh source
     vec4 fresh = texture(sTD2DInputs[0], uv);
 
-    // Combine: add new content on top of decayed history
+    // Keep whichever is brighter: new content or decayed history
     fragColor = TDOutputSwizzle(max(fresh, feedback));
 }
 ```
 
 ---
 
-## Part 3: Adding Custom Parameters
+## Part 3: Setting the Uniforms
 
-For the uniforms to be tweakable, create **Custom Parameters** on the GLSL TOP:
+The GLSL TOP passes values to the shader from its **Vectors** page. Add one entry per uniform, with the **Uniform Name** spelled exactly as in the shader:
 
-1. Right-click the GLSL TOP → **Customize Component…**
-2. Add float parameters matching the uniform names:
-   - `uZoom` - default `1.002`, range `0.99–1.05`
-   - `uRotation` - default `0.001`, range `-0.05–0.05`
-   - `uDecay` - default `0.97`, range `0.5–1.0`
-   - `uOffset` - default `0, 0` (XY float pair)
+- `uZoom`: `1.002` (useful range `0.99–1.05`)
+- `uRotation`: `0.001` (range `-0.05–0.05`)
+- `uDecay`: `0.97` (range `0.5–1.0`)
+- `uOffset`: x `0`, y `0`
 
-Now sliders appear on the parameter panel for live tweaking during performance.
+Each value field takes an expression or a CHOP reference. For sliders you can tweak during a performance, wrap the GLSL TOP in a Base COMP, give the Base custom parameters, and reference them from the Vectors values (e.g. `parent().par.Zoom`). Custom parameters live on COMPs, not on the GLSL TOP itself.
 
 ---
 
 ## Part 4: Driving with Audio
 
-```
+```text
 Audio Device In CHOP → Audio Spectrum CHOP → Analyze CHOP (RMS)
   → Math CHOP (remap: e.g. 0→1 becomes 1.000→1.008)
-  → [CHOP reference onto GLSL TOP's uZoom custom parameter]
+  → [CHOP reference in the uZoom value on the Vectors page]
 ```
 
-Kick drums push the zoom, creating the classic "zoom-in-on-beat" VJ effect.
+Loud hits push the zoom, the classic zoom-on-the-beat VJ effect.
 
 ---
 
 ## Visual Variations
 
-| Change                                  | Effect                                                  |
-| --------------------------------------- | ------------------------------------------------------- |
-| `uZoom > 1`                             | Content zooms in and expands outward - "into the abyss" |
-| `uZoom < 1`                             | Content shrinks inward - imploding tunnel               |
-| `uRotation != 0`                        | Trails spiral                                           |
-| `uDecay` close to 1                     | Long, persistent trails                                 |
-| `uDecay` close to 0.5                   | Short, quickly fading traces                            |
-| Add `sin(absTime.seconds)` to `uOffset` | Drifting, oscillating trails                            |
+| Change                                  | Effect                                          |
+| --------------------------------------- | ----------------------------------------------- |
+| `uZoom > 1`                             | Content zooms in and expands outward            |
+| `uZoom < 1`                             | Content shrinks inward like an imploding tunnel |
+| `uRotation != 0`                        | Trails spiral                                   |
+| `uDecay` close to 1                     | Long, persistent trails                         |
+| `uDecay` close to 0.5                   | Short, quickly fading traces                    |
+| Add `sin(absTime.seconds)` to `uOffset` | Drifting, oscillating trails                    |
 
 ---
 
 ## Common Gotchas
 
-- **Feedback explodes to white** → `uDecay` is too high (≥ 1.0). Drop it to `0.97`.
+- **Trails never fade** → `uDecay` is at or above `1.0`. Drop it to `0.97`.
 - **Nothing feeds back** → confirm the Feedback TOP's **Target TOP** path is exactly the GLSL TOP's name.
-- **Green/uniform shader errors** → check the GLSL TOP's `Info` OP for compile errors; common issue is uniform name mismatch.
-- **1-frame latency** in the loop is unavoidable and is what makes feedback work - the Feedback TOP always serves the _previous_ frame.
-- For **reaction-diffusion** (Turing patterns), replace the simple zoom/rotate with a two-channel diffusion equation in the shader - a natural next step from this recipe.
+- **Green/uniform shader errors** → check the GLSL TOP's Info DAT for compile errors. The usual cause is a uniform name that doesn't match the Vectors page.
+- **1-frame latency** in the loop is unavoidable. The Feedback TOP always serves the _previous_ frame, which is what makes feedback work.
+- For **reaction-diffusion** (Turing patterns), replace the zoom/rotate with a two-channel diffusion equation in the shader. See [[touchdesigner/06_Recipes_and_Projects/y-3/Reaction-Diffusion|Reaction-Diffusion]].
 
 ## Related Topics
 
-- [[Feedback Loops]] - pure TOP-based feedback without GLSL
-- [[Introduction to GLSL]] - GLSL fundamentals in TouchDesigner
+- [[Feedback Loops]]: pure TOP-based feedback without GLSL
+- [[Introduction to GLSL]]: GLSL fundamentals in TouchDesigner
 
 ---
 
@@ -156,11 +139,9 @@ Kick drums push the zoom, creating the classic "zoom-in-on-beat" VJ effect.
 | **uZoom**     | >1.0 = trails expand outward (tunnel effect); <1.0 = trails shrink toward center.           |
 | **uRotation** | Higher = trails spiral rapidly; Zero = trails move in straight lines from the center.       |
 | **uDecay**    | Higher (0.99) = trails stay on screen for a long time; Lower (0.8) = trails vanish quickly. |
-| **uOffset**   | Adds a directional "drift" to the feedback (e.g., trails always float upward).              |
+| **uOffset**   | Adds a directional drift to the feedback (e.g., trails always float upward).                |
 
 ## Network Architecture
-
-To visualize how the data flows, here is a map of the final network:
 
 ```text
 [ SOURCE ]

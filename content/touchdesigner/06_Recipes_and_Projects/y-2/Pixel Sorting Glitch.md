@@ -11,7 +11,7 @@ tags:
 date: 2026-05-26
 ---
 
-Bright pixels get dragged horizontally across the frame, leaving streaks of color that look like corrupted data. This is pixel sorting - popularized by Kim Asendorf's Processing sketches and now everywhere in live visuals and music videos.
+Bright pixels get dragged horizontally across the frame, leaving streaks of color that look like corrupted data. This is pixel sorting, popularized by Kim Asendorf's Processing sketches and now common in live visuals and music videos.
 
 A GLSL shader does the sort. An optional feedback loop turns it into datamosh.
 
@@ -47,27 +47,23 @@ layout(location = 0) out vec4 fragColor;
 void main()
 {
     vec2 uv    = vUV.st;
-
     vec4 color = texture(sTD2DInputs[0], uv);
     float luma = dot(color.rgb, vec3(0.299, 0.587, 0.114));
 
-    if (luma > uThreshold) {
-        float offset = (luma - uThreshold) * uSortStrength * uDirection;
-        fragColor    = TDOutputSwizzle(texture(sTD2DInputs[0], vec2(uv.x + offset, uv.y)));
-    } else {
-        fragColor = TDOutputSwizzle(color);
-    }
+    // Zero below the threshold, so dark pixels sample themselves
+    float offset = max(luma - uThreshold, 0.0) * uSortStrength * uDirection;
+    fragColor = TDOutputSwizzle(texture(sTD2DInputs[0], vec2(uv.x + offset, uv.y)));
 }
 ```
 
 > [!info] What the shader does
-> Pixels above `uThreshold` sample from a position shifted right by `(brightness - threshold) × strength`. Brighter pixels reach further, leaving longer streaks. Dark pixels stay put.
+> Pixels above `uThreshold` sample from a position shifted right by `(brightness - threshold) × strength`. Brighter pixels reach further and leave longer streaks. Below the threshold the offset is `0`, so dark pixels stay put without an `if` branch.
 
 ---
 
-## Part 3: Add Custom Parameters
+## Part 3: Set the Uniforms
 
-Right-click the **GLSL TOP** → **Customize Component** → add three float uniforms:
+On the **GLSL TOP**'s **Vectors** page, add three uniforms with these names. The Min/Max columns are the useful range to explore:
 
 | Name            | Default | Min    | Max   |
 | --------------- | ------- | ------ | ----- |
@@ -75,7 +71,7 @@ Right-click the **GLSL TOP** → **Customize Component** → add three float uni
 | `uSortStrength` | `0.3`   | `0.0`  | `1.0` |
 | `uDirection`    | `1.0`   | `-1.0` | `1.0` |
 
-Start with the defaults. Drop `uThreshold` to `0.3` to sort more of the image, raise to `0.7` to isolate only the brightest highlights.
+Start with the defaults. Drop `uThreshold` to `0.3` to sort more of the image, or raise it to `0.7` to isolate the brightest highlights.
 
 ---
 
@@ -84,12 +80,12 @@ Start with the defaults. Drop `uThreshold` to `0.3` to sort more of the image, r
 Without feedback each frame sorts fresh from the clean webcam. With feedback, displaced pixels pile up across frames and the image slowly disintegrates.
 
 1. Add a **Feedback TOP**.
-2. **Mix TOP**: Input 0 = Feedback, Input 1 = GLSL output. **Blend** → `0.7`.
+2. **Cross TOP**: Input 0 = GLSL output, Input 1 = Feedback. **Cross** → `0.7` (70% history, 30% new frame).
 3. Connect to a **Null TOP** named `SORT_OUT`.
 4. Set **Feedback TOP Target** → `SORT_OUT`.
 
 > [!tip] Performance toggle
-> Wire a **Select TOP** before `SORT_OUT` to switch between the raw GLSL output and the Mix TOP output. Clean toggle between sorted and datamoshed during a performance.
+> Add a **Switch TOP** after `SORT_OUT` with the raw GLSL output on its other input. Flipping its **Index** toggles between sorted and datamoshed during a performance.
 
 ---
 
@@ -105,19 +101,19 @@ Without feedback each frame sorts fresh from the clean webcam. With feedback, di
 
 | Variant                 | How to do it                                                                                 |
 | ----------------------- | -------------------------------------------------------------------------------------------- |
-| **Vertical sort**       | Change `uv.x + offset` to `uv.y + offset`                                                    |
+| **Vertical sort**       | Change `vec2(uv.x + offset, uv.y)` to `vec2(uv.x, uv.y + offset)`                            |
 | **Color channel split** | Three GLSL TOPs (one per channel), different `uSortStrength` each. Merge with `Reorder TOP`. |
-| **Motion-triggered**    | Route `Optical Flow TOP` luma to `uThreshold` - motion activates the sort.                   |
+| **Motion-triggered**    | Route `Optical Flow TOP` luma to `uThreshold` so motion activates the sort.                  |
 | **Audio-reactive**      | Bind `uSortStrength` to an Analyze CHOP RMS so beats extend the streaks.                     |
 
 ---
 
 ## Troubleshooting
 
-- **"Whole image turns to horizontal bars."** - `uSortStrength` is too high. Drop to `0.1` and build up.
-- **"Nothing moves - looks like normal webcam."** - Check `uThreshold` is below `1.0` and that GLSL input 0 is connected to `CAM`. Check the Info DAT for compile errors.
-- **"Shader compile error (green or pink output)."** - Open the GLSL TOP → **Info DAT** for the error. Usually a missing semicolon or uniform name mismatch.
-- **"Datamosh fills completely, loses image."** - Mix TOP blend too high. Try `0.5`. Confirm Feedback Target is `SORT_OUT`.
+- **"Whole image turns to horizontal bars."** `uSortStrength` is too high. Drop it to `0.1` and build up.
+- **"Nothing moves, looks like a normal webcam."** Check `uThreshold` is below `1.0` and that GLSL input 0 is connected to `CAM`. Check the Info DAT for compile errors.
+- **"Shader compile error (green or pink output)."** Open the GLSL TOP → **Info DAT** for the error. Usually a missing semicolon or uniform name mismatch.
+- **"Datamosh fills completely, loses image."** The Cross TOP value is too high. Try `0.5`, and confirm the Feedback Target is `SORT_OUT`.
 
 ---
 
@@ -131,13 +127,13 @@ Without feedback each frame sorts fresh from the clean webcam. With feedback, di
 
 ## Parameter Tuning & Behavior
 
-| Parameter           | Behavior                                                            |
-| :------------------ | :------------------------------------------------------------------ |
-| **uThreshold**      | Lower = more pixels sorted; Higher = only peak highlights affected. |
-| **uSortStrength**   | Higher = long streaks; Lower = subtle shimmer.                      |
-| **uDirection**      | `1.0` = streaks right; `-1.0` = streaks left.                       |
-| **Feedback Blend**  | Higher = datamosh smear; Lower = crisp per-frame sort.              |
-| **Bloom Intensity** | Higher = neon glow; Lower = harsh clean glitch.                     |
+| Parameter            | Behavior                                                            |
+| :------------------- | :------------------------------------------------------------------ |
+| **uThreshold**       | Lower = more pixels sorted; Higher = only peak highlights affected. |
+| **uSortStrength**    | Higher = long streaks; Lower = subtle shimmer.                      |
+| **uDirection**       | `1.0` = streaks right; `-1.0` = streaks left.                       |
+| **Cross (feedback)** | Higher = datamosh smear; Lower = crisp per-frame sort.              |
+| **Bloom Intensity**  | Higher = neon glow; Lower = harsh clean glitch.                     |
 
 ## Network Architecture
 
@@ -147,7 +143,7 @@ Video Device In ──▶ CAM
                      ▼
                GLSL TOP (sort shader)
                      │
-              Mix TOP (0.7 old + 0.3 new) ◀── Feedback TOP
+            Cross TOP (0.7 old + 0.3 new) ◀── Feedback TOP
                      │                         (target: SORT_OUT)
                      ▼
                SORT_OUT

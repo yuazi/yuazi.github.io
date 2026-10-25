@@ -10,15 +10,15 @@ date: 2026-02-26
 
 # Introduction to GLSL in TouchDesigner
 
-While TouchDesigner's built-in nodes (TOPs, SOPs, MATs) are incredibly powerful, writing custom **GLSL (OpenGL Shading Language)** code allows you to bypass the node network overhead and write highly optimized, bespoke algorithms that run natively on the GPU.
+TouchDesigner's built-in nodes (TOPs, SOPs, MATs) cover a lot, but custom **GLSL (OpenGL Shading Language)** code lets you write your own algorithms that run directly on the GPU, without the overhead of chaining many nodes.
 
 ## What is a Shader?
 
-A shader is simply a small program that runs very fast directly on the graphics card. In TouchDesigner, you primarily deal with three types:
+A shader is a small program that runs on the graphics card. In TouchDesigner you mostly deal with three types:
 
 1.  **Vertex Shader (`.vert`):** Runs once _per vertex_ of a 3D model. Used to move, warp, or transform 3D points before drawing them.
 2.  **Fragment/Pixel Shader (`.frag`):** Runs once _per pixel_ on the screen (or in a 2D texture). Used to calculate colors, lights, and 2D generative patterns.
-3.  **Compute Shader (`.comp`):** Very advanced. Runs in arbitrary workgroups without being tied to traditional geometry pipelines. Phenomenal for simulating massive particle systems or fluid dynamics.
+3.  **Compute Shader (`.comp`):** The advanced one. Runs in arbitrary workgroups, outside the usual geometry pipeline. Used for large particle systems and fluid simulations.
 
 ## The GLSL TOP (2D Image Processing)
 
@@ -43,23 +43,22 @@ void main()
     // TD's built-in varying for texture UV is vUV
     vec2 uv = vUV.st;
 
-    // Create a color gradient using the UV coordinates
-    vec4 color = vec4(uv.x, uv.y, 0.0, 1.0);
-
-    fragColor = color;
+    // Create a color gradient using the UV coordinates.
+    // TDOutputSwizzle() fixes up channel order for TD's output formats.
+    fragColor = TDOutputSwizzle(vec4(uv, 0.0, 1.0));
 }
 ```
 
 ## The GLSL MAT (3D Materials)
 
-When you need custom lighting models, advanced displacement, or you are hitting the limits of the standard Phong MAT/PBR MAT, you use the **GLSL MAT**.
+When you need a custom lighting model or displacement that the Phong and PBR MATs can't do, use the **GLSL MAT**.
 
 - It requires both a Vertex Shader and a Pixel Shader.
-- The easiest way to start is to build your material using a standard PBR MAT, click the "Output Shader" button locally on its parameter page, and it will spawn the GLSL equivalent network for you to study and modify.
+- The easiest way to start is to build your material with a standard PBR MAT and click the "Output Shader" button on its parameter page. It spawns the equivalent GLSL network for you to study and modify.
 
 ## Uniforms and Samplers
 
-The biggest advantage of GLSL in TD is how easily you can pass data _into_ the shader from your noisy node networks:
+TD makes it easy to pass data _into_ a shader from the rest of your network:
 
 - **Uniforms:** If you have an oscillating LFO CHOP channel, you can map it to a Uniform Variable on the "Vectors" page of the GLSL TOP/MAT. Your shader can then read that float, vec2, or vec3 directly.
 - **Samplers:** You can connect up to 30 Input TOPs (images, noises, videos) to a GLSL TOP. In the shader, you reference them using standard sampler functions (like `texture(sTD2DInputs[0], uv)`).

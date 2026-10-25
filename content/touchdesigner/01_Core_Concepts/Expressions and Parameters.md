@@ -23,16 +23,15 @@ Right-click any parameter → **Set to Expression** (or press `=` in the field) 
 
 ## Time References
 
-These are the most commonly used time variables in expressions:
+The time variables you'll use most in expressions:
 
-| Expression             | Returns                                            |
-| ---------------------- | -------------------------------------------------- |
-| `absTime.seconds`      | Seconds elapsed since the application started      |
-| `absTime.frame`        | Absolute frame count since the application started |
-| `me.time.seconds`      | Seconds within the local component's timeline      |
-| `me.time.frame`        | Frame within the local timeline                    |
-| `me.time.rate`         | The cook rate (FPS) of the local timeline          |
-| `iop.Geometry1.par.tx` | The `tx` parameter on a sibling node `Geometry1`   |
+| Expression        | Returns                                            |
+| ----------------- | -------------------------------------------------- |
+| `absTime.seconds` | Seconds elapsed since the application started      |
+| `absTime.frame`   | Absolute frame count since the application started |
+| `me.time.seconds` | Seconds within the local component's timeline      |
+| `me.time.frame`   | Frame within the local timeline                    |
+| `me.time.rate`    | The cook rate (FPS) of the local timeline          |
 
 **Example:** Make a node's X-translate oscillate at 0.5 Hz:
 
@@ -55,18 +54,18 @@ op('noise1')[0]
 op('table1')[1, 2]        # row 1, column 2
 op('table1')['Name', 1]  # row with label 'Name', column 1
 
-# Get another node's parameter value
-op('geo1').par.tx.val
+# Get another node's parameter value (evaluated, so expressions resolve)
+op('geo1').par.tx.eval()
 
-# Use 'me' to reference siblings relative to the current node
-op(me.path + '/../sibling')[0]
+# Names resolve relative to the current network, so a sibling is just its name
+op('sibling')[0]
 ```
 
 ---
 
 ## The `me` Object
 
-`me` always refers to the **operator the script is running inside**. It's more reliable than hardcoded paths because it works wherever you copy the node.
+`me` always refers to the **operator the script is running inside**. Code that uses it keeps working wherever you copy the node, which hardcoded paths don't.
 
 ```python
 me.parent()          # The parent COMP
@@ -82,7 +81,7 @@ me.path              # Full path e.g. /project1/base1/lfo1
 
 ## The `parent()` Shortcut
 
-Instead of writing `op(me.path + '/../')`, use:
+Instead of `op('..')`, you can write:
 
 ```python
 parent()         # One level up
@@ -106,20 +105,21 @@ parent().par.Inputtex  # A custom parameter on the parent
 1 if op('button1')['chan1'] > 0.5 else 0
 ```
 
-**Smoothstep (using numpy, available in TD):**
+**Smoothstep (LFO remapped to 0→1, then eased):**
 
 ```python
-x = op('lfo1')['chan1']
-x * x * (3 - 2 * x)
+(x := (op('lfo1')['chan1'].eval() + 1) / 2) * x * (3 - 2 * x)
 ```
+
+A parameter expression has to be a single expression, so the walrus (`:=`) stores the remapped value without a separate assignment line.
 
 ---
 
 ## Common Gotchas
 
-- **Green background on a parameter field** means expression mode is active - it's not an error.
-- Division by zero in an expression **silently evaluates to 0** rather than crashing.
-- `absTime.seconds` keeps counting even when a **component's** local timeline is paused. It only stops if you pause the **root timeline** or hit the power button. Use `me.time.seconds` for timeline-relative time.
+- **A blue parameter field** means expression mode is active. It isn't an error.
+- Division by zero in an expression raises a Python error on the op. Guard it with `a / b if b else 0`.
+- `absTime.seconds` keeps counting when a timeline is paused, because it ignores the timeline entirely. Use `me.time.seconds` for timeline-relative time.
 - Using `op('path')` with an absolute path is fragile. Prefer relative references or `me` / `parent()`.
 
 ---

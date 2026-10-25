@@ -11,7 +11,7 @@ date: 2026-03-18
 
 > **Inspired by:** [Okamirufu Vizualizer](https://www.youtube.com/@OkamirufuV)
 
-The signature post-processing technique used by [Okamirufu Vizualizer](https://www.youtube.com/@OkamirufuV) to give generative visuals a "rendered," high-end feel. It uses time-delayed RGB splitting to create movement-based color separation.
+A post-processing trick [Okamirufu Vizualizer](https://www.youtube.com/@OkamirufuV) uses to make generative visuals look rendered. Each color channel comes from a different frame, so anything that moves splits into red, green and blue.
 
 > [!info] Operator Families in this Recipe
 >
@@ -21,24 +21,28 @@ The signature post-processing technique used by [Okamirufu Vizualizer](https://w
 
 ## Part 1: Movement-Based RGB Split
 
-Instead of a static lens effect, this technique separates colors based on time, making fast-moving objects "ghost" in different colors.
+A lens-style aberration offsets the channels in space. This one offsets them in time, so still areas stay clean and fast-moving objects leave colored ghosts.
 
 1.  **Three Cache TOPs:** Connect your final **Render TOP** to three **Cache TOP** nodes in parallel (connect the same output to all three).
     - Cache 1: **Index** → `0`, **Cache Size** → `2` (current frame).
     - Cache 2: **Index** → `-5`, **Cache Size** → `10` (5 frames back).
     - Cache 3: **Index** → `-10`, **Cache Size** → `15` (10 frames back).
     - _Note:_ Each Cache TOP must have a Size larger than the absolute value of its Index, or the indexed frame won't exist yet.
-2.  **Reorder TOP:** Connect all three Cache TOPs to a **Reorder TOP**.
+
+> [!tip] Lighter version
+> The three caches above hold 27 frames between them, and Cache 3 alone covers what the other two store. You can use one **Cache TOP** (**Cache Size** → `11`) and read it with three **Cache Select TOPs** set to **Cache Index** `0`, `-5` and `-10`. The look is identical and it uses less GPU memory. 2. **Reorder TOP:** Connect all three Cache TOPs to a **Reorder TOP**.
+
     - **Output Red** → `Input 1` (current frame, Red).
     - **Output Green** → `Input 2` (5 frames ago, Green).
     - **Output Blue** → `Input 3` (10 frames ago, Blue).
-3.  **The Result:** You now have an RGB split that only appears when objects move.
+
+3.  **The Result:** The RGB split now only appears where something moves.
 
 ---
 
 ## Part 2: Growth Feedback Loop
 
-To make the visuals "bloom" and grow over time:
+This loop makes the image bloom outward over time.
 
 1.  **Feedback TOP:** Connect your Reorder TOP to a **Feedback TOP**.
 2.  **Transform TOP:** Add a **Transform TOP** after the feedback.
@@ -63,8 +67,8 @@ To make the visuals "bloom" and grow over time:
 
 ## Troubleshooting
 
-- **"It's getting too bright!"** - Lower the **Opacity** on your Level TOP or the **Brightness 1** of the feedback.
-- **"The trails aren't moving."** - Make sure the **Transform TOP** has a non-zero **Scale** or **Rotate**.
+- **"It's getting too bright!"** Lower the **Opacity** or **Brightness 1** on the Level TOP inside the loop.
+- **"The trails aren't moving."** Make sure the **Transform TOP** has a non-zero **Scale** or **Rotate**.
 
 ---
 
@@ -80,20 +84,21 @@ To make the visuals "bloom" and grow over time:
 
 ## Network Architecture
 
-To visualize how the data flows, here is a map of the final network:
-
 ```text
 [ INPUT ]
 Render TOP
     │
-    ├─▶ [ Cache TOP ] (Index  0, Size  2) ──┐
-    ├─▶ [ Cache TOP ] (Index -5, Size 10) ──┼─▶ [ Reorder TOP ] (R, G, B Split)
-    └─▶ [ Cache TOP ] (Index-10, Size 15) ──┘           │
-                                                        ▼
-[ TOP FEEDBACK LOOP ] ◀────────────────────────────────┘
-    │
-    ▼
-[ Feedback TOP ] ──▶ [ Transform TOP ] ──▶ [ Level TOP ] ──▶ [ Composite TOP ]
+    ├─▶ Cache TOP (Index   0, Size  2) ──┐
+    ├─▶ Cache TOP (Index  -5, Size 10) ──┼─▶ Reorder TOP (R, G, B split)
+    └─▶ Cache TOP (Index -10, Size 15) ──┘          │
+                                                    ▼
+[ FEEDBACK LOOP ]                              Feedback TOP ◀── Target: Composite TOP
+                                                    │                    ▲
+                                                    ▼                    │
+                         Transform TOP ──▶ Level TOP ──▶ Blur TOP ──▶ Composite TOP (+ Reorder TOP)
+                                                                         │
+[ POLISH ]                                                               ▼
+                                                    Luma Blur TOP ──▶ HSV Adjust TOP
 ```
 
 > [!tip]- 📚 Learning Path · Stage 2 - Your First Visuals · step 12 of 44

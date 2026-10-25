@@ -33,14 +33,14 @@ if n:
 
 ### Global OP Shortcuts (`op.NAME`)
 
-You can give a COMP a Global OP Shortcut name (RMB → Common page → `Global OP Shortcut`). Once set, that COMP becomes reachable from anywhere in the project as `op.YourName`, no matter where it lives in the hierarchy.
+You can give a COMP a Global OP Shortcut name (parameters → Common page → `Global OP Shortcut`). Once set, that COMP becomes reachable from anywhere in the project as `op.YourName`, no matter where it lives in the hierarchy.
 
 ```python
 op.PROJECT          # the COMP whose Global OP Shortcut is "PROJECT"
 op.PROJECT.par.tx
 ```
 
-This is the preferred way to reference top-level singletons (your audio engine, your settings COMP, your render output).
+Use it for top-level singletons such as an audio engine, a settings COMP or the render output.
 
 ## `me` : The Current Operator
 
@@ -74,7 +74,7 @@ me.digits * 0.1
 | `parent(2)`               | Grandparent                                                        |
 | `parent.MyName`           | The nearest ancestor that has a **Parent Shortcut** named `MyName` |
 
-Counting parents with `parent(2)` is brittle: the moment you nest your COMP one level deeper, every expression breaks. Parent Shortcuts solve that.
+Counting parents with `parent(2)` is brittle: nest your COMP one level deeper and every expression breaks. A Parent Shortcut finds the ancestor by name instead.
 
 To set a Parent Shortcut, open the COMP's parameters → Common page → `Parent Shortcut` field, type a name like `Effect`. Now from anywhere inside that COMP or any descendant, `parent.Effect` always resolves to it.
 
@@ -87,7 +87,7 @@ By default `/project1` ships with the Parent Shortcut `Project`, so `parent.Proj
 
 ## `iop` and `ipar` : Internal Shortcuts
 
-When building a reusable component, you'll often want to give the _outside_ world a clean name for some internal op or parameter. Two more auto-imported helpers:
+When building a reusable component, you'll often want short names for important ops and parameters inside it. Two more auto-imported helpers do that:
 
 - **`iop`** : Internal Operator Shortcut. Defined on a COMP's Common page. From inside the COMP, `iop.Audio` resolves to the named internal op.
 - **`ipar`** : Internal Parameter Shortcut. Same idea but pointing at a specific parameter.

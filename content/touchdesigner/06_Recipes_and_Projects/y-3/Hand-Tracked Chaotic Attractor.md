@@ -15,20 +15,20 @@ date: 2026-03-08
 
 **Related:** [[Hand Tracking Tutorial|(y-) Hand Tracking Tutorial]] · [[Hand Tracking|(y-) Hand Tracking]] · [[Sierpinski Tetrahedron with Hand Tracking|(y-) Sierpinski with Hand Tracking]]
 
-> Tested on M1 Pro · TD 2023+. Performance numbers in Part 7 are from that machine specifically - results will vary.
+> Tested on an M1 Pro with TD 2023+. The performance numbers in Part 7 come from that machine, so yours will vary.
 
 ---
 
 ## Overview
 
-Want to make your TouchDesigner projects react to your hand movements in real time, without installing any extra plugins? This tutorial shows you how to drive a mesmerizing Lorenz attractor (you know, that classic butterfly-shaped chaotic system) using nothing but Python scripts in TouchDesigner and your webcam. The best part? Everything runs natively, so you won't need to juggle external dependencies or worry about performance hits from plugins.
+This tutorial drives a Lorenz attractor, the butterfly-shaped chaotic system, with your hand. A webcam feeds MediaPipe inside a Script CHOP, and a Script SOP draws the attractor. There is no TouchDesigner plugin to install, only two pip packages.
 
-```
+```text
 Webcam → Script CHOP (MediaPipe) → Filter/Lag CHOPs → Math CHOPs
   → Script SOP (Lorenz) → Geo COMP → Render TOP → Post FX → Output
 ```
 
-See also: [[notes/random/lorenz-attractor|(y-) The Lorenz Attractor]] - the maths behind the system.
+See also: [[notes/random/lorenz-attractor|(y-) The Lorenz Attractor]] for the maths behind the system.
 
 ---
 
@@ -50,20 +50,21 @@ Create these inside `/project1`:
 | Node            | Type        | Notes                  |
 | --------------- | ----------- | ---------------------- |
 | `script_lorenz` | Script SOP  | Lorenz code lives here |
-| `geo_attractor` | Geo COMP    | SOP = `script_lorenz`  |
+| `geo_attractor` | Geo COMP    | Object Merge → lorenz  |
 | `cam1`          | Camera COMP | Translate Z = 8        |
 | `light1`        | Light COMP  | Default is fine        |
 | `render1`       | Render TOP  | 1920×1080              |
 
 ### Post FX
 
-```
-render1 → level1 → bloom1 → feedback1 ┐
-                                        ↓
-                              composite1 → null_out
+```text
+render1 → level1 → bloom1 ──────────────┐
+                     │                  ↓
+                     └→ feedback1 → fade1 → composite1 → null_out
+                            ↑ Target TOP: composite1
 ```
 
-In `composite1`: Operation → **Over**. Wire `bloom1` into input 0, `feedback1` into input 1, then wire `composite1` back into `feedback1`. Set `feedback1` Opacity to **0.92–0.96** for trails.
+In `composite1`: Operation → **Over**, with `bloom1` in input 0 and `fade1` in input 1. Wire `bloom1` into `feedback1` and set the Feedback TOP's **Target TOP** to `composite1`. A Feedback TOP doesn't fade anything by itself, so `fade1` is a **Level TOP** with Opacity **0.92–0.96** for trails.
 
 ### Output
 
@@ -92,100 +93,74 @@ import mediapipe as mp
 import math
 import time
 
-def _get_state(op):
-    """Use op.store for safe persistent state between cooks."""
-    if 'state' not in op.store:
-        op.store['state'] = {
-            'cap': None,
-            'hands': None,
+PALM = (0, 5, 9, 13, 17)  # wrist + 4 MCP joints
+
+def _state(owner):
+    """Webcam, model and last values, kept in the op's storage between cooks."""
+    st = owner.fetch('state', None, search=False)
+    if st is None:
+        cap = cv2.VideoCapture(0)
+        cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+        cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+        st = {
+            'cap': cap,
+            'hands': mp.solutions.hands.Hands(
+                static_image_mode=False,
+                max_num_hands=1,
+                model_complexity=0,
+                min_detection_confidence=0.6,
+                min_tracking_confidence=0.6,
+            ),
             'last_t': time.time(),
             'last_x': 0.5,
             'last_y': 0.5,
         }
-    return op.store['state']
-
-def _init(op):
-    st = _get_state(op)
-    if st['cap'] is None:
-        cap = cv2.VideoCapture(0)
-        cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-        cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-        st['cap'] = cap
-    if st['hands'] is None:
-        mp_hands = mp.solutions.hands
-        st['hands'] = mp_hands.Hands(
-            static_image_mode=False,
-            max_num_hands=1,
-            model_complexity=0,
-            min_detection_confidence=0.6,
-            min_tracking_confidence=0.6,
-        )
+        owner.store('state', st)
+    return st
 
 def onSetupParameters(scriptOp):
     pass  # no custom params needed on this CHOP
 
 def onCook(scriptOp):
-    _init(scriptOp)
-    st = _get_state(scriptOp)
-
-    scriptOp.clear()
-    for name in ['hand_present', 'x', 'y', 'pinch', 'vel']:
-        scriptOp.appendChan(name)
+    st = _state(scriptOp)
+    # Fallback for no frame or no hand: hold the last position, zero the rest
+    vals = {'hand_present': 0.0, 'x': st['last_x'], 'y': st['last_y'], 'pinch': 0.0, 'vel': 0.0}
 
     ok, frame = st['cap'].read()
-    if not ok:
-        scriptOp['hand_present'][0] = 0
-        scriptOp['x'][0] = st['last_x']
-        scriptOp['y'][0] = st['last_y']
-        scriptOp['pinch'][0] = 0.0
-        scriptOp['vel'][0] = 0.0
-        return
+    if ok:
+        results = st['hands'].process(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
 
-    frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-    results = st['hands'].process(frame_rgb)
+        now = time.time()
+        dt = max(1e-4, now - st['last_t'])
+        st['last_t'] = now
 
-    now = time.time()
-    dt = max(1e-4, now - st['last_t'])
-    st['last_t'] = now
+        if results.multi_hand_landmarks:
+            lm = results.multi_hand_landmarks[0].landmark
+            cx = sum(lm[i].x for i in PALM) / len(PALM)
+            cy = 1.0 - sum(lm[i].y for i in PALM) / len(PALM)  # flip Y
 
-    if results.multi_hand_landmarks:
-        lm = results.multi_hand_landmarks[0].landmark
+            # Pinch: thumb tip (4) to index tip (8); ~0.25 = open, ~0.05 = closed
+            pinch_dist = math.hypot(lm[4].x - lm[8].x, lm[4].y - lm[8].y)
+            speed = math.hypot(cx - st['last_x'], cy - st['last_y']) / dt
 
-        # Palm center: average wrist + 4 MCP joints
-        palm_idx = [0, 5, 9, 13, 17]
-        cx = sum(lm[i].x for i in palm_idx) / len(palm_idx)
-        cy = 1.0 - sum(lm[i].y for i in palm_idx) / len(palm_idx)  # flip Y
+            vals = {
+                'hand_present': 1.0,
+                'x': cx,
+                'y': cy,
+                'pinch': max(0.0, min(1.0, (0.25 - pinch_dist) / 0.20)),
+                'vel': min(1.0, speed * 0.015),
+            }
+            st['last_x'], st['last_y'] = cx, cy
 
-        # Pinch: thumb tip (4) to index tip (8), normalized 0..1
-        pdx = lm[4].x - lm[8].x
-        pdy = lm[4].y - lm[8].y
-        pinch_dist = math.sqrt(pdx * pdx + pdy * pdy)
-        # ~0.25 = open, ~0.05 = closed
-        pinch = max(0.0, min(1.0, (0.25 - pinch_dist) / 0.20))
-
-        vx = (cx - st['last_x']) / dt
-        vy = (cy - st['last_y']) / dt
-        vel = min(1.0, math.sqrt(vx * vx + vy * vy) * 0.015)
-
-        st['last_x'] = cx
-        st['last_y'] = cy
-
-        scriptOp['hand_present'][0] = 1.0
-        scriptOp['x'][0] = cx
-        scriptOp['y'][0] = cy
-        scriptOp['pinch'][0] = pinch
-        scriptOp['vel'][0] = vel
-    else:
-        scriptOp['hand_present'][0] = 0.0
-        scriptOp['x'][0] = st['last_x']
-        scriptOp['y'][0] = st['last_y']
-        scriptOp['pinch'][0] = 0.0
-        scriptOp['vel'][0] = 0.0
+    scriptOp.clear()
+    scriptOp.numSamples = 1
+    for name, val in vals.items():
+        scriptOp.appendChan(name)[0] = val
 ```
 
-> `op.store` keeps state between cooks without breaking on network reloads. Don't use `globals()` here.
+> `store()` and `fetch()` keep the state in the op's storage. It survives the callbacks DAT being re-parsed after an edit, where module globals would reset and open a second webcam handle. `search=False` stops `fetch()` from picking up a `state` key stored on a parent COMP.
 
-```
+```text
 script_hand → filter_hand → lag_hand → null_ctrl
 ```
 
@@ -193,19 +168,19 @@ script_hand → filter_hand → lag_hand → null_ctrl
 
 ## Part 3 - Control mapping
 
-> One Math CHOP can't remap different channels to different ranges - you need a separate one per channel.
+> One Math CHOP can't remap different channels to different ranges, so you need one per channel.
 
-### Option A - Separate Math CHOPs
+### Option A: Separate Math CHOPs
 
-**`math_sigma`** - channel `x`, From 0→1, To 8→20, rename output to `sigma`
+**`math_sigma`**: channel `x`, From 0→1, To 8→20, rename output to `sigma`
 
-**`math_rho`** - channel `y`, From 0→1, To 20→45, rename output to `rho`
+**`math_rho`**: channel `y`, From 0→1, To 20→45, rename output to `rho`
 
-**`math_beta`** - channel `pinch`, From 0→1, To 1.8→3.5, rename output to `beta`
+**`math_beta`**: channel `pinch`, From 0→1, To 1.8→3.5, rename output to `beta`
 
 Merge them: `math_sigma + math_rho + math_beta → merge_params`
 
-### Option B - Expressions directly in Script SOP parameters
+### Option B: Expressions directly in Script SOP parameters
 
 Skip the Math CHOPs. Type into the parameter fields of `script_lorenz`:
 
@@ -213,7 +188,7 @@ Skip the Math CHOPs. Type into the parameter fields of `script_lorenz`:
 - **Rho**: `tdu.remap(op('null_ctrl')['y'][0], 0, 1, 20, 45)`
 - **Beta**: `tdu.remap(op('null_ctrl')['pinch'][0], 0, 1, 1.8, 3.5)`
 
-Start with Option B - it's less to set up.
+Start with Option B, since it's less to set up.
 
 ---
 
@@ -241,29 +216,21 @@ def onCook(scriptOp):
     sigma = float(scriptOp.par.Sigma)
     rho   = float(scriptOp.par.Rho)
     beta  = float(scriptOp.par.Beta)
-    n     = int(scriptOp.par.Points)
     dt    = float(scriptOp.par.Dt)
     s     = float(scriptOp.par.Scale)
 
     x, y, z = 0.1, 0.0, 0.0
+    scriptOp.appendPoly(int(scriptOp.par.Points), closed=False, addPoints=True)
 
-    poly = scriptOp.appendPoly(n, closed=False, addPoints=True)
-
-    for i in range(n):
-        dx = sigma * (y - x)
-        dy = x * (rho - z) - y
-        dz = x * y - beta * z
-        x += dx * dt
-        y += dy * dt
-        z += dz * dt
-
-        pt = scriptOp.points[i]
-        pt.x = x * s
-        pt.y = y * s
-        pt.z = z * s
+    # One Euler step per point; the right side uses the old x, y, z
+    for pt in scriptOp.points:
+        x, y, z = (x + sigma * (y - x) * dt,
+                   y + (x * (rho - z) - y) * dt,
+                   z + (x * y - beta * z) * dt)
+        pt.x, pt.y, pt.z = x * s, y * s, z * s
 ```
 
-In `geo_attractor` parameters → SOP path = `../script_lorenz`
+Inside `geo_attractor`, delete the default torus and add an **Object Merge SOP** pointing at `../script_lorenz`, with its render and display flags on. A Geo COMP draws the flagged SOP inside it and has no SOP path parameter.
 
 ---
 
@@ -277,12 +244,14 @@ In `geo_attractor` parameters → SOP path = `../script_lorenz`
 
 **Post FX:**
 
-```
+```text
 render1
   → level1       (Brightness 1: 1.2, Gamma: 0.9)
   → bloom1       (Threshold: 0.3, Size: 0.015)
-  → composite1   (input 0 = bloom1, input 1 = feedback1, Op = Over)
-  ↑___ feedback1 ← composite1   (Opacity: 0.93)
+  → composite1   (input 0 = bloom1, input 1 = fade1, Op = Over)
+
+feedback1 (input: bloom1, Target TOP: composite1)
+  → fade1        (Level TOP, Opacity: 0.93)
 
 composite1 → null_out
 ```
@@ -299,8 +268,6 @@ In `window1`: Operator → `../null_out`, match render resolution. Open Window o
 
 ## Part 7 - Performance (M1 Pro)
 
-These numbers are from my machine - use them as a rough reference.
-
 | Setting              | Value                      |
 | -------------------- | -------------------------- |
 | Starting point count | 4,000–6,000                |
@@ -316,9 +283,9 @@ If CPU spikes, reduce Points first, then lower dt a little. Add a Timer CHOP to 
 
 ## Where to go from here
 
-- **Gesture switching** - detect open hand vs fist to swap between Lorenz, Rössler, and Thomas attractors
-- **Colour reaction** - map `vel` to hue shift in a GLSL MAT, see [[touchdesigner/05_Connectivity_and_Shaders/Introduction to GLSL|(y-) Introduction to GLSL]]
-- **GPU particles** - replace the Script SOP with a feedback TOP based solver for 500k+ particles, see [[5 Ways To Make Particles]]
+- **Gesture switching:** detect open hand vs fist to swap between Lorenz, Rössler, and Thomas attractors
+- **Colour reaction:** map `vel` to hue shift in a GLSL MAT, see [[touchdesigner/05_Connectivity_and_Shaders/Introduction to GLSL|(y-) Introduction to GLSL]]
+- **GPU particles:** replace the Script SOP with a feedback TOP based solver for 500k+ particles, see [[5 Ways To Make Particles]]
 
 ---
 
@@ -342,8 +309,6 @@ If CPU spikes, reduce Points first, then lower dt a little. Add a Timer CHOP to 
 | **Feedback Opacity** | Higher = persistent, "ghostly" history of the attractor; Lower = focus on the leading point. |
 
 ## Network Architecture
-
-This project uses a "native" Python approach without external plugins. Here is the data flow:
 
 ```text
 [ COMPUTER VISION ]              [ PARAMETER MAPPING ]
