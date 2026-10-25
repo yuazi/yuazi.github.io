@@ -17,6 +17,16 @@ Read the shared mechanics first: [[notes/sports/taekwondo/spinning-kicks|(y-) Th
 
 ---
 
+## (y-) Tutorial Video
+
+Watch where the heel goes. It drives straight back into the target like a horse kick, and the spin only turns your back to it first. W1 describes the contact as the bottom of the foot, while this page says to strike with the heel; either way the heel leads along the same straight line.
+
+![](https://www.youtube.com/watch?v=ZTJZq64VT8g)
+
+[Kick Like A Pro #6: The Back Kick](https://www.youtube.com/watch?v=ZTJZq64VT8g) by W1 Taekwondo.
+
+---
+
 ## (y-) Mental Model
 
 It is not a "kick" so much as a **backward thrust**. Think of driving your heel straight back into a wall behind you, like a horse kicking. The spin is only there to turn your back to the target so the heel has somewhere to go. Straight line in, straight line out.

@@ -23,6 +23,16 @@ Six punches, each with a number. Coaches call combinations by number on the pads
 
 ---
 
+## (y-) Tutorial video
+
+Keep an eye on the hips. Every punch turns them, and that turn loads the next strike the other way.
+
+![](https://www.youtube.com/watch?v=SedKFKgpgbk)
+
+[How To Punch For Beginners (Jab, Cross, Hook, and Uppercut)](https://www.youtube.com/watch?v=SedKFKgpgbk) by Michael Foley's Academy of Martial Arts, aimed at boxing, kickboxing, Muay Thai and MMA.
+
+---
+
 ## (y-) Mental model
 
 Every punch is a turn of the hips, and every turn of the hips loads the next strike in the opposite direction. The cross turns you one way, so the lead hook comes back the other way. The lead hook turns you back again, so the rear leg is now wound up for a kick. That's why so many kickboxing combinations end with "three, rear low kick": the hook loads the kick. The [[notes/sports/kickboxing/combinations|(y-) combinations]] page builds on this.

@@ -15,6 +15,16 @@ A parry is any blade action that deflects the opponent's incoming point away fro
 
 ---
 
+## (y-) Tutorial Video
+
+It covers sixte, quarte and octave, parries with a step back, and the parry-riposte.
+
+![](https://www.youtube.com/watch?v=c3K7NpMSgQs)
+
+[Epee Fencing 1.0.1: Parries](https://www.youtube.com/watch?v=c3K7NpMSgQs) by Fencing4You is a short demonstration. For an explained version, [Introduction to Beginners Epee, Part III: Defence](https://www.youtube.com/watch?v=VIoNnlkS0I8) by OSM Fencing completes the series used on the footwork and bladework pages, though it teaches seconde rather than octave for the low line.
+
+---
+
 ## (y-) The Numbered Parries
 
 Eight numbered parries cover every line. The line is defined by two axes: high or low (above or below the bell guard), and inside or outside (toward or away from your weapon arm side, for a right-hander).

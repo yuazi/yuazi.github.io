@@ -17,6 +17,16 @@ The [[notes/sports/fencing/tactics|(y-) Tactics]] page lists it among the épée
 
 ---
 
+## (y-) Tutorial video
+
+Time it to their step. The point drops as their front foot lands on an advance: the step brings the foot into range, and they can't pull it back until the step is finished.
+
+![](https://www.youtube.com/watch?v=rxz9puBIKFE)
+
+[Fencing Tips From Champions: Toe Touches in Epee](https://www.youtube.com/watch?v=rxz9puBIKFE) by Tim Morehouse Fencing Club, with champion Teddy Lombardo.
+
+---
+
 ## (y-) Mental model
 
 The toe touch is a timing hit on a target that moves twice: it lifts and it lands. You aim for the moment the foot lands, because a foot in the air is moving fast and a foot on the floor is still. The point drops from your normal line, so the action is short: the hand lowers and the knees bend a little.

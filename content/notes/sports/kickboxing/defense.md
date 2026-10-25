@@ -14,6 +14,16 @@ Defense in kickboxing has to cover more ground than in boxing. Punches come at t
 
 ---
 
+## (y-) Tutorial video
+
+This covers the parry and the slip, the hands and head layers in the table below. The high guard and kick catches have their own sections.
+
+![](https://www.youtube.com/watch?v=fqB_szSOQBk)
+
+[Muay Thai: How to Parry and Slip Punches](https://www.youtube.com/watch?v=fqB_szSOQBk) by Absolute MMA.
+
+---
+
 ## (y-) Mental model
 
 Defense works in layers, from far to close:

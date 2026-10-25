@@ -15,6 +15,16 @@ The front split is the achievable one. Most people are far closer to it than the
 
 ---
 
+## (y-) Tutorial Video
+
+It divides the work the same way this page does: hamstrings for the front leg, hip flexors for the back leg.
+
+![](https://www.youtube.com/watch?v=XyUGrTk2Zh0)
+
+[Front Splits Stretching Tutorial Part 1 (Hamstrings & Hip Flexors)](https://www.youtube.com/watch?v=XyUGrTk2Zh0) by Ecole de Pole.
+
+---
+
 ## (y-) What Is Actually Limiting You
 
 A front split is one leg in hip flexion and the other in hip extension. Two different tissues are fighting you, on two different legs, and they need different work.

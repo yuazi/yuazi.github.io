@@ -14,6 +14,16 @@ aliases:
 
 ---
 
+## (y-) Tutorial Video
+
+A bout-management breakdown of Koki Kano, one of the fencers in the [[notes/sports/fencing/index|épée index]]. Watch where he sets the distance and when he commits.
+
+![](https://www.youtube.com/watch?v=XP95ItoHDRY)
+
+[How to manage a bout in epee like Kano (JPN)](https://www.youtube.com/watch?v=XP95ItoHDRY) by GP Fencing.
+
+---
+
 ## (y-) Foundational Ideas
 
 ### Distance (Mesura)

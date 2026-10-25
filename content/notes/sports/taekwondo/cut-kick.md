@@ -17,6 +17,16 @@ The [[notes/sports/taekwondo/sparring|(y-) Sparring]] page calls this the "cance
 
 ---
 
+## (y-) Tutorial video
+
+Watch when the front leg comes up. The cut works because it meets the opponent as they step in, so the timing matters more than the height.
+
+![](https://www.youtube.com/watch?v=0wk7NZw9L9A)
+
+[Kick Like A Pro #5: The Cut Kick](https://www.youtube.com/watch?v=0wk7NZw9L9A) by W1 Taekwondo, covering how to throw it, when to use it and how to practice it.
+
+---
+
 ## (y-) Mental model
 
 The front leg works as a door. When the opponent steps in, you close the door on their hip or their kicking leg. When they stop, you open it and kick through. Most of the skill is timing: lift too early and they wait you out; lift too late and their kick is already past your knee.

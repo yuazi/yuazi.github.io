@@ -17,6 +17,16 @@ The steps themselves are on the [[notes/sports/fencing/footwork|(y-) Footwork]] 
 
 ---
 
+## (y-) Tutorial video
+
+Ten partner drills for holding the edge of lunge distance. Run two or three of them alongside the partner drills below.
+
+![](https://www.youtube.com/watch?v=NdILOISyOx0)
+
+[Distance Control Drills](https://www.youtube.com/watch?v=NdILOISyOx0) by Fencer's Edge, the same coach as the point-control drill.
+
+---
+
 ## (y-) Mental model
 
 There are three distances that matter, and they are personal. They depend on your reach, your lunge, and how fast you move, so you have to find them on yourself.

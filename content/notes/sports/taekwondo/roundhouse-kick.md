@@ -14,6 +14,16 @@ The roundhouse kick (dollyo chagi) is the workhorse of modern sparring. Watch a 
 
 ---
 
+## (y-) Tutorial Video
+
+Watch the support foot as closely as the kicking leg. The pivot is what lets the hip turn over, and it's step 2 below.
+
+![](https://www.youtube.com/watch?v=SyGWnZu2iDY)
+
+[Kick Like A Pro #3: Pivoting & The Roundhouse Kick](https://www.youtube.com/watch?v=SyGWnZu2iDY) by W1 Taekwondo. The series is Master Adrian's breakdown of sparring kicks, and the axe, cut, back and spinning hook kick pages use other episodes from it.
+
+---
+
 ## (y-) Mental Model
 
 Picture the leg as a door on a hinge. The knee comes up and points at the target first, then the hip turns over and the lower leg swings out from the knee and snaps back. The power comes from the hip rotating, so a roundhouse thrown from a hip that stays square is just a leg swing.

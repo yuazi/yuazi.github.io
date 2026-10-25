@@ -15,6 +15,16 @@ If the legs decide whether you reach the target, the blade decides whether you s
 
 ---
 
+## (y-) Tutorial Video
+
+Start with the extension it shows: the arm goes first, then the lunge or flèche carries it. That is the straight thrust below, and every attack on this page is delivered the same way.
+
+![](https://www.youtube.com/watch?v=vV8EWU496Vc)
+
+[Introduction to Beginners Epee, Part II: Attacking](https://www.youtube.com/watch?v=vV8EWU496Vc) by OSM Fencing.
+
+---
+
 ## (y-) Simple Attacks
 
 A simple attack is one offensive action. One blade motion, one extension, one lunge.

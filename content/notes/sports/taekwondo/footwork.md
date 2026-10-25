@@ -17,6 +17,16 @@ For the tactics that sit on top of this, see [[notes/sports/taekwondo/sparring|(
 
 ---
 
+## (y-) Tutorial Video
+
+Copy the rhythm as well as the steps. Stay light on the balls of the feet so you never start moving from a dead stop.
+
+![](https://www.youtube.com/watch?v=CNQLkaeKvxM)
+
+[Footwork that Every TKD Martial Artist Should Know!](https://www.youtube.com/watch?v=CNQLkaeKvxM) by W1 Taekwondo, the sparring channel behind most of the kick videos here.
+
+---
+
 ## (y-) Mental Model
 
 You are a spring that is always slightly loaded. Weight on the balls of the feet, knees soft, a small rhythm going so you never have to start moving from a dead stop. When you decide to go, the energy is already in your legs.

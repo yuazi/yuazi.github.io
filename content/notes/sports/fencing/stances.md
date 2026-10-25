@@ -14,6 +14,16 @@ The on-guard position is the entire game compressed into one posture. Everything
 
 ---
 
+## (y-) Tutorial Video
+
+Compare your feet with the classical en garde below: right angle, heels in line, knees over the toes.
+
+![](https://www.youtube.com/watch?v=IPnVcjNRMmk)
+
+[Coaching Epee Level One 01: Stance, en garde in sixte, the target](https://www.youtube.com/watch?v=IPnVcjNRMmk) by The French Fencing Factory, part of a series on the grade 1 épée coaching requirements.
+
+---
+
 ### En Garde (Classical)
 
 Feet at roughly a right angle, front foot pointing down the strip, back foot perpendicular. Heels in line with each other, about one and a half foot-lengths apart. Knees bent so the kneecaps sit roughly over the toes. Weight evenly distributed, 50/50, with the centre of gravity sunk between the feet.

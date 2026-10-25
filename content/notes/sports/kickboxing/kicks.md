@@ -14,6 +14,16 @@ The kicking in kickboxing comes mostly from Muay Thai by way of Dutch and Japane
 
 ---
 
+## (y-) Tutorial video
+
+Coming from taekwondo, watch how straight the leg stays and how far the hips turn over. The shin swings through like a bat and doesn't snap back.
+
+![](https://www.youtube.com/watch?v=wwc4cnvkwnk)
+
+[Step by Step Guide to Perfecting Your Muay Thai Roundhouse Kick](https://www.youtube.com/watch?v=wwc4cnvkwnk) by Kingdom Martial Arts Academy, taught on the heavy bag.
+
+---
+
 ## (y-) Mental model
 
 Think of a baseball bat instead of a whip. The taekwondo roundhouse chambers the knee and snaps the lower leg out and back. The kickboxing roundhouse keeps the leg long, turns the hips over completely, and swings through as if the target were a few centimeters further back. The shin is the bat. The foot only matters when the distance is long and the foot is what reaches.

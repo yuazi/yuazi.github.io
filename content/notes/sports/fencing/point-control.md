@@ -17,6 +17,16 @@ Most of the touches described on the [[notes/sports/fencing/tactics|(y-) Tactics
 
 ---
 
+## (y-) Tutorial Video
+
+A drill you can do at home. Move the point first and let the arm follow it, as described below.
+
+![](https://www.youtube.com/watch?v=_P2R9BvAj-4)
+
+[Point Control Ball Drill](https://www.youtube.com/watch?v=_P2R9BvAj-4) by Fencer's Edge, part 5 of an eight-part series of blade drills to practice at home. Part 4 is [400 Touches](https://www.youtube.com/watch?v=dDuNOxKyfxs).
+
+---
+
 ## (y-) Mental Model
 
 Move the point first. The hand starts the action and steers the tip, the arm extends behind it, and the feet arrive last to deliver it. If the body moves first, the point has to catch up, and it wobbles on the way.

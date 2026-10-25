@@ -16,6 +16,16 @@ In sparring it shows up mostly off the front leg, as a jab with the foot: a long
 
 ---
 
+## (y-) Tutorial video
+
+Watch the hips more than the foot. At full extension, head, hips and heel should form one straight line.
+
+![](https://www.youtube.com/watch?v=iOC08Ka_oPo)
+
+[Best Taekwondo Side Kick Tutorial (Breakdown + Drill)](https://www.youtube.com/watch?v=iOC08Ka_oPo) by Global Martial Arts University: a breakdown of the kick, then a drill for it.
+
+---
+
 ## (y-) Mental model
 
 Picture yourself as a ruler turned on its side. The kick is good when the ruler is straight from the head to the heel and pushes through the target. If the hips stay facing forward, the ruler is bent at the waist and the kick turns into a weak, sideways front kick.

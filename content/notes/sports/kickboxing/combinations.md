@@ -16,6 +16,16 @@ Numbers are punches, as on the [[notes/sports/kickboxing/punches|(y-) Punches]] 
 
 ---
 
+## (y-) Tutorial video
+
+Each strike turns the hips into position for the next one. Combo 8 uses an elbow, which the [[notes/sports/kickboxing/rules|rules]] page lists as a foul, so swap it for a cross or a low kick.
+
+![](https://www.youtube.com/watch?v=E-88x-eiwg4)
+
+[10 Kickboxing Combos To Practice](https://www.youtube.com/watch?v=E-88x-eiwg4) by Gabriel Varga.
+
+---
+
 ## (y-) Mental model
 
 Each strike loads the next one through the hips. The cross drives your rear hip forward, which pulls the lead hip back and loads the lead leg for a switch kick. The lead hook turns the hips back the other way, which winds up the rear leg. So:

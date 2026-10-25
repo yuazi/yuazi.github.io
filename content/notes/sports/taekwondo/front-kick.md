@@ -16,6 +16,16 @@ In poomsae it strikes with the ball of the foot (ap chuk). In sparring it usuall
 
 ---
 
+## (y-) Tutorial video
+
+The foot goes out and comes back along the line the knee points at. If it travels in an arc, it turns into a bad roundhouse.
+
+![](https://www.youtube.com/watch?v=iYHa5VrX2t0)
+
+[Front Kick (Ap Chagi) Tutorial](https://www.youtube.com/watch?v=iYHa5VrX2t0) by Tom Edwards TKD.
+
+---
+
 ## (y-) Mental model
 
 The front kick is a piston. The knee aims, the lower leg fires along the line the knee pointed at, and then it retracts along the same line. If the foot travels in an arc, you are throwing a bad roundhouse.

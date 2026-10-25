@@ -15,6 +15,16 @@ The side split is the hard one, and it is the one Taekwondo actually needs most.
 
 ---
 
+## (y-) Tutorial Video
+
+It's a step-by-step protocol built around hip range of motion, which fits the order below: rotation work first, then the adductors.
+
+![](https://www.youtube.com/watch?v=cpFCIs27iaY)
+
+[Side Splits Protocol](https://www.youtube.com/watch?v=cpFCIs27iaY) by Anna Atras.
+
+---
+
 ## (y-) Why It Is So Much Harder Than the Front Split
 
 In a front split, the femur swings in the direction the hip socket is built to swing. In a side split, the leg abducts to 90 degrees, and at some point the neck of the femur runs into the rim of the hip socket. That is a bone-on-bone stop, and no stretching in the world moves it.
@@ -61,7 +71,7 @@ Spend two weeks on rotation before you get impatient with the split itself. Most
 - **Frog stretch.** On all fours, knees wide, ankles in line with knees, shins parallel. **Tuck the pelvis.** Rock gently back and forth for 10 slow reps, then hold at the deepest comfortable point for 60 seconds. If it pinches the front of the hip, widen the knees less and tuck harder.
 - **Straddle against a wall.** Lie on your back with your legs up a wall in a straddle. Gravity does the work and you can stay there 3 to 5 minutes without effort. The best passive volume you can get.
 - **Cossack squats.** Wide stance, sink onto one leg with the other straight. This is adductor length _under load_, which converts far better into kicks than a passive hold.
-- **Standing wide-stance slide.** Feet wide on a smooth floor with socks, slowly slide out under control, hands on the floor or a chair for support. The closest thing to the split itself and the easiest to overdo. Go gently.
+- **Standing wide-stance slide.** Feet wide on a smooth floor with socks, slowly slide out under control, hands on the floor or a chair for support. Keep your weight on your hands or the chair the whole time, so the feet can never slide further than you choose. The closest thing to the split itself and the easiest to overdo. Go gently.
 - **Butterfly with PNF.** Soles together, press the knees down. Push the knees _up_ against your hands for 8 seconds at 60% effort, relax, exhale, press deeper. Three rounds.
 
 ---

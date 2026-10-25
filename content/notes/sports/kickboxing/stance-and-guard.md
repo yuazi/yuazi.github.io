@@ -15,6 +15,16 @@ The kickboxing stance is a compromise between three demands. Punching works best
 
 ---
 
+## (y-) Tutorial video
+
+Check yourself against it in a mirror. You should be able to lift either foot without shifting your weight first.
+
+![](https://www.youtube.com/watch?v=dLg_7FkL4YI)
+
+[BKA Episode #1: Stance & Footwork](https://www.youtube.com/watch?v=dLg_7FkL4YI) by Bazooka Joe Valtellini, a former Glory kickboxer. [Muay Thai vs Kickboxing Stance & Footwork](https://www.youtube.com/watch?v=C1gLitjrn2A) by Gabriel Varga shows how the two stances differ.
+
+---
+
 ## (y-) Mental model
 
 Stand so you could lift either foot off the floor right now without leaning. If you have to shift your weight before you can lift the lead leg, you're too heavy on it, and a low kick will land before you can check it. Most of the details below come back to that test.

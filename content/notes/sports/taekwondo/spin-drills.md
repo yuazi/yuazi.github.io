@@ -15,6 +15,16 @@ The spinning kicks in [[notes/sports/taekwondo/spinning-kicks|(y-) the guide]] a
 
 ---
 
+## (y-) Tutorial Video
+
+These drills are for the spin back kick, the easiest spin to groove. The solo drills below build the balance and spotting every spin needs, starting with a standing leg that doesn't wobble.
+
+![](https://www.youtube.com/watch?v=1QKVPMXaHyE)
+
+[How to Improve Your Spin Back Kick](https://www.youtube.com/watch?v=1QKVPMXaHyE) by GNT (Ginger Ninja Trickster).
+
+---
+
 ## (y-) 1. Balance: The Standing Leg
 
 If the standing leg wobbles, everything above it wobbles too, and the kick goes wide.

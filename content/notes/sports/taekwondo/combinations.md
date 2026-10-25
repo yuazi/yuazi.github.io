@@ -11,6 +11,18 @@ aliases:
 
 Combinations are where it starts to actually feel like Taekwondo. Single kicks are fine to drill but in sparring or patterns you're always chaining things together. These are the ones we work on in training.
 
+---
+
+## (y-) Tutorial Video
+
+A few beginner combinations in live sparring, as a warm-up for the longer chains in the table below.
+
+![](https://www.youtube.com/watch?v=JrmHkZRWXvo)
+
+[Combos All Beginners Should Learn](https://www.youtube.com/watch?v=JrmHkZRWXvo) by W1 Taekwondo, built from the cut kick, the roundhouse and the punch.
+
+---
+
 ## Combination Kicks
 
 | Kicks | Combination                                                                                   |

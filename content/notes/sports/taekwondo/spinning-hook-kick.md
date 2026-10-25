@@ -17,6 +17,16 @@ It is harder than the [[notes/sports/taekwondo/spinning-back-kick|(y-) back kick
 
 ---
 
+## (y-) Tutorial Video
+
+Compare it with the back kick episode. Here the leg travels past the target and the heel whips back through it, where the back kick thrusts and stops.
+
+![](https://www.youtube.com/watch?v=ZbbNS0guMRQ)
+
+[Kick Like A Pro #7: The Spinning Hook Kick](https://www.youtube.com/watch?v=ZbbNS0guMRQ) by W1 Taekwondo.
+
+---
+
 ## (y-) Mental Model
 
 The difference from a back kick is one word: **hook**. A back kick thrusts straight and stops. A hook kick sends the leg _past_ the target with a nearly straight leg, then bends the knee to whip the heel back through it. Think of your leg as a scythe: it swings wide, and the cutting edge (your heel) catches the target on the way back, not on the way out.

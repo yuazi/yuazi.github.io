@@ -14,6 +14,16 @@ In épée more than any other weapon, the bout is won and lost with the legs. Th
 
 ---
 
+## (y-) Tutorial Video
+
+Practice the advance and retreat along with it before moving on to the cross-step and balestra below.
+
+![](https://www.youtube.com/watch?v=Yf_s9qsY4Xs)
+
+[Introduction to Beginners Epee, Part I: Movement](https://www.youtube.com/watch?v=Yf_s9qsY4Xs) by OSM Fencing, covering posture, en garde and footwork.
+
+---
+
 ### Advance (Marche)
 
 Front foot moves first, lifting just off the floor and stepping forward about one foot length. The back foot follows the same distance to restore the en garde. Heel of the front foot lands first, toes of the back foot drag last. The torso stays level. If your head bobs up and down, you are giving away the timing of every advance.

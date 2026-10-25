@@ -13,6 +13,16 @@ Core stances used in Taekwondo, covering both poomsae (forms) and sparring.
 
 ---
 
+## (y-) Tutorial Video
+
+The video uses the Kukkiwon names from poomsae: ap kubi (front stance), dwit kubi (back stance), juchum seogi (riding stance) and beom seogi (tiger stance). Some headings below use the ITF names for similar shapes.
+
+![](https://www.youtube.com/watch?v=MNSAJ04XJkU)
+
+[Kukkiwon Text Book 1-b Seogi-Stances 1995](https://www.youtube.com/watch?v=MNSAJ04XJkU), posted by USA Taekwondo (TeamUSAT). It's based on the 1995 English edition of the Kukkiwon textbook, so the footage is old.
+
+---
+
 ### Charyeot Seogi - Attention Stance
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Charyot_sogi.svg" alt="Charyeot Seogi" height="280">

@@ -14,6 +14,16 @@ Most kickboxing training happens in three-minute rounds with a minute's rest, th
 
 ---
 
+## (y-) Tutorial video
+
+Worth watching before your first round holding for a partner. It goes with the pad-holding sections below.
+
+![](https://www.youtube.com/watch?v=V_3e_Io18d8)
+
+[How to Hold Thai Pads for Muay Thai Kickboxing](https://www.youtube.com/watch?v=V_3e_Io18d8) by fightTIPS. The same channel has a follow-up on [holding for low kicks](https://www.youtube.com/watch?v=PWzhtEKTWbc).
+
+---
+
 ## (y-) Mental model
 
 The three tools do different jobs:

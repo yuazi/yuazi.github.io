@@ -17,6 +17,16 @@ Checking is the defense, and it gets taught together with the kick because nobod
 
 ---
 
+## (y-) Tutorial video
+
+Learn the kick from this one and the check from the second video linked under it.
+
+![](https://www.youtube.com/watch?v=reUa4aHfkY0)
+
+[Muay Thai Low Kick: Leg Kick Tutorial](https://www.youtube.com/watch?v=reUa4aHfkY0) by Ironboy Experience. For the defense, [How To Check A Low Kick](https://www.youtube.com/watch?v=-_rs7ymFowg) by Michael Foley's Academy of Martial Arts covers the shin check.
+
+---
+
 ## (y-) Mental model
 
 The kick is a short, heavy swing of the shin through the meat of the thigh, angled slightly downward. The check puts your shin in the way so their shin hits bone instead of muscle. Both are about the hips. The kick needs the hip turned all the way over to have any weight behind it. The check needs your weight centered enough that you can lift the leg in time.

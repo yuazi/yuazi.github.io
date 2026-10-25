@@ -17,6 +17,16 @@ Every spinning kick, from the [[notes/sports/taekwondo/spinning-back-kick|(y-) b
 
 ---
 
+## (y-) Tutorial Video
+
+While you watch, look for the two phases this page singles out: the spot before the kick and the balanced landing after it.
+
+![](https://www.youtube.com/watch?v=aFvsRUo6u7w)
+
+[How to Improve Your Spin Kicks (Circular Motion)](https://www.youtube.com/watch?v=aFvsRUo6u7w) by GNT (Ginger Ninja Trickster).
+
+---
+
 ## (y-) The Five Phases of Every Spin
 
 | Phase      | What Happens                                                                                    |

@@ -17,6 +17,16 @@ Defense in WT sparring comes in four layers, and the outer ones are cheaper than
 
 ---
 
+## (y-) Tutorial video
+
+This covers the last layer below, the counter. Work on distance and movement first, then come back to it.
+
+![](https://www.youtube.com/watch?v=9VXfAbbSsU8)
+
+[3 Counter Kicks That Will Always Work!](https://www.youtube.com/watch?v=9VXfAbbSsU8) by W1 Taekwondo: a back kick from closed stance, a spinning hook kick, and a lead-leg axe kick from open stance.
+
+---
+
 ## (y-) Mental model
 
 Every attack has to cross a distance, come from an angle, and get past your arms. You can stop it at any of those three points. The further out you stop it, the less it costs you. Blocking with the arms works, but it is the last layer, and an arm block still leaves you standing in range.

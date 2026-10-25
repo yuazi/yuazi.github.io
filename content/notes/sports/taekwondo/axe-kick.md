@@ -16,6 +16,16 @@ It depends on flexibility more than most kicks. With tight hamstrings the leg st
 
 ---
 
+## (y-) Tutorial Video
+
+The episode starts with the back-leg, straight-leg version, while the step-by-step below is the front-leg, bent-knee one. In both, watch the drop more than the lift: the score comes from pulling the heel down fast and straight.
+
+![](https://www.youtube.com/watch?v=J5FGxXh0DNk)
+
+[Kick Like A Pro #8: The Axe Kick](https://www.youtube.com/watch?v=J5FGxXh0DNk) by W1 Taekwondo.
+
+---
+
 ## (y-) Mental Model
 
 Think of the leg as an axe handle with the heel as the blade. The lift is only there to get the blade above the target. The scoring part is the drop, so the leg has to come down fast and in a straight line, pulled by the hip.
