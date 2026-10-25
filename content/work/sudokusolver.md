@@ -1,5 +1,6 @@
 ---
 title: "Solving Sudoku with GNNs"
+description: "A PyTorch graph neural network that solves 99.4% of 1,000 held-out Sudoku puzzles on its own, with input validation and an exact backtracking fallback."
 tags:
   - work
   - projects

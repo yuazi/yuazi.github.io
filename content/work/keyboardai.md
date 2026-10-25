@@ -1,5 +1,6 @@
 ---
 title: "Keyboard AI"
+description: "Python CLI that learns character patterns from a text corpus and searches for keyboard layouts with lower ergonomic cost."
 tags:
   - work
   - projects

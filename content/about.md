@@ -1,5 +1,6 @@
 ---
 title: About
+description: "M.Sc. Information Systems student at the University of Stuttgart and PIM working student at BTS GmbH. I build Python tools, ML workflows and a native macOS app."
 tags:
   - me
 date: 2026-10-24

@@ -1,5 +1,6 @@
 ---
 title: "Gestural Attractors"
+description: "Real-time strange-attractor visualizer in Python with ModernGL rendering, MediaPipe hand controls, GPU stepping with CPU fallback, and Datashader exports."
 tags:
   - work
   - projects

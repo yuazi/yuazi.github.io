@@ -1,5 +1,6 @@
 ---
 title: "Ambient Chaos"
+description: "A live Lorenz and Halvorsen attractor canvas background for Quartz v4, with a settings panel, focus mode, and light and dark palettes."
 tags:
   - work
   - projects

@@ -1,5 +1,6 @@
 ---
 title: "SlideLink: Automating Lecture Notes"
+description: "Offline Python CLI that matches Markdown lecture notes to PDF slides with TF-IDF and visual signals, then inserts the slide images into the notes."
 tags:
   - tools
   - python

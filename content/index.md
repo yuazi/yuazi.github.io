@@ -1,5 +1,6 @@
 ---
 title: (y)usage Garden
+description: "Yusuf Abdul Aziz's digital garden: project writeups, lecture notes, a TouchDesigner wiki, and notes on tools and sports."
 tags:
   - home
 ---

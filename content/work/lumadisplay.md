@@ -1,5 +1,6 @@
 ---
 title: "LumaDisplay: Display Control for macOS"
+description: "Native macOS app for resolution, brightness, warmth and presets, with Metal HDR brightness above 100% and automatic rollback of display changes."
 tags:
   - tools
   - swift
