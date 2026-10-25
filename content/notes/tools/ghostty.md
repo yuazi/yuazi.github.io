@@ -7,7 +7,7 @@ tags:
 date: 2026-03-02
 ---
 
-[Ghostty](https://ghostty.org/) is a fast native terminal emulator written in Zig. It supports GPU rendering, fits nicely into the OS, and works well right out of the box.
+[Ghostty](https://ghostty.org/) is a native terminal emulator written in Zig, with GPU rendering and platform-native UI. It works well with almost no configuration.
 
 ## Installation
 
@@ -19,15 +19,15 @@ brew install --cask ghostty
 
 ## Configuration
 
-Ghostty uses a plain text config file located at:
+Ghostty reads a plain text config file at:
 
-```
+```text
 ~/.config/ghostty/config
 ```
 
 Example configuration:
 
-```
+```ini
 font-family = "JetBrains Mono"
 font-size = 14
 theme = catppuccin-mocha
@@ -37,13 +37,11 @@ window-padding-y = 8
 
 ## Key Features
 
-- **GPU rendering:** via Metal (macOS) and OpenGL/Vulkan (Linux)
-- **Native UI:** uses window decorations and menus that feel at home on the platform
-- **Split panes:** horizontal and vertical splits are built in
-- **Tabs:** native tab support
-- **Ligature support:** full font ligature rendering
-- **True color & undercurl:** modern terminal capability support
-- **Shell integration:** automatic shell prompts, cursor shape, and working directory tracking
+- GPU rendering through Metal on macOS and OpenGL on Linux
+- Native window decorations, menus and tabs on each platform
+- Built-in split panes
+- Font ligatures, true color and undercurl
+- Shell integration: prompt marking, cursor shape and working-directory tracking
 
 ## Splits & Tabs
 
@@ -54,8 +52,8 @@ window-padding-y = 8
 | Close surface      | `Cmd+W`            |
 | Previous tab       | `Cmd+Shift+[`      |
 | Next tab           | `Cmd+Shift+]`      |
-| Split vertically   | `Cmd+D`            |
-| Split horizontally | `Cmd+Shift+D`      |
+| Split right        | `Cmd+D`            |
+| Split down         | `Cmd+Shift+D`      |
 | Focus split left   | `Cmd+Option+Left`  |
 | Focus split right  | `Cmd+Option+Right` |
 | Focus split up     | `Cmd+Option+Up`    |
@@ -66,7 +64,7 @@ window-padding-y = 8
 
 ## Themes
 
-Ghostty ships with many built in themes. List them with:
+Ghostty ships with many built-in themes. List them with:
 
 ```sh
 ghostty +list-themes
@@ -74,13 +72,13 @@ ghostty +list-themes
 
 Set a theme in config:
 
-```
+```ini
 theme = nord
 ```
 
 ## Shell Integration
 
-Ghostty automatically integrates with common shells (bash, zsh, fish). It tracks the current working directory, marks prompt zones, and reports exit codes. No manual setup required for supported shells.
+Ghostty integrates with bash, zsh and fish automatically. It tracks the current working directory, marks prompt zones and reports exit codes, and the supported shells need no manual setup.
 
 ---
 

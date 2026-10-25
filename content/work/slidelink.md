@@ -14,7 +14,7 @@ github: https://github.com/yuazi/SlideLink
 
 Taking manual screenshots of lecture slides while writing notes is a slow workflow. For my Machine Perception & Learning notes, I wanted a local tool that could connect Markdown sections to the most relevant PDF slide without uploading notes to a third-party service.
 
-**SlideLink** is an offline Python CLI that scans Markdown lecture notes, extracts slide text and visual features from PDFs, renders matching slides as PNGs, and inserts the image links back into the notes.
+**SlideLink** is an offline Python CLI that scans Markdown lecture notes, extracts slide text and visual features from PDFs, renders matching slides as PNGs, and inserts the image links back into the notes. I use it to build the [[notes/lectures/index|lecture notes]] on this site.
 
 ---
 
@@ -22,7 +22,7 @@ Taking manual screenshots of lecture slides while writing notes is a slow workfl
 
 - Python package structure with installable CLI commands.
 - PDF parsing and slide rendering with `PyMuPDF`.
-- TF-IDF semantic matching with `scikit-learn`.
+- TF-IDF text matching with `scikit-learn`.
 - Visual heuristics for image count, drawing density, and build-slide selection.
 - Review flags for ambiguous matches and a revert command for safe rollback.
 - CI-backed tests for matching, slug generation, build-slide behavior, and heading filtering.
@@ -33,7 +33,7 @@ Taking manual screenshots of lecture slides while writing notes is a slow workfl
 
 SlideLink combines three signals:
 
-### 1. TF-IDF Semantic Matching
+### 1. TF-IDF Text Matching
 
 The tool turns note context and slide text into TF-IDF vectors, then compares them with cosine similarity.
 
@@ -49,13 +49,13 @@ def find_best_slide(note_context, slides):
     return scores.argmax(), scores.max()
 ```
 
-### 2. Math And Alias Support
+### 2. Math and Alias Support
 
-For technical notes, aliases map symbols or LaTeX commands to searchable words, such as mapping `\nabla` to `gradient`.
+TF-IDF only matches words, so equations in the notes would otherwise match nothing. Aliases map symbols and LaTeX commands to searchable words, such as `\nabla` to `gradient`.
 
 ### 3. Visual Slide Signals
 
-The tool inspects images, vector drawings, and visual density so it can prefer useful diagram-heavy slides over plain text when the semantic score is close.
+When two slides score about the same on text, the tool prefers the one with more diagrams, judged by its images, vector drawings and visual density.
 
 ---
 

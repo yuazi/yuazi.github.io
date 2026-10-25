@@ -13,7 +13,7 @@ github: https://github.com/yuazi/sudoku_solver
 
 [View on GitHub](https://github.com/yuazi/sudoku_solver)
 
-**Sudoku Solver** is a PyTorch experiment that models Sudoku boards as graphs and trains a graph neural network to predict digits through message passing. The project also includes a practical CLI layer with validation, visualizations, tests, and an exact fallback path when the neural prediction is invalid.
+**Sudoku Solver** is a PyTorch experiment that models Sudoku boards as graphs and trains a graph neural network to predict digits through message passing. A command-line solver wraps the model. It validates the puzzle, can plot the board step by step, and falls back to exact backtracking when the network's answer isn't a valid solution.
 
 ---
 
@@ -21,9 +21,10 @@ github: https://github.com/yuazi/sudoku_solver
 
 - Graph construction for 9x9 Sudoku boards with 81 nodes and 1,620 directed constraint edges.
 - A message-passing GNN with shared MLP messages, summed aggregation, GRU updates, and per-cell digit logits.
-- Training over all GNN iterations, not only the final prediction.
+- A loss on every message-passing iteration, so the intermediate predictions are trained along with the final one.
 - CLI validation before model loading, including length checks, invalid characters, contradictory givens, and clue preservation.
-- Unit tests for validation behavior, clue preservation, solution checking, and CLI errors.
+- Matplotlib views of the predicted solution and of each iteration (`--plot`, `--steps`).
+- Unit tests for validation behavior, clue preservation, solution checking, and CLI errors, run in GitHub Actions CI.
 
 ---
 
@@ -60,7 +61,7 @@ python3 -m pip install -r requirements.txt
 python3 -m unittest discover -s tests -v
 ```
 
-Train a checkpoint:
+Train a checkpoint. The first run downloads the SATNet Sudoku dataset, trains for 30 epochs, and saves the best checkpoint to `gnn_sudoku.pth`:
 
 ```bash
 python3 train.py

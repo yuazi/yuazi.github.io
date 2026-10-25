@@ -8,7 +8,7 @@ tags:
 date: 2026-02-28
 ---
 
-[Yazi](https://yazi-rs.github.io/) is a very fast terminal file manager written in Rust, with a three column Miller layout (parent / current / preview).
+[Yazi](https://yazi-rs.github.io/) is a fast terminal file manager written in Rust, built on async I/O, with a three-column Miller layout (parent / current / preview).
 
 Start it with:
 

@@ -7,20 +7,20 @@ tags:
 date: 2026-03-27
 ---
 
-[Homebrew](https://brew.sh/) is the missing package manager for macOS (and Linux). It simplifies the installation of software that Apple (or your Linux system) didn't include.
+[Homebrew](https://brew.sh/) is the package manager macOS doesn't ship with (it runs on Linux too). It installs command-line tools and, through casks, regular apps.
 
 ## Installation
 
-Install Homebrew by running the following command in your terminal:
+Install it from the terminal:
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-After installation, ensure it is in your `PATH` by adding it to your `.zshrc` or `.bash_profile`:
+Then put it on your `PATH`. On Apple silicon, Homebrew lives in `/opt/homebrew`, and the line belongs in `~/.zprofile`, which runs once per login shell instead of in every new shell:
 
 ```sh
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
@@ -39,7 +39,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ## Brewfile (Infrastructure as Code)
 
-A `Brewfile` allows you to manage all your dependencies in a single file. You can export your current setup with:
+A `Brewfile` lists everything you install, so a new Mac can be set up with one command. Export your current setup with:
 
 ```sh
 brew bundle dump
@@ -54,9 +54,6 @@ brew bundle
 ### Example Brewfile
 
 ```ruby
-tap "homebrew/bundle"
-tap "homebrew/services"
-
 # Core Utilities
 brew "git"
 brew "gh"
@@ -85,17 +82,13 @@ cask "spotify"
 
 ## Maintenance
 
-Keep your system clean by removing old versions of installed formulae:
+Remove old versions of installed formulae and clear the download cache:
 
 ```sh
 brew cleanup
 ```
 
-Check for potential issues:
-
-```sh
-brew doctor
-```
+`brew doctor` from the table above reports anything misconfigured.
 
 ---
 

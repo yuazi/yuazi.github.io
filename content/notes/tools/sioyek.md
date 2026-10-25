@@ -7,7 +7,7 @@ tags:
 date: 2026-03-06
 ---
 
-[Sioyek](https://sioyek.info/) is a fast PDF viewer driven by the keyboard and designed for reading research papers and technical documents. It focuses on a reading experience free from distraction with powerful navigation, smart highlights, and deep linking features that most PDF readers lack.
+[Sioyek](https://sioyek.info/) is a keyboard-driven PDF viewer built for research papers and technical books. Its navigation, highlights and links between parts of a document go well beyond what a normal PDF reader offers.
 
 ## Installation
 
@@ -23,20 +23,20 @@ Or download the latest release from [github.com/ahrm/sioyek/releases](https://gi
 
 ## Key Features
 
-- **Keyboard first navigation** - nearly every action has a keybind, no mouse required
-- **Smart jump and portal system** - create persistent links in both directions between locations in a document
-- **Marks** - set named one character bookmarks and jump back instantly
-- **Highlights** - annotate text with color coded highlights that persist across sessions
-- **Search** - full text search across the open document with chapter scoping
-- **Table of contents sidebar** - quickly jump to any chapter or section
-- **Link following** - keyboard activate hyperlinks and footnote references inside PDFs
-- **Overview window** - peek at a link target in a floating overlay without losing your current place
-- **Visual mark ruler** - right click to place a reading ruler that highlights the current line and masks everything above or below; move it line by line with `j` or `k`
-- **Presentation mode** - pages snap to fill the screen; movement keys advance whole pages
-- **Synctex support** - bidirectional sync with LaTeX editors to jump from PDF to source and back
-- **Multiple windows** - open several documents or views simultaneously
-- **Custom keybinds** - fully remappable via a plain text `keys_user.config` file
-- **Dark mode and custom colors** - invert colors or define custom background and foreground themes
+- **Keyboard first navigation**: nearly every action has a keybind, no mouse required
+- **Smart jump and portal system**: create persistent links in both directions between locations in a document
+- **Marks**: set named one character bookmarks and jump back instantly
+- **Highlights**: annotate text with color coded highlights that persist across sessions
+- **Search**: full text search across the open document with chapter scoping
+- **Table of contents sidebar**: quickly jump to any chapter or section
+- **Link following**: keyboard activate hyperlinks and footnote references inside PDFs
+- **Overview window**: peek at a link target in a floating overlay without losing your current place
+- **Visual mark ruler**: right click to place a reading ruler that highlights the current line and masks everything above or below; move it line by line with `j` or `k`
+- **Presentation mode**: pages snap to fill the screen; movement keys advance whole pages
+- **Synctex support**: bidirectional sync with LaTeX editors to jump from PDF to source and back
+- **Multiple windows**: open several documents or views simultaneously
+- **Custom keybinds**: fully remappable via a plain text `keys_user.config` file
+- **Dark mode and custom colors**: invert colors or define custom background and foreground themes
 
 ---
 
@@ -63,7 +63,7 @@ Or download the latest release from [github.com/ahrm/sioyek/releases](https://gi
 | `+`                              | Zoom in                                                     |
 | `-`                              | Zoom out                                                    |
 | `=` / `F9`                       | Fit page to screen width                                    |
-| `F10`                            | Fit page to screen width (smart - ignores margins)          |
+| `F10`                            | Fit page to screen width (smart: ignores margins)           |
 | `Backspace` / `Ctrl+Left`        | Go back (previous location in history)                      |
 | `Shift+Backspace` / `Ctrl+Right` | Go forward (next location in history)                       |
 | `Ctrl+PageDown`                  | Next page (one full page forward)                           |
@@ -93,13 +93,13 @@ Or download the latest release from [github.com/ahrm/sioyek/releases](https://gi
 
 ### Visual Mark (Ruler)
 
-The "ruler" in Sioyek is called the **visual mark**. It highlights the current line and dims everything above and below it - useful for staying focused on a single line of dense text.
+The "ruler" in Sioyek is called the **visual mark**. It highlights the current line and dims everything above and below it, which keeps your eyes on one line of dense text.
 
 **How to use it:**
 
 1. **Right click** anywhere on the PDF to place the visual mark on that line.
 2. Press `j` or `↓` to move it down one line, `k` or `↑` to move it up.
-3. Press `F7` to toggle **visual scroll mode** - in this mode the mouse wheel also moves the visual mark line by line instead of scrolling the page.
+3. Press `F7` to toggle **visual scroll mode**. In this mode the mouse wheel also moves the visual mark line by line instead of scrolling the page.
 
 | Key         | Action                                                         |
 | ----------- | -------------------------------------------------------------- |
@@ -150,7 +150,7 @@ Select text with the mouse first, then press the shortcut.
 
 ### Portals (Persistent Links)
 
-Portals are bidirectional spatial links between locations - useful for jumping between a figure and the text that references it, or linking across documents.
+Portals are bidirectional links between two locations, useful for jumping between a figure and the text that references it, or linking across documents.
 
 | Key                | Action                                                             |
 | ------------------ | ------------------------------------------------------------------ |
@@ -162,14 +162,14 @@ Portals are bidirectional spatial links between locations - useful for jumping b
 
 ### Links & Keyboard Selection
 
-| Key      | Action                                                                           |
-| -------- | -------------------------------------------------------------------------------- |
-| `f`      | Enter link follow mode - highlights all links on the page for keyboard selection |
-| `F`      | Smart jump - follow the most semantically relevant link under cursor             |
-| `v`      | Select text using the keyboard                                                   |
-| `l`      | Open definition overview (in visual scroll mode)                                 |
-| `Ctrl+]` | Go to definition                                                                 |
-| `]`      | Create a portal to the definition                                                |
+| Key      | Action                                                                       |
+| -------- | ---------------------------------------------------------------------------- |
+| `f`      | Enter link follow mode: labels every link on the page for keyboard selection |
+| `F`      | Smart jump: follow the reference under the cursor                            |
+| `v`      | Select text using the keyboard                                               |
+| `l`      | Open definition overview (in visual scroll mode)                             |
+| `Ctrl+]` | Go to definition                                                             |
+| `]`      | Create a portal to the definition                                            |
 
 ### Table of Contents
 
@@ -210,7 +210,7 @@ You can open them quickly from within Sioyek using the command palette (`:`) and
 
 ### Example `prefs_user.config`
 
-```
+```text
 background_color          0.15 0.15 0.15
 text_highlight_color      0.9  0.9  0.2
 dark_mode_contrast        0.85
@@ -221,7 +221,7 @@ search_url_g              https://www.google.com/search?q=
 
 Remap any action by writing `<action_name>  <new_key>` (the base key name syntax uses `<C->` for Ctrl, `<A->` for Alt, `<S->` for Shift):
 
-```
+```text
 screen_down     j
 screen_up       k
 next_page       <right>
@@ -234,9 +234,9 @@ See the full list of action names in the [official documentation](https://github
 
 ## SyncTeX (LaTeX Integration)
 
-Sioyek supports bidirectional SyncTeX. To jump from PDF to source, set your inverse search command in `prefs.config`:
+Sioyek supports bidirectional SyncTeX. To jump from PDF to source, set your inverse search command in `prefs_user.config`:
 
-```
+```text
 # For Neovim via neovim-remote:
 inverse_search_command  nvr --remote-send ":e %1 | :%2<CR>"
 

@@ -19,7 +19,7 @@ The terminal tools I use and the keyboard-driven workflow I've built around them
 - [[notes/tools/yazi|(y-) Yazi]]: terminal file manager with async I/O and image previews.
 - [[notes/tools/zsh|(y-) Zsh & Powerlevel10k]]: shell and prompt setup.
 - [[notes/tools/macos-terminal|(y-) macOS Terminal]]: built-in commands worth knowing.
-- [[notes/tools/modern-cli|(y-) Modern CLI Tools]]: drop-in replacements for ls, cat, grep, find.
+- [[notes/tools/modern-cli|(y-) Modern CLI Tools]]: eza and bat in place of ls and cat, plus fzf and thefuck.
 
 ---
 

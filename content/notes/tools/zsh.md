@@ -9,31 +9,31 @@ tags:
 date: 2025-03-23
 ---
 
-A powerful terminal setup using Zsh as the shell, Oh My Zsh for framework management, and Powerlevel10k for a highly informative and fast prompt.
+My shell setup: Zsh, Oh My Zsh to manage plugins, and Powerlevel10k for a fast prompt that shows Git status and more at a glance.
 
 ## Components
 
 ### Zsh
 
-The Z-shell (Zsh) is a powerful shell that can be used as an interactive login shell and as a shell script command processor. It is the default shell on macOS.
+Zsh is the default shell on macOS. It works as an interactive shell and as a scripting language.
 
 ### Oh My Zsh (OMZ)
 
-[Oh My Zsh](https://ohmyz.sh/) is an open-source, community-driven framework for managing your Zsh configuration. It comes bundled with thousands of helpful functions, helpers, plugins, and themes.
+[Oh My Zsh](https://ohmyz.sh/) is a community-driven framework for managing Zsh configuration. It bundles a large set of plugins, helper functions and themes.
 
 ### Powerlevel10k (P10k)
 
-[Powerlevel10k](https://github.com/romkatv/powerlevel10k) is a theme for Zsh. It emphasizes speed, flexibility, and out-of-the-box experience.
+[Powerlevel10k](https://github.com/romkatv/powerlevel10k) is a Zsh theme built for speed. Its setup wizard configures the prompt for you.
 
 ---
 
 ## My Configuration
 
-The configuration is primarily handled in `~/.zshrc`.
+Most of the configuration lives in `~/.zshrc`.
 
 ### Instant Prompt
 
-Powerlevel10k uses an "Instant Prompt" feature to make the shell start immediately, even if you have many plugins. This block must stay at the top of your `.zshrc`:
+Powerlevel10k's instant prompt draws the prompt before the plugins finish loading, so the shell feels ready immediately. This block must stay at the top of your `.zshrc`:
 
 ```zsh
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -56,7 +56,7 @@ plugins=(git web-search sudo zoxide)
 
 ### Essential Add-ons
 
-These are sourced at the bottom of the `.zshrc` to ensure they don't interfere with the startup:
+These come from outside Oh My Zsh, and the order matters. zsh-completions has to be on `fpath` before `compinit` runs. zsh-syntax-highlighting has to be sourced last, after anything else that defines widgets, or it won't highlight them.
 
 - **zsh-completions**: Adds thousands of extra completion rules.
 - **zsh-autosuggestions**: Suggests commands as you type based on history.

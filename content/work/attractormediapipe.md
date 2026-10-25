@@ -16,45 +16,53 @@ github: https://github.com/yuazi/attractormediapipe
 
 ![[pictures/work/attractormediapipe/demo.gif]]
 
-Exploring complex mathematical systems like strange attractors is usually done through static plots or traditional sliders. I wanted a way to "touch" the math and interact with it as if it were a physical object, so I built **AttractorMediaPipe**.
-
-It is an interactive 3D visualizer that combines **ModernGL rendering**, **MediaPipe hand tracking**, and **Datashader snapshot exports**. It is less of a plot and more of a real-time instrument for exploring chaotic systems as glowing point trails.
+Strange attractors are usually explored through static plots and parameter sliders. I wanted to steer one with my hands, so I built **AttractorMediaPipe**. It draws one of nine chaotic systems as a glowing particle trail and reads hand gestures from a webcam through MediaPipe. It also exports dense, high-resolution snapshots with Datashader.
 
 ---
 
-## The Core Concept
+## What It Demonstrates
 
-To make the attractors move smoothly, the tool solves differential equations using **Runge-Kutta 4 (RK4)**. This allows for high-precision simulation even at high speeds.
+- Nine attractors (Lorenz, Aizawa, Sprott B, Thomas, Dadras, Chen, Langford, Rossler and Halvorsen), each with a Numba-compiled RK4 stepper.
+- A ModernGL renderer that keeps the trail in a ring buffer and draws the newest 100,000 points as additive point sprites, with age-based fading in the fragment shader.
+- A GPU transform-feedback stepper that falls back to the Numba CPU path automatically when the OpenGL context doesn't support it.
+- MediaPipe hand tracking mapped to camera and scene controls, with keyboard and mouse controls when there's no camera.
+- A separate Datashader export path for multi-million-point snapshots with embedded PNG metadata.
+- Unit tests for controls, snapshots, renderer behavior and GPU/CPU equivalence.
 
-Here is a simplified version of an RK4 step for a Lorenz attractor:
+---
+
+## Stepping the Equations
+
+Every system is integrated with fourth-order Runge-Kutta (RK4), which stays accurate at much larger time steps than plain Euler integration. Here is the idea in NumPy, written once so it works for any of the systems:
 
 ```python
-def lorenz_deriv(state, sigma=10, beta=8/3, rho=28):
-    x, y, z = state
-    return [sigma * (y - x), x * (rho - z) - y, x * y - beta * z]
+import numpy as np
 
-def rk4_step(state, dt):
-    k1 = lorenz_deriv(state)
-    k2 = lorenz_deriv([s + d * dt/2 for s, d in zip(state, k1)])
-    k3 = lorenz_deriv([s + d * dt/2 for s, d in zip(state, k2)])
-    k4 = lorenz_deriv([s + d * dt for s, d in zip(state, k3)])
-    return [s + (dt/6) * (a + 2*b + 2*c + d) for s, a, b, c, d in zip(state, k1, k2, k3, k4)]
+
+def lorenz(s, sigma=10, rho=28, beta=8 / 3):
+    x, y, z = s
+    return np.array([sigma * (y - x), x * (rho - z) - y, x * y - beta * z])
+
+
+def rk4_step(f, s, dt):
+    k1 = f(s)
+    k2 = f(s + dt / 2 * k1)
+    k3 = f(s + dt / 2 * k2)
+    k4 = f(s + dt * k3)
+    return s + dt / 6 * (k1 + 2 * k2 + 2 * k3 + k4)
 ```
+
+The project's steppers are Numba-compiled, but the math is the same.
 
 ---
 
-## The Deep Dive: How it works
+## How It Works
 
-The project is built to handle the tension between fast, interactive discovery and high-resolution artistic exports.
+### 1. Live View
 
-### 1. Hybrid Rendering Engine
+`ModernGL` and `pygame` draw the newest 100,000 trail points over a procedural background and a separate fog layer, which keeps the attractor readable without flattening it. When the OpenGL context supports transform feedback, a shader advances the simulation on the GPU. Otherwise the app switches to the Numba CPU stepper, so it still runs on machines with modest graphics.
 
-The tool handles the simulation of **nine chaotic systems**, including **Lorenz, Aizawa, Sprott B, Thomas, Dadras, Chen, Langford, Rossler, and Halvorsen**.
-
-- **Live View**: Built with `ModernGL` and `pygame`, rendering the newest 100,000 points as additive point sprites with age-based fading and procedural backgrounds.
-- **Simulation**: Employs **Numba-compiled CPU paths** for stability and high-performance RK4 integration.
-
-For more on the mathematical background and chaotic properties of these systems, see my note on **[[notes/random/lorenz-attractor|The Lorenz Attractor]]**.
+For the math behind these systems, see my note on [[notes/random/lorenz-attractor|The Lorenz Attractor]].
 
 ![[pictures/attractor_aizawa.png]]
 
@@ -62,26 +70,24 @@ For more on the mathematical background and chaotic properties of these systems,
 
 ![[pictures/lorenz_8k_textured.png]]
 
-<p class="image-caption">8K High-resolution Lorenz attractor export with density-based coloring</p>
+<p class="image-caption">8K Lorenz attractor export with density-based coloring</p>
 
 ### 2. Gesture Control
 
-Using **MediaPipe**, the tool maps hand landmarks to scene controls. Your left hand handles **speed and luminosity**, while your right hand controls **yaw, pitch, and zoom**. This makes the interface feel like a performance tool rather than a simple script.
+MediaPipe tracks both hands. The left hand sets speed and luminosity, the right hand controls yaw, pitch and zoom, and pinky touches reset the scene or switch attractors. Changes are interpolated, so the scene eases into a new state instead of jumping with every twitch of the hand. A focus mode reduces the interface to a slim bar for use on stage.
 
-### 3. High-Res Snapshot Pipeline
+### 3. Snapshot Pipeline
 
-When you find a view you like, you can trigger an export. Instead of just saving the screen, the tool uses **Datashader** to generate dense 8K snapshots with millions of points, using inferno-inspired density coloring. The pipeline embeds descriptive metadata directly into the PNG files and logs entries to a JSONL archive.
+Pressing `S`, or running with `--snapshot-only`, switches to the export path. It doesn't save the live framebuffer. Datashader generates 5,000,000 points by default and rasterizes them at 5120×2880. Each export writes a clean and a textured PNG in one of four presets (nebula, blueprint, void, print). It embeds the attractor, parameters and resolution as PNG text metadata, and appends an entry to a JSONL log.
 
 ---
 
 ## Project Structure
 
-The project is modular and supports both gesture and traditional keyboard controls:
-
-- **`attractors/`**: Mathematical definitions and the attractor manager for all 9 systems.
-- **`hands/`**: MediaPipe tracking and gesture interpretation logic.
-- **`renderer/`**: ModernGL live scene and the Datashader export path.
-- **`main.py`**: The application loop, CLI modes, and control mapping.
+- `attractors/`: equations and the attractor manager for all nine systems.
+- `hands/`: MediaPipe tracking and gesture interpretation.
+- `renderer/`: the ModernGL live scene and the Datashader export path.
+- `main.py`: the application loop, CLI modes and control mapping.
 
 ---
 
@@ -93,7 +99,7 @@ Run the viewer with your webcam:
 python main.py
 ```
 
-Generate high-quality renders in batch mode without the UI:
+Render snapshots in batch mode without the UI:
 
 ```bash
 python main.py --snapshot-only
@@ -109,7 +115,7 @@ python main.py --no-camera
 
 ## Getting Started
 
-AttractorMediaPipe is built with Python and requires a few high-performance libraries for the math and rendering.
+The dependencies (pygame, ModernGL, Numba, Datashader, OpenCV and MediaPipe) are pinned in `requirements.txt`.
 
 ```bash
 git clone https://github.com/yuazi/attractormediapipe

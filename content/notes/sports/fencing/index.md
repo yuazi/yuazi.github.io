@@ -22,14 +22,14 @@ I picked it up because it felt less like a choreography contest and more like a 
 
 ## (y-) Core Concepts
 
-| Concept           | Épée Specifics                                                                                                                            |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Target Area       | The entire body. Toe, knee, wrist, mask, back, everywhere.                                                                                |
-| Right of Way      | None. First touch scores. Simultaneous touches inside ~40ms award one to each fencer.                                                     |
-| Weapon Weight     | Around 770 grams, the heaviest of the three. Slower and stiffer than foil, which favours opposition and point control over flick attacks. |
-| Tip Pressure      | The point must depress with at least 750 grams of force to register, much stiffer than foil's 500g.                                       |
-| Distance (Mesura) | Long. The wrist is closer than the body, so most touches happen at the edge of lunge distance, not in the chest.                          |
-| Default Strategy  | Patience. Most touches come from drawing a committed action and stop-hitting the exposed wrist or forearm.                                |
+| Concept           | Épée Specifics                                                                                                                           |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Target Area       | The entire body. Toe, knee, wrist, mask, back, everywhere.                                                                               |
+| Right of Way      | None. First touch scores. Simultaneous touches inside ~40ms award one to each fencer.                                                    |
+| Weapon Weight     | Up to 770 grams, the heaviest of the three. Slower and stiffer than foil, which favours opposition and point control over flick attacks. |
+| Tip Pressure      | The point must depress with at least 750 grams of force to register, much stiffer than foil's 500g.                                      |
+| Distance (Mesura) | Long. The wrist is closer than the body, so most touches happen at the edge of lunge distance, not in the chest.                         |
+| Default Strategy  | Patience. Most touches come from drawing a committed action and stop-hitting the exposed wrist or forearm.                               |
 
 ---
 
@@ -44,14 +44,14 @@ I picked it up because it felt less like a choreography contest and more like a 
 
 ## (y-) Notable Modern Épéeists
 
-| Fencer            | Country | Style Notes                                                                                                               |
-| ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Koki Kano         | JPN     | Paris 2024 Olympic gold, 2025 world champion. Compact stance, fast hand, precise toe touches. The benchmark of the cycle. |
-| Lucas Malcotti    | SUI     | 2026 world champion. Cool under pressure, won the Hong Kong final 13-12. New name at the very top.                        |
-| Davide Di Veroli  | ITA     | 2026 Worlds silver. Spearhead of the deepest program in the sport.                                                        |
-| Mohamed El-Sayed  | EGY     | Most consistent man on the 2025-26 World Cup circuit, two legs. Épée's spread beyond Europe.                              |
-| Yannick Borel     | FRA     | Tall, patient, dominant blade work. Picks the wrist apart with measured prises de fer.                                    |
-| Andrea Santarelli | ITA     | Wrist sniper. Counter-attacks and point-in-line specialist.                                                               |
+| Fencer            | Country | Style Notes                                                                                                                   |
+| ----------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Koki Kano         | JPN     | Paris 2024 Olympic gold, 2025 world champion. Compact stance, fast hand, precise toe touches. The man to beat this cycle.     |
+| Lucas Malcotti    | SUI     | 2026 world champion. Cool under pressure, won the Hong Kong final 13-12 as a new name at the very top.                        |
+| Davide Di Veroli  | ITA     | 2026 Worlds silver. Leads Italy, the deepest épée program in the sport.                                                       |
+| Mohamed El-Sayed  | EGY     | Won two legs of the 2025-26 World Cup circuit, the most consistent man on it, and proof the sport is spreading beyond Europe. |
+| Yannick Borel     | FRA     | Tall, patient, dominant blade work. Picks the wrist apart with measured prises de fer.                                        |
+| Andrea Santarelli | ITA     | Wrist sniper. Counter-attacks and point-in-line specialist.                                                                   |
 
 For the full 2026 results and the current circuit, see [[notes/sports/fencing/2026-season|(y-) 2026 Season]].
 

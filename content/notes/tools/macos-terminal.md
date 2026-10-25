@@ -7,20 +7,20 @@ tags:
 date: 2026-04-19
 ---
 
-A quick reference guide for essential macOS terminal commands, including built-in utilities and common shell operations.
+The terminal commands I reach for on a Mac: standard shell commands plus the macOS-only tools.
 
 ## Navigation and File Operations
 
 | Command              | Description                                    |
 | -------------------- | ---------------------------------------------- |
-| `pwd`                | Print Working Directory                        |
+| `pwd`                | Print the current directory                    |
 | `ls -la`             | List all files with detailed info              |
 | `cd <dir>`           | Change directory                               |
 | `mkdir <name>`       | Create a new directory                         |
 | `touch <file>`       | Create an empty file                           |
 | `cp -r <src> <dest>` | Copy files/folders recursively                 |
 | `mv <src> <dest>`    | Move or rename files/folders                   |
-| `rm -rf <path>`      | Force remove files/folders (use with caution!) |
+| `rm -rf <path>`      | Force remove files/folders (no undo, no Trash) |
 
 ## macOS Specific Commands
 

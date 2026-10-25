@@ -11,7 +11,7 @@ date: 2026-03-12
 
 > **Inspired by:** [Gatys et al. (A Neural Algorithm of Artistic Style)](https://arxiv.org/abs/1508.06576)
 
-I’ve been looking for a way to actually "see" the concepts from my [[/notes/lectures/mlp/02-cnn|CNN theory]] notes in a live environment. Neural Style Transfer (NST) turns out to be the answer - it uses a pre-trained network to "repaint" your camera feed using the visual DNA of a specific artwork. Since optimization loops are too slow for real-time work, I reach for **Feed-forward Style Transfer** to keep things running at a steady 60fps.
+I’ve been looking for a way to actually "see" the concepts from my [[/notes/lectures/mlp/02-cnn|CNN theory]] notes in a live environment. Neural Style Transfer (NST) turned out to be the answer: a pre-trained network repaints your camera feed in the style of one specific artwork. The original method optimizes every image from scratch, which is far too slow for live video, so I use **feed-forward style transfer**, where one pass through a trained network does the job, to keep things running at a steady 60fps.
 
 > [!info] Operator Families in this Recipe
 >
@@ -21,10 +21,8 @@ I’ve been looking for a way to actually "see" the concepts from my [[/notes/le
 
 ## Part 1: Setup & Models
 
-The first step is hooking up your camera and pointing TouchDesigner to the right model file.
-
-1.  **Video Device In TOP:** This is your "eye." It pulls the feed from your MacBook's webcam.
-2.  **Script TOP:** Create a **Script TOP** and connect your camera to its input. This acts as the Python bridge.
+1.  **Video Device In TOP:** Pulls the feed from your MacBook's webcam.
+2.  **Script TOP:** Create a **Script TOP** and connect your camera to its input. Its Python callbacks run the network.
 3.  **Model Selection:** You'll need a pre-trained `.onnx` file. You can grab these from the [ONNX Model Zoo](https://github.com/onnx/models) under the **Vision > Image Manipulation** section (look for "Fast Neural Style Transfer").
 
 > [!tip] Hugging Face
@@ -32,13 +30,13 @@ The first step is hooking up your camera and pointing TouchDesigner to the right
 
 ### Recommended Models
 
-Different models have different "personalities." Here are the ones that work best for real-time:
+Each model has its own look. These work best in real time:
 
-- **`mosaic`**: Very strong, geometric textures. Great for high-contrast scenes.
-- **`udnie`**: A mix of sharp lines and muted colors. Very "painterly."
-- **`rain-princess`**: Bright, vibrant blues and yellows. Very expressive.
-- **`candy`**: High-saturation, smooth shapes. Great for colorful lighting.
-- **`pointilism`**: Soft, dotted textures. Perfect for subtle, dreamy looks.
+- **`mosaic`**: strong, geometric textures. Good for high-contrast scenes.
+- **`udnie`**: sharp lines and muted colors, the most painterly of the five.
+- **`rain-princess`**: bright blues and yellows with loose brushwork.
+- **`candy`**: saturated colors and smooth shapes. Good under colorful lighting.
+- **`pointilism`**: soft, dotted textures for a subtle, dreamy look.
 
 4.  **Custom Page:** Open the script callbacks and add a file parameter in the `onSetupParameters` function.
     ```python
@@ -52,14 +50,12 @@ Different models have different "personalities." Here are the ones that work bes
 
 ## Part 1.5: How Model Paths Work
 
-When the code asks for a **Model Path**, it’s looking for the literal address of the `.onnx` file on your MacBook's hard drive.
+**Model Path** is the full path to the `.onnx` file on disk, something like `/Users/yourname/Downloads/mosaic.onnx`. Instead of typing it, click the **folder icon** next to the parameter, or drag the file from Finder onto the parameter field.
 
-- **The Address:** Something like `/Users/yourname/Downloads/mosaic.onnx`.
-- **The Shortcut:** Instead of typing it out, you can click the **folder icon** next to the **Model Path** parameter or simply **drag and drop** the file from your Finder directly onto the parameter field in TouchDesigner.
-- **The Code Logic:** The script uses `scriptOp.par.Modelpath.eval()` to grab that address and pass it to OpenCV. If the path is wrong, the network won't load and you'll get a black screen.
+The script reads it with `scriptOp.par.Modelpath.eval()` and passes it to OpenCV. If the path is wrong, the network won't load and you'll get a black screen.
 
 > [!tip] Troubleshooting Paths
-> If it's not working, open the **Textport** (`Alt+T`). If you see an error like `cv2.error: ... can't open file`, it means the path is pointing to a file that doesn't exist or is in a folder TouchDesigner can't access.
+> If it's not working, open the **Textport** (`Alt+T`). An error like `cv2.error: ... can't open file` means the path points to a file that doesn't exist, or to a folder TouchDesigner can't access.
 
 ---
 
@@ -67,65 +63,59 @@ When the code asks for a **Model Path**, it’s looking for the literal address 
 
 The `onCook` callback handles the data flow: taking pixels from the input, running them through the neural net, and copying them back to the TOP.
 
-1.  **Initialize the Net:** Load the model once and store it in a global variable so it doesn't reload every frame.
-2.  **Prepare the Image:** Convert the incoming TOP data into a 0-255 RGB Numpy array.
+1.  **Initialize the Net:** Cache the loaded model so it isn't reloaded every frame, and load it again only when **Model Path** changes.
+2.  **Prepare the Image:** Scale the incoming TOP data (RGBA floats in 0-1) to 0-255 RGB.
 3.  **Run Inference:** Use `cv2.dnn.blobFromImage` to format the data and `net.forward()` to get the result.
 
 ```python
+import functools
+
 import cv2
 import numpy as np
 
-net = None
+
+@functools.lru_cache(maxsize=1)  # reload only when Model Path changes
+def load(path):
+    return cv2.dnn.readNetFromONNX(path)
+
 
 def onCook(scriptOp):
-    global net
-    model_path = scriptOp.par.Modelpath.eval()
-    if not model_path: return
+    path = scriptOp.par.Modelpath.eval()
+    if not path or not scriptOp.inputs:
+        return
+    net = load(path)
 
-    # Load the net once
-    if net is None:
-        net = cv2.dnn.readNetFromONNX(model_path)
-        # Optimized for M1 Pro (Apple Silicon):
-        net.setPreferableBackend(cv2.dnn.DNN_BACKEND_DEFAULT)
-        net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
+    # 1. Grab pixels: TD gives RGBA floats in 0-1
+    img = scriptOp.inputs[0].numpyArray(delayed=True)
+    if img is None:  # delayed download: nothing is ready on the first cook
+        return
+    rgb = img[:, :, :3] * 255
 
-    # 1. Grab pixels
-    input_img = scriptOp.inputs[0].numpyArray(delayed=True)
+    # 2. Predict. The ONNX Model Zoo style models take raw 0-255 RGB, with no mean subtraction
+    net.setInput(cv2.dnn.blobFromImage(rgb, 1.0, (640, 480), swapRB=False))
+    out = net.forward()[0].transpose(1, 2, 0)  # (1, 3, H, W) -> (H, W, 3)
 
-    # 2. Convert to 0-255 RGB
-    input_img = (input_img[:, :, :3] * 255).astype(np.uint8)
-
-    # 3. Predict
-    blob = cv2.dnn.blobFromImage(input_img, 1.0, (640, 480), (103.9, 116.7, 123.6), swapRB=False)
-    net.setInput(blob)
-    output = net.forward()
-
-    # 4. Clean up for TD (H, W, 4)
-    output = output.reshape(3, output.shape[2], output.shape[3]).transpose(1, 2, 0)
-    output = np.clip(output, 0, 255) / 255.0
-    h, w, _ = output.shape
-    final = np.ones((h, w, 4), dtype=np.float32)
-    final[:, :, :3] = output
-
-    scriptOp.copyNumpyArray(final)
+    # 3. Back to 0-1 RGBA for TD, with opaque alpha
+    out = np.clip(out, 0, 255) / 255
+    scriptOp.copyNumpyArray(np.dstack([out, np.ones(out.shape[:2])]).astype(np.float32))
 ```
 
 ---
 
 ## Part 3: Mac Optimization
 
-Running neural networks in Python can bottleneck quickly. Since we're on an M1 Pro, I use a few tricks to keep the UI from locking up.
+Running a neural network inside TouchDesigner's Python can stall the whole UI. Two things keep it smooth on my M1 Pro:
 
-1.  **Delayed Arrays:** Setting `delayed=True` in the `numpyArray` call prevents the CPU from waiting for the GPU to finish, which stops the UI from stuttering.
-2.  **Resolution Scaling:** I usually run the inference at `640x480` or even `320x240`. Style transfer is very forgiving - you can scale it back up with a **Resolution TOP** and the painterly textures hide the low-res artifacts perfectly.
+1.  **Delayed Arrays:** Setting `delayed=True` in the `numpyArray` call prevents the CPU from waiting for the GPU to finish, which stops the UI from stuttering. The price is one frame of latency, and the very first call returns `None`, which the script skips.
+2.  **Resolution Scaling:** I usually run the inference at `640x480` or even `320x240`. Style transfer is forgiving: scale it back up with a **Resolution TOP** and the painterly textures hide most of the low-res artifacts.
 
 ---
 
 ## Troubleshooting
 
-- **"The UI is lagging!"** - Lower the resolution in `blobFromImage`. Python is single-threaded, so heavy inference will eat your frame time.
-- **"It's just a black screen."** - Ensure your input image isn't empty and that the `Modelpath` parameter is pointing to a valid ONNX file.
-- **"The colors look weird."** - Toggle `swapRB` in the `blobFromImage` function; some models expect BGR instead of RGB.
+- **"The UI is lagging!"** Lower the resolution in `blobFromImage`. Python is single-threaded, so heavy inference will eat your frame time.
+- **"It's just a black screen."** Ensure your input image isn't empty and that the `Modelpath` parameter is pointing to a valid ONNX file.
+- **"The colors look weird."** Toggle `swapRB` in the `blobFromImage` function; some models expect BGR instead of RGB.
 
 ---
 
@@ -135,13 +125,11 @@ Running neural networks in Python can bottleneck quickly. Since we're on an M1 P
 | :------------------- | :----------------------------------------------------------------------------------- |
 | **Model Resolution** | Higher = more detail but slower FPS; Lower = faster but "blockier" textures.         |
 | **Delayed Array**    | `True` keeps the UI responsive; `False` can cause micro-stutters during heavy loads. |
-| **Backend Target**   | M1 Pro works best with `DNN_TARGET_CPU` for standard OpenCV DNN calls.               |
+| **Backend Target**   | OpenCV's default CPU target, which the script leaves as is, runs well on an M1 Pro.  |
 
 ---
 
 ## Network Architecture
-
-Here is how the data flows through the operator and the Python script:
 
 ```text
 [ VIDEO INPUT ] ──▶ [ Script TOP ] ──▶ [ Resolution TOP ] ──▶ [ OUT ]
@@ -160,16 +148,16 @@ Here is how the data flows through the operator and the Python script:
 
 1.  **Input:** A live camera feed or pre-recorded video enters the `Script TOP`.
 2.  **Conversion:** We pull the texture data into Python as a Numpy array.
-3.  **Inference:** The OpenCV library crunches the numbers based on the latent space of the artwork we're mimicking.
+3.  **Inference:** OpenCV runs one forward pass of a network whose weights were trained on a single artwork's style.
 4.  **Upscaling:** Since we run the heavy math at low res, the `Resolution TOP` brings it back to full screen for display.
 
 ---
 
 ## See Also
 
-- [[touchdesigner/04_Scripting_and_Architecture/Python in TD|(y-) Python in TouchDesigner]] - More on how to use external libraries like OpenCV.
-- [[/notes/lectures/mlp/01-introduction|(y-) Introduction to Machine Learning]] - The foundation for understanding how networks "see."
-- [[work/index|(y) The Workshop]] - Other creative coding experiments and finished projects.
+- [[touchdesigner/04_Scripting_and_Architecture/Python in TD|(y-) Python in TouchDesigner]]: more on using external libraries like OpenCV.
+- [[/notes/lectures/mlp/01-introduction|(y-) Introduction to Machine Learning]]: background on how networks learn features.
+- [[work/index|(y) The Workshop]]: other creative coding experiments and finished projects.
 
 ---
 

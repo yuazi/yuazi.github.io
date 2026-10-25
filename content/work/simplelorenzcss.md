@@ -13,17 +13,15 @@ github: https://github.com/yuazi/simpleLorenzcss
 
 [View on GitHub](https://github.com/yuazi/simpleLorenzcss)
 
-Most digital gardens use static colors or simple gradients for their backgrounds. I wanted something that felt "alive" and reflected my interest in chaotic systems, so I built **simpleLorenzcss**.
-
-It is a specialized background system for Quartz that renders a live **Lorenz attractor** and two **Halvorsen attractors** directly behind your notes. It is lightweight, interactive, and switches themes automatically with your site.
+Most digital gardens have a flat color or a gradient behind the text. I wanted mine to show my interest in chaotic systems, so I built **simpleLorenzcss**, a canvas background for Quartz v4. It runs a live Lorenz attractor in the center and two Halvorsen attractors at the edges, and it has a settings panel and light and dark palettes.
 
 ---
 
-## The Core Concept
+## How It Works
 
-The background is not a video or a pre rendered image. It is a live simulation running in your browser. It uses differential equations to calculate the next position of thousands of particles every frame.
+Nothing is pre-rendered. Every frame, the script steps each particle forward by a small `dt` and projects the 3D positions to 2D with a slow rotation. It then draws a fading trail on a `<canvas>` fixed behind the page with `pointer-events: none`, so the background never blocks a click.
 
-Here is the core update logic for a Lorenz attractor in TypeScript:
+The core of the Lorenz update in TypeScript:
 
 ```typescript
 const dt = 0.005
@@ -31,53 +29,41 @@ const sigma = 10,
   rho = 28,
   beta = 8 / 3
 
-// Calculate the change in position
-dx = sigma * (y - x) * dt
-dy = (x * (rho - z) - y) * dt
-dz = (x * y - beta * z) * dt
+// All three derivatives read the old x, y, z before any of them change
+const dx = sigma * (y - x) * dt
+const dy = (x * (rho - z) - y) * dt
+const dz = (x * y - beta * z) * dt
 
-// Update the coordinates
 x += dx
 y += dy
 z += dz
 ```
 
----
+### 1. Three Attractors
 
-## The Deep Dive: How it works
+The Lorenz attractor stays centered as the focal point, and the two Halvorsen attractors fill the left and right edges.
 
-The system is designed to be atmospheric rather than distracting. It stays in the background and only draws attention when you want it to.
+### 2. Settings and Focus Mode
 
-### 1. Multi Attractor System
-
-The simulation runs three distinct systems simultaneously:
-
-- A **Lorenz attractor** stays centered to provide a focal point.
-- Two **Halvorsen attractors** run on the left and right edges to fill the periphery.
-
-### 2. Interactive Settings
-
-A hidden gear button opens a settings panel where you can tune the math live. You can adjust constants like **sigma** and **rho**, change the simulation speed, or increase the particle count for a denser look.
+A gear button in the bottom-right corner opens a panel for sigma, rho, beta, speed, trail length and particle count. Changes are saved to `localStorage`, so they survive a reload. Focus mode, toggled from the panel or with `Escape`, fades out the header, sidebars and article and leaves only the animation.
 
 ### 3. Quartz Integration
 
-The project is built specifically for **Quartz 4**. It hooks into the single page application routing to ensure the animation survives page transitions without restarting. It also reads the saved theme to automatically swap between light and dark palettes.
+The script hooks into Quartz's single-page routing, so the animation keeps running across page transitions instead of restarting. It reads the saved theme to switch between the light and dark palettes.
 
 ---
 
 ## Project Structure
 
-The project is kept small and focused so it can be easily dropped into any Quartz garden:
-
-- **`LorenzBackground.tsx`**: The React component that wires the feature into the layout.
-- **`lorenz.inline.ts`**: The core animation script that handles the canvas and math.
-- **`lorenz.css`**: Styles for the canvas, settings panel, and the focus mode toggle.
+- `LorenzBackground.tsx`: the Quartz component that adds the script and styles to the layout.
+- `lorenz.inline.ts`: the canvas, the attractor math and the settings UI.
+- `lorenz.css`: styles for the canvas, the settings panel and focus mode.
 
 ---
 
 ## Getting Started
 
-This project is archived because it already fulfills its purpose as a clean extract for others to use.
+The repo is archived because it's finished: a standalone copy of this site's background for other Quartz v4 gardens. The README covers copying the three files in and registering the component.
 
 ```bash
 git clone https://github.com/yuazi/simpleLorenzcss

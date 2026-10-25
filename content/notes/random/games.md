@@ -6,18 +6,18 @@ tags:
 date: 2026-03-27
 ---
 
-Gaming is a good way to switch gears - sometimes it's about the mechanical challenge of a tactical shooter, other times it's just about a well-told story.
+Gaming is how I switch gears. Some days I want the mechanical challenge of a tactical shooter, other days just a well-told story.
 
 ## Tactical Shooters
 
-These are mostly about the technical side of things: positioning, timing, and mechanical consistency.
+These are about positioning, timing and mechanical consistency.
 
-- **Counter-Strike** - It's the gold standard for a reason. The focus on pure mechanical skill and the high-pressure rounds where every decision matters makes it hard to put down.
-- **Ready or Not** - A much slower, more methodical experience. It requires a different kind of focus - less about fast reflexes and more about situational awareness and staying calm when things go sideways.
+- **Counter-Strike**: the gold standard of the genre. It rewards pure mechanical skill, and in the high-pressure rounds every decision matters, which makes it hard to put down.
+- **Ready or Not**: much slower and more methodical. It takes a different kind of focus: situational awareness, and staying calm when things go sideways, more than fast reflexes.
 
 ## Narrative & World-Building
 
-- **Yakuza Series** - It has a unique way of balancing a very serious crime drama with completely unhinged side content. The world feels dense and lived-in, and it doesn't take itself too seriously despite the high stakes of the main plot.
+- **Yakuza series**: a deadly serious crime drama next to completely unhinged side content, and somehow it works. The world feels dense and lived-in, and the games never take themselves too seriously, even when the main plot does.
 
 ---
 

@@ -9,43 +9,39 @@ tags:
 date: 2026-04-11
 ---
 
-In April 2026, I participated in the **Legal Innovation Challenge 8 (LIC8)** in Stuttgart, organized by the **Legal AI Network**. My team, **"Menold Bezler 1,"** took **2nd place (🥈)** out of a competitive field of innovators at the intersection of IT and Law.
+In April 2026 my team, "Menold Bezler 1", took **2nd place** at the **Legal Innovation Challenge 8 (LIC8)** in Stuttgart, organized by the Legal AI Network. LIC8 is a two-day event where lawyers, developers and designers use legal design thinking to prototype solutions to real problems in the legal industry.
 
-We developed **MB Client**, a digital onboarding portal designed for the law firm **Menold Bezler** to revolutionize how they start client collaborations.
-
----
-
-## The Problem: Email Chaos
-
-The initial phase of a legal mandate is often plagued by "email chaos." Lawyers and clients exchange dozens of messages to:
-
-- Collect basic company information.
-- Track missing KYC (Know Your Customer) documents.
-- Coordinate kick-off meetings.
-- Share sensitive files across insecure or disorganized channels.
-
-This manual process is slow, prone to error, and creates a poor first impression for the client.
+Our project was **MB Client**, a digital onboarding portal for the law firm Menold Bezler.
 
 ---
 
-## The Solution: MB Client
+## The Problem
 
-**MB Client** is a centralized, transparent onboarding platform that streamlines the entire process into a single digital flow.
+The start of a new mandate usually runs over email. Lawyers and clients exchange dozens of messages to:
 
-### Key Features
+- collect basic company information
+- track missing KYC (Know Your Customer) documents
+- coordinate the kick-off meeting
+- share sensitive files across scattered, sometimes insecure channels
 
-- **Smart Import**: Automated data import from existing business registers to minimize manual entry for the client.
-- **Real-Time Status Tracking**: A clear dashboard showing exactly which documents are still missing and which steps are complete.
-- **Automated Kick-off Scheduling**: Integration with calendars to book the initial consultation as soon as the prerequisite data is provided.
-- **Centralized Upload System**: A secure, encrypted portal for all document transfers, eliminating the need for fragmented email threads.
+It's slow and error-prone, and it gives the client a poor first impression of the firm.
 
 ---
 
-## The Challenge: LIC8
+## The Solution
 
-LIC8 was a two-day intensive event focused on **Legal Design Thinking** and rapid prototyping. It brought together lawyers, developers, and designers to solve real-world problems in the legal industry.
+MB Client puts onboarding into one digital flow that the lawyer and the client both see:
 
-Our project was praised for its practical applicability and focus on user experience (UX) for both the lawyer and the client.
+- Smart import pulls company data from business registers, so the client has less to type.
+- A status dashboard shows which documents are still missing and which steps are done.
+- A calendar integration books the kick-off consultation as soon as the required data is in.
+- One encrypted upload portal handles every document transfer, so files stop getting lost in email threads.
+
+---
+
+## The Result
+
+We took 2nd place. The feedback on MB Client focused on how practical it was, and on its user experience for both the lawyer and the client.
 
 ---
 
