@@ -31,7 +31,7 @@ _Note: In TouchDesigner, the node is called `Syphon Spout` to support both OS ty
 
 ---
 
-> [!tip]- 📚 Learning Path · Stage 7 - Connectivity & Shaders · step 38 of 44
+> [!tip]- 📚 Learning Path · Stage 7: Connectivity & Shaders · step 38 of 44
 > [[touchdesigner/05_Connectivity_and_Shaders/Introduction to GLSL|(y-) ← Prev: Introduction to GLSL]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/05_Connectivity_and_Shaders/DMX and Art-Net|(y-) Next: DMX and Art-Net →]]
 
 ---

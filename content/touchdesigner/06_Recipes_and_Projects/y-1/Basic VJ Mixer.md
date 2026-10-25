@@ -117,7 +117,7 @@ Movie File In TOP (source_b) ─┤        │
                          Null TOP (OUT) ──▶ Display Flag
 ```
 
-> [!tip]- 📚 Learning Path · Stage 2 - Your First Visuals · step 9 of 44
+> [!tip]- 📚 Learning Path · Stage 2: Your First Visuals · step 9 of 44
 > [[touchdesigner/01_Core_Concepts/Common Shortcuts|(y-) ← Prev: Common Shortcuts]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/06_Recipes_and_Projects/y-1/Audio Reactive Geometry|(y-) Next: Audio Reactive Geometry →]]
 
 ---

@@ -138,7 +138,7 @@ Source POP (1000/sec) ──┐
 Audio File In CHOP ──▶ Analyze CHOP (RMS) ──▶ Math CHOP ──▶ bound to Source POP Emit Rate
 ```
 
-> [!tip]- 📚 Learning Path · Stage 2 - Your First Visuals · step 13 of 44
+> [!tip]- 📚 Learning Path · Stage 2: Your First Visuals · step 13 of 44
 > [[touchdesigner/06_Recipes_and_Projects/y-1/Chromatic Aberration Feedback|(y-) ← Prev: Chromatic Aberration Feedback]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/02_The_Operators/TOPs/TOP - Texture Operators|(y-) Next: TOPs →]]
 
 ---

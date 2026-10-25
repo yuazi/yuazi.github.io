@@ -83,7 +83,7 @@ GLSL MAT is the escape hatch when the built-ins can't do what you need: custom l
 
 ---
 
-> [!tip]- 📚 Learning Path · Stage 3 - The Operator Families · step 19 of 44
+> [!tip]- 📚 Learning Path · Stage 3: The Operator Families · step 19 of 44
 > [[touchdesigner/02_The_Operators/DATs/DAT - Data Operators|(y-) ← Prev: DATs]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/02_The_Operators/POPs/POP - Point Operators|(y-) Next: POPs →]]
 
 ---

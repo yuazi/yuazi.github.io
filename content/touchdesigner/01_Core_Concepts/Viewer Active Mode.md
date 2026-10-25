@@ -56,7 +56,7 @@ For something more involved, build a small Panel UI with a `Slider COMP` and a f
 
 ---
 
-> [!tip]- 📚 Learning Path · Stage 1 - Foundations · step 7 of 44
+> [!tip]- 📚 Learning Path · Stage 1: Foundations · step 7 of 44
 > [[touchdesigner/01_Core_Concepts/Expressions and Parameters|(y-) ← Prev: Expressions and Parameters]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/01_Core_Concepts/Common Shortcuts|(y-) Next: Common Shortcuts →]]
 
 ---

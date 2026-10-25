@@ -101,7 +101,7 @@ Render TOP
                                                     Luma Blur TOP ──▶ HSV Adjust TOP
 ```
 
-> [!tip]- 📚 Learning Path · Stage 2 - Your First Visuals · step 12 of 44
+> [!tip]- 📚 Learning Path · Stage 2: Your First Visuals · step 12 of 44
 > [[touchdesigner/06_Recipes_and_Projects/y-1/Waveform Oscilloscope|(y-) ← Prev: Waveform Oscilloscope]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/06_Recipes_and_Projects/y-1/Particle System with POPs|(y-) Next: Particle System with POPs →]]
 
 ---

@@ -79,7 +79,7 @@ Application shortcuts can be edited and customized in TouchDesigner's preference
 
 ---
 
-> [!tip]- 📚 Learning Path · Stage 1 - Foundations · step 8 of 44
+> [!tip]- 📚 Learning Path · Stage 1: Foundations · step 8 of 44
 > [[touchdesigner/01_Core_Concepts/Viewer Active Mode|(y-) ← Prev: Viewer Active Mode]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/06_Recipes_and_Projects/y-1/Basic VJ Mixer|(y-) Next: Basic VJ Mixer →]]
 
 ---

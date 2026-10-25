@@ -78,7 +78,7 @@ Now anyone (including future you) can drop the `.tox` in and get a clean paramet
 
 ---
 
-> [!tip]- 📚 Learning Path · Stage 3 - The Operator Families · step 17 of 44
+> [!tip]- 📚 Learning Path · Stage 3: The Operator Families · step 17 of 44
 > [[touchdesigner/02_The_Operators/SOPs/SOP - Surface Operators|(y-) ← Prev: SOPs]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/02_The_Operators/DATs/DAT - Data Operators|(y-) Next: DATs →]]
 
 ---

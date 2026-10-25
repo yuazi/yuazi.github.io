@@ -330,7 +330,7 @@ Merge CHOP ────────▶ [ Null (NULL_INSTANCES) ]
                        └──────────────┘
 ```
 
-> [!tip]- 📚 Learning Path · Stage 5 - Intermediate Recipes · step 27 of 44
+> [!tip]- 📚 Learning Path · Stage 5: Intermediate Recipes · step 27 of 44
 > [[touchdesigner/06_Recipes_and_Projects/y-2/GLSL Feedback Effect|(y-) ← Prev: GLSL Feedback Effect]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/06_Recipes_and_Projects/y-2/MediaPipe Face Tracking for Interactive Expressions|(y-) Next: MediaPipe Face Tracking →]]
 
 ---

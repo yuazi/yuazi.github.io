@@ -65,7 +65,7 @@ TD makes it easy to pass data _into_ a shader from the rest of your network:
 
 ---
 
-> [!tip]- 📚 Learning Path · Stage 7 - Connectivity & Shaders · step 37 of 44
+> [!tip]- 📚 Learning Path · Stage 7: Connectivity & Shaders · step 37 of 44
 > [[touchdesigner/05_Connectivity_and_Shaders/Audio Reactivity|(y-) ← Prev: Audio Reactivity]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/05_Connectivity_and_Shaders/NDI and Syphon|(y-) Next: NDI and Syphon →]]
 
 ---

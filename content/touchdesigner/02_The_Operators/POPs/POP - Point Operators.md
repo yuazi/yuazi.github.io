@@ -115,7 +115,7 @@ The POP path scales better than the CHOP path for large LED arrays or pixel-mapp
 
 ---
 
-> [!tip]- 📚 Learning Path · Stage 3 - The Operator Families · step 20 of 44
+> [!tip]- 📚 Learning Path · Stage 3: The Operator Families · step 20 of 44
 > [[touchdesigner/02_The_Operators/MATs/MAT - Material Operators|(y-) ← Prev: MATs]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/03_Rendering_and_Output/Rendering Basics|(y-) Next: Rendering Basics →]]
 
 ---

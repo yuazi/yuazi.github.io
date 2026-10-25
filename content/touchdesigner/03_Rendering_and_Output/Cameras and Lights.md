@@ -103,7 +103,7 @@ Per the wiki: "The Env Map is added to whatever the normal lighting will be, so 
 
 ---
 
-> [!tip]- 📚 Learning Path · Stage 4 - Rendering & 3D · step 22 of 44
+> [!tip]- 📚 Learning Path · Stage 4: Rendering & 3D · step 22 of 44
 > [[touchdesigner/03_Rendering_and_Output/Rendering Basics|(y-) ← Prev: Rendering Basics]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/03_Rendering_and_Output/Instancing|(y-) Next: Instancing →]]
 
 ---

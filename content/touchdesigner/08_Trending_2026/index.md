@@ -9,7 +9,7 @@ tags:
 date: 2026-06-18
 ---
 
-The ten projects that are lighting up galleries, festivals, and Instagram feeds **right now (June 2026)**. This chapter leans into the two things every new-media show is doing this year: **real-time AI** (live diffusion, monocular depth, Gaussian splats) and **camera-only body interaction** (MediaPipe presence, hands, and holistic tracking). No depth cameras, no expensive sensors, just a webcam and a GPU.
+Ten projects in the style showing up at galleries, festivals and on Instagram as of **June 2026**. They lean on the two big trends in new-media work this year: **real-time AI** (live diffusion, monocular depth, Gaussian splats) and **camera-only body interaction** (MediaPipe presence, hands and holistic tracking). You need a webcam and a GPU, not depth cameras or other sensors.
 
 > [!tip] Want to amaze someone?
 > Every recipe here is built to look finished on a big screen or projector. Pick one, swap in a photo or song that means something to the two of you, and you have an installation-quality piece in an evening.
@@ -25,32 +25,32 @@ The ten projects that are lighting up galleries, festivals, and Instagram feeds 
 
 ## Real-Time AI (the 2026 headline)
 
-- **[[touchdesigner/08_Trending_2026/Live AI Painting with TouchDiffusion|(y-) Live AI Painting with TouchDiffusion]]**: Turn your webcam, or any TOP, into a continuously repainted AI canvas using StreamDiffusion. The single hottest TD technique of the year.
+- **[[touchdesigner/08_Trending_2026/Live AI Painting with TouchDiffusion|(y-) Live AI Painting with TouchDiffusion]]**: Turn your webcam, or any TOP, into a continuously repainted AI canvas using StreamDiffusion, the TD technique everyone was posting this year.
 - **[[touchdesigner/08_Trending_2026/ControlNet Pose to Art|(y-) ControlNet Pose-to-Art]]**: Your body pose drives a living AI artwork. Move, and the painting regenerates around your silhouette.
-- **[[touchdesigner/08_Trending_2026/Gaussian Splatting Scenes|(y-) Gaussian Splatting Scenes]]**: Import a 3D Gaussian Splat of a real place and fly a camera through it. Photoreal volumetric memories.
+- **[[touchdesigner/08_Trending_2026/Gaussian Splatting Scenes|(y-) Gaussian Splatting Scenes]]**: Import a 3D Gaussian Splat of a real place and fly a camera through it, for photoreal volumetric memories.
 - **[[touchdesigner/08_Trending_2026/Depth Anything Parallax Portraits|(y-) Depth Anything Parallax Portraits]]**: Use AI monocular depth to turn a single flat photo into a living 2.5D parallax scene.
 
 ## MediaPipe Installations (camera-only interaction)
 
-- **[[touchdesigner/08_Trending_2026/Interactive Portrait Wall|(y-) Interactive Portrait Wall]]**: A gallery piece where a viewer who steps closer dissolves into a cloud of particles. Pure presence and proximity.
-- **[[touchdesigner/08_Trending_2026/Air Drawing Light Painting|(y-) Air-Drawing Light Painting]]**: Pinch your fingers in the air and paint glowing ribbons of light. The crowd-pleaser interactive.
+- **[[touchdesigner/08_Trending_2026/Interactive Portrait Wall|(y-) Interactive Portrait Wall]]**: A gallery piece where a viewer who steps closer dissolves into a cloud of particles. It reacts to presence and distance alone.
+- **[[touchdesigner/08_Trending_2026/Air Drawing Light Painting|(y-) Air-Drawing Light Painting]]**: Pinch your fingers in the air and paint glowing ribbons of light. Nobody needs instructions for this one.
 - **[[touchdesigner/08_Trending_2026/Holistic Magic Mirror|(y-) Holistic Magic Mirror]]**: Face, hands, and body tracked at once to build a responsive "magic mirror" that reacts to your whole presence.
 
 ## Generative & Atmospheric (gallery loops)
 
-- **[[touchdesigner/08_Trending_2026/Reaction Diffusion Living Canvas|(y-) Reaction-Diffusion Living Canvas]]**: A GLSL Gray-Scott system that grows organic, coral-like textures forever. The definitive "living wallpaper."
-- **[[touchdesigner/08_Trending_2026/Volumetric Audio Nebula|(y-) Volumetric Audio Nebula]]**: A glowing 3D nebula of points that breathes with music. The perfect romantic ambient loop.
-- **[[touchdesigner/08_Trending_2026/Projection Mapped Memory Garden|(y-) Projection-Mapped Memory Garden]]**: The finale. Combine presence detection with projection mapping so flowers bloom on a real wall when someone walks up.
+- **[[touchdesigner/08_Trending_2026/Reaction Diffusion Living Canvas|(y-) Reaction-Diffusion Living Canvas]]**: A GLSL Gray-Scott system that grows organic, coral-like textures forever, a "living wallpaper."
+- **[[touchdesigner/08_Trending_2026/Volumetric Audio Nebula|(y-) Volumetric Audio Nebula]]**: A glowing 3D nebula of points that breathes with music, made for a slow, romantic ambient loop.
+- **[[touchdesigner/08_Trending_2026/Projection Mapped Memory Garden|(y-) Projection-Mapped Memory Garden]]**: The capstone. Combine presence detection with projection mapping so flowers bloom on a real wall when someone walks up.
 
 ## Viral Right Now (recreate these reels)
 
 Five art-video styles going viral on TikTok and Instagram in June 2026, each as a step-by-step recreate-it tutorial with the original linked and a vertical export for posting.
 
-- **[[touchdesigner/08_Trending_2026/Viral - Photo to Exploding Particles|(y-) Photo to Exploding Particles]]**: A photo shatters into a 3D point cloud on the beat. The scroll-stopper.
-- **[[touchdesigner/08_Trending_2026/Viral - Hand-Tracked Metaballs|(y-) Hand-Tracked Metaballs]]**: Glowing chrome blobs merge at your fingertips. MediaPipe hands.
+- **[[touchdesigner/08_Trending_2026/Viral - Photo to Exploding Particles|(y-) Photo to Exploding Particles]]**: A photo shatters into a 3D point cloud on the beat.
+- **[[touchdesigner/08_Trending_2026/Viral - Hand-Tracked Metaballs|(y-) Hand-Tracked Metaballs]]**: Glowing chrome blobs merge at your fingertips, driven by MediaPipe hand tracking.
 - **[[touchdesigner/08_Trending_2026/Viral - Audio Reactive Hand Tracking Reel|(y-) Audio-Reactive Hand-Tracking Reel]]**: Visuals that pulse with the music and bend to your hands at once.
-- **[[touchdesigner/08_Trending_2026/Viral - Real-Time AI Repaint Reel|(y-) Real-Time AI Repaint Reel]]**: Live footage repainted as oil/Ghibli in real time. Before/after reveal.
-- **[[touchdesigner/08_Trending_2026/Viral - Smoky Optical Flow Particles|(y-) Smoky Optical-Flow Particles]]**: Ink-in-water smoke that follows motion. Hypnotic loop.
+- **[[touchdesigner/08_Trending_2026/Viral - Real-Time AI Repaint Reel|(y-) Real-Time AI Repaint Reel]]**: Live footage repainted as oil paint or Ghibli in real time, with a before/after reveal.
+- **[[touchdesigner/08_Trending_2026/Viral - Smoky Optical Flow Particles|(y-) Smoky Optical-Flow Particles]]**: Ink-in-water smoke that follows motion, made to loop.
 
 ---
 

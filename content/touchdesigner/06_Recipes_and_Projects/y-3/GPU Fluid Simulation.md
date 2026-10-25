@@ -368,7 +368,7 @@ Constant (RG32) ──┐              Constant (R32) ──┐
 [ vel_field ] ────────────────────▶ [ dens_field ] ──▶ [ OUT ]
 ```
 
-> [!tip]- 📚 Learning Path · Stage 8 - Advanced Projects · step 41 of 44
+> [!tip]- 📚 Learning Path · Stage 8: Advanced Projects · step 41 of 44
 > [[touchdesigner/06_Recipes_and_Projects/y-3/Hand Tracking Tutorial|(y-) ← Prev: Complete Hand Tracking Walkthrough]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/06_Recipes_and_Projects/y-3/Reaction-Diffusion|(y-) Next: Reaction-Diffusion →]]
 
 ---

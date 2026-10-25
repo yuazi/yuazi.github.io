@@ -94,7 +94,7 @@ Apply in this order, cheapest fixes first:
 
 ---
 
-> [!tip]- 📚 Learning Path · Stage 6 - Scripting & Architecture · step 34 of 44
+> [!tip]- 📚 Learning Path · Stage 6: Scripting & Architecture · step 34 of 44
 > [[touchdesigner/04_Scripting_and_Architecture/Modular Design and Toxes|(y-) ← Prev: Modular Design and Toxes]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/05_Connectivity_and_Shaders/OSC and MIDI|(y-) Next: OSC and MIDI →]]
 
 ---

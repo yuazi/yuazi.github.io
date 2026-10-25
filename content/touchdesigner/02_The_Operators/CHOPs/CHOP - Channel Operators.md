@@ -83,7 +83,7 @@ One value, one place to edit, propagates everywhere. Wrap a Null CHOP at the end
 
 ---
 
-> [!tip]- 📚 Learning Path · Stage 3 - The Operator Families · step 15 of 44
+> [!tip]- 📚 Learning Path · Stage 3: The Operator Families · step 15 of 44
 > [[touchdesigner/02_The_Operators/TOPs/TOP - Texture Operators|(y-) ← Prev: TOPs]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/02_The_Operators/SOPs/SOP - Surface Operators|(y-) Next: SOPs →]]
 
 ---

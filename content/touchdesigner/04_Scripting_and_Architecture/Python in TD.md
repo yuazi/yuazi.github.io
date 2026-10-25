@@ -123,7 +123,7 @@ me.fetch('lastVal', default=0)
 
 ---
 
-> [!tip]- 📚 Learning Path · Stage 6 - Scripting & Architecture · step 29 of 44
+> [!tip]- 📚 Learning Path · Stage 6: Scripting & Architecture · step 29 of 44
 > [[touchdesigner/06_Recipes_and_Projects/y-2/MediaPipe Face Tracking for Interactive Expressions|(y-) ← Prev: MediaPipe Face Tracking]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/04_Scripting_and_Architecture/The op and me objects|(y-) Next: The op and me objects →]]
 
 ---

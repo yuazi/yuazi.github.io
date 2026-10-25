@@ -124,7 +124,7 @@ A parameter expression has to be a single expression, so the walrus (`:=`) store
 
 ---
 
-> [!tip]- 📚 Learning Path · Stage 1 - Foundations · step 6 of 44
+> [!tip]- 📚 Learning Path · Stage 1: Foundations · step 6 of 44
 > [[touchdesigner/01_Core_Concepts/Parameters|(y-) ← Prev: Parameters]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/01_Core_Concepts/Viewer Active Mode|(y-) Next: Viewer Active Mode →]]
 
 ---

@@ -29,7 +29,7 @@ Standard protocol for music hardware and software controllers.
 
 ---
 
-> [!tip]- 📚 Learning Path · Stage 7 - Connectivity & Shaders · step 35 of 44
+> [!tip]- 📚 Learning Path · Stage 7: Connectivity & Shaders · step 35 of 44
 > [[touchdesigner/04_Scripting_and_Architecture/Performance Monitoring|(y-) ← Prev: Performance Monitoring]] · [[touchdesigner/Learning Path|(y) Path Overview]] · [[touchdesigner/05_Connectivity_and_Shaders/Audio Reactivity|(y-) Next: Audio Reactivity →]]
 
 ---
