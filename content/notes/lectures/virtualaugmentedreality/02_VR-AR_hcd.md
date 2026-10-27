@@ -76,6 +76,8 @@ Useful prototyping modes:
 
 Design for VR/AR reuses principles from HCI, visualization and computer graphics: layering of information, color design (for example with colourlovers.com), visual pop-out, visual flow, the distinction between conceptual and implementation model, and interaction metaphors, idioms and affordances.
 
+Because VR/AR is still relatively new, a heterogeneous team of designers, programmers and subject-matter experts is valuable, and communication between them is key.
+
 ## 5. Testing and Evaluation
 
 ![[pictures/virtualaugmentedreality/02/Lecture02_Pg013_Testing_Methods.png]]

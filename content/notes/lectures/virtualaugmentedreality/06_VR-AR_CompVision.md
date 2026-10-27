@@ -97,6 +97,8 @@ Natural feature tracking avoids artificial markers. The lecture contrast is:
 
 Tracking by detection determines the camera pose from matching interest points in every frame, without relying on previous-frame motion. It is simple and robust to reinitialization, but it is computationally expensive.
 
+FAST is a fast interest point detector. It searches a circle of 16 pixels around a candidate for a contiguous arc of pixels that are all lighter or all darker than the center. Testing the top, bottom, left and right pixels first allows an early exit. Improved versions learn a decision tree that orders the pixel tests so that most candidates are rejected as early as possible.
+
 ## 5. Descriptors and SIFT
 
 ![[pictures/virtualaugmentedreality/06/Lecture06_Pg023_Sift.png]]
