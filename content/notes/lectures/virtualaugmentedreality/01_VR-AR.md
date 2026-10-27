@@ -28,6 +28,19 @@ AR keeps the physical world in view and overlays virtual information on top of i
 
 <p class="image-caption">AR is a feedback loop: the user observes an augmented display, controls the viewpoint, the system tracks that view, and the computer updates the situated visualization.</p>
 
+The term itself is an oxymoron. Webster's Dictionary (1989) defines virtual as "being in essence or effect, but not in fact" and reality as the state or quality of being real, something that exists independently of ideas about it.
+
+LaValle defines VR as "inducing targeted behavior in an organism by using artificial sensory stimulation, while the organism has little or no awareness of the interference". The definition has four parts:
+
+- **Targeted behavior**: the organism has an experience designed by the creator, such as flying, walking, exploring, watching a movie or socializing.
+- **Organism**: a person, or even a fruit fly, cockroach, fish, rodent or monkey; scientists have used VR with all of them.
+- **Artificial sensory stimulation**: one or more senses are co-opted, and their ordinary inputs are replaced or enhanced.
+- **Awareness**: the organism seems unaware of the interference, feels present in the virtual world and accepts it as natural.
+
+### Reality Trade-Offs
+
+VR pursues one of two goals: reproduce the real world as well as possible, or surpass reality. Approaching realism without reaching it risks the uncanny valley. Fidelity varies along three continua: representational fidelity (photorealistic to abstract), interaction fidelity (physical interactions for training, grabbing remote objects, or pressing a button) and experiential fidelity (how closely the user's experience matches the creator's intent, from a VR "movie" to a free-roaming world).
+
 ## 2. Immersion and Presence
 
 ![[pictures/virtualaugmentedreality/01/Lecture01_Pg009_Immersion_Presence.png]]
@@ -54,6 +67,19 @@ Important milestones:
 - NASA VIEW and later HMDs pushed VR toward practical systems.
 - Boeing wire harness guidance, KARMA, NaviCam, ARToolKit, and outdoor AR systems shaped early AR practice.
 
+Early AR systems in more detail:
+
+- **KARMA** (1993, Columbia): the first knowledge-driven AR application; an HMD showed instructions for printer maintenance.
+- **Ultrasound pregnancy visualization** (1994, UNC): a view inside the womb of an expecting mother.
+- **NaviCam** (1994 to 1995, Rekimoto): handheld AR and a forerunner of today's smartphone AR browsers.
+- **Construct3D** (late 1990s, Kaufmann): teaching geometry in AR to high school students.
+- **RV Border Guards** (1999, Canon Mixed Reality Systems Laboratory): a multiuser shooting game.
+- **Touring Machine** (late 1990s): the first outdoor AR system, with Situated Documentaries as a campus tour guide.
+- **WorldBoard** (Spohrer 1999): the world as a repository of information with place as the index, and mobile AR as the interface to location-based information.
+- **Studierstube mobile AR** (2003): HMD, camera, notebook and tracked touchpad, with DGPS outdoors and ARToolKit indoors for wide-area tracking.
+- **ARToolKit**: the popular open-source AR framework built around square markers.
+- **Invisible Train**: a handheld AR game with virtual trains on real wooden tracks.
+
 The pattern is consistent: VR/AR progresses when display, tracking, registration, and interaction improve together.
 
 ## 4. Applications
@@ -63,6 +89,18 @@ The pattern is consistent: VR/AR progresses when display, tracking, registration
 <p class="image-caption">VR application examples include entertainment, psychology, healthcare, education, training, fine arts, heritage, and archaeology.</p>
 
 VR applications often benefit from replacing the environment: exposure therapy, training, simulation, art, virtual heritage, and embodied experiments. AR applications often benefit from keeping the real environment visible: maintenance, medical guidance, navigation, industrial discrepancy analysis, translation, retail, sports visualization, and situated information overlays.
+
+Examples from the lecture:
+
+- **Heritage and archaeology**: VR reconstructions as time travel to historical sites.
+- **Building acceptance**: the Planar, a touchscreen on wheels, supports discrepancy analysis directly on the factory floor.
+- **Underground infrastructure**: a tablet with differential GPS shows a geo-registered virtual excavation revealing a gas pipe.
+- **Aerial reconstruction**: a spherical AR overlay shows where a distant, barely visible drone is.
+- **Explaining how things work**: a ghost visualization reveals the inside of a coffee machine for end-user maintenance.
+- **Telepresence**: UNC's Office of the Future used projector-camera systems for immersive telepresence, and in image-based telepresence a remote expert draws hints on a 3D model of a car during a repair.
+- **Medicine**: the CamC, a mobile C-arm, blends a camera view with X-ray images, and AR supports needle insertion in surgery.
+- **Everyday AR**: Google Translate overlays live translations on the camera image, many cars have an AR parking assistant, the Red Bulletin was the first print magazine with dynamic AR content, and Pictofit renders garments from shopping sites onto the customer's image.
+- **Games**: Vuforia SmartTerrain turns a scanned room into a game landscape, Pokémon Go brought mobile AR to the mass market, and Microsoft's IllumiRoom extends the game world beyond the TV with a projector.
 
 ## 5. Mixed Reality Continuum
 
@@ -79,6 +117,8 @@ Related terms:
 - **Augmented virtuality** brings real elements into a mostly virtual world.
 - **Mediated reality** alters perception by adding, removing, or transforming information.
 - **Diminished reality** removes real-world content from the user's view.
+
+The Milgram-Weiser continuum adds a second axis, from terminal to ubiquitous computing, to Milgram's axis from real to virtual. Its examples: stationary AR (surgical navigation), VR (scientific visualization in a CAVE), ubiquitous computing (home automation), mobile AR (underground visualization), distributed VR (massively multiplayer online games) and augmented virtuality (3D video conferencing).
 
 ## 6. Hype and Adoption
 

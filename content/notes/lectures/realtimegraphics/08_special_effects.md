@@ -393,6 +393,8 @@ A **billboard cloud** is many billboards with varied size and orientation, gener
 
 Particle systems model things that change over time: rain, snow, fire, smoke, explosions, sparks, sprays. They are typically large numbers of small objects rendered as billboards, with shared update logic.
 
+The lecture's list of applications also includes clouds, fireworks and waterfalls.
+
 The 1982 Genesis sequence in _Star Trek II_ is the canonical historical example.
 
 ![[pictures/realtimegraphics/08/L08_Pg-72.jpg]]

@@ -103,6 +103,14 @@ Repeated and mirrored modes are useful for tiled materials; clamping is useful w
 
 ## 3. Texture Data on the GPU
 
+### Texture Format and Specification
+
+![[pictures/realtimegraphics/06/L06_Pg-21.jpg]]
+
+<p class="image-caption">L06_Pg-21: A texture is specified by numerical format, bit depth, channels, dimension, formats, size and a data pointer.</p>
+
+A texture format has a numerical type (integer, float or double), a number of bits per value (8, 16, 32 or 64) and channels (red, green, blue, alpha, depth, stencil). To create a texture, the application specifies a texture id, the dimension, the external format of the source data, the internal format on the GPU, width and height, and a pointer to the raw data.
+
 ### Texture Compression
 
 Texture compression reduces memory bandwidth and storage. S3TC stores a $4 \times 4$ texel block using two 16-bit colors plus 2-bit per-texel indices into interpolated colors, giving roughly 4:1 or 6:1 compression.

@@ -81,6 +81,12 @@ The exam-critical comparison:
 | Toe-in rendering   | Rotates cameras inward                   | Easy but introduces vertical parallax and eye strain.        |
 | Off-axis rendering | Keeps cameras parallel and shifts frusta | Correct stereo geometry for comfortable horizontal parallax. |
 
+### Separating the Two Images
+
+Spectral multiplexing, used by the INFITEC system of the VISUS powerwall, divides the visible spectrum into six blocks, three per eye, so each eye gets half of the light from the red, green and blue ranges. Because each eye's blocks are spread across the spectrum, colors look almost normal, unlike with red-cyan glasses.
+
+Polarized glasses are passive. The polarization pairs are horizontal and vertical or clockwise and counterclockwise. They cause less crosstalk but need a special projector or a display with alternating rows or columns, which loses display resolution, and horizontal and vertical polarization suffers when the user tilts the head. 3D cinemas use them because the glasses are cheap and the projection maintains polarization.
+
 ## 3. Visual VR Output Hardware
 
 VR output systems include anaglyph, polarized, shutter, CAVE-like projection, autostereoscopic displays, and head-mounted displays. Each technique separates images for the two eyes with a different tradeoff in cost, color quality, crosstalk, brightness, field of view, and user freedom.
@@ -107,6 +113,10 @@ Important hardware challenges:
 ![[pictures/virtualaugmentedreality/03-1/Lecture03-1_Pg060_High_Resolution_Display.png]]
 
 <p class="image-caption">Wide human field of view makes high-resolution VR display requirements extremely demanding.</p>
+
+### Latency Thought Experiment
+
+Fatahalian's example: a 1,000 × 1,000 display spanning a 100° field of view has 10 pixels per degree. If the user turns the head 90° in one second, a modest speed, and the system latency is 50 ms, the displayed image is off by 4.5°, about 45 pixels. The follow-up slide plots object position relative to the eye: rapid head motion while the eyes track an object is one of the cases where this error becomes visible.
 
 ## 5. Vergence-Accommodation Conflict
 

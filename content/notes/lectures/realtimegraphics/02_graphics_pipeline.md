@@ -100,6 +100,14 @@ Raster operations decide whether a fragment becomes a final pixel value. Multipl
 
 APIs such as Vulkan, OpenGL, OpenGL ES, and DirectX define how applications talk to graphics hardware. The API itself is portable; the driver implementation is vendor-specific.
 
+### A Story About GPU Programming
+
+![[pictures/realtimegraphics/02/L02_Pg-15.jpg]]
+
+<p class="image-caption">L02_Pg-15: The GPU as a big shoe factory with workers at stations, a control room, storage and delivery trucks.</p>
+
+The lecture explains GPU programming with shoemaking. On a single-threaded CPU, the master shoemaker is alone in the shop and finishes one task after the other. On a multi-threaded CPU, a few apprentices split the work and talk to each other directly. A GPU has around 10,000 worker threads, which only works as a factory: workers at production stations follow regular work instructions, a control room sends special instructions by telephone, storage keeps an inventory list, and trucks deliver leather, nails, glue and laces and take the finished shoes to the shop.
+
 ### Vulkan Handles
 
 ![[pictures/realtimegraphics/02/L02_Pg-18.jpg]]
@@ -186,6 +194,14 @@ The cost of getting this wrong: hangs, tearing, frames presented before they fin
 <p class="image-caption">L02_Pg-36: GLSL shaders declare uniforms, varying inputs, outputs, and the main function executed by each invocation.</p>
 
 Shader programs run many times: once per vertex, per fragment, or per compute invocation depending on the stage.
+
+### Language Elements and Built-In Functions
+
+![[pictures/realtimegraphics/02/L02_Pg-33.jpg]]
+
+<p class="image-caption">L02_Pg-33: GLSL language elements: types, structs, samplers, control flow and swizzles.</p>
+
+GLSL has scalar types (float, int, bool), vector and matrix types (vec2, vec3, vec4, ivec3, mat4), structs and fixed-size arrays, and texture samplers (sampler2D, sampler3D). Control flow uses if, else, while and for, and functions can be called but not recursively. Swizzle operators reorder components (`color1.rgb = color2.bga`), and masks write selected components (`pos1.z = pos2.x + pos2.y`). Built-in functions cover trigonometry (sin, cos, radians), math (logarithm, exponential, square root), helpers (min, max, mod, floor, abs), geometry (distance, normalize, dot, length) and special functions such as linear interpolation and the reflection and refraction vectors.
 
 ### Built-In Variables
 

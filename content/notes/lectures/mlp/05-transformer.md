@@ -62,6 +62,8 @@ Neural attention is loosely inspired by **human visual attention**:
 - We don't perceive a whole image at once - we focus on different parts sequentially (scanpaths of eye fixations)
 - Neurons associated with the attended stimulus fire more synchronously
 
+Attention in humans also means alertness or vigilance to the surroundings. It can be selective to different sensory inputs, and what attracts it is called salient (saliency).
+
 > "Attention is the flexible control of limited computational resources." - Lindsay, 2020
 
 ---

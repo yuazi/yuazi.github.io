@@ -45,6 +45,8 @@ Selection techniques:
 - **Hand tracking**: uses the user's hands as the input device.
 - **Eye tracking and multimodal input**: can be combined with voice or gestures, as introduced in the lecture's multimodal interaction section.
 
+Selection with the hands can use pinch gloves, which detect fingertips pressed together and interpret that gesture as a selection, or hand and finger tracking with a depth camera.
+
 ## 3. Manipulation
 
 ![[pictures/virtualaugmentedreality/04/Lecture04_Pg013_Manipulation.png]]
@@ -86,6 +88,8 @@ System control issues:
 - gestures should avoid accidental activation,
 - 2D interfaces inside 3D environments are sometimes the pragmatic choice.
 
+Complex tasks include exploring 3D data with cutting planes (for example through a fluid simulation, Preim 2015) or magic lenses, creating complex shapes by modeling or 3D sketching (Google Tilt Brush), and domain-specific tasks such as AR-assisted maintenance, remote collaboration and games.
+
 ## 6. AR-Specific Interaction
 
 ![[pictures/virtualaugmentedreality/04/Lecture04_Pg025_VR_AR_Interaction.png]]
@@ -97,6 +101,8 @@ System control issues:
 <p class="image-caption">World-in-miniature gives users an overview model that can be manipulated to affect the larger scene.</p>
 
 AR-specific patterns include tangible props, magic mirrors, projection on surfaces, personal interaction panels, augmented maps, and world-in-miniature techniques.
+
+Examples: IBM's EverywhereDisplay (2001) turns an ordinary surface into a touchscreen with a projector-camera system. Generic tangibles are markers that people use to manipulate virtual objects together. The Personal Interaction Panel shows and manipulates a 3D surface visualization on a handheld tablet. Augmented maps combine a paper map with projected interactive content. The Virtual Ether is a 3D model of the space around the users that can be filled with virtual objects and observed through notebooks, wall projections and HMDs, and one locale can be seen through several views at once, such as a first-person view on a wall projection and a third-person view through an HMD.
 
 ## 7. Design Guidelines
 

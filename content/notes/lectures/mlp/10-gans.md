@@ -636,6 +636,8 @@ At inference, use $w_1$ for early (coarse) layers and $w_2$ for later (fine) lay
 
 > **Example**: `thispersondoesnotexist.com` generates realistic human faces using StyleGAN. None of the people exist - every image is synthesised from scratch from random $z$ noise. Refresh the page to get a completely different face.
 
+More generated domains are collected on thisxdoesnotexist.com, among them memes (imgflip.com/ai-meme), artworks (thisartworkdoesnotexist.com) and cars (thisautomobiledoesnotexist.com).
+
 ---
 
 ## Case Study: GANs for Gaze Redirection

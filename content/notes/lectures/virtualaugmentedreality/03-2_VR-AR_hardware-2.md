@@ -39,6 +39,17 @@ AR display hardware decides how the real world and virtual content meet. Optical
 - both views share the same display pipeline,
 - camera quality, latency, dynamic range, and failure safety become central problems.
 
+The Microsoft HoloLens is an example of an optical see-through HMD. It needs no external PC, has a depth camera for 3D scene acquisition, and does inside-out tracking and gesture recognition.
+
+See-through displays split into optical and video see-through, each monocular or binocular, with monoscopic or stereoscopic overlays and, for video see-through, one or two cameras. Examples range from smartphone and tablet AR (video see-through) to the HoloLens and Epson Moverio (optical see-through).
+
+The lecture compares both types on four criteria:
+
+- **Image quality**: in optical see-through displays the real world looks better, but the combined image is generally inconsistent.
+- **Field of view**: AR systems usually have a limited overlay field of view where augmentations appear and a peripheral field of view where they do not.
+- **Brightness**: optical see-through depends on the transparency of the optical combiner, while video see-through can change brightness and contrast freely as long as the display delivers enough contrast.
+- **Failure**: if a video see-through display fails, the user sees nothing, which is dangerous in surgery or when piloting an aircraft.
+
 ## 2. Display Space Taxonomy
 
 ![[pictures/virtualaugmentedreality/03-2/Lecture03-2_Pg019_Display_Space_Taxonomy.png]]
@@ -77,6 +88,8 @@ Current systems satisfy only subsets of this list.
 <p class="image-caption">Spatial AR projects virtual imagery onto physical surfaces instead of using a worn or hand-held display.</p>
 
 Spatial AR moves the display into the environment. It is powerful for shared settings because multiple users can see the augmentation without wearing hardware. The tradeoff is that projection depends on surface geometry, lighting, calibration, and user viewpoint.
+
+Examples of stationary and spatial AR: desktop AR follows the eyeball-in-hand metaphor, where a tracked camera feeds its images to a display, as when Lee and Höllerer (2007) track the user's hand as a marker. A video see-through magic mirror tracks the user and shows them like a real mirror, independent of the viewing angle. Dynamic shader lamps project onto tracked objects, painting with light on real surfaces or animating the face of an animatronic character. A steerable, tracked projector (IBM's Everywhere Projector Display) can show images anywhere, and two FogScreens in an L-shape form an immaterial display that produces a depth-fused 3D image for a tracked observer and lets people augment each other and interact through it.
 
 ## 5. Multimodal Input Hardware
 

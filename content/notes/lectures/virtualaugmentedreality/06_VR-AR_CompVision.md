@@ -206,6 +206,13 @@ Outdoor AR introduces new difficulties:
 
 Sparse point clouds with descriptors are common, but search must be pruned. Priors can come from GPS, magnetometer viewing direction, gravity-aligned features, GIS data such as OpenStreetMap, panoramas, or hybrid SLAM.
 
+Concrete techniques from the lecture:
+
+- **View cells**: after reconstruction, an urban area is divided into cells, and a GPS measurement preselects the cells to search, which prunes the database substantially.
+- **GIS pruning**: OpenStreetMap is available everywhere. Offline, features are aligned with facades during reconstruction, so the model is less distorted. Online, facade visibility prunes the database, and building outlines are detected in the image. From a central square, only the directly connected street segments are potentially visible.
+- **Parallel tracking, mapping and localization**: conventional SLAM tracks and maps on the mobile client. A localization server adds a third, slowest activity that matches keyframes against a wide-area database of visual features and returns a global pose. Client and server run independently, so tracking stays at the highest frame rate.
+- **Panoramic and hybrid SLAM**: panoramic SLAM works instantly but allows only rotation, so the user must stay in one place. Full 6DOF SLAM lets the user move but needs a baseline of several meters of walking. Combining both tracks the pose in 98% of the frames, compared with 53% for 6DOF SLAM alone.
+
 ### Applied Exam Focus
 
 - **Marker tracking pipeline**: capture image, find quadrilaterals, normalize, identify, estimate pose.

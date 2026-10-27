@@ -40,6 +40,14 @@ The hardware is mixed:
 - programmable shader units for developer-defined work,
 - schedulers and command processors to feed the machine.
 
+### Embarrassingly Parallel Pixels
+
+![[pictures/realtimegraphics/03/L03_Pg-06.jpg]]
+
+<p class="image-caption">L03_Pg-06: A diffuse pixel shader runs independently for millions of fragments without explicit parallel code.</p>
+
+The example is a diffuse pixel shader: it samples a texture, scales the color by the clamped dot product of light direction and normal, and returns it. Every fragment runs this independently, so millions of fragments are processed in parallel without the programmer writing any parallel code. This is the kind of workload GPUs are built for.
+
 ---
 
 ## 2. SIMD, SIMT, and Divergence
@@ -144,6 +152,22 @@ The historical pipeline contains many optional geometry stages. Understanding it
 
 Tessellation can add geometric detail based on distance, curvature, or screen size. It is powerful but can become expensive if it generates more primitives than the later pipeline can handle.
 
+### Geometry Generation Examples
+
+![[pictures/realtimegraphics/03/L03_Pg-26.jpg]]
+
+<p class="image-caption">L03_Pg-26: Geometry generated on the fly: cube maps, particles, plant instances, shadow volumes and surface displacement.</p>
+
+Programmable geometry stages create primitives on the fly. The slide's examples: rendering a cube map by instancing every triangle six times, expanding particles into textured quads, creating plants as parameterized instances, extruding shadow volumes, and displacing surfaces.
+
+### Domain Shader
+
+![[pictures/realtimegraphics/03/L03_Pg-33.jpg]]
+
+<p class="image-caption">L03_Pg-33: The domain shader runs for every point the tessellator generates, after the hull shader.</p>
+
+Tessellation has three parts: the hull shader (tessellation control) sets up the patch, the fixed-function tessellator generates new points, and the domain shader (tessellation evaluation) runs once for every generated point. Its inputs are the patch's control points and the u, v coordinates of the vertex. It has the same goal as a vertex shader, placing a vertex, but applies the tessellation algorithm, for example to evaluate spline or subdivision surfaces or to apply displacement maps.
+
 ---
 
 ## 5. Rasterization, Depth, and Fragment Cost
@@ -192,6 +216,18 @@ Fragment shading is programmable; ROP is fixed-function. The boundary matters be
 
 ## 6. Display Synchronization
 
+### Display Stage and Display Format
+
+![[pictures/realtimegraphics/03/L03_Pg-45.jpg]]
+
+<p class="image-caption">L03_Pg-45: The display stage turns framebuffer pixels into light.</p>
+
+![[pictures/realtimegraphics/03/L03_Pg-46.jpg]]
+
+<p class="image-caption">L03_Pg-46: Framebuffer formats, double and quad buffering, and auxiliary buffers.</p>
+
+The last stage turns framebuffer pixels into light. It applies gamma correction. Historically it also converted digital values to an analog signal; today it handles digital scan-out, including HDMI encryption. The framebuffer stores integer or floating-point values with 16, 32, 64 or 128 bits. Double buffering keeps animation smooth, quad buffering adds a buffer pair for stereo, and auxiliary buffers hold alpha, stencil and depth.
+
 ### Display Synchronization
 
 ![[pictures/realtimegraphics/03/L03_Pg-48.jpg]]
@@ -209,6 +245,14 @@ The display is continuously scanning out an image while the GPU is producing fut
 - **Immediate**: low latency, but can tear.
 - **FIFO**: vertical sync style queue; no tearing, but can add latency.
 - **Mailbox**: keeps the newest completed frame; useful for interactive workloads.
+
+### Adaptive Sync
+
+![[pictures/realtimegraphics/03/L03_Pg-54.jpg]]
+
+<p class="image-caption">L03_Pg-54: With adaptive sync, the GPU triggers scan-out when a frame is ready instead of idling until the next fixed refresh.</p>
+
+With a fixed refresh rate, a finished frame waits for the next scan-out and the GPU idles in between. Adaptive sync lets the GPU trigger the display scan-out as soon as a frame is ready. It needs an additional hardware feature in the display and is sold as G-Sync (NVIDIA) and FreeSync (AMD).
 
 ---
 
@@ -229,6 +273,22 @@ Drivers batch, validate, translate, and submit commands. Modern APIs try to make
 <p class="image-caption">L03_Pg-65: Vulkan, DirectX 12, and Metal expose more explicit control and allow CPU-side multithreading.</p>
 
 The tradeoff is clear: explicit APIs reduce hidden driver overhead, but require applications to manage more details correctly.
+
+### Multi-Threaded Drawing
+
+![[pictures/realtimegraphics/03/L03_Pg-66.jpg]]
+
+<p class="image-caption">L03_Pg-66: ARM's Vulkan benchmark: 79% less CPU load than OpenGL ES.</p>
+
+In ARM's Vulkan benchmark (ARM Cortex A-15/A-7 with a Mali T-628 MP6 GPU, 1000 meshes, 3 materials), Vulkan needs 79% less CPU than OpenGL ES, measured as driver overhead.
+
+### Problems with Modern APIs
+
+![[pictures/realtimegraphics/03/L03_Pg-67.jpg]]
+
+<p class="image-caption">L03_Pg-67: Explicit APIs cost code size and pipeline state objects, and make older GPU concepts obsolete.</p>
+
+Explicit control has a price. Even a minimal program needs more than 1000 lines of code. Pipeline state objects must be created explicitly, which leads to a combinatorial explosion of PSOs and large driver files. Many concepts that were modern a few years ago are now obsolete. Some features are translated into extra shader commands, for example the compiler turns vertex, tessellation and geometry shaders into a mesh shader.
 
 ### Very Modern APIs
 

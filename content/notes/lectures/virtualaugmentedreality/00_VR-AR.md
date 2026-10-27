@@ -32,6 +32,8 @@ Key dependencies:
 - **HCI** shapes the interaction techniques and evaluation methods.
 - **Human perception** constrains latency, field of view, motion, comfort, and presence.
 
+The overview of course topics closes with the future of VR/AR, illustrated with a Spiegel review of Spielberg's _Ready Player One_.
+
 ## 2. Course Structure
 
 ![[pictures/virtualaugmentedreality/00/Lecture00_Pg029_Course_Structure.png]]

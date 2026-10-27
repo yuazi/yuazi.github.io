@@ -63,6 +63,14 @@ The Bidirectional Reflectance Distribution Function $f_r(\mathbf{x}, \boldsymbol
 - **Local shading**: only direct illumination.
 - **Analytical lights** (point, directional, spot) replace the area-light integral with a single direction per pixel.
 
+### Area Lights
+
+![[pictures/realtimegraphics/05/L05_Pg-07.jpg]]
+
+<p class="image-caption">L05_Pg-07: An area light sends light from a range of directions and produces soft shadows.</p>
+
+The most general light source is an area light. At every point, light arrives from a range of directions, so shading needs an integral over the light. Analytic solutions exist only for extremely simple cases, so real-time rendering needs simplifications such as the point, directional and spot lights below. Area lights are what produce soft shadows.
+
 ### Point Light
 
 ![[pictures/realtimegraphics/05/L05_Pg-09.jpg]]

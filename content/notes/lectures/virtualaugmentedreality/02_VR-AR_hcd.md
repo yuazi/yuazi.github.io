@@ -74,6 +74,8 @@ Useful prototyping modes:
 - **Low-fidelity VR mockups** to test scale, comfort, reach, visibility, and timing.
 - **High-fidelity prototypes** only after the major interaction risks are understood.
 
+Design for VR/AR reuses principles from HCI, visualization and computer graphics: layering of information, color design (for example with colourlovers.com), visual pop-out, visual flow, the distinction between conceptual and implementation model, and interaction metaphors, idioms and affordances.
+
 ## 5. Testing and Evaluation
 
 ![[pictures/virtualaugmentedreality/02/Lecture02_Pg013_Testing_Methods.png]]
@@ -87,6 +89,8 @@ Testing choices should match the question:
 - **Qualitative** methods explain what users experience.
 - **Quantitative** methods measure performance, error, comfort, or preference.
 - **With-user** studies catch real behavior; expert methods catch issues quickly.
+
+Concrete test methods range from heuristic evaluations, design critiques and expert evaluations over demos, interviews, observations, focus groups and questionnaires to controlled lab studies, eye-tracking studies and field studies. Technical measures count as well: algorithm runtime, quality measures and qualitative inspection of results.
 
 ## Exam Focus
 

@@ -153,6 +153,10 @@ Marker and feature tradeoffs:
 - **Retro-reflective markers** reflect light back toward the light source and are easy to see with infrared cameras.
 - **Natural features** avoid instrumenting the environment but require robust image processing and target identification.
 
+### Natural Features
+
+Natural feature tracking detects salient interest points that are easy to find and stay at a stable image position when the viewpoint changes, which requires textured surfaces. Edge features are an alternative but less discriminative. The points are matched against a tracking model database filled by 3D reconstruction. Matching whole images is too costly, so interest points are compiled into descriptors. Single interest points are too easily confused, so target identification relies on the co-occurrence of many points and uses probabilistic search such as vocabulary trees and random sample consensus.
+
 ## 8. Sensor Fusion
 
 ![[pictures/virtualaugmentedreality/05/Lecture05_Pg041_Sensor_Fusion.png]]

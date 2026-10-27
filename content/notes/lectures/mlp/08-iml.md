@@ -107,6 +107,8 @@ The lecture also highlights two complementary cautions:
 
 ### Motivating Applications
 
+Holzinger's introduction also shows ML in recommender systems, in autonomous vehicles such as the Google car (Dietterich and Horvitz 2015), in many industrial applications and with big data, and then moves to settings with multiple agents in the loop.
+
 #### Example 1: k-Anonymisation of Medical Data
 
 ![[pictures/mpl/08/Lecture08_Pg027_Example_1_K_Anonymisation_Of_Medical.png]]
