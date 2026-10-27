@@ -18,16 +18,19 @@ Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
 
 - [[notes/lectures/infovis/index|(y) Information Visualization and Visual Analytics]]: perception, visual encoding, graphs, multivariate data, interaction and evaluation. Password-protected, since the slides can't be published.
 - [[notes/lectures/foundationmodels/index|(y) Foundation Models]]: pretraining, adaptation, LLMs, VLMs and VLAs, evaluation, reasoning and agents.
+- [[notes/lectures/datasciencebusinessdata/index|(y) Data Science for Business Data]]: BI and analytics concepts, data science tools and the classic discriminative ML methods, from a business angle.
 - [[notes/lectures/mitun/index|(y) Management von IT-Unternehmen]]: network effects, platforms and ecosystems, and competitive strategy for software companies (in German).
 - [[notes/lectures/ai4iot/index|(y) AI4IoT]]: AI in the industrial Internet of Things from a business angle, with a remote maintenance case study (in German).
 - [[notes/lectures/markstrat/index|(y) Digital Markstrat]]: the marketing strategy simulation, eight periods scored by the Share Price Index (in German).
 - [[notes/lectures/supplychainmanagement/index|(y) Supply Chain Management]]: planning, steering, control and sustainability in supply chains (in German).
+- [[notes/lectures/digitalmarketing/index|(y) Digital Marketing Strategies and Business Models]]: LLM visibility, search, social, lead nurturing and data-driven business models. Password-protected, since the slides are confidential.
 
 ### Earlier courses
 
 - [[notes/lectures/realtimegraphics/index|(y) Real-Time Graphics (RTG)]]: the rendering pipeline in Vulkan, from rasterization and GPU architecture to deferred shading, ray tracing and virtual textures.
 - [[notes/lectures/virtualaugmentedreality/index|(y) Virtual & Augmented Reality]]: displays, tracking, interaction, computer vision, perception and evaluation of immersive systems.
 - [[notes/lectures/mlp/index|(y) Machine Perception & Learning (MPL)]]: deep learning from CNNs and transformers through VAEs, GANs and diffusion models.
+- [[notes/lectures/forschungsmethoden/index|(y) Forschungsmethoden der Wirtschaftsinformatik]]: literature reviews, research design, qualitative methods and design science research (in German).
 - [[notes/lectures/programverification/index|(y) Program Verification]]: Hoare logic, predicate transformers, SMT, Boogie and Boostan.
 
 ## CLI & Tools

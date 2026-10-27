@@ -23,10 +23,11 @@ The garden keeps growing too: a [[notes/sports/index|Sports]] section that group
 
 ## In the Lab (Academic)
 
-Master's in Wirtschaftsinformatik at the University of Stuttgart, now in the winter semester 2026/27. Two courses are technical and four are business modules taught in German:
+Master's in Wirtschaftsinformatik at the University of Stuttgart, now in the winter semester 2026/27. Two courses are technical, two are business informatics and marketing modules in English, and four are business modules taught in German:
 
 - [[notes/lectures/infovis/index|Information Visualization and Visual Analytics]]: perception, visual encoding, and interactive views of data.
 - [[notes/lectures/foundationmodels/index|Foundation Models]]: pretraining, adaptation, LLMs, VLMs and agents.
+- [[notes/lectures/datasciencebusinessdata/index|Data Science for Business Data]] and [[notes/lectures/digitalmarketing/index|Digital Marketing Strategies and Business Models]] (password-protected).
 - [[notes/lectures/mitun/index|Management von IT-Unternehmen]], [[notes/lectures/ai4iot/index|AI4IoT]], [[notes/lectures/markstrat/index|Digital Markstrat]] and [[notes/lectures/supplychainmanagement/index|Supply Chain Management]].
 
 The summer semester's notes (Real-Time Graphics, Program Verification, VR & AR) are finished and stay up in the [[notes/lectures/index|Lectures]] hub.

@@ -16,6 +16,9 @@ date: 2026-10-20
 - [[/notes/lectures/ai4iot/00-kickoff|(y-00) Kick-Off und Kernbegriffe]]  
    Dozenten und das Ferdinand-Steinbeis-Institut mit seinen Micro Testbeds, die Fallstudie zur Remote-Wartung als Prüfungsleistung, Lernziele und Leitfragen, der Semesterplan und die Kernbegriffe: KI, Machine Learning, künstliche neuronale Netze, Deep Learning, IoT-Umgebung, IoT-System, IoT-Komponente und IoT-Plattform.
 
+- [[/notes/lectures/ai4iot/01-ai-methoden|(y-01) AI-Methoden]]  
+   Starke und schwache KI, Data Mining und ML, überwachtes, unüberwachtes und bestärkendes Lernen, Strategien gegen Datenmangel, diskriminative Methoden (Abweichungsanalyse, Klassifikation, Clustering, Wirkungsprognose, Assoziationsanalyse), künstliche neuronale Netze, CNNs, GANs, Autoencoder, Diffusion, RNNs und LSTMs, Transformer, Embeddings und Tokens, RAG, Scaling Laws und Test-Time Compute, TinyLLMs für Edge-Geräte, Physical und Agentic AI.
+
 ## Prüfungsübersicht
 
 | Bestandteil         | Termin     | Hinweise                                                                            |

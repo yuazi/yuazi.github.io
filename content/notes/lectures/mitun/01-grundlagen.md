@@ -10,7 +10,7 @@ tags:
 date: 2026-10-20
 ---
 
-[[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/00-kickoff|Zurück: (y-00) Kick-Off]]
+[[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/00-kickoff|Zurück: (y-00) Kick-Off]] | [[/notes/lectures/mitun/02-vorgruendung|Weiter: (y-02) Vorgründung]]
 
 ## Mentales Modell
 
@@ -634,4 +634,4 @@ Das Fazit fasst die Werkzeuge der Einheit auf einer Folie zusammen: Porters Five
 
 ---
 
-[[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/00-kickoff|Zurück: (y-00) Kick-Off]]
+[[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/00-kickoff|Zurück: (y-00) Kick-Off]] | [[/notes/lectures/mitun/02-vorgruendung|Weiter: (y-02) Vorgründung]]

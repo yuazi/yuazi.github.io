@@ -9,7 +9,7 @@ tags:
 date: 2026-10-20
 ---
 
-[[/notes/lectures/ai4iot/index|Zurück zum AI4IoT-Index]]
+[[/notes/lectures/ai4iot/index|Zurück zum AI4IoT-Index]] | [[/notes/lectures/ai4iot/01-ai-methoden|Weiter: (y-01) AI-Methoden]]
 
 ## Mentales Modell
 
@@ -222,4 +222,4 @@ Nach NISTIR 8316 stehen die drei Begriffe in einer festen Beziehung. Eine IoT-Um
 
 ---
 
-[[/notes/lectures/ai4iot/index|Zurück zum AI4IoT-Index]]
+[[/notes/lectures/ai4iot/index|Zurück zum AI4IoT-Index]] | [[/notes/lectures/ai4iot/01-ai-methoden|Weiter: (y-01) AI-Methoden]]
