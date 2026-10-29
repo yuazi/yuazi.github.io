@@ -11,15 +11,12 @@ date: 2026-10-27
 
 [[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/01-grundlagen|Zurück: (y-01) Einführung und Grundlagen]] | [[/notes/lectures/mitun/03-geschaeftsmodell|Weiter: (y-03) Geschäftsmodell]]
 
-> [!note] Foliengrundlage
-> Diese Notiz basiert auf dem Foliensatz aus dem Wintersemester 2025/26. Sobald die Folien für 2026/27 vorliegen, wird sie daran angepasst.
-
 ## Mentales Modell
 
 - Die Vorgründungsphase (Seed) ist die erste Phase im Lebenszyklus eines IT-Unternehmens: Forschung, eine Geschäftsidee und ein Geschäftsmodell entwickeln, Prototypen bauen und den Markt analysieren. Es gibt noch keinen Umsatz, der Kapitalbedarf ist mäßig und wird aus Eigen- und Fördermitteln gedeckt.
 - Am Anfang steht eine Entrepreneurial Opportunity: Ideen, Überzeugungen und Aktionen, die künftige Güter ermöglichen, für die es noch keinen Markt gibt. Je nachdem, ob Angebot und Nachfrage schon existieren, wird sie erkannt (Recognition), entdeckt (Discovery) oder geschaffen (Creation).
 - Wie man eine Gelegenheit umsetzt, hängt von der Ungewissheit ab. Bei hoher Ungewissheit passt Effectuation (mit den vorhandenen Mitteln starten, leistbaren Verlust begrenzen, Partner gewinnen, Zufälle nutzen), bei sinkender Ungewissheit Design Thinking, Lean Startup und schließlich klassische Planung (Causation).
-- Lean Startup prüft Hypothesen mit einem Minimum Viable Product im Build-Measure-Learn-Zyklus. Prototypen schaffen Transparenz für Kunden und verhindern, dass sich ein IT-Startup in technischen Details verliert.
+- Lean Startup prüft Hypothesen mit einem Minimum Viable Product im Build-Measure-Learn-Zyklus. Prototypen schaffen Transparenz für Kunden und verhindern, dass sich ein IT-Startup in technischen Details verliert. Seit KI Code schnell und billig erzeugt, liegt der Engpass bei Architektur, Security, Betrieb und Testing.
 - Aus der Gelegenheit wird eine Value Proposition: der Nutzen, den das Unternehmen stiftet. Der Value Proposition Canvas verbindet die Value Map (Produkte, Pain Relievers, Gain Creators) mit dem Kundenprofil (Jobs, Pains, Gains).
 
 ## 1. Die Vorgründungsphase im Lebenszyklus
@@ -49,19 +46,19 @@ Das Modul folgt dem Lebenszyklus von IT-Unternehmen: Vorgründung (Seed), Gründ
 
 ## 2. Inhalt und Lernziele
 
-![[pictures/mitun/02/Lecture02_Pg004_Inhalt_Und_Lernziele.png]]
-
-<p class="image-caption">Inhalt der Vorlesung.</p>
-
 ![[pictures/mitun/02/Lecture02_Pg005_Inhalt_Und_Lernziele.png]]
 
 <p class="image-caption">Lernziele der Einheit.</p>
 
-Das Kapitel hat drei Teile: Entrepreneurial Opportunity, Ansätze zu ihrer Implementierung und Value Proposition. Ziel ist, die Entstehungsformen und Quellen unternehmerischer Gelegenheiten zu erläutern, Ansätze zu ihrer Umsetzung zu beurteilen, Arten des Prototypings abzugrenzen und eine Gelegenheit in eine Value Proposition zu überführen.
+![[pictures/mitun/02/Lecture02_Pg006_Inhalt_Und_Lernziele.png]]
+
+<p class="image-caption">Inhalt der Vorlesung.</p>
+
+Die Einheit beginnt mit einem Kahoot-Rückblick auf die Grundlagen. Das Kapitel hat drei Teile: Entrepreneurial Opportunity, Ansätze zu ihrer Implementierung und Value Proposition. Ziel ist, die Entstehungsformen unternehmerischer Gelegenheiten zu erläutern, ihre Quellen abzugrenzen und an Beispielen zu erläutern, Ansätze zu ihrer Umsetzung zu erläutern und ihre situative Eignung zu beurteilen, Möglichkeiten und Arten des Prototypings abzugrenzen und eine Gelegenheit in eine Value Proposition zu überführen.
 
 ## 3. Entrepreneurial Opportunity
 
-![[pictures/mitun/02/Lecture02_Pg007_Entrepreneurial_Opportunity.png]]
+![[pictures/mitun/02/Lecture02_Pg008_Entrepreneurial_Opportunity.png]]
 
 <p class="image-caption">Ideen, Überzeugungen und Aktionen als Bestandteile einer Entrepreneurial Opportunity.</p>
 
@@ -73,7 +70,7 @@ Das Kapitel hat drei Teile: Entrepreneurial Opportunity, Ansätze zu ihrer Imple
 
 ### Recognition, Discovery und Creation
 
-![[pictures/mitun/02/Lecture02_Pg008_Recognition_Discovery_Und_Creation.png]]
+![[pictures/mitun/02/Lecture02_Pg009_Recognition_Discovery_Und_Creation.png]]
 
 <p class="image-caption">Recognition, Discovery und Creation je nach vorhandenen Angebots- und Nachfragequellen.</p>
 
@@ -91,7 +88,7 @@ Das Kapitel hat drei Teile: Entrepreneurial Opportunity, Ansätze zu ihrer Imple
 
 ### Quellen unternehmerischer Möglichkeiten
 
-![[pictures/mitun/02/Lecture02_Pg010_Quellen_Unternehmerischer_M_Glichkeiten.png]]
+![[pictures/mitun/02/Lecture02_Pg011_Quellen_Unternehmerischer_M_Glichkeiten.png]]
 
 <p class="image-caption">Quellen unternehmerischer Möglichkeiten nach Frank und Mitterer (2009).</p>
 
@@ -99,7 +96,7 @@ Frank und Mitterer (2009) ordnen die Quellen nach Informationsasymmetrien (Kirzn
 
 ## 4. Ansätze zur Implementierung
 
-![[pictures/mitun/02/Lecture02_Pg012_Ans_Tze_Zur_Implementierung.png]]
+![[pictures/mitun/02/Lecture02_Pg013_Ans_Tze_Zur_Implementierung.png]]
 
 <p class="image-caption">Effectuation, Design Thinking und Lean Startup nach sinkender Ungewissheit (Grichnik u. a. 2017).</p>
 
@@ -107,7 +104,7 @@ Welcher Ansatz passt, hängt von der Ungewissheit ab (Grichnik u. a. 2017). Mit 
 
 ### Causation und Effectuation
 
-![[pictures/mitun/02/Lecture02_Pg013_Causation_Und_Effectuation.png]]
+![[pictures/mitun/02/Lecture02_Pg014_Causation_Und_Effectuation.png]]
 
 <p class="image-caption">Die Entscheidungslogiken Causation und Effectuation (Sarasvathy 2001).</p>
 
@@ -120,7 +117,7 @@ Saras Sarasvathy hat Effectuation entwickelt. Es ist eine Entscheidungslogik, di
 
 ### Der Causation-Ansatz
 
-![[pictures/mitun/02/Lecture02_Pg014_Der_Causation_Ansatz.png]]
+![[pictures/mitun/02/Lecture02_Pg015_Der_Causation_Ansatz.png]]
 
 <p class="image-caption">Der lineare Causation-Prozess (Fisher 2012).</p>
 
@@ -128,7 +125,7 @@ Fisher (2012) beschreibt Causation als linearen Prozess: Eine Gelegenheit wird i
 
 ### Der Effectuation-Ansatz
 
-![[pictures/mitun/02/Lecture02_Pg015_Der_Effectuation_Ansatz.png]]
+![[pictures/mitun/02/Lecture02_Pg016_Der_Effectuation_Ansatz.png]]
 
 <p class="image-caption">Der Effectuation-Prozess mit wachsenden Mitteln und sich verengenden Zielen (Fisher 2012).</p>
 
@@ -136,7 +133,7 @@ Bei Effectuation (Fisher 2012, nach Sarasvathy und Dew 2005) startet der Gründe
 
 ### Prinzipien von Effectuation
 
-![[pictures/mitun/02/Lecture02_Pg016_Prinzipien_Von_Effectuation.png]]
+![[pictures/mitun/02/Lecture02_Pg017_Prinzipien_Von_Effectuation.png]]
 
 <p class="image-caption">Die fünf Prinzipien von Effectuation.</p>
 
@@ -150,7 +147,7 @@ Bei Effectuation (Fisher 2012, nach Sarasvathy und Dew 2005) startet der Gründe
 
 ### Causation und Effectuation im Vergleich
 
-![[pictures/mitun/02/Lecture02_Pg017_Causation_Und_Effectuation_Im_Vergleich.png]]
+![[pictures/mitun/02/Lecture02_Pg018_Causation_Und_Effectuation_Im_Vergleich.png]]
 
 <p class="image-caption">Causation und Effectuation im Vergleich.</p>
 
@@ -166,7 +163,7 @@ Bei Effectuation (Fisher 2012, nach Sarasvathy und Dew 2005) startet der Gründe
 
 ## 5. Design Thinking
 
-![[pictures/mitun/02/Lecture02_Pg018_Design_Thinking.png]]
+![[pictures/mitun/02/Lecture02_Pg019_Design_Thinking.png]]
 
 <p class="image-caption">Der Design-Thinking-Prozess.</p>
 
@@ -174,7 +171,7 @@ Design Thinking ist eine Methode aus den Kreativitätstechniken, um Probleme zu 
 
 ## 6. Lean Startup
 
-![[pictures/mitun/02/Lecture02_Pg019_Lean_Startup.png]]
+![[pictures/mitun/02/Lecture02_Pg020_Lean_Startup.png]]
 
 <p class="image-caption">Gegenstand und Merkmale des Lean Startup.</p>
 
@@ -182,7 +179,7 @@ Lean Startup wendet Lean Thinking auf den Innovationsprozess an. Es verbindet ku
 
 ### Build-Measure-Learn
 
-![[pictures/mitun/02/Lecture02_Pg020_Build_Measure_Learn.png]]
+![[pictures/mitun/02/Lecture02_Pg021_Build_Measure_Learn.png]]
 
 <p class="image-caption">Der Build-Measure-Learn-Zyklus (Ries 2011).</p>
 
@@ -190,7 +187,7 @@ Ideen werden gebaut (Code), gemessen (Daten) und daraus wird gelernt (neue Ideen
 
 ### Minimum Viable Product
 
-![[pictures/mitun/02/Lecture02_Pg021_Minimum_Viable_Product.png]]
+![[pictures/mitun/02/Lecture02_Pg022_Minimum_Viable_Product.png]]
 
 <p class="image-caption">Das MVP und der Testprozess.</p>
 
@@ -204,11 +201,11 @@ Ideen werden gebaut (Code), gemessen (Daten) und daraus wird gelernt (neue Ideen
 
 ## 7. Prototyping
 
-![[pictures/mitun/02/Lecture02_Pg022_Prototyping.png]]
+![[pictures/mitun/02/Lecture02_Pg023_Prototyping.png]]
 
 <p class="image-caption">Was Prototyping ist und welche Arten es gibt.</p>
 
-![[pictures/mitun/02/Lecture02_Pg023_Prototyping.png]]
+![[pictures/mitun/02/Lecture02_Pg024_Prototyping.png]]
 
 <p class="image-caption">Beispiele für Prototypen in der Softwareentwicklung.</p>
 
@@ -222,15 +219,40 @@ Die Beispiele reichen von Papierskizzen über Mockups bis zu klickbaren Oberflä
 
 ### Vibe Coding
 
-![[pictures/mitun/02/Lecture02_Pg024_Vibe_Coding.png]]
+![[pictures/mitun/02/Lecture02_Pg025_Vibe_Coding.png]]
 
 <p class="image-caption">Vibe Coding als schneller Weg zum Prototyp?</p>
 
 Vibe Coding, also Software per Prompt an eine KI zu entwickeln, wird als möglicher schneller Weg von der Idee zum Prototyp diskutiert (YouTube 2025).
 
+### Vibe Coding: die Ernüchterung
+
+![[pictures/mitun/02/Lecture02_Pg026_Vibe_Coding_Ernuechterung.png]]
+
+<p class="image-caption">Karpathys Tweets von 2025 und 2026: Der Engpass verschiebt sich.</p>
+
+Andrej Karpathy prägte den Begriff im Februar 2025: Man gibt sich den "Vibes" hin, akzeptiert alle Änderungen, liest keine Diffs mehr und vergisst, dass es Code gibt. Für Wegwerf-Projekte am Wochenende reiche das. Ein Jahr später (Februar 2026) schreibt er, dass Programmieren über LLM-Agenten für Profis zum Standard wird, aber mit mehr Aufsicht und Prüfung. Ziel sei, die Hebelwirkung der Agenten zu nutzen, ohne bei der Softwarequalität Abstriche zu machen, und sein Lieblingsname dafür ist "Agentic Engineering".
+
+Die Folie zieht daraus den Schluss, warum aus schnellen Prototypen noch keine skalierbaren Produkte werden: Codeerzeugung ist dank KI schnell und günstig, also verschiebt sich der Engpass zu Architektur und Systemdesign, Security und Datenschutz, Betrieb und Skalierung sowie Testing und Qualität. Dazu gibt es einen Hörtipp.
+
+### Klassifikation von Prototypen
+
+![[pictures/mitun/02/Lecture02_Pg028_Klassifikation_Von_Prototypen.png]]
+
+<p class="image-caption">Prototypen nach Breite (Features) und Tiefe (Funktionalität), nach Nielsen (1993).</p>
+
+Nach Nielsen (1993) lassen sich Prototypen danach einordnen, wie viel Breite (Features) und Tiefe (Funktionalität) des Systems sie abdecken:
+
+| Art                    | Abdeckung                                                                            |
+| :--------------------- | :----------------------------------------------------------------------------------- |
+| Horizontaler Prototyp  | Einzelne Schichten der Systemarchitektur über alle Features, etwa das User Interface |
+| Vertikaler Prototyp    | Alle Architekturschichten, aber nur für einzelne Funktionen                          |
+| Minimum Viable Product | "Kleinstnötiges lebensfähiges (praktikabel anwendbares) Produkt"                     |
+| Vollsystem             | Volle Funktionalität und alle Funktionen, aber noch kein Produktivsystem             |
+
 ### Design Thinking, Lean Startup und agile Entwicklung
 
-![[pictures/mitun/02/Lecture02_Pg026_Design_Thinking_Lean_Startup_Und_Agile.png]]
+![[pictures/mitun/02/Lecture02_Pg029_Design_Thinking_Lean_Startup_Und_Agile.png]]
 
 <p class="image-caption">Design Thinking, Lean Startup und Agile kombiniert (Gartner 2016).</p>
 
@@ -238,7 +260,7 @@ Gartner (2016) kombiniert die drei Ansätze: Design Thinking erkundet das Kunden
 
 ## 8. Value Proposition
 
-![[pictures/mitun/02/Lecture02_Pg028_Value_Proposition.png]]
+![[pictures/mitun/02/Lecture02_Pg031_Value_Proposition.png]]
 
 <p class="image-caption">Value Proposition nach Osterwalder und Pigneur und nach Stähler.</p>
 
@@ -246,7 +268,7 @@ Ein Geschäftsmodell beschreibt, welchen Nutzen Kunden oder Partner aus der Verb
 
 ### Alleinstellungsmerkmal
 
-![[pictures/mitun/02/Lecture02_Pg029_Alleinstellungsmerkmal.png]]
+![[pictures/mitun/02/Lecture02_Pg032_Alleinstellungsmerkmal.png]]
 
 <p class="image-caption">Merkmale eines Alleinstellungsmerkmals (Kollmann 2014).</p>
 
@@ -254,7 +276,7 @@ Eine Value Proposition heißt auch Unique Selling Proposition oder Unique Sellin
 
 ### Templates für Value Propositions
 
-![[pictures/mitun/02/Lecture02_Pg030_Templates_F_R_Value_Propositions.png]]
+![[pictures/mitun/02/Lecture02_Pg033_Templates_F_R_Value_Propositions.png]]
 
 <p class="image-caption">Templates zur Formulierung von Value Propositions.</p>
 
@@ -266,7 +288,7 @@ Eine Value Proposition heißt auch Unique Selling Proposition oder Unique Sellin
 
 ### Value Proposition Canvas
 
-![[pictures/mitun/02/Lecture02_Pg031_Value_Proposition_Canvas.png]]
+![[pictures/mitun/02/Lecture02_Pg034_Value_Proposition_Canvas.png]]
 
 <p class="image-caption">Der Value Proposition Canvas.</p>
 
@@ -280,26 +302,34 @@ Der Canvas (Osterwalder u. a. 2015) verbindet zwei Seiten:
 
 ### Beispiel Foodora
 
-![[pictures/mitun/02/Lecture02_Pg032_Beispiel_Foodora.png]]
+![[pictures/mitun/02/Lecture02_Pg035_Beispiel_Foodora.png]]
 
 <p class="image-caption">Der Value Proposition Canvas für Foodora.</p>
 
 Im Canvas für Foodora sind Products and Services etwa Lieferservice, Bestellung über Website oder App, Online-Bezahlung und Kundensupport. Gain Creators sind ein vielfältiges Restaurantangebot, kostenlose Lieferung ab einem Bestellwert und ein einfacher Bestellprozess. Pain Relievers sind schnelle Lieferung über kurze Wege, bequeme Lieferung bis an die Haustür und verschiedene Bezahlmöglichkeiten. Auf der Kundenseite stehen Gains wie neue Restaurants ausprobieren und frisches, warmes Essen sowie Pains wie fehlende Einkaufsmöglichkeiten, wenige Bezahlmöglichkeiten und komplizierte Bestellprozesse. Foodoras eigene Value Proposition lautet: "At foodora, customers can expect a consistent and locally-relevant value proposition in terms of food quality, variety and value, with a reliable and fast delivery service to back it up" (Groeschel 2018, Hoffmann 2020).
 
+### Beispiel Slack
+
+![[pictures/mitun/02/Lecture02_Pg036_Beispiel_Slack.png]]
+
+<p class="image-caption">Der Value Proposition Canvas für Slack.</p>
+
+Der Canvas für Slack (Whiting 2016, Qutcry 2018) nennt als Produkt eine Messaging-App für Teams, ideale Kunden sind Startups. Features sind das Teilen von Bildern, Dokumenten und vielen Dateiformaten, das Speichern aller Nachrichten und eigene Channels für Abteilungen. Als Benefits stehen eine hohe Akzeptanz im Team bei wenig Aufwand und kaum nötige Schulung, als Experience eine App mit einer Hauptfunktion, die das Arbeitsleben einfacher macht. Auf der Kundenseite stehen Needs wie Ideen für alle sichtbar kommunizieren, mit mehreren Leuten in Echtzeit chatten und Dateien teilen, Pains wie unübersichtliche lange E-Mail-Verläufe und fehlende Möglichkeiten zu kommentieren, Gains wie ein positives Selbstbild und das Gefühl, ein geschätztes Teammitglied zu sein. Substitute sind E-Mail und WhatsApp. Die Value Proposition lautet: "Slack ist ein Ort, an dem Ihr Team zusammenkommt, um zusammenzuarbeiten, an dem wichtige Informationen von den richtigen Leuten gefunden werden können und an dem Ihre Werkzeuge Informationen liefern, wann und wo Sie sie brauchen."
+
 ### Übungsaufgabe: Lovable
 
-![[pictures/mitun/02/Lecture02_Pg033_Bungsaufgabe_Lovable.png]]
+![[pictures/mitun/02/Lecture02_Pg037_Bungsaufgabe_Lovable.png]]
 
 <p class="image-caption">Übung: eine Value Proposition für Lovable.</p>
 
-In Kleingruppen von 2 bis 3 Studierenden wird anhand eines Handelsblatt-Artikels (2025) eine Value Proposition für Lovable entwickelt und im Plenum diskutiert.
+In Kleingruppen von 2 bis 3 Studierenden wird anhand eines Handelsblatt-Artikels (2025) eine Value Proposition für Lovable entwickelt und im Plenum diskutiert. Mit Lovable erstellen Nutzer Apps und Websites ohne Programmierkenntnisse, und laut Artikel ist die schwedische KI-Firma inzwischen Milliarden wert. Neben dem Fallbeispiel verlinkt die Folie ein Conceptboard für die Gruppenarbeit.
 
 ## Zusammenfassung
 
 - In der Seed-Phase entstehen Geschäftsidee, Geschäftsmodell und Prototypen, finanziert aus Eigen- und Fördermitteln. Business Plan und Finanzierung sind die Problembereiche.
 - Eine Entrepreneurial Opportunity sind Ideen, Überzeugungen und Aktionen für Güter ohne bestehenden Markt. Sie wird erkannt, entdeckt oder geschaffen.
 - Bei hoher Ungewissheit passt Effectuation (Bird in Hand, Affordable Loss, Crazy Quilt, Lemonade, Pilot in the Plane), bei sinkender Ungewissheit Design Thinking, Lean Startup und klassische Planung.
-- Lean Startup prüft Hypothesen mit einem MVP im Build-Measure-Learn-Zyklus. Prototypen sind explorativ, experimentell oder evolutionär.
+- Lean Startup prüft Hypothesen mit einem MVP im Build-Measure-Learn-Zyklus. Prototypen sind explorativ, experimentell oder evolutionär und nach Abdeckung horizontal, vertikal, MVP oder Vollsystem. Vibe Coding macht Prototypen billig und verschiebt den Engpass zu Architektur, Security, Betrieb und Testing.
 - Die Value Proposition beschreibt den gestifteten Nutzen. Der Value Proposition Canvas verbindet Value Map und Kundenprofil.
 
 ## Selbsttest
@@ -334,7 +364,17 @@ In Kleingruppen von 2 bis 3 Studierenden wird anhand eines Handelsblatt-Artikels
 > [!success]- Antwort
 > Exploratives Prototyping erarbeitet bei unklarem Problem die Anforderungen. Experimentelles Prototyping weist die technische Realisierbarkeit einer Idee nach. Evolutionäres Prototyping entwickelt ein Programm mit Grundfunktionen laufend weiter.
 
-7. Wie ist der Value Proposition Canvas aufgebaut?
+7. Wie unterscheiden sich horizontaler und vertikaler Prototyp?
+
+> [!success]- Antwort
+> Der horizontale Prototyp deckt die Breite der Features ab, aber nur einzelne Architekturschichten, etwa das User Interface. Der vertikale Prototyp deckt für einzelne Funktionen alle Architekturschichten ab, also volle Tiefe bei geringer Breite (Nielsen 1993).
+
+8. Warum werden aus schnellen Vibe-Coding-Prototypen nicht automatisch skalierbare Produkte?
+
+> [!success]- Antwort
+> KI macht die Codeerzeugung schnell und günstig, damit verschiebt sich der Engpass. Engpässe sind jetzt Architektur und Systemdesign, Security und Datenschutz, Betrieb und Skalierung sowie Testing und Qualität. Auch Karpathy beschreibt ein Jahr nach dem Begriff "Vibe Coding" professionelles Arbeiten mit Agenten als "Agentic Engineering" mit mehr Aufsicht und Prüfung.
+
+9. Wie ist der Value Proposition Canvas aufgebaut?
 
 > [!success]- Antwort
 > Die Value Map mit Products and Services, Pain Relievers und Gain Creators steht dem Kundenprofil mit Customer Jobs, Pains und Gains gegenüber. Ein Fit entsteht, wenn die Pain Relievers die wichtigsten Pains und die Gain Creators die wichtigsten Gains adressieren.

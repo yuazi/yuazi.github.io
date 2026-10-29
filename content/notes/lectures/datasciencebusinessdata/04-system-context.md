@@ -10,7 +10,7 @@ tags:
 date: 2026-10-27
 ---
 
-[[/notes/lectures/datasciencebusinessdata/index|Back to DSfBD Index]] | [[/notes/lectures/datasciencebusinessdata/03-central-concepts|Previous: (y-03) Central Concepts]]
+[[/notes/lectures/datasciencebusinessdata/index|Back to DSfBD Index]] | [[/notes/lectures/datasciencebusinessdata/03-central-concepts|Previous: (y-03) Central Concepts]] | [[/notes/lectures/datasciencebusinessdata/05a-organizational-context|Next: (y-05a) Organizational Context]]
 
 ## Mental Model First
 
@@ -339,4 +339,4 @@ Cloud analytics offerings follow the same tool levels, from completed analytics 
 
 ---
 
-[[/notes/lectures/datasciencebusinessdata/index|Back to DSfBD Index]] | [[/notes/lectures/datasciencebusinessdata/03-central-concepts|Previous: (y-03) Central Concepts]]
+[[/notes/lectures/datasciencebusinessdata/index|Back to DSfBD Index]] | [[/notes/lectures/datasciencebusinessdata/03-central-concepts|Previous: (y-03) Central Concepts]] | [[/notes/lectures/datasciencebusinessdata/05a-organizational-context|Next: (y-05a) Organizational Context]]

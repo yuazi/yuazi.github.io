@@ -25,6 +25,9 @@ date: 2026-10-27
 - [[/notes/lectures/datasciencebusinessdata/04-system-context|(y-04) System Context]]  
    New system landscapes, the model and its tools, tool types for the model lifecycle and foundation models, the data scientist's tool environment, fraud detection, process mining and data science environments, AutoML and no-code AI, programming languages and Python, distributing results and models, workbenches and cloud analytics.
 
+- [[/notes/lectures/datasciencebusinessdata/05a-organizational-context|(y-05a) Organizational Context]]  
+   Organizational challenges, data quality dimensions, data governance, owners and stewards, the BICC, embedding data science roles in a matrix, data scientists versus data analysts, KDD, SEMMA, CRISP-DM and DataOps, data exploration and distributions, correlation, data wrangling, dummy attributes, standardization and overfitting.
+
 ## Assessment Map
 
 | Component    | Notes                                                                                           |

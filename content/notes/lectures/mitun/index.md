@@ -20,10 +20,10 @@ date: 2026-10-20
    Der Lebenszyklus von IT-Unternehmen mit allen fünf Phasen, Apple, Twitter und Yahoo als Beispiele, Software als ökonomisches Gut (Immaterialität, Netzeffekte, Skalenerträge, Wechselkosten, kritische Masse, Lock-in), Plattformen und Softwareökosysteme (Gawer, Rollen, Co-Creation, Koopkurrenz), der IT-Markt nach Lünendonk und Wettbewerbsstrategien (Market-based und Resource-based View, Five Forces, Wertnetz, Delta-Modell, Dynamic Capabilities).
 
 - [[/notes/lectures/mitun/02-vorgruendung|(y-02) Vorgründung]]  
-   Die Seed-Phase, Entrepreneurial Opportunity (Recognition, Discovery, Creation) und ihre Quellen, Causation und Effectuation mit den fünf Prinzipien, Design Thinking, Lean Startup und MVP, Arten des Prototypings, Vibe Coding, Value Proposition, USP und Value Proposition Canvas am Beispiel Foodora (Folien 2025/26).
+   Die Seed-Phase, Entrepreneurial Opportunity (Recognition, Discovery, Creation) und ihre Quellen, Causation und Effectuation mit den fünf Prinzipien, Design Thinking, Lean Startup und MVP, Arten und Klassifikation von Prototypen, Vibe Coding und der verschobene Engpass, Value Proposition, USP und Value Proposition Canvas an Foodora und Slack.
 
 - [[/notes/lectures/mitun/03-geschaeftsmodell|(y-03) Geschäftsmodell]]  
-   Geschäftsmodell nach Wirtz und Stähler, Abgrenzung zu Strategie und Prozessen, die vier generischen Geschäftsmodelle für IT-Produkte mit ihren Wertschöpfungsketten, Everything-as-a-Service, die neun Bausteine des Business Model Canvas, der Canvas im Effectuation-Prozess und seine Bewertung (Folien 2025/26).
+   Geschäftsmodell nach Wirtz und Stähler, Abgrenzung zu Strategie (Schallmo) und Prozessen, die neun Bausteine des Business Model Canvas, der Canvas im Effectuation-Prozess, seine Bewertung und Google 2012, die vier generischen Geschäftsmodelle für IT-Produkte mit ihren Wertschöpfungsketten, Everything-as-a-Service und die Einordnung von KI-Anbietern.
 
 - [[/notes/lectures/mitun/04-team-und-fuehrung|(y-04) Team und Führung]]  
    Das Timmons-Modell, Erfolgsfaktoren und Gründungsteams, Gründerpersönlichkeit und -motive, Team-Building, IT-Fachkräftemangel und KI, Führungsstile nach Tannenbaum und Schmidt, Intrapreneurship, Ambidextrous und transformationale Führung, selbstorganisierte Teams, Vergütung, VSOP und ESOP, OKR und Vision (Folien 2025/26).
