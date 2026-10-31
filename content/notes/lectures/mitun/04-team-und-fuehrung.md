@@ -9,7 +9,7 @@ tags:
 date: 2026-10-27
 ---
 
-[[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/03-geschaeftsmodell|Zurück: (y-03) Geschäftsmodell]]
+[[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/03b-devops|Zurück: (y-03b) DevOps]] | [[/notes/lectures/mitun/05-business-plan-und-funding|Weiter: (y-05) Business Plan und Funding]]
 
 > [!note] Foliengrundlage
 > Diese Notiz basiert auf dem Foliensatz aus dem Wintersemester 2025/26. Sobald die Folien für 2026/27 vorliegen, wird sie daran angepasst.
@@ -359,4 +359,4 @@ Eine Skizze zur Arbeitszufriedenheit vergleicht beide Welten: Im Konzern sinkt d
 
 ---
 
-[[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/03-geschaeftsmodell|Zurück: (y-03) Geschäftsmodell]]
+[[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/03b-devops|Zurück: (y-03b) DevOps]] | [[/notes/lectures/mitun/05-business-plan-und-funding|Weiter: (y-05) Business Plan und Funding]]

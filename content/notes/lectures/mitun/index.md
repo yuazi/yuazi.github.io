@@ -25,8 +25,20 @@ date: 2026-10-20
 - [[/notes/lectures/mitun/03-geschaeftsmodell|(y-03) Geschäftsmodell]]  
    Geschäftsmodell nach Wirtz und Stähler, Abgrenzung zu Strategie (Schallmo) und Prozessen, die neun Bausteine des Business Model Canvas, der Canvas im Effectuation-Prozess, seine Bewertung und Google 2012, die vier generischen Geschäftsmodelle für IT-Produkte mit ihren Wertschöpfungsketten, Everything-as-a-Service und die Einordnung von KI-Anbietern.
 
+- [[/notes/lectures/mitun/03b-devops|(y-03b) DevOps zur Umsetzung software-intensiver Geschäftsmodelle]]  
+   Workshop der OMM Solutions GmbH: ein Bauspiel mit Dev- und Ops-Abteilung in zwei Runden, DevOps als organisatorischer Wandel, die Reichweite von agiler Entwicklung, CI, Continuous Delivery und Deployment, Ziele, Prinzipien und die Eisberg-Metapher, die drei Dimensionen des Kundenwerts und die Toolkette von Jira über GitLab bis Kubernetes (Folien 2025/26).
+
 - [[/notes/lectures/mitun/04-team-und-fuehrung|(y-04) Team und Führung]]  
    Das Timmons-Modell, Erfolgsfaktoren und Gründungsteams, Gründerpersönlichkeit und -motive, Team-Building, IT-Fachkräftemangel und KI, Führungsstile nach Tannenbaum und Schmidt, Intrapreneurship, Ambidextrous und transformationale Führung, selbstorganisierte Teams, Vergütung, VSOP und ESOP, OKR und Vision (Folien 2025/26).
+
+- [[/notes/lectures/mitun/05-business-plan-und-funding|(y-05) Business Plan und Funding]]  
+   Aufbau und Adressaten eines Business Plans, Executive Summary, Isenbergs Entrepreneurship-Ökosystem und deutsche Startup-Standorte, Rechtsformen im Vergleich, Finanzplanung, No-, Low- und Big-Budget-Modell, Business Angels, VC und strategische Investoren, Finanzierungsphasen und -ablauf, Rule of 40, Airbnb vom Seed bis zum IPO, SWOT-Analyse und Risikomanagement (Folien 2025/26).
+
+- [[/notes/lectures/mitun/06-skalierung|(y-06) Skalierung]]  
+   Wachstum, Skalierbarkeit und Skalierung, Determinanten skalierbarer Geschäftsmodelle, die Dimensionen Produkt, Prozess und Organisation, Microservices und Prime Video, Boundary Resources und Entwicklerportale, DORA-Metriken, DevOps Evolution Model, Golden Paths, Brooks's und Conway's Law, Spotify-Modell, LeSS, SAFe, gestufter Support und die DevOps-Toolchain (Folien 2025/26).
+
+- [[/notes/lectures/mitun/07-vermarktung|(y-07) Vermarktung]]  
+   Die vier Ebenen der Marketingkonzeption mit Ansoff-Matrix und Segmentierung, Software als Konsum-, Vertrauens- oder Investitionsgut, der erweiterte Marketing-Mix, Feature Fatigue und Pareto-Fokussierung, virales Marketing, Preisfindung per Triangulation und Cost-plus für Cloud-Produkte, Vertriebstrichter und B2B-SaaS-Vertrieb, Freemium und Free Trial (Folien 2025/26).
 
 ## Prüfungsübersicht
 

@@ -9,7 +9,7 @@ tags:
 date: 2026-10-29
 ---
 
-[[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/02-vorgruendung|Zurück: (y-02) Vorgründung]] | [[/notes/lectures/mitun/04-team-und-fuehrung|Weiter: (y-04) Team und Führung]]
+[[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/02-vorgruendung|Zurück: (y-02) Vorgründung]] | [[/notes/lectures/mitun/03b-devops|Weiter: (y-03b) DevOps]]
 
 ## Mentales Modell
 
@@ -417,4 +417,4 @@ Kapitel 3.4 behandelt DevOps zur Optimierung der Wertschöpfungsstruktur softwar
 
 ---
 
-[[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/02-vorgruendung|Zurück: (y-02) Vorgründung]] | [[/notes/lectures/mitun/04-team-und-fuehrung|Weiter: (y-04) Team und Führung]]
+[[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/02-vorgruendung|Zurück: (y-02) Vorgründung]] | [[/notes/lectures/mitun/03b-devops|Weiter: (y-03b) DevOps]]
