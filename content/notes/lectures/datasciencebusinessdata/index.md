@@ -28,6 +28,12 @@ date: 2026-10-27
 - [[/notes/lectures/datasciencebusinessdata/05a-organizational-context|(y-05a) Organizational Context]]  
    Organizational challenges, data quality dimensions, data governance, owners and stewards, the BICC, embedding data science roles in a matrix, data scientists versus data analysts, KDD, SEMMA, CRISP-DM and DataOps, data exploration and distributions, correlation, data wrangling, dummy attributes, standardization and overfitting.
 
+- [[/notes/lectures/datasciencebusinessdata/06-outlier-analysis|(y-06) Outlier Analysis]]  
+   Outlier detection and generative AI: monitoring prompts, RAG pipelines and agent actions for anomalies and drift, using language models to explain outliers, and classical methods as the baseline for tabular data. Covers slide 12 only until the full deck is posted.
+
+- [[/notes/lectures/datasciencebusinessdata/07-classification|(y-07) Classification]]  
+   The confusion matrix, accuracy, recall, precision, specificity, F-score and MCC, ROC curves and AUC, k-NN, classification trees, impurity and pruning, random forests, bagging and boosting, SVMs with soft margins and kernels, logistic regression and odds, and naive Bayes with a spam example.
+
 ## Assessment Map
 
 | Component    | Notes                                                                                           |

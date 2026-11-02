@@ -10,7 +10,7 @@ tags:
 date: 2026-10-29
 ---
 
-[[/notes/lectures/datasciencebusinessdata/index|Back to DSfBD Index]] | [[/notes/lectures/datasciencebusinessdata/04-system-context|Previous: (y-04) System Context]]
+[[/notes/lectures/datasciencebusinessdata/index|Back to DSfBD Index]] | [[/notes/lectures/datasciencebusinessdata/04-system-context|Previous: (y-04) System Context]] | [[/notes/lectures/datasciencebusinessdata/06-outlier-analysis|Next: (y-06) Outlier Analysis]]
 
 ## Mental Model First
 
@@ -478,4 +478,4 @@ In machine learning, a model can overfit: it memorizes the training data but can
 
 ---
 
-[[/notes/lectures/datasciencebusinessdata/index|Back to DSfBD Index]] | [[/notes/lectures/datasciencebusinessdata/04-system-context|Previous: (y-04) System Context]]
+[[/notes/lectures/datasciencebusinessdata/index|Back to DSfBD Index]] | [[/notes/lectures/datasciencebusinessdata/04-system-context|Previous: (y-04) System Context]] | [[/notes/lectures/datasciencebusinessdata/06-outlier-analysis|Next: (y-06) Outlier Analysis]]
