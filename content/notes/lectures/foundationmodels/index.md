@@ -21,6 +21,9 @@ The material overlaps with the [[/notes/lectures/mlp/index|MPL course]] on trans
 - [[/notes/lectures/foundationmodels/02-ml-basics|(y-02) Machine Learning Basics]]  
    Training versus inference, learning signals, tensors, losses, population versus empirical risk, data splits and leakage, bias and variance, regularization, linear and logistic regression, gradient descent by hand, cross-entropy and softmax, MLPs and backpropagation, residuals and layer norm, CNNs (stride, padding, pooling, receptive fields), embeddings, a first look at self-attention, and pretraining versus adaptation.
 
+- [[/notes/lectures/foundationmodels/03-from-counting-to-predicting|(y-03) From Counting to Predicting: Statistical Language Models]]  
+   Shannon's guessing game, the chain rule, Zipf's and Heaps' laws and why sparsity cannot be avoided, n-gram models with MLE, add-k, interpolation and Kneser-Ney, cross-entropy, perplexity and the link to compression, tokenizer-dependent perplexity, distributional semantics, Bengio's neural LM, word2vec and its biases, RNN language models, the encoder-decoder bottleneck and attention.
+
 ## Assessment Map
 
 | Component       | Weight / Gate          | Notes                                                                                                         |

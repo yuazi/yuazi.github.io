@@ -11,7 +11,7 @@ tags:
 date: 2026-10-20
 ---
 
-[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/01-introduction|Previous: (y-01) Introduction]]
+[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/01-introduction|Previous: (y-01) Introduction]] | [[/notes/lectures/foundationmodels/03-from-counting-to-predicting|Next: (y-03) From Counting to Predicting]]
 
 ## Mental Model First
 
@@ -642,4 +642,4 @@ The same questions return each time: which targets, which loss, which parameters
 
 ---
 
-[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/01-introduction|Previous: (y-01) Introduction]]
+[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/01-introduction|Previous: (y-01) Introduction]] | [[/notes/lectures/foundationmodels/03-from-counting-to-predicting|Next: (y-03) From Counting to Predicting]]
