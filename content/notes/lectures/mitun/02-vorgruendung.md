@@ -235,24 +235,9 @@ Andrej Karpathy prägte den Begriff im Februar 2025: Man gibt sich den "Vibes" h
 
 Die Folie zieht daraus den Schluss, warum aus schnellen Prototypen noch keine skalierbaren Produkte werden: Codeerzeugung ist dank KI schnell und günstig, also verschiebt sich der Engpass zu Architektur und Systemdesign, Security und Datenschutz, Betrieb und Skalierung sowie Testing und Qualität. Dazu gibt es einen Hörtipp.
 
-### Klassifikation von Prototypen
-
-![[pictures/mitun/02/Lecture02_Pg028_Klassifikation_Von_Prototypen.png]]
-
-<p class="image-caption">Prototypen nach Breite (Features) und Tiefe (Funktionalität), nach Nielsen (1993).</p>
-
-Nach Nielsen (1993) lassen sich Prototypen danach einordnen, wie viel Breite (Features) und Tiefe (Funktionalität) des Systems sie abdecken:
-
-| Art                    | Abdeckung                                                                            |
-| :--------------------- | :----------------------------------------------------------------------------------- |
-| Horizontaler Prototyp  | Einzelne Schichten der Systemarchitektur über alle Features, etwa das User Interface |
-| Vertikaler Prototyp    | Alle Architekturschichten, aber nur für einzelne Funktionen                          |
-| Minimum Viable Product | "Kleinstnötiges lebensfähiges (praktikabel anwendbares) Produkt"                     |
-| Vollsystem             | Volle Funktionalität und alle Funktionen, aber noch kein Produktivsystem             |
-
 ### Design Thinking, Lean Startup und agile Entwicklung
 
-![[pictures/mitun/02/Lecture02_Pg029_Design_Thinking_Lean_Startup_Und_Agile.png]]
+![[pictures/mitun/02/Lecture02_Pg028_Design_Thinking_Lean_Startup_Und_Agile.png]]
 
 <p class="image-caption">Design Thinking, Lean Startup und Agile kombiniert (Gartner 2016).</p>
 
@@ -260,7 +245,7 @@ Gartner (2016) kombiniert die drei Ansätze: Design Thinking erkundet das Kunden
 
 ## 8. Value Proposition
 
-![[pictures/mitun/02/Lecture02_Pg031_Value_Proposition.png]]
+![[pictures/mitun/02/Lecture02_Pg030_Value_Proposition.png]]
 
 <p class="image-caption">Value Proposition nach Osterwalder und Pigneur und nach Stähler.</p>
 
@@ -268,7 +253,7 @@ Ein Geschäftsmodell beschreibt, welchen Nutzen Kunden oder Partner aus der Verb
 
 ### Alleinstellungsmerkmal
 
-![[pictures/mitun/02/Lecture02_Pg032_Alleinstellungsmerkmal.png]]
+![[pictures/mitun/02/Lecture02_Pg031_Alleinstellungsmerkmal.png]]
 
 <p class="image-caption">Merkmale eines Alleinstellungsmerkmals (Kollmann 2014).</p>
 
@@ -276,7 +261,7 @@ Eine Value Proposition heißt auch Unique Selling Proposition oder Unique Sellin
 
 ### Templates für Value Propositions
 
-![[pictures/mitun/02/Lecture02_Pg033_Templates_F_R_Value_Propositions.png]]
+![[pictures/mitun/02/Lecture02_Pg032_Templates_F_R_Value_Propositions.png]]
 
 <p class="image-caption">Templates zur Formulierung von Value Propositions.</p>
 
@@ -288,7 +273,7 @@ Eine Value Proposition heißt auch Unique Selling Proposition oder Unique Sellin
 
 ### Value Proposition Canvas
 
-![[pictures/mitun/02/Lecture02_Pg034_Value_Proposition_Canvas.png]]
+![[pictures/mitun/02/Lecture02_Pg033_Value_Proposition_Canvas.png]]
 
 <p class="image-caption">Der Value Proposition Canvas.</p>
 
@@ -302,23 +287,15 @@ Der Canvas (Osterwalder u. a. 2015) verbindet zwei Seiten:
 
 ### Beispiel Foodora
 
-![[pictures/mitun/02/Lecture02_Pg035_Beispiel_Foodora.png]]
+![[pictures/mitun/02/Lecture02_Pg034_Beispiel_Foodora.png]]
 
 <p class="image-caption">Der Value Proposition Canvas für Foodora.</p>
 
 Im Canvas für Foodora sind Products and Services etwa Lieferservice, Bestellung über Website oder App, Online-Bezahlung und Kundensupport. Gain Creators sind ein vielfältiges Restaurantangebot, kostenlose Lieferung ab einem Bestellwert und ein einfacher Bestellprozess. Pain Relievers sind schnelle Lieferung über kurze Wege, bequeme Lieferung bis an die Haustür und verschiedene Bezahlmöglichkeiten. Auf der Kundenseite stehen Gains wie neue Restaurants ausprobieren und frisches, warmes Essen sowie Pains wie fehlende Einkaufsmöglichkeiten, wenige Bezahlmöglichkeiten und komplizierte Bestellprozesse. Foodoras eigene Value Proposition lautet: "At foodora, customers can expect a consistent and locally-relevant value proposition in terms of food quality, variety and value, with a reliable and fast delivery service to back it up" (Groeschel 2018, Hoffmann 2020).
 
-### Beispiel Slack
-
-![[pictures/mitun/02/Lecture02_Pg036_Beispiel_Slack.png]]
-
-<p class="image-caption">Der Value Proposition Canvas für Slack.</p>
-
-Der Canvas für Slack (Whiting 2016, Qutcry 2018) nennt als Produkt eine Messaging-App für Teams, ideale Kunden sind Startups. Features sind das Teilen von Bildern, Dokumenten und vielen Dateiformaten, das Speichern aller Nachrichten und eigene Channels für Abteilungen. Als Benefits stehen eine hohe Akzeptanz im Team bei wenig Aufwand und kaum nötige Schulung, als Experience eine App mit einer Hauptfunktion, die das Arbeitsleben einfacher macht. Auf der Kundenseite stehen Needs wie Ideen für alle sichtbar kommunizieren, mit mehreren Leuten in Echtzeit chatten und Dateien teilen, Pains wie unübersichtliche lange E-Mail-Verläufe und fehlende Möglichkeiten zu kommentieren, Gains wie ein positives Selbstbild und das Gefühl, ein geschätztes Teammitglied zu sein. Substitute sind E-Mail und WhatsApp. Die Value Proposition lautet: "Slack ist ein Ort, an dem Ihr Team zusammenkommt, um zusammenzuarbeiten, an dem wichtige Informationen von den richtigen Leuten gefunden werden können und an dem Ihre Werkzeuge Informationen liefern, wann und wo Sie sie brauchen."
-
 ### Übungsaufgabe: Lovable
 
-![[pictures/mitun/02/Lecture02_Pg037_Bungsaufgabe_Lovable.png]]
+![[pictures/mitun/02/Lecture02_Pg035_Bungsaufgabe_Lovable.png]]
 
 <p class="image-caption">Übung: eine Value Proposition für Lovable.</p>
 
@@ -329,7 +306,7 @@ In Kleingruppen von 2 bis 3 Studierenden wird anhand eines Handelsblatt-Artikels
 - In der Seed-Phase entstehen Geschäftsidee, Geschäftsmodell und Prototypen, finanziert aus Eigen- und Fördermitteln. Business Plan und Finanzierung sind die Problembereiche.
 - Eine Entrepreneurial Opportunity sind Ideen, Überzeugungen und Aktionen für Güter ohne bestehenden Markt. Sie wird erkannt, entdeckt oder geschaffen.
 - Bei hoher Ungewissheit passt Effectuation (Bird in Hand, Affordable Loss, Crazy Quilt, Lemonade, Pilot in the Plane), bei sinkender Ungewissheit Design Thinking, Lean Startup und klassische Planung.
-- Lean Startup prüft Hypothesen mit einem MVP im Build-Measure-Learn-Zyklus. Prototypen sind explorativ, experimentell oder evolutionär und nach Abdeckung horizontal, vertikal, MVP oder Vollsystem. Vibe Coding macht Prototypen billig und verschiebt den Engpass zu Architektur, Security, Betrieb und Testing.
+- Lean Startup prüft Hypothesen mit einem MVP im Build-Measure-Learn-Zyklus. Prototypen sind explorativ, experimentell oder evolutionär. Vibe Coding macht Prototypen billig und verschiebt den Engpass zu Architektur, Security, Betrieb und Testing.
 - Die Value Proposition beschreibt den gestifteten Nutzen. Der Value Proposition Canvas verbindet Value Map und Kundenprofil.
 
 ## Selbsttest
@@ -364,17 +341,12 @@ In Kleingruppen von 2 bis 3 Studierenden wird anhand eines Handelsblatt-Artikels
 > [!success]- Antwort
 > Exploratives Prototyping erarbeitet bei unklarem Problem die Anforderungen. Experimentelles Prototyping weist die technische Realisierbarkeit einer Idee nach. Evolutionäres Prototyping entwickelt ein Programm mit Grundfunktionen laufend weiter.
 
-7. Wie unterscheiden sich horizontaler und vertikaler Prototyp?
-
-> [!success]- Antwort
-> Der horizontale Prototyp deckt die Breite der Features ab, aber nur einzelne Architekturschichten, etwa das User Interface. Der vertikale Prototyp deckt für einzelne Funktionen alle Architekturschichten ab, also volle Tiefe bei geringer Breite (Nielsen 1993).
-
-8. Warum werden aus schnellen Vibe-Coding-Prototypen nicht automatisch skalierbare Produkte?
+7. Warum werden aus schnellen Vibe-Coding-Prototypen nicht automatisch skalierbare Produkte?
 
 > [!success]- Antwort
 > KI macht die Codeerzeugung schnell und günstig, damit verschiebt sich der Engpass. Engpässe sind jetzt Architektur und Systemdesign, Security und Datenschutz, Betrieb und Skalierung sowie Testing und Qualität. Auch Karpathy beschreibt ein Jahr nach dem Begriff "Vibe Coding" professionelles Arbeiten mit Agenten als "Agentic Engineering" mit mehr Aufsicht und Prüfung.
 
-9. Wie ist der Value Proposition Canvas aufgebaut?
+8. Wie ist der Value Proposition Canvas aufgebaut?
 
 > [!success]- Antwort
 > Die Value Map mit Products and Services, Pain Relievers und Gain Creators steht dem Kundenprofil mit Customer Jobs, Pains und Gains gegenüber. Ein Fit entsteht, wenn die Pain Relievers die wichtigsten Pains und die Gain Creators die wichtigsten Gains adressieren.
