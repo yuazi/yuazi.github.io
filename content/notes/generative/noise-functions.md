@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Random numbers per pixel give static. Noise functions give randomness that is smooth: nearby inputs give nearby outputs, but the pattern never repeats in an obvious way. They drive clouds, terrain, flow fields, wobble on a camera, and most of what looks organic in a TouchDesigner or GLSL patch. The ideas are few: a lattice of random values, a smooth interpolation curve, and layering at several scales.
 
+![[pictures/topics/generative/noise-functions.png]]
+
+<p class="image-caption">Smooth randomness: like hills and clouds, never a jumble of pixels. Image: Lord Belbury, CC0, via <a href="https://commons.wikimedia.org/wiki/File:Perlin_noise_example.png">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Noise is a deterministic hash on an integer lattice plus smooth interpolation between lattice points. Same input always gives the same output.
@@ -17,6 +21,10 @@ Random numbers per pixel give static. Noise functions give randomness that is sm
 - fBm stacks noise at doubling frequencies and halving amplitudes. Domain warping feeds noise into noise.
 
 ## 1. Value Noise vs Gradient Noise
+
+![[pictures/topics/generative/noise-value-vs-perlin.png]]
+
+<p class="image-caption">Left: random heights blended together look blocky. Right: random slopes blended together look like smooth hills. Rendered from the equations on this page.</p>
 
 **Value noise** assigns a random value to each integer lattice point and blends the four (in 2D) surrounding values with a smooth weight. It is cheap, but the lattice is easy to see because the extrema always sit on lattice points, giving a boxy look.
 
@@ -52,6 +60,10 @@ The input is skewed onto the simplex grid with factors $F_2=(\sqrt3-1)/2\approx0
 
 ## 4. Fractal Brownian Motion (fBm)
 
+![[pictures/topics/generative/noise-fbm-octaves.png]]
+
+<p class="image-caption">Stack smaller and smaller bumps on top of big ones and flat hills turn into mountains with rocky detail. Rendered from the equations on this page.</p>
+
 One noise octave has a single characteristic feature size. Real terrain and clouds have detail at many sizes. fBm sums octaves:
 
 $$
@@ -80,6 +92,10 @@ float fbm(vec2 p) {                         // result in [0, 1)
 The sine hash is the usual quick choice, but its precision differs between GPUs, so patterns can change across devices. For stable results use an integer hash.
 
 ## 5. Domain Warping
+
+![[pictures/topics/generative/noise-domain-warp.png]]
+
+<p class="image-caption">Push the noise around with more noise and it starts to look like marble or smoke. Rendered from the equations on this page.</p>
 
 Instead of sampling at $\mathbf{p}$, sample at a point displaced by another noise field:
 

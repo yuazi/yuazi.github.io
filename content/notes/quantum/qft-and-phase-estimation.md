@@ -8,6 +8,10 @@ date: 2026-11-05
 
 The quantum Fourier transform (QFT) is the discrete Fourier transform applied to the amplitudes of a quantum state, and it can be built from $O(n^2)$ gates on $n$ qubits. Quantum phase estimation (QPE) uses it to read out the eigenphase of a unitary as a binary fraction. These two pieces are the engine of Shor's algorithm, quantum counting, and the phase-estimation approach to chemistry, so it is worth being able to derive the circuit from scratch.
 
+![[pictures/topics/quantum/qft-and-phase-estimation.png]]
+
+<p class="image-caption">Phase estimation reads a hidden angle out as ordinary bits, one digit per counting qubit. Image: Erdabravest2001, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Quantum_Phase_Estimation_Canonical_Circuit.png">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - The QFT does not speed up the classical FFT task, because you cannot read out all $2^n$ amplitudes. It is useful when the answer is a peak that a few measurements can find.

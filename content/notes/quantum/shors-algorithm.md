@@ -8,6 +8,10 @@ date: 2026-11-05
 
 Shor's algorithm (1994) factors an integer $N$ in time polynomial in $\log N$, where the best known classical algorithms need super-polynomial time. It does this by turning factoring into the problem of finding the period of $a^x \bmod N$, and a quantum computer finds periods efficiently with phase estimation. It is the reason quantum computers matter for cryptography, and it is also the clearest example of a speedup that comes from structure and not from brute-force search.
 
+![[pictures/topics/quantum/shors-algorithm.png]]
+
+<p class="image-caption">Shor turns 'find the factors' into 'find how often a pattern repeats', which quantum computers are good at. Image: JavaFXpert, CC0, via <a href="https://commons.wikimedia.org/wiki/File:Shor%27s_algorithm_quantum_circuit.png">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Factoring is reduced, classically, to order finding: the smallest $r$ with $a^r \equiv 1 \pmod N$. Only the order-finding step is quantum.

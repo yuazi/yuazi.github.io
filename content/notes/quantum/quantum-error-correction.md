@@ -8,6 +8,10 @@ date: 2026-11-05
 
 Qubits decohere and gates are imperfect, so a long computation needs a way to detect and undo errors without looking at the data. Classical codes copy bits and take a majority vote. Quantum states cannot be copied, and measuring them destroys them, so quantum error correction has to get the same protection from entanglement and indirect measurement. It is the reason people expect fault-tolerant machines to exist at all, and the reason they will need thousands of physical qubits per useful logical qubit.
 
+![[pictures/topics/quantum/quantum-error-correction.png]]
+
+<p class="image-caption">Spread one qubit over many so a few mistakes can be spotted and fixed, like a team double-checking a sum. Image: Will Apodaca, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Quantum_Error_Correction_On_Three_Quibits_with_no_Ancilla.png">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Spread one logical qubit over many physical qubits, then measure parity checks (syndromes) that reveal where an error happened without revealing the encoded amplitudes.

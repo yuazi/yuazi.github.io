@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A 35mm film camera is a light-tight box with a lens on the front and a shutter in front of the film. Most of the choices that matter are about how you see and focus (SLR, rangefinder, point-and-shoot), how the shutter is driven (mechanical or electronic), and which focal length you use. Film cameras are old, so condition counts as much as model. A fully working cheap camera takes better pictures than a rare one with a failing shutter or rotted light seals.
 
+![[pictures/topics/photography/35mm-cameras-and-lenses.png]]
+
+<p class="image-caption">Longer lenses see a narrower slice of the scene, shorter lenses see wider. Image: MikeRun, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Photo_lenses_with_a_focal_length_and_angle.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - The three common body types differ in how you compose and focus, not in the film they use.
@@ -18,6 +22,14 @@ A 35mm film camera is a light-tight box with a lens on the front and a shutter i
 - Buy the lens mount you like first, then the body.
 
 ## 1. Camera Types
+
+![[pictures/topics/photography/35mm-cameras-and-lenses-2.png]]
+
+<p class="image-caption">An SLR: a mirror shows you exactly what the lens sees until the moment you shoot. Image: Unknown author, CC BY-SA 2.5, via <a href="https://commons.wikimedia.org/wiki/File:Pentax_K1000.jpg">Wikimedia Commons</a>.</p>
+
+![[pictures/topics/photography/35mm-cameras-and-lenses-1.png]]
+
+<p class="image-caption">A rangefinder: you look through a separate window, not through the lens. Image: Matthew T Rader, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Leica_M_(Typ_262)_back.jpg">Wikimedia Commons</a>.</p>
 
 An SLR (single-lens reflex) has a mirror that sends the lens image up to a focusing screen and a prism, so you see through the lens. When you press the shutter, the mirror flips out of the way. You compose exactly what the lens sees, and you can change lenses. Because of the mirror box, SLRs are larger and louder. Most SLR bodies have a built-in light meter.
 

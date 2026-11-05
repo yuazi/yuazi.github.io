@@ -8,6 +8,10 @@ date: 2026-11-05
 
 A quantum computer computes with amplitudes and reads out probabilities. The Born rule is the bridge: it says how a state vector turns into the bitstrings you get from a device, and what the state looks like afterwards. Almost every practical question in a quantum workflow (how many shots, which basis, how noisy is this estimate) goes back to this page.
 
+![[pictures/topics/quantum/measurement-and-the-born-rule.png]]
+
+<p class="image-caption">Measuring forces a yes-or-no answer: the particle lands in one of two spots, never in between. Image: Tatoute, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Stern-Gerlach_experiment.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - The probability of an outcome is the squared magnitude of its amplitude. Phases do not appear in a single measurement, only in what interferes before it.

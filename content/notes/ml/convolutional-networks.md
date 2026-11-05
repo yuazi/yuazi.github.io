@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A convolutional network applies the same small filter at every position of an image, so it needs far fewer parameters than a dense network and treats a pattern the same wherever it appears. Stacking such layers builds up from edges to textures to object parts. Before vision transformers took over many benchmarks, this was the default architecture for images, and convolutions are still everywhere: in audio models, in U-Nets, in the patch embedding of a ViT. I keep this page as the arithmetic cheat sheet: sizes, parameter counts and receptive fields.
 
+![[pictures/topics/ml/convolutional-networks.png]]
+
+<p class="image-caption">A small window slides over the picture and looks for the same pattern everywhere. Image: Daniel Voigt Godoy, CC BY 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Convolutional_neural_network,_maxpooling.png">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - A convolution slides one small set of weights over the input. The weights are shared across positions, which gives translation equivariance and a tiny parameter count.

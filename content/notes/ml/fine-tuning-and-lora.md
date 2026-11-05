@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Fine-tuning takes a pretrained model and continues training it on a smaller, task-specific dataset. It is how a general language or vision model becomes a classifier, a chat assistant or a domain expert. Updating every weight works but is expensive in memory, and it produces a full copy of the model per task. Low-rank adaptation (LoRA) freezes the pretrained weights and trains a small additive update instead, which cuts the trainable parameters by two to three orders of magnitude and often matches full fine-tuning on the target task.
 
+![[pictures/topics/ml/fine-tuning-and-lora.png]]
+
+<p class="image-caption">Start from a model that already knows a lot and teach it just the new part. Rendered for this page.</p>
+
 ## Mental Model
 
 - Pretraining learns general features; fine-tuning nudges them toward a task. The change in the weights is often small and structured, which is the bet behind low-rank updates.

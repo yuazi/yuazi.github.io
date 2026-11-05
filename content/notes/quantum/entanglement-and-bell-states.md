@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Entanglement is the property of a multi-qubit state that cannot be written as a product of single-qubit states. It is the resource behind teleportation, superdense coding and most of the speedups in the algorithm pages, and the CHSH inequality is the cleanest way to show that it is more than classical correlation. This page covers how to tell whether a pure state is entangled, the standard families of entangled states, and the CHSH computation with numbers.
 
+![[pictures/topics/quantum/entanglement-and-bell-states.png]]
+
+<p class="image-caption">Entangled qubits are like two coins that always land the same way, however far apart they are. Image: JPNARPHY, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Bell_State_Circuit_and_Matrix_Representation.png">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - A pure two-qubit state is a product state exactly when its $2 \times 2$ coefficient matrix has rank 1. Otherwise it is entangled.

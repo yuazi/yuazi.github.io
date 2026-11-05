@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Clustering groups unlabeled points so that members of a group are more alike than members of different groups. There is no ground truth to check against, so the algorithm's assumptions about what a cluster looks like decide the result. I think of the three standard methods as three answers to that question: a compact blob around a center (k-means), a Gaussian with its own shape (GMM), or a dense region separated by sparse gaps (DBSCAN).
 
+![[pictures/topics/ml/clustering.png]]
+
+<p class="image-caption">Clustering puts similar dots into the same group without anyone telling it the groups. Rendered for this page.</p>
+
 ## Mental Model
 
 - k-means minimizes within-cluster squared distance to a centroid. It assumes roughly round, similar-sized clusters and needs $k$ in advance.

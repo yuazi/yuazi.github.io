@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A particle system on the GPU keeps every particle's state in video memory and updates it in parallel, so the CPU only issues a couple of commands per frame. That is how you get from thousands of particles to millions at 60 fps. The design questions are where the state lives, how an update pass reads and writes it, how the particles get drawn, and whether the memory traffic fits the bandwidth budget. Strange attractors and flow fields are natural fits, since each particle follows a simple rule that does not depend on the others.
 
+![[pictures/topics/graphics/gpu-particle-systems.png]]
+
+<p class="image-caption">Thousands of dots, each with a position and speed, updated every frame on the GPU. Image: Jtsiomb, Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Particle_sys_fire.jpg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - One particle is a few floats (position, velocity, age, maybe size or color), stored in a buffer or in texels of a float texture.

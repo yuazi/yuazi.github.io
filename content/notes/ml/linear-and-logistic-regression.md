@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Linear regression fits a weighted sum of the inputs to a number. Logistic regression squashes that same weighted sum through a sigmoid and reads it as a probability. Both are small enough to derive on paper, and almost everything later in deep learning (losses, gradients, maximum likelihood, decision boundaries) shows up here first in a form you can fully check. I treat them as the model to beat before reaching for anything bigger.
 
+![[pictures/topics/ml/linear-and-logistic-regression.png]]
+
+<p class="image-caption">Draw the straight line that misses the dots by as little as possible. Image: Justinkunimune, CC0, via <a href="https://commons.wikimedia.org/wiki/File:Linear_regression_residuals.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - A linear model is a dot product $\hat y = \mathbf w^\top \mathbf x + b$. Fitting means choosing $\mathbf w$ so the predictions are close to the targets.

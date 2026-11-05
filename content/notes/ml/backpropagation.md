@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Backpropagation is the algorithm that computes the gradient of a scalar loss with respect to every parameter of a network, in time comparable to one forward pass. It is the chain rule applied in a clever order, and it is reverse-mode automatic differentiation specialized to neural nets. Once you have done one by hand with numbers, `loss.backward()` stops being magic and starts being bookkeeping.
 
+![[pictures/topics/ml/backpropagation.png]]
+
+<p class="image-caption">Blame flows backwards: each connection learns how much it caused the mistake. Rendered for this page.</p>
+
 ## Mental Model
 
 - A model is a computational graph: nodes are operations, edges carry tensors. Each node knows its own local derivative.

@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Pushing and pulling change the effective speed of a roll after the fact. You set your meter to a different number than the box says, then ask for development that compensates. Pushing buys you speed in dim light at the cost of contrast and grain. Pulling does the opposite, which tames a high-contrast scene. Both only work cleanly when the whole roll is shot at the same rating, which is the main thing to plan around.
 
+![[pictures/topics/photography/push-and-pull-processing.png]]
+
+<p class="image-caption">Pushing makes film act more sensitive than it is, at the cost of grain and contrast. Image: Schvaxet, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Ilford_HP5_Autowinder_film.jpg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Push means rating the film faster than its box speed (underexposing on purpose) and developing longer. Pull means rating it slower and developing shorter.

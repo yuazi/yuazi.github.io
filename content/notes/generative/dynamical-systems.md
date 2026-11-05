@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A dynamical system is a rule for how a state changes. Give it a starting point and the rule produces everything after: a pendulum swinging down, a population over the years, the three numbers of the Lorenz equations. The vocabulary here (phase space, fixed points, stability, attractors) is what every other page in this section assumes, so I want it in one place with a few worked numbers.
 
+![[pictures/topics/generative/dynamical-systems.png]]
+
+<p class="image-caption">Each arrow says where a point moves next; follow the arrows to see the future. Rendered for this page.</p>
+
 ## Mental Model
 
 - The state is a point in phase space. The rule moves that point, and the whole history is a curve through it.

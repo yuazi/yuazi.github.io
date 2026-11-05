@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A state vector describes a qubit you know everything about. Real qubits are partly unknown: they are entangled with something you cannot see, or they have been through a noisy gate. The density matrix handles both cases with one object, and quantum channels (written with Kraus operators) describe how noise acts on it. Without this page the numbers T1, T2 and gate fidelity on a hardware spec sheet stay abstract.
 
+![[pictures/topics/quantum/density-matrices-and-noise.png]]
+
+<p class="image-caption">Noise slowly blurs a clean quantum state into a coin flip, like a photo fading in the sun. Rendered for this page.</p>
+
 ## Mental Model
 
 - A density matrix $\rho$ is a probabilistic mixture of state vectors. Pure states are the special case of a single vector.

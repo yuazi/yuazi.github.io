@@ -8,6 +8,10 @@ date: 2026-11-05
 
 Reinforcement learning (RL) trains an agent from rewards instead of labelled examples. The agent acts, the environment answers with a new state and a reward, and the agent has to learn which actions pay off over the long run, including actions whose reward arrives many steps later. RL covers game-playing agents, robot control, and the final stage of training for chat models (RLHF). The core of it fits in a few equations, and a gridworld is enough to see them working.
 
+![[pictures/topics/ml/reinforcement-learning.png]]
+
+<p class="image-caption">Try something, get a reward or not, and do more of what earned rewards. Image: Megajuice, CC0, via <a href="https://commons.wikimedia.org/wiki/File:Reinforcement_learning_diagram.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - The world is a Markov decision process: the next state and reward depend only on the current state and action.

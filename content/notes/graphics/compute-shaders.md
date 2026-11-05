@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A compute shader is a GPU program that is not attached to the graphics pipeline. It has no vertices, no triangles and no pixels to write: you launch a grid of threads, and each one reads and writes buffers or textures as it likes. That freedom is what makes particle simulations, image filters, reductions and fluid solvers practical on the GPU. The ideas are the same in GLSL, Metal and HLSL, with different names.
 
+![[pictures/topics/graphics/compute-shaders.png]]
+
+<p class="image-caption">Lots of tiny workers, grouped into teams, each doing one small piece of the job. Image: Ilze Lucero, Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Jerarquia_de_fils_d%27execuci%C3%B3_CUDA.png">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - A dispatch launches a 1D, 2D or 3D grid of workgroups, and each workgroup contains a fixed number of threads set in the shader source.

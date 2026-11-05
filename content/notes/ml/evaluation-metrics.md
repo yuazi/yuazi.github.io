@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A metric turns a model's predictions into a number you can compare, and the choice of metric quietly decides what "better" means. Accuracy can look excellent on a model that never finds the rare class you care about, and a high ROC-AUC can hide a model that is useless at the precision you need. I keep this page as a checklist for matching the metric to the cost of the mistakes.
 
+![[pictures/topics/ml/evaluation-metrics.png]]
+
+<p class="image-caption">Precision: of what you caught, how much was right. Recall: of what was there, how much you caught. Image: Pouria, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Precision-Recall_tradeoff.png">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Start from the confusion matrix. Precision, recall, specificity and F1 are all ratios of its four cells.

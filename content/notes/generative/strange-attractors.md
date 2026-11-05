@@ -26,11 +26,19 @@ $$
 \dot{x}=-y-z,\quad \dot{y}=x+ay,\quad \dot{z}=b+z(x-c)
 $$
 
+![[pictures/topics/generative/attractor-rossler.png]]
+
+<p class="image-caption">A ribbon that spirals out, gets flipped up and folded back in, over and over. Rendered from the equations on this page.</p>
+
 **Thomas** (b=0.208186) has cyclic symmetry in $x,y,z$ and divergence $-3b$ everywhere, so volume shrinks at a constant rate. At $b=0$ the system is conservative and the orbit wanders over the whole space.
 
 $$
 \dot{x}=\sin y-bx,\quad \dot{y}=\sin z-by,\quad \dot{z}=\sin x-bz
 $$
+
+![[pictures/topics/generative/attractor-thomas.png]]
+
+<p class="image-caption">A particle bouncing around a lattice of sine-shaped hills, never settling. Rendered from the equations on this page.</p>
 
 **Aizawa** (a=0.95, b=0.7, c=0.6, d=3.5, e=0.25, f=0.1) looks like a sphere with a tube through its axis.
 
@@ -42,17 +50,29 @@ $$
 \end{aligned}
 $$
 
-**Halvorsen** (a=1.89) has threefold rotational symmetry. This is the one running on the side of this site, see [[notes/random/lorenz-attractor|the Lorenz essay]].
+![[pictures/topics/generative/attractor-aizawa.png]]
+
+<p class="image-caption">A ball wrapped in thread, with a tube punched through the middle. Rendered from the equations on this page.</p>
+
+**Halvorsen** (a=1.4) has threefold rotational symmetry. This is the one running on the side of this site, see [[notes/random/lorenz-attractor|the Lorenz essay]].
 
 $$
 \dot{x}=-ax-4y-4z-y^2,\quad \dot{y}=-ay-4z-4x-z^2,\quad \dot{z}=-az-4x-4y-x^2
 $$
+
+![[pictures/topics/generative/attractor-halvorsen.png]]
+
+<p class="image-caption">Three arms that look the same, like a propeller drawn by one endless pen stroke. Rendered from the equations on this page.</p>
 
 **Chen** (a=35, b=3, c=28) has a double-scroll shape like Lorenz, with larger coordinates (see the table below).
 
 $$
 \dot{x}=a(y-x),\quad \dot{y}=(c-a)x-xz+cy,\quad \dot{z}=xy-bz
 $$
+
+![[pictures/topics/generative/attractor-chen.png]]
+
+<p class="image-caption">Two wings like Lorenz's butterfly, flown faster and wider. Rendered from the equations on this page.</p>
 
 ## 2. Two Planar Maps
 
@@ -66,6 +86,10 @@ $$
 \text{De Jong: } x'=\sin(ay)-\cos(bx),\quad y'=\sin(cx)-\cos(dy)
 $$
 
+![[pictures/topics/generative/maps-clifford-dejong.png]]
+
+<p class="image-caption">Each dot jumps to a new spot by a simple rule; after millions of jumps the dots draw a lace pattern. Brighter means visited more often. Rendered from the equations on this page.</p>
+
 Good starting constants: Clifford with $(a,b,c,d)=(-1.4,\,1.6,\,1.0,\,0.7)$ and De Jong with $(1.4,\,-2.3,\,2.4,\,-2.1)$. Sines and cosines are bounded by 1, so both maps stay inside a fixed box without any checking: De Jong inside $[-2,2]^2$, Clifford inside $\lvert x\rvert\le 1+\lvert c\rvert$ and $\lvert y\rvert\le 1+\lvert d\rvert$. Random constants in $[-3,3]$ often give a fixed point or a short cycle instead of a picture. You can reject those by checking that the orbit still covers many distinct pixels after a few thousand steps.
 
 ## 3. Boundedness Check
@@ -77,7 +101,7 @@ I integrated each flow with RK4 for 60,000 to 200,000 steps, dropped the first 1
 | Rössler   | (1,1,1)            | 0.01   | -9.1 to 11.4 | 0 to 22.8    |
 | Thomas    | (1.1,1.1,-0.01)    | 0.05   | -1.1 to 3.8  | -1.1 to 3.8  |
 | Aizawa    | (0.1,0,0)          | 0.01   | -1.5 to 1.5  | -0.4 to 1.9  |
-| Halvorsen | (-1.48,-1.51,2.04) | 0.005  | -12.1 to 6.3 | -12.1 to 6.3 |
+| Halvorsen | (-1.48,-1.51,2.04) | 0.005  | -13.3 to 6.4 | -13.3 to 6.4 |
 | Chen      | (-3,2,20)          | 0.0005 | -23 to 24    | 7.4 to 46.5  |
 
 All stayed finite. The Chen step is small because a=35 makes the dynamics fast. The Clifford and De Jong orbits stayed in $[-1.42,1.98]\times[-1.30,1.54]$ and $[-2,2]^2$ over 200,000 iterations. These ranges depend on the start point only through the transient, so treat them as the approximate size of the picture, and use them to set your camera.

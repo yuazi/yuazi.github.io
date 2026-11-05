@@ -8,6 +8,10 @@ date: 2026-11-05
 
 Variational algorithms split the work between a quantum processor and a classical optimizer. The quantum side prepares a parameterized state and measures an expectation value, and the classical side adjusts the parameters to lower it. The Variational Quantum Eigensolver (VQE) targets ground-state energies, and the Quantum Approximate Optimization Algorithm (QAOA) targets combinatorial problems like MaxCut. They were designed for noisy, shallow hardware, and they come with real obstacles: measurement cost, noise and flat optimization landscapes.
 
+![[pictures/topics/quantum/variational-algorithms.png]]
+
+<p class="image-caption">A quantum circuit with knobs, and a normal computer turning the knobs until the energy is lowest. Rendered for this page.</p>
+
 ## Mental Model
 
 - The variational principle guarantees that any trial state gives an energy at or above the true ground energy, so lower is always better and the result is a rigorous upper bound.

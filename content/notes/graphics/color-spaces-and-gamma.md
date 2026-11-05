@@ -9,6 +9,10 @@ date: 2026-11-05
 
 An RGB triple means nothing until you know two things about it: which primaries it refers to (the gamut) and how its numbers map to light intensity (the transfer function). Mixing those up is behind most color bugs in shaders: blends that look muddy, gradients with a dark band in the middle, and blurs that darken edges. This page fixes the vocabulary and works through the sRGB curve with real numbers.
 
+![[pictures/topics/graphics/color-spaces-and-gamma.png]]
+
+<p class="image-caption">Each colour space can show only part of all colours; the triangle marks which part. Image: Myndex, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:CIE_1931_chromaticity_ACES_sRGB_gamut_comparison_CreativeCommons_v06.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Light adds linearly. Pixel values stored for display are not linear: they are encoded with a curve that spends more codes on dark values.

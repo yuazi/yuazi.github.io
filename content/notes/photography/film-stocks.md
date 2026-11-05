@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A film stock is a specific emulsion: a particular recipe of silver halide crystals, dyes and layers on a plastic base. Two stocks with the same ISO number can look very different in color, contrast, grain and how they handle bad light. Knowing the three broad families (color negative, slide, black and white) tells you how to expose and process a roll. Knowing individual stocks tells you what the result will look like. Stock lineups change often, with discontinuations, renamings and regional availability, so everything below is a general description, not a buying guide.
 
+![[pictures/topics/photography/film-stocks.png]]
+
+<p class="image-caption">Each roll of film has its own colours, grain and sensitivity. Image: R. Henrik Nilsson, CC BY 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Kodak_35mm_film_aluminium_canisters_made_in_the_US_1950s_or_1960s.jpg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - There are three families: color negative (processed in C-41), color slide or reversal (processed in E-6), and black-and-white negative.

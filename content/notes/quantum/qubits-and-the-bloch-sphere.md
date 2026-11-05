@@ -8,6 +8,10 @@ date: 2026-11-05
 
 A qubit is a two-level quantum system whose state is a unit vector in $\mathbb{C}^2$. Everything else in quantum computing (gates, measurement, entanglement) is built on that one definition, so I keep this page as the place to look up conventions: how amplitudes map to angles, which phases matter, and how Qiskit orders bits. The Bloch sphere is the picture that makes single-qubit gates easy to reason about, and it stops working in exactly the place where multi-qubit physics starts.
 
+![[pictures/topics/quantum/qubits-and-the-bloch-sphere.png]]
+
+<p class="image-caption">A qubit is an arrow on a ball: up is 0, down is 1, and every other direction is a mix of both. Rendered for this page.</p>
+
 ## Mental Model
 
 - A qubit state is a pair of complex amplitudes $(\alpha, \beta)$ with $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$. Squared magnitudes are measurement probabilities, phases are what interference acts on.

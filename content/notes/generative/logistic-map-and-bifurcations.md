@@ -9,6 +9,10 @@ date: 2026-11-05
 
 The logistic map is one line, $x_{n+1}=rx_n(1-x_n)$, and it contains most of what is known about how order turns into chaos. As the parameter $r$ increases, a steady value splits into a 2-cycle, then 4, 8, 16 and so on, faster each time, until the behaviour stops repeating. The same sequence shows up in fluids, circuits and populations, and the ratio between successive splits is a universal constant.
 
+![[pictures/topics/generative/logistic-map-and-bifurcations.png]]
+
+<p class="image-caption">Turn up one knob and a single answer splits into two, then four, then chaos. Rendered for this page.</p>
+
 ## Mental Model
 
 - For $x\in[0,1]$ and $0<r\le 4$ the map stays in $[0,1]$. Think of $r$ as a knob that stretches and folds the interval.

@@ -8,6 +8,10 @@ date: 2026-11-05
 
 Several physical systems can serve as qubits, and none has won yet. They differ in how fast their gates run, how long their coherence lasts, which qubits can interact directly, and what stops them from scaling. I keep this page for one reason: a circuit that looks identical on paper compiles and performs very differently on each platform, so it helps to know what the machine underneath can and cannot do. All figures below are rough orders of magnitude that vary by device, vendor and year. Treat them as a way to compare platforms, not as specifications.
 
+![[pictures/topics/quantum/quantum-hardware.png]]
+
+<p class="image-caption">A real quantum computer: most of what you see keeps the chip colder than outer space. Image: IBM Research, CC BY 2.0, via <a href="https://commons.wikimedia.org/wiki/File:IBM_Q_system_(Fraunhofer_2).jpg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Every platform trades gate speed against coherence and fidelity. Fast gates give many shots per second, slow gates with long coherence give high accuracy per operation.
@@ -34,6 +38,10 @@ Strengths are speed and a mature chip-fabrication process. Weaknesses are fixed 
 
 ## 3. Trapped Ions
 
+![[pictures/topics/quantum/quantum-hardware-1.png]]
+
+<p class="image-caption">Trapped ions: single charged atoms held still by electric fields and poked with lasers. Image: National Institute of Standards and Technology, Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Quantum_Computing;_Ion_Trapping_(5941055642).jpg">Wikimedia Commons</a>.</p>
+
 Ions such as ytterbium or calcium are held in vacuum by electromagnetic fields, laser-cooled and used as qubits through two internal energy levels. Gates come from laser or microwave pulses. Two-qubit gates use the shared motion of the ion chain, with the Mølmer-Sørensen gate as the standard entangling operation.
 
 Typical orders of magnitude: single-qubit gates in microseconds, two-qubit gates in tens to hundreds of microseconds, coherence from seconds up to much longer, and two-qubit error rates of order $10^{-3}$ or below in the best demonstrations. Within one chain any ion can in principle interact with any other, which means all-to-all connectivity for small registers and few SWAPs.
@@ -49,6 +57,10 @@ Typical orders of magnitude: single-qubit gates in microseconds, two-qubit gates
 There is no dilution refrigerator, only vacuum and lasers. The open issues are atom loss during a run, reloading and rearranging atoms between shots (which makes each cycle slow compared to a chip), and keeping laser control precise across thousands of sites.
 
 ## 5. Photonics
+
+![[pictures/topics/quantum/quantum-hardware-3.png]]
+
+<p class="image-caption">Photonic qubits: particles of light guided through tiny channels on a chip. Image: FMNLab, CC BY 4.0, via <a href="https://commons.wikimedia.org/wiki/File:FMN_Lab_electro-optical_integrated_modulator.jpg">Wikimedia Commons</a>.</p>
 
 Here the qubit is a photon, encoded in polarization, path or time bin. Photons travel long distances with little decoherence, they work at room temperature along the path, and they are the natural carrier for quantum networks. Single-qubit operations are easy with waveplates and beam splitters. Two-qubit gates are the problem, since photons barely interact. Linear-optics schemes make entangling gates probabilistic and heralded by detection, which leads to measurement-based and fusion-based architectures that consume large entangled resource states.
 

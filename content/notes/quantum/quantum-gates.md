@@ -8,6 +8,10 @@ date: 2026-11-05
 
 A quantum gate is a unitary matrix acting on the state vector of one or more qubits. A circuit is a product of such matrices, followed by measurement. I use this page as a lookup table: the standard matrices, the identities that let you rewrite circuits, and how the textbook gates turn into the handful of operations a real chip implements.
 
+![[pictures/topics/quantum/quantum-gates.png]]
+
+<p class="image-caption">Gates are the moves you can make: each one turns the qubit's arrow in a fixed way. Image: Rxtreme, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Quantum_Logic_Gates.png">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Gates are unitary: $U^\dagger U = I$. That makes them reversible and norm-preserving, and it is why no gate can copy an unknown state or erase information.

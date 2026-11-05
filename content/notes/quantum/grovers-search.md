@@ -8,6 +8,10 @@ date: 2026-11-05
 
 Grover's algorithm finds a marked item among $N$ unstructured candidates using about $\sqrt{N}$ oracle queries, where any classical method needs on the order of $N$. It is the standard example of a quadratic speedup, and the same mechanism, amplitude amplification, shows up inside quantum counting, minimum finding and many proposals for speeding up search-like subroutines. The most useful thing to understand about it is geometric: the whole algorithm is a rotation in a two-dimensional plane.
 
+![[pictures/topics/quantum/grovers-search.png]]
+
+<p class="image-caption">Each round makes the right answer's bar taller and the wrong ones shorter. Image: Danski14, CC BY-SA 3.0, via <a href="https://commons.wikimedia.org/wiki/File:Grovers_algorithm_geometry.png">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Two reflections make a rotation. The oracle reflects about the "unmarked" axis, the diffuser reflects about the uniform state, and together they rotate by $2\theta$ per iteration.

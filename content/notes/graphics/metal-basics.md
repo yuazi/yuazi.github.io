@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Metal is Apple's low-level GPU API. Compared with OpenGL it makes you build the objects once (device, queue, pipeline) and then record work into command buffers that the GPU executes later. The same objects serve rendering and compute. This page covers the shortest path from nothing to a Swift program that runs a kernel on the GPU, which is also the skeleton behind LumaDisplay's Metal work.
 
+![[pictures/topics/graphics/metal-basics.png]]
+
+<p class="image-caption">On Apple silicon the CPU and GPU share one pool of memory, so data doesn't need copying. Image: Sonic8400, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Mac_Mini_M1_chip.jpg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - A `MTLDevice` is the GPU. A `MTLCommandQueue` belongs to a device, and you take command buffers from the queue.

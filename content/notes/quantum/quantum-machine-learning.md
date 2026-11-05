@@ -8,6 +8,10 @@ date: 2026-11-05
 
 Quantum machine learning (QML) asks whether a quantum computer can learn from data faster or better than a classical one. The honest answer today is mixed. A few clean constructions exist, most promised speedups depend on assumptions about data access that rarely hold, and several have been matched by classical algorithms. I keep this page as a checklist of the ideas and of the places where each one breaks, so that I can read QML papers critically.
 
+![[pictures/topics/quantum/quantum-machine-learning.png]]
+
+<p class="image-caption">Data gets turned into qubit states, and the circuit learns to sort them. Rendered for this page. A quantum feature map does the lifting with qubit states.</p>
+
 ## Mental Model
 
 - Classical data has to be loaded into a quantum state first, and that step can cost as much as the learning it enables.

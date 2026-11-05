@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A generative model learns the distribution of the training data well enough to draw new samples from it. Three families dominate image generation: variational autoencoders (VAEs), generative adversarial networks (GANs) and diffusion models. They answer the same question, how do you train a network to turn noise into data, with three different objectives, and the differences show up in sample quality, training stability, sampling speed and whether you get a likelihood.
 
+![[pictures/topics/ml/generative-models.png]]
+
+<p class="image-caption">One network draws fakes, the other spots them, and both keep getting better. Image: Mtanti, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Generative_Adversarial_Network_illustration.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - A likelihood-based model defines or bounds $p_\theta(x)$ and is trained by maximizing it. An implicit model only gives samples, and needs a different training signal.

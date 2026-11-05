@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Reaction-diffusion systems make spots, stripes and labyrinths out of two chemicals that react and spread at different speeds. The Gray-Scott model is the version that is easiest to put on a GPU: two fields, one Laplacian each, a few multiplications per pixel per step. Changing two numbers moves you between coral, spots that divide like cells, and moving worms.
 
+![[pictures/topics/generative/reaction-diffusion.png]]
+
+<p class="image-caption">Two pretend chemicals spread and react, and spots and stripes appear by themselves. Image: Jonathan Lidbeck from Eugene, USA, CC BY 2.0, via <a href="https://commons.wikimedia.org/wiki/File:Gray-Scott_Lotus_(2125994225).jpg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Two fields $u$ and $v$ on a grid. $u$ is fed in from outside and eaten by $v$; $v$ reproduces by eating $u$ and is removed at a slow rate.
@@ -31,6 +35,10 @@ $$
 The term $uv^2$ is the reaction rate: it removes $u$ and adds the same amount to $v$. $F(1-u)$ pulls $u$ back toward 1 at rate $F$. $(F+k)v$ removes $v$: $F$ because the whole reactor is flushed at that rate, plus $k$ for the decay. Without $v$ the system sits at $u=1$, $v=0$, which is why the standard start is a field of $(1,0)$ with a small seed of $v$.
 
 ## 2. Parameters
+
+![[pictures/topics/generative/gray-scott-regimes.png]]
+
+<p class="image-caption">Same two pretend chemicals, two different feed and kill rates: one grows like coral, the other splits into dots like dividing cells. Rendered from the equations on this page.</p>
 
 Common choices on a unit grid: $D_u=1.0$, $D_v=0.5$, $\Delta t=1$. The feed and kill rates then select the regime. These are typical values from the usual parameter maps, and the exact boundaries between regimes are fuzzy:
 

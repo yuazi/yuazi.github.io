@@ -9,6 +9,10 @@ date: 2026-11-05
 
 An attractor visualizer does one thing over and over: take the state, ask the equations for a velocity, and move a short distance. The question is how to choose that move. Explicit Euler is the obvious choice and a poor one. Fourth-order Runge-Kutta (RK4) costs four evaluations per step and is the default in almost every attractor renderer, including [[work/attractormediapipe|my gestural attractor project]]. This page derives the usual methods, measures their error on a problem with a known answer, and ends with what I actually do when drawing.
 
+![[pictures/topics/generative/numerical-integration.png]]
+
+<p class="image-caption">A computer follows a curve by taking many small straight steps. Image: HilberTraum, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Runge-Kutta_slopes.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - A step of size $h$ estimates the average slope over the interval. The methods differ in how good that estimate is.

@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Teleportation moves an unknown qubit state from Alice to Bob using one shared Bell pair and two classical bits. Superdense coding runs the same resources in the other direction: one shared Bell pair and one transmitted qubit carry two classical bits. Together they show what entanglement is worth as a communication resource, and teleportation is also the standard first example of a circuit with mid-circuit measurement and classical feed-forward.
 
+![[pictures/topics/quantum/teleportation-and-superdense-coding.png]]
+
+<p class="image-caption">Teleportation moves a qubit's state, not the qubit itself, using a shared entangled pair and a phone call. Rendered with Qiskit; the last two gates stand in for the corrections controlled by Alice's two measured bits.</p>
+
 ## Mental Model
 
 - Teleportation does not send the qubit. It sends two classical bits that tell Bob which of four Pauli corrections turns his half of the Bell pair into the original state.

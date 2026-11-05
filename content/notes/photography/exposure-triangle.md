@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Exposure is the amount of light that reaches the film during one frame. Three settings control it: the aperture (how wide the lens opens), the shutter speed (how long it stays open), and the film speed (how sensitive the emulsion is). On a digital camera all three can change from shot to shot. On film the third one is locked in when you load the roll, which changes how you plan. I keep coming back to the arithmetic here because every other photography note in this garden, from [[notes/photography/metering-and-sunny-16|Sunny 16]] to [[notes/photography/push-and-pull-processing|pushing]], is built on it.
 
+![[pictures/topics/photography/exposure-triangle.png]]
+
+<p class="image-caption">Hole size, open time and film sensitivity together decide how bright the picture is. Image: WClarke and Samsara, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Exposure_triangle_-_aperture,_shutter_speed_and_ISO.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Light is counted in stops. One stop is a doubling or halving of the light, whichever setting you change.

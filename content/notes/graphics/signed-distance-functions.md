@@ -10,6 +10,10 @@ date: 2026-11-05
 
 A signed distance function (SDF) takes a point in space and returns how far it is from the nearest surface: negative inside, zero on the surface, positive outside. A whole 3D scene can be written as one such function, with no triangles, and rendered by marching a ray through it. This is how most fragment-shader 3D demos on Shadertoy work, and it is a good fit for TouchDesigner's GLSL TOP because the entire scene fits in one shader.
 
+![[pictures/topics/graphics/signed-distance-functions.png]]
+
+<p class="image-caption">March along a ray in safe steps until you bump into a shape. Rendered for this page.</p>
+
 ## Mental Model
 
 - A scene is a function `map(p)` that returns a distance. The surface is where it equals zero.

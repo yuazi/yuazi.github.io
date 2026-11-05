@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A graph neural network (GNN) learns on data that comes as nodes and edges: molecules, road networks, citation graphs, constraint puzzles. Images and text have a fixed grid or sequence layout, but a graph has no ordering and each node can have a different number of neighbours, so a GNN has to give the same answer for any relabelling of the nodes. The recipe that achieves this is message passing, and almost every GNN variant is a choice of how to build and combine the messages. I built one for Sudoku, so this page is also the theory behind that project.
 
+![[pictures/topics/ml/graph-neural-networks.png]]
+
+<p class="image-caption">Each dot listens to its neighbours and updates what it believes. Rendered for this page.</p>
+
 ## Mental Model
 
 - Each node holds a feature vector. In every layer it collects messages from its neighbours, combines them with an order-independent function (sum, mean, max), and updates its own vector.

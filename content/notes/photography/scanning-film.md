@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A developed negative is a physical object with a very wide tonal range and a lot of fine detail. Scanning turns it into a file, and the choices made there (the scanner, the light, the inversion) shape the final image as much as the film itself. A lab scan is the easiest route. A flatbed or a camera setup gives you more control and costs less per roll over time. Knowing what each path does helps you judge scans you receive as well as scans you make.
 
+![[pictures/topics/photography/scanning-film.png]]
+
+<p class="image-caption">Scanning turns each little negative into a digital photo. Image: Спасимир (Spasimir Pilev), CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:BASA_scanner_for_negatives_and_microfilms.jpg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - A scan is a measurement of how much light passes through each point of the film. The software turns that measurement into a picture.

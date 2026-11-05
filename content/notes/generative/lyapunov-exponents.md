@@ -46,6 +46,10 @@ The same average at $r=3.2$ (a stable 2-cycle) is negative, and at $r=3.83$ (the
 
 ## 3. Lorenz by Two-Trajectory Renormalization
 
+![[pictures/topics/generative/lorenz-divergence.png]]
+
+<p class="image-caption">Two runs that start a hundred-millionth apart look identical, then suddenly don't. On a log scale the gap grows along a straight line, and its slope is the Lyapunov exponent. Rendered from the equations on this page.</p>
+
 You cannot let two chaotic trajectories run apart for long: the separation saturates at the size of the attractor, and the exponential law stops. The fix is renormalization. Advance both for a short time, record the log growth, and pull the second trajectory back to distance $\delta_0$ along the line to the first.
 
 ```python

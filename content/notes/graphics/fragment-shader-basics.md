@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A fragment shader is a small function that the GPU runs once for every pixel it has to color. You give it a position and some inputs, it returns a color, and thousands of copies run at the same time without knowing about each other. Almost every generative visual in TouchDesigner, every Shadertoy demo, and the last stage of every raster pipeline is built on that one idea. I keep returning to it because a handful of functions (`mix`, `step`, `smoothstep`, `fract`) cover most of what you draw with it.
 
+![[pictures/topics/graphics/fragment-shader-basics.png]]
+
+<p class="image-caption">A fragment shader is a tiny program that picks the colour of every single pixel. Image: Scriptor universalis, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:WebGL_Shader_Pipeline.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - The shader is a pure function from pixel position (plus uniforms) to color. It cannot read its neighbours' output, so all coordination happens through the inputs.

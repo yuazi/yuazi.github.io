@@ -10,6 +10,10 @@ date: 2026-11-05
 
 On macOS, Apple's name for high dynamic range output is Extended Dynamic Range (EDR). The idea is that 1.0 stays "SDR white", and a display that has spare brightness can show values above 1.0 as brighter than white. An app opts in with a few layer settings, picks a floating-point pixel format, and renders values above 1.0 in linear light. I ran into this while building [[work/lumadisplay|LumaDisplay]], which uses the headroom macOS reports to push the whole desktop past 100 percent brightness.
 
+![[pictures/topics/graphics/hdr-and-edr-on-macos.png]]
+
+<p class="image-caption">HDR keeps detail in both the bright sky and the dark shadows at once. Image: HDRI_Sample_Scene_Window_(JPEG-HDR).jpg: Axel Jacobs (Photographer) derivative w, CC BY-SA 2.0, via <a href="https://commons.wikimedia.org/wiki/File:Tone_Mapping_Methods.jpg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - The scale is relative. 1.0 means "SDR white at the current brightness setting", not a fixed number of nits.

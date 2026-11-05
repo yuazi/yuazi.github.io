@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A decision tree predicts by asking a sequence of yes/no questions about the features, and a forest or boosted ensemble averages or sums many such trees. Single trees are easy to read but unstable. Ensembles fix that and, on tabular data, are still the models I try first before touching a neural net. The page walks through how a split is chosen, why trees overfit, and how bagging and boosting attack the two halves of the bias-variance tradeoff.
 
+![[pictures/topics/ml/decision-trees-and-ensembles.png]]
+
+<p class="image-caption">A decision tree is a game of twenty questions that ends with an answer. Image: Rossc0827, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Recursive_Splitting.png">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - A tree partitions feature space into axis-aligned boxes and predicts a constant (class mix or mean) in each box.

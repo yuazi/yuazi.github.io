@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A fractal is a set with structure at every scale, and usually a dimension that is not an integer. The Mandelbrot and Julia sets come out of iterating $z^2+c$, the strange attractors of chaos have the same kind of structure, and the dimension is the number that lets you compare them. Everything here is cheap to compute and shows up directly in shader work.
 
+![[pictures/topics/generative/fractals.png]]
+
+<p class="image-caption">Zoom in and the edge keeps showing new detail forever. Rendered for this page.</p>
+
 ## Mental Model
 
 - Escape-time fractals ask one question per pixel: does this orbit stay bounded, and if not, how fast does it leave?
@@ -17,6 +21,10 @@ A fractal is a set with structure at every scale, and usually a dimension that i
 - Dimension counts how the amount of detail grows as you shrink the ruler, $N\propto\varepsilon^{-D}$.
 
 ## 1. Escape-Time Mandelbrot and Julia
+
+![[pictures/topics/generative/julia.png]]
+
+<p class="image-caption">Start at a point, square it and add c, again and again. Dark points stay close forever; coloured points escape, and the colour says how fast. Rendered from the equations on this page.</p>
 
 Iterate $z_{n+1}=z_n^2+c$. A complex number $c$ is in the Mandelbrot set if the orbit from $z_0=0$ stays bounded. Once $\lvert z_n\rvert>2$ the orbit is certain to escape, so 2 is a safe escape radius. For a Julia set you fix $c$ (for example $-0.8+0.156i$) and ask the same question for every starting $z_0$ on the grid.
 
@@ -50,6 +58,10 @@ def mandelbrot(w=800, h=600, maxit=200, R=256.0):
 For a Julia image, start with `z = c_grid` and a constant `c`. In a fragment shader the loop is the same, one pixel per invocation.
 
 ## 3. Self-Similarity and Dimension
+
+![[pictures/topics/generative/sierpinski.png]]
+
+<p class="image-caption">Every corner holds a smaller copy of the whole triangle, and each copy holds even smaller ones. Rendered from the equations on this page.</p>
 
 If a shape is made of $N$ copies of itself, each scaled by a factor $s<1$, its similarity dimension is
 

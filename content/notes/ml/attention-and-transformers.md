@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Attention lets every position in a sequence read from every other position, with weights computed from the data itself. The transformer (Vaswani et al., 2017) stacks attention with a per-position MLP and residual connections, and drops recurrence entirely. Nearly every large language model, and many vision and audio models, are variations of that block. This page is the shape-and-cost reference I wanted when reading the lecture slides: what each matrix looks like, where the parameters live, and why long contexts are expensive.
 
+![[pictures/topics/ml/attention-and-transformers.png]]
+
+<p class="image-caption">Every word looks at every other word and decides which ones matter for it. Image: Yuening Jia, CC BY-SA 3.0, via <a href="https://commons.wikimedia.org/wiki/File:The-Transformer-model-architecture.png">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Each token produces a query, a key and a value. A query is compared with all keys, the scores become weights through a softmax, and the output is the weighted sum of the values.

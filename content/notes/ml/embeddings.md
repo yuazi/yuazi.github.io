@@ -9,6 +9,10 @@ date: 2026-11-05
 
 An embedding maps a discrete or high-dimensional thing (a word, an image, a user, a graph node) to a dense vector of a few hundred numbers, arranged so that similar things end up close together. Almost everything downstream works on these vectors: the first layer of a language model, retrieval systems, recommendation, clustering. Once a model produces good embeddings, "find similar items" turns into a geometry problem that a matrix multiplication solves.
 
+![[pictures/topics/ml/embeddings.png]]
+
+<p class="image-caption">Words become points on a map, and similar words end up close together. Image: Singerep, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Word_vector_illustration.jpg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - An embedding layer is a lookup table with one learned row per token. Looking up a row is the same as multiplying a one-hot vector by the table.

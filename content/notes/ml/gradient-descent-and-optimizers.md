@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Training a model means minimizing a loss $L(\boldsymbol\theta)$ over parameters, and almost every method in use is some variant of "step downhill using the gradient". The variants differ in how much data goes into each gradient, how past gradients are remembered, and how the step size is chosen. I find the clearest way to understand them is a two-dimensional quadratic with a long narrow valley, where each trick has a visible job to do.
 
+![[pictures/topics/ml/gradient-descent-and-optimizers.png]]
+
+<p class="image-caption">Walk downhill one small step at a time until you reach the bottom of the valley. Image: Babayaga94, CC0, via <a href="https://commons.wikimedia.org/wiki/File:Gradient_descent_with_momentum.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Plain gradient descent is $\boldsymbol\theta \leftarrow \boldsymbol\theta - \eta\nabla L$. Its speed is limited by the condition number $\kappa$, the ratio of the steepest to the flattest curvature.

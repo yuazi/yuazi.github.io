@@ -9,6 +9,10 @@ date: 2026-11-05
 
 PyTorch does not give you a `fit()` method. You write the loop yourself: fetch a batch, run the model, compute the loss, backpropagate, update the weights. That is more typing than a high-level API, but it also means every step is visible and every bug is findable. Almost every PyTorch project I have written, including the [[work/sudokusolver|Sudoku GNN]], is a variation of the same twenty lines, so this page collects them together with the details that cause the usual problems: devices, evaluation mode, mixed precision, checkpoints and seeds.
 
+![[pictures/topics/ml/pytorch-training-loop.png]]
+
+<p class="image-caption">Training is a loop: guess, measure the mistake, nudge the weights, repeat. Image: scikit-learn developers, BSD, via <a href="https://commons.wikimedia.org/wiki/File:Learning_Curves_(Naive_Bayes).png">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Four objects drive training: a `Dataset` wrapped in a `DataLoader`, a model (`nn.Module`), a loss function and an optimizer.

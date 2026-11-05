@@ -8,6 +8,10 @@ date: 2026-11-05
 
 Deutsch-Jozsa and Bernstein-Vazirani are the two smallest algorithms that show a quantum computer extracting global information about a function with fewer queries than any classical method. Neither is useful as software. I keep them in the notes because they contain every ingredient that Grover, phase estimation and Shor reuse later: an oracle, phase kickback, and a Hadamard transform that turns phases into bit strings.
 
+![[pictures/topics/quantum/deutsch-jozsa-and-bernstein-vazirani.png]]
+
+<p class="image-caption">One question to the box instead of many: interference reveals the answer in a single try. Image: User:Fran4004, CC BY-SA 3.0, via <a href="https://commons.wikimedia.org/wiki/File:Deutsch-Jozsa_algorithm_circuit.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - An oracle $U_f$ is a black box that computes a Boolean function $f$ reversibly. The algorithms are judged by how often they call it, not by their gate count.

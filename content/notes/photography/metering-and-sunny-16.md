@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Metering is the step where you decide how much light the film should get. A camera's built-in meter, a handheld meter, or your own eye plus the Sunny 16 rule can all do it. They agree on most scenes and disagree on the interesting ones: snow, backlight, a dark figure in front of a bright window. Understanding what a meter assumes tells you when to trust it and when to correct it. This is also the one skill that does not need batteries, which matters if you shoot a mechanical camera.
 
+![[pictures/topics/photography/metering-and-sunny-16.png]]
+
+<p class="image-caption">A light meter tells you how bright the scene is so you can set the camera. Image: Kecko, CC BY 2.0, via <a href="https://commons.wikimedia.org/wiki/File:Revue_S110_Exposure_Meter.jpg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - A reflected-light meter measures the light bouncing off the scene and assumes the scene averages out to middle gray.

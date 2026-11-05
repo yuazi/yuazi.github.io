@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A convolution kernel is a small grid of weights. To filter an image you slide the grid over every pixel, multiply the weights by the pixels underneath, and add the products to get the output pixel. Blur, sharpen, and edge detection are all that operation with different weights. It is also exactly what a convolutional layer in a neural network does, with weights that are learned instead of designed.
 
+![[pictures/topics/graphics/image-convolution-kernels.png]]
+
+<p class="image-caption">A small grid of numbers slides over the image and finds edges or blurs it. Rendered for this page.</p>
+
 ## Mental Model
 
 - Output pixel = weighted sum of a neighbourhood. The kernel is the recipe for the weights.

@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Dimensionality reduction maps high-dimensional data into a few dimensions, either to compress it or to look at it. PCA is linear, exact and interpretable. t-SNE and UMAP are nonlinear and built for 2D or 3D pictures of neighborhood structure. The three get used interchangeably in blog posts, but they answer different questions, and the most common mistake is reading a t-SNE plot as if it were a scatter plot with meaningful axes and distances.
 
+![[pictures/topics/ml/dimensionality-reduction.png]]
+
+<p class="image-caption">Find the direction where the data spreads out most and look at it from there. Image: Nicoguaro, CC BY 4.0, via <a href="https://commons.wikimedia.org/wiki/File:GaussianScatterPCA.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - PCA finds the orthogonal directions of greatest variance. It is a rotation plus truncation, and everything about it follows from the SVD.

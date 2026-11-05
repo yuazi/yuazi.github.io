@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A model is only useful if it works on data it has not seen. Generalization is the gap between performance on the training set and performance on fresh samples from the same distribution, and nearly everything in practical machine learning (splits, validation, penalties, dropout, augmentation) is about measuring that gap honestly or shrinking it. I come back to this page whenever a training curve looks too good.
 
+![[pictures/topics/ml/generalization-and-regularization.png]]
+
+<p class="image-caption">Overfitting is memorizing the homework instead of learning the subject. Image: すじにくシチュー, CC0, via <a href="https://commons.wikimedia.org/wiki/File:Overfitting_sample1.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Training error always flatters the model. Only data the fitting process never touched gives an honest estimate.

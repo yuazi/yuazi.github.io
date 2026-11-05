@@ -9,6 +9,10 @@ date: 2026-11-05
 
 Black-and-white film is the easiest film to develop at home. The process is a chain of liquids at room temperature, a light-tight tank, and about thirty minutes of work, with no darkroom needed after the film is on the reel. Developing it yourself gives you control over contrast and speed (see [[notes/photography/push-and-pull-processing|Push and Pull Processing]]), and the roll is in your hands the same day. The risks are practical: a badly loaded reel or a temperature mistake ruins a roll that cannot be reshot, so it pays to practice the loading step first.
 
+![[pictures/topics/photography/developing-black-and-white.png]]
+
+<p class="image-caption">In the dark, the film goes on a reel inside a light-tight tank, and the chemicals do the rest. Image: きたし, CC BY 2.5, via <a href="https://commons.wikimedia.org/wiki/File:Film_developing_reel.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - Developer turns exposed silver halide into metallic silver. Stop bath halts it. Fixer removes the unexposed halide. Wash removes the chemicals.

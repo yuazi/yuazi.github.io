@@ -9,6 +9,10 @@ date: 2026-11-05
 
 C-41 is the standard process for color negative film, and nearly every consumer and portrait stock is made for it. The chemistry is the same family as black-and-white development with two differences: the developer builds dye as well as silver, and it must run hot, at 37.8 °C (100 °F), within a fraction of a degree. That temperature requirement, not the chemistry, is what stops most people from trying it at home. With a water bath and a thermometer it is a manageable routine, and a roll takes under an hour including setup.
 
+![[pictures/topics/photography/c41-color-developing.png]]
+
+<p class="image-caption">Colour negatives look orange and inverted until they are scanned or printed. Image: LoMit, CC BY 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Color_print_film_strip_01_-_negative.jpg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - C-41 is one process with fixed times and a fixed temperature. The chemistry kits are built to that standard.

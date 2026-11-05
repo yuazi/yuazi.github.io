@@ -9,6 +9,10 @@ date: 2026-11-05
 
 A flow field assigns a velocity to every point in space. Release thousands of particles into it, move each one a little per frame, and keep a faded memory of where they were: you get the silky, streaming look of wind maps and many generative posters. The three choices that matter are how to build the field, how to step the particles, and how to leave trails.
 
+![[pictures/topics/generative/flow-fields-and-particles.png]]
+
+<p class="image-caption">Drop particles into the arrows and let the flow carry them. Image: Twisp, Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Streamlines_and_streamtube.svg">Wikimedia Commons</a>.</p>
+
 ## Mental Model
 
 - A particle at position $\mathbf{x}$ obeys $\dot{\mathbf{x}}=\mathbf{v}(\mathbf{x},t)$. The field $\mathbf{v}$ is a function you design.
