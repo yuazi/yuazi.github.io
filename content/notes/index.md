@@ -33,6 +33,10 @@ Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
 - [[notes/lectures/forschungsmethoden/index|(y) Forschungsmethoden der Wirtschaftsinformatik]]: literature reviews, research design, qualitative methods and design science research (in German).
 - [[notes/lectures/programverification/index|(y) Program Verification]]: Hoare logic, predicate transformers, SMT, Boogie and Boostan.
 
+### Special
+
+- [[notes/lectures/qiskit/index|(y) Qiskit Global Summer School 2026]]: IBM Quantum's summer school labs, from circuits for real hardware to error mitigation, QAOA and SQD. Password-protected, since it includes the lab solutions.
+
 ## CLI & Tools
 
 > [!abstract] [[notes/tools/index|(y) CLI & Tools Hub]]

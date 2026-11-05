@@ -53,6 +53,11 @@ Lecture notes from my master's courses, one hub per course.
 > [!abstract] [[notes/lectures/programverification/index|(y) Program Verification]]
 > Proving programs correct with Hoare logic, predicate transformers, SMT solvers, Boogie and Boostan.
 
+## Special
+
+> [!abstract] [[notes/lectures/qiskit/index|(y) Qiskit Global Summer School 2026]]
+> IBM Quantum's summer school labs: circuits for real hardware, noise and dynamic circuits, layer-by-layer error mitigation with Samplomatic, QAOA and sample-based quantum diagonalization, with worked solutions. The notes are password-protected because QGSS asks attendees to keep lab solutions private.
+
 ---
 
 [[notes/index|(y) Back to Notes]]
