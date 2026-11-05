@@ -16,7 +16,7 @@ This is where I write things down while I'm learning them. Some notes are polish
 ## What's growing here
 
 - [[touchdesigner/index|(y) TouchDesigner Wiki]]: reference for real-time visual programming, with a learning path from zero.
-- [[notes/index|(y) Notes]]: lecture notes, terminal tools, taekwondo, fencing and kickboxing, and a few random topics.
+- [[notes/index|(y) Notes]]: lecture notes, reference notes on quantum computing, machine learning, chaos, shaders and film photography, terminal tools, taekwondo, fencing and kickboxing.
 - [[work/index|(y) Work]]: projects and experiments.
 - [[calendar/index|(y) Calendar]]: a month-by-month log of what I've been learning and building.
 - [[film|Film]]: collages from my 35mm rolls.

@@ -16,14 +16,16 @@ Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
 
 ### Winter semester 2026/27
 
-- [[notes/lectures/infovis/index|(y) Information Visualization and Visual Analytics]]: perception, visual encoding, graphs, multivariate data, interaction and evaluation. Password-protected, since the slides can't be published.
-- [[notes/lectures/foundationmodels/index|(y) Foundation Models]]: pretraining, adaptation, LLMs, VLMs and VLAs, evaluation, reasoning and agents.
-- [[notes/lectures/datasciencebusinessdata/index|(y) Data Science for Business Data]]: BI and analytics concepts, data science tools and the classic discriminative ML methods, from a business angle.
-- [[notes/lectures/mitun/index|(y) Management von IT-Unternehmen]]: network effects, platforms and ecosystems, and competitive strategy for software companies (in German).
-- [[notes/lectures/ai4iot/index|(y) AI4IoT]]: AI in the industrial Internet of Things from a business angle, with a remote maintenance case study (in German).
-- [[notes/lectures/markstrat/index|(y) Digital Markstrat]]: the marketing strategy simulation, eight periods scored by the Share Price Index (in German).
-- [[notes/lectures/supplychainmanagement/index|(y) Supply Chain Management]]: planning, steering, control and sustainability in supply chains (in German).
-- [[notes/lectures/digitalmarketing/index|(y) Digital Marketing Strategies and Business Models]]: LLM visibility, search, social, lead nurturing and data-driven business models. Password-protected, since the slides are confidential.
+> [!example]- All 8 pages
+>
+> - [[notes/lectures/infovis/index|(y) Information Visualization and Visual Analytics]]: perception, visual encoding, graphs, multivariate data, interaction and evaluation. Password-protected, since the slides can't be published.
+> - [[notes/lectures/foundationmodels/index|(y) Foundation Models]]: pretraining, adaptation, LLMs, VLMs and VLAs, evaluation, reasoning and agents.
+> - [[notes/lectures/datasciencebusinessdata/index|(y) Data Science for Business Data]]: BI and analytics concepts, data science tools and the classic discriminative ML methods, from a business angle.
+> - [[notes/lectures/mitun/index|(y) Management von IT-Unternehmen]]: network effects, platforms and ecosystems, and competitive strategy for software companies (in German).
+> - [[notes/lectures/ai4iot/index|(y) AI4IoT]]: AI in the industrial Internet of Things from a business angle, with a remote maintenance case study (in German).
+> - [[notes/lectures/markstrat/index|(y) Digital Markstrat]]: the marketing strategy simulation, eight periods scored by the Share Price Index (in German).
+> - [[notes/lectures/supplychainmanagement/index|(y) Supply Chain Management]]: planning, steering, control and sustainability in supply chains (in German).
+> - [[notes/lectures/digitalmarketing/index|(y) Digital Marketing Strategies and Business Models]]: LLM visibility, search, social, lead nurturing and data-driven business models. Password-protected, since the slides are confidential.
 
 ### Earlier courses
 
@@ -37,18 +39,39 @@ Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
 
 - [[notes/lectures/qiskit/index|(y) Qiskit Global Summer School 2026]]: IBM Quantum's summer school labs, from circuits for real hardware to error mitigation, QAOA and SQD. Password-protected, since it includes the lab solutions.
 
+## Topics
+
+Reference notes on what I keep coming back to outside of courses.
+
+> [!abstract] [[notes/quantum/index|(y) Quantum Computing]]
+> Qubits, gates, measurement and entanglement, then Deutsch-Jozsa, Grover, Shor, variational algorithms, error correction and quantum machine learning.
+
+> [!abstract] [[notes/ml/index|(y) Machine Learning]]
+> Regression, optimizers and backpropagation, classical methods like trees and clustering, and deep learning from CNNs and transformers to GNNs, generative models, RL and LoRA.
+
+> [!abstract] [[notes/generative/index|(y) Chaos and Generative Art]]
+> Dynamical systems, strange attractors, the logistic map, Lyapunov exponents and fractals, plus noise, reaction-diffusion and flow fields for visuals.
+
+> [!abstract] [[notes/graphics/index|(y) Graphics and Shaders]]
+> Fragment shaders, raymarching, convolution kernels, compute shaders, particles, color spaces, Metal and HDR on macOS.
+
+> [!abstract] [[notes/photography/index|(y) Film Photography]]
+> Exposure and metering on 35mm, film stocks, cameras and lenses, and developing and scanning at home.
+
 ## CLI & Tools
 
 > [!abstract] [[notes/tools/index|(y) CLI & Tools Hub]]
 > The terminal tools I use and the keyboard-driven workflow I've built around them.
 
-- [[notes/tools/ghostty|(y-) Ghostty]]: GPU-rendered terminal emulator written in Zig.
-- [[notes/tools/homebrew|(y-) Homebrew]]: macOS package manager.
-- [[notes/tools/sioyek|(y-) Sioyek]]: PDF viewer made for technical papers.
-- [[notes/tools/yazi|(y-) Yazi]]: terminal file manager with async I/O and image previews.
-- [[notes/tools/zsh|(y-) Zsh & Powerlevel10k]]: shell and prompt setup.
-- [[notes/tools/macos-terminal|(y-) macOS Terminal]]: built-in commands worth knowing.
-- [[notes/tools/modern-cli|(y-) Modern CLI Tools]]: drop-in replacements for ls, cat, grep, find.
+> [!example]- All 7 pages
+>
+> - [[notes/tools/ghostty|(y-) Ghostty]]: GPU-rendered terminal emulator written in Zig.
+> - [[notes/tools/homebrew|(y-) Homebrew]]: macOS package manager.
+> - [[notes/tools/sioyek|(y-) Sioyek]]: PDF viewer made for technical papers.
+> - [[notes/tools/yazi|(y-) Yazi]]: terminal file manager with async I/O and image previews.
+> - [[notes/tools/zsh|(y-) Zsh & Powerlevel10k]]: shell and prompt setup.
+> - [[notes/tools/macos-terminal|(y-) macOS Terminal]]: built-in commands worth knowing.
+> - [[notes/tools/modern-cli|(y-) Modern CLI Tools]]: drop-in replacements for ls, cat, grep, find.
 
 ## Sports
 
@@ -60,85 +83,93 @@ Notes, references, and rabbit holes. Some are seedlings, some are evergreen.
 > [!abstract] [[notes/sports/taekwondo/index|(y) Taekwondo Hub]]
 > What I'm working on in the dojang, from stances up to sparring.
 
-- [[notes/sports/taekwondo/stances|(y-) Stances]]: foot positions and how they shape balance and power.
-- [[notes/sports/taekwondo/front-kick|(y-) Front Kick]]: the straight-line kick, snap and push versions.
-- [[notes/sports/taekwondo/side-kick|(y-) Side Kick]]: the linear kick that stops an opponent walking in.
-- [[notes/sports/taekwondo/roundhouse-kick|(y-) Roundhouse Kick]]: the main scoring kick in sparring, step by step.
-- [[notes/sports/taekwondo/axe-kick|(y-) Axe Kick]]: the head kick that drops over the guard.
-- [[notes/sports/taekwondo/combinations|(y-) Combinations]]: chaining strikes, transitions, and pressure tactics.
-- [[notes/sports/taekwondo/sparring|(y-) Sparring]]: front-leg cancel style, inspired by CJ Nickolas.
-- [[notes/sports/taekwondo/footwork|(y-) Footwork]]: moving between distance bands and using the boundary.
-- [[notes/sports/taekwondo/cut-kick|(y-) Cut & Push Kick]]: jamming an attack with the front leg.
-- [[notes/sports/taekwondo/defense|(y-) Defense]]: distance, movement, the guard, and the counter.
-- [[notes/sports/taekwondo/conditioning|(y-) Conditioning]]: training for three two-minute rounds.
-- [[notes/sports/taekwondo/spinning-kicks|(y-) Spinning Kicks]]: the complete guide to the spins, phase by phase.
-- [[notes/sports/taekwondo/spinning-back-kick|(y-) Spinning Back Kick]]: the highest-percentage spin, step by step.
-- [[notes/sports/taekwondo/spinning-hook-kick|(y-) Spinning Hook Kick]]: the head-hunter that hooks around the guard.
-- [[notes/sports/taekwondo/spin-drills|(y-) Spin Drills]]: balance, spotting, and power work that builds the engine.
-- [[notes/sports/taekwondo/stretching|(y-) Stretching]]: PNF protocols and the mobility work that actually moved my range.
-- [[notes/sports/taekwondo/splits-progression|(y-) Splits Progression]]: the flexibility project for head-height kicks.
-- [[notes/sports/taekwondo/warmup-routine|(y-) Flexibility Warm-Up]]: the RAMP protocol I run before every session.
-- [[notes/sports/taekwondo/front-splits|(y-) Front Splits]]: hamstrings and hip flexors, and the back leg everyone forgets.
-- [[notes/sports/taekwondo/side-splits|(y-) Side Splits]]: adductors, hip rotation, and the bone geometry that sets your ceiling.
-- [[notes/sports/taekwondo/flexibility-plateaus|(y-) Flexibility Plateaus]]: what to check when nothing has moved in two months.
-- [[notes/sports/taekwondo/philosophy|(y-) Philosophy]]: the five tenets and what they mean off the mat.
-- [[notes/sports/taekwondo/taeguk|(y-) Taegeuk Poomsae]]: the eight foundational WT forms and the ideas behind each.
-- [[notes/sports/taekwondo/rules|(y-) Rules (2026)]]: PSS electronic scoring, point values, and the new-for-2026 rule changes.
-- [[notes/sports/taekwondo/2026-season|(y-) 2026 Season]]: Wuxi 2025 Worlds, the Roma Grand Prix, and the road to LA 2028.
+> [!example]- All 25 pages
+>
+> - [[notes/sports/taekwondo/stances|(y-) Stances]]: foot positions and how they shape balance and power.
+> - [[notes/sports/taekwondo/front-kick|(y-) Front Kick]]: the straight-line kick, snap and push versions.
+> - [[notes/sports/taekwondo/side-kick|(y-) Side Kick]]: the linear kick that stops an opponent walking in.
+> - [[notes/sports/taekwondo/roundhouse-kick|(y-) Roundhouse Kick]]: the main scoring kick in sparring, step by step.
+> - [[notes/sports/taekwondo/axe-kick|(y-) Axe Kick]]: the head kick that drops over the guard.
+> - [[notes/sports/taekwondo/combinations|(y-) Combinations]]: chaining strikes, transitions, and pressure tactics.
+> - [[notes/sports/taekwondo/sparring|(y-) Sparring]]: front-leg cancel style, inspired by CJ Nickolas.
+> - [[notes/sports/taekwondo/footwork|(y-) Footwork]]: moving between distance bands and using the boundary.
+> - [[notes/sports/taekwondo/cut-kick|(y-) Cut & Push Kick]]: jamming an attack with the front leg.
+> - [[notes/sports/taekwondo/defense|(y-) Defense]]: distance, movement, the guard, and the counter.
+> - [[notes/sports/taekwondo/conditioning|(y-) Conditioning]]: training for three two-minute rounds.
+> - [[notes/sports/taekwondo/spinning-kicks|(y-) Spinning Kicks]]: the complete guide to the spins, phase by phase.
+> - [[notes/sports/taekwondo/spinning-back-kick|(y-) Spinning Back Kick]]: the highest-percentage spin, step by step.
+> - [[notes/sports/taekwondo/spinning-hook-kick|(y-) Spinning Hook Kick]]: the head-hunter that hooks around the guard.
+> - [[notes/sports/taekwondo/spin-drills|(y-) Spin Drills]]: balance, spotting, and power work that builds the engine.
+> - [[notes/sports/taekwondo/stretching|(y-) Stretching]]: PNF protocols and the mobility work that actually moved my range.
+> - [[notes/sports/taekwondo/splits-progression|(y-) Splits Progression]]: the flexibility project for head-height kicks.
+> - [[notes/sports/taekwondo/warmup-routine|(y-) Flexibility Warm-Up]]: the RAMP protocol I run before every session.
+> - [[notes/sports/taekwondo/front-splits|(y-) Front Splits]]: hamstrings and hip flexors, and the back leg everyone forgets.
+> - [[notes/sports/taekwondo/side-splits|(y-) Side Splits]]: adductors, hip rotation, and the bone geometry that sets your ceiling.
+> - [[notes/sports/taekwondo/flexibility-plateaus|(y-) Flexibility Plateaus]]: what to check when nothing has moved in two months.
+> - [[notes/sports/taekwondo/philosophy|(y-) Philosophy]]: the five tenets and what they mean off the mat.
+> - [[notes/sports/taekwondo/taeguk|(y-) Taegeuk Poomsae]]: the eight foundational WT forms and the ideas behind each.
+> - [[notes/sports/taekwondo/rules|(y-) Rules (2026)]]: PSS electronic scoring, point values, and the new-for-2026 rule changes.
+> - [[notes/sports/taekwondo/2026-season|(y-) 2026 Season]]: Wuxi 2025 Worlds, the Roma Grand Prix, and the road to LA 2028.
 
 ### Fencing (Épée)
 
 > [!abstract] [[notes/sports/fencing/index|(y) Fencing (Épée) Hub]]
 > Notes on épée, the slowest and most tactical of the three weapons. No right of way, whole-body target, wrist sniping galore.
 
-- [[notes/sports/fencing/stances|(y-) Stances]]: classical and modern en garde variants.
-- [[notes/sports/fencing/footwork|(y-) Footwork]]: advance, retreat, lunge, fleche, balestra, passata-sotto.
-- [[notes/sports/fencing/parries|(y-) Parries]]: the numbered parries, circular parries, prises de fer.
-- [[notes/sports/fencing/bladework|(y-) Bladework]]: simple and compound attacks, taking the blade, counter-offense.
-- [[notes/sports/fencing/point-control|(y-) Point Control]]: the grip, angulated hits, and drills for hitting a wrist on purpose.
-- [[notes/sports/fencing/toe-touch|(y-) Toe Touch]]: dropping the point onto the front foot without getting hit on the mask.
-- [[notes/sports/fencing/distance-drills|(y-) Distance Drills]]: finding your lunge distance and staying at its edge.
-- [[notes/sports/fencing/tactics|(y-) Tactics]]: distance, tempo, second intention, and modern competitive styles.
-- [[notes/sports/fencing/left-handers|(y-) Fencing Lefties]]: why left-handers are hard to fence and how to retrain for them.
-- [[notes/sports/fencing/score-and-clock|(y-) Doubles, Priority & the Clock]]: how doubles, the priority minute, and the 2026 non-combativity cards decide bouts.
-- [[notes/sports/fencing/bout-analysis|(y-) Bout Analysis]]: a one-line-per-touch log and short scouting notes.
-- [[notes/sports/fencing/competition-day|(y-) Competition Day]]: pools, seeding, what to pack, and the hours in between.
-- [[notes/sports/fencing/equipment|(y-) Equipment]]: the weapon, electric scoring, the 750g tip, and the 40ms lockout.
-- [[notes/sports/fencing/2026-season|(y-) 2026 Season]]: Hong Kong Worlds, the World Cup circuit, and who's fencing well now.
-- [[notes/sports/fencing/workout|(y-) Workout]]: no-equipment conditioning grouped by purpose.
-- [[notes/sports/fencing/stretching|(y-) Stretching]]: mobility for the lunge, the wrist, and the asymmetric fencer's body.
-- [[notes/sports/fencing/glossary|(y-) Glossary]]: the French (mostly) vocabulary you need to read a coaching book.
+> [!example]- All 17 pages
+>
+> - [[notes/sports/fencing/stances|(y-) Stances]]: classical and modern en garde variants.
+> - [[notes/sports/fencing/footwork|(y-) Footwork]]: advance, retreat, lunge, fleche, balestra, passata-sotto.
+> - [[notes/sports/fencing/parries|(y-) Parries]]: the numbered parries, circular parries, prises de fer.
+> - [[notes/sports/fencing/bladework|(y-) Bladework]]: simple and compound attacks, taking the blade, counter-offense.
+> - [[notes/sports/fencing/point-control|(y-) Point Control]]: the grip, angulated hits, and drills for hitting a wrist on purpose.
+> - [[notes/sports/fencing/toe-touch|(y-) Toe Touch]]: dropping the point onto the front foot without getting hit on the mask.
+> - [[notes/sports/fencing/distance-drills|(y-) Distance Drills]]: finding your lunge distance and staying at its edge.
+> - [[notes/sports/fencing/tactics|(y-) Tactics]]: distance, tempo, second intention, and modern competitive styles.
+> - [[notes/sports/fencing/left-handers|(y-) Fencing Lefties]]: why left-handers are hard to fence and how to retrain for them.
+> - [[notes/sports/fencing/score-and-clock|(y-) Doubles, Priority & the Clock]]: how doubles, the priority minute, and the 2026 non-combativity cards decide bouts.
+> - [[notes/sports/fencing/bout-analysis|(y-) Bout Analysis]]: a one-line-per-touch log and short scouting notes.
+> - [[notes/sports/fencing/competition-day|(y-) Competition Day]]: pools, seeding, what to pack, and the hours in between.
+> - [[notes/sports/fencing/equipment|(y-) Equipment]]: the weapon, electric scoring, the 750g tip, and the 40ms lockout.
+> - [[notes/sports/fencing/2026-season|(y-) 2026 Season]]: Hong Kong Worlds, the World Cup circuit, and who's fencing well now.
+> - [[notes/sports/fencing/workout|(y-) Workout]]: no-equipment conditioning grouped by purpose.
+> - [[notes/sports/fencing/stretching|(y-) Stretching]]: mobility for the lunge, the wrist, and the asymmetric fencer's body.
+> - [[notes/sports/fencing/glossary|(y-) Glossary]]: the French (mostly) vocabulary you need to read a coaching book.
 
 ### Kickboxing
 
 > [!abstract] [[notes/sports/kickboxing/index|(y) Kickboxing Hub]]
 > K-1 and Glory-style kickboxing: punches, shin kicks, low kicks, and a guard that stays up.
 
-- [[notes/sports/kickboxing/hand-wrapping|(y-) Hand Wrapping]]: step-by-step wrapping with a video tutorial to follow along.
-- [[notes/sports/kickboxing/gear|(y-) Gear]]: what to buy in what order, glove weights, shin guards, mouthguard.
-- [[notes/sports/kickboxing/stance-and-guard|(y-) Stance & Guard]]: the square stance, the high guard, and footwork.
-- [[notes/sports/kickboxing/punches|(y-) Punches]]: the six numbered punches and how each one loads the next strike.
-- [[notes/sports/kickboxing/kicks|(y-) Kicks & Knees]]: the shin roundhouse, teep, switch kick, and knees.
-- [[notes/sports/kickboxing/low-kicks|(y-) Low Kicks & Checking]]: attacking the legs and stopping it happening to you.
-- [[notes/sports/kickboxing/defense|(y-) Defense]]: blocking, parrying, catching kicks, and countering.
-- [[notes/sports/kickboxing/combinations|(y-) Combinations]]: Dutch-style punches into kicks.
-- [[notes/sports/kickboxing/bag-and-pads|(y-) Bag, Pads & Shadowboxing]]: training in rounds and holding pads well.
-- [[notes/sports/kickboxing/from-taekwondo|(y-) Coming from Taekwondo]]: what transfers and what to unlearn.
-- [[notes/sports/kickboxing/rules|(y-) Rulesets & Scoring]]: WAKO, Glory's 2026 rules, and how rounds are judged.
+> [!example]- All 11 pages
+>
+> - [[notes/sports/kickboxing/hand-wrapping|(y-) Hand Wrapping]]: step-by-step wrapping with a video tutorial to follow along.
+> - [[notes/sports/kickboxing/gear|(y-) Gear]]: what to buy in what order, glove weights, shin guards, mouthguard.
+> - [[notes/sports/kickboxing/stance-and-guard|(y-) Stance & Guard]]: the square stance, the high guard, and footwork.
+> - [[notes/sports/kickboxing/punches|(y-) Punches]]: the six numbered punches and how each one loads the next strike.
+> - [[notes/sports/kickboxing/kicks|(y-) Kicks & Knees]]: the shin roundhouse, teep, switch kick, and knees.
+> - [[notes/sports/kickboxing/low-kicks|(y-) Low Kicks & Checking]]: attacking the legs and stopping it happening to you.
+> - [[notes/sports/kickboxing/defense|(y-) Defense]]: blocking, parrying, catching kicks, and countering.
+> - [[notes/sports/kickboxing/combinations|(y-) Combinations]]: Dutch-style punches into kicks.
+> - [[notes/sports/kickboxing/bag-and-pads|(y-) Bag, Pads & Shadowboxing]]: training in rounds and holding pads well.
+> - [[notes/sports/kickboxing/from-taekwondo|(y-) Coming from Taekwondo]]: what transfers and what to unlearn.
+> - [[notes/sports/kickboxing/rules|(y-) Rulesets & Scoring]]: WAKO, Glory's 2026 rules, and how rounds are judged.
 
 ## Random
 
 > [!abstract] [[notes/random/index|(y) Random Hub]]
 > Everything that isn't a lecture and isn't a project.
 
-- [[notes/random/lorenz-attractor|(y-) The Lorenz Attractor]]: three equations, infinite orbits, and why determinism is not the same as predictability.
-- [[notes/random/neural-style-transfer|(y-) Neural Style Transfer]]: notes on the technique and what makes it work.
-- [[notes/random/motorcycles|(y-) Motorcycles]]: the Husqvarna Vitpilen 701 and why I ride.
-- [[notes/random/games|(y-) Gaming]]: what I'm playing right now.
-- [[notes/random/perfumes|(y-) Perfumes]]: rotation organized by season.
-- [[notes/random/matcha-coffee|(y-) Matcha and Coffee]]: two caffeine rituals that have almost nothing in common.
-- [[work/slidelink|(y-) SlideLink]]: the slide-to-heading matcher that powers my lecture notes.
-- [[work/sudokusolver|(y-) Sudoku Solver]]: a GNN that learns to solve Sudoku via node classification.
+> [!example]- All 8 pages
+>
+> - [[notes/random/lorenz-attractor|(y-) The Lorenz Attractor]]: three equations, infinite orbits, and why determinism is not the same as predictability.
+> - [[notes/random/neural-style-transfer|(y-) Neural Style Transfer]]: notes on the technique and what makes it work.
+> - [[notes/random/motorcycles|(y-) Motorcycles]]: the Husqvarna Vitpilen 701 and why I ride.
+> - [[notes/random/games|(y-) Gaming]]: what I'm playing right now.
+> - [[notes/random/perfumes|(y-) Perfumes]]: rotation organized by season.
+> - [[notes/random/matcha-coffee|(y-) Matcha and Coffee]]: two caffeine rituals that have almost nothing in common.
+> - [[work/slidelink|(y-) SlideLink]]: the slide-to-heading matcher that powers my lecture notes.
+> - [[work/sudokusolver|(y-) Sudoku Solver]]: a GNN that learns to solve Sudoku via node classification.
 
 ---
 

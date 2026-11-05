@@ -127,64 +127,70 @@ The competitive side changes fast. New electronic-scoring rules landed in 2026 a
 
 ## (y-) Poomsae Commands
 
-Poomsae (patterns / forms) practice has its own vocabulary. Knowing what the instructor says means you are not the person looking around confused after everyone else bowed.
-
-| Korean         | Pronunciation | Meaning                                                |
-| -------------- | ------------- | ------------------------------------------------------ |
-| Charyeot       | Cha ryut      | Attention stance                                       |
-| Gyeongnyae     | Gyong nyeh    | Bow                                                    |
-| Joonbi         | Joon bee      | Ready                                                  |
-| Sijak          | Shi jak       | Begin / Start                                          |
-| Geuman         | Guh man       | Stop                                                   |
-| Baro           | Ba ro         | Return to ready position                               |
-| Poomsae        | Poom say      | Pattern / Form                                         |
-| Hana, Dul, Set | Hana Dul Set  | One, Two, Three                                        |
-| Kihap          | Key hap       | Shout / Yell (the loud exhale you do on certain moves) |
-| Dobok          | Do bok        | Uniform                                                |
-| Dojang         | Do jang       | Training hall                                          |
-| Sabomnim       | Sa bom nim    | Instructor / Master                                    |
-| Sunbae         | Sun beh       | Senior student                                         |
-| Gamsahamnida   | Gamsahamnida  | Thank you                                              |
+> [!example]- Show the command table
+>
+> Poomsae (patterns / forms) practice has its own vocabulary. Knowing what the instructor says means you are not the person looking around confused after everyone else bowed.
+>
+> | Korean         | Pronunciation | Meaning                                                |
+> | -------------- | ------------- | ------------------------------------------------------ |
+> | Charyeot       | Cha ryut      | Attention stance                                       |
+> | Gyeongnyae     | Gyong nyeh    | Bow                                                    |
+> | Joonbi         | Joon bee      | Ready                                                  |
+> | Sijak          | Shi jak       | Begin / Start                                          |
+> | Geuman         | Guh man       | Stop                                                   |
+> | Baro           | Ba ro         | Return to ready position                               |
+> | Poomsae        | Poom say      | Pattern / Form                                         |
+> | Hana, Dul, Set | Hana Dul Set  | One, Two, Three                                        |
+> | Kihap          | Key hap       | Shout / Yell (the loud exhale you do on certain moves) |
+> | Dobok          | Do bok        | Uniform                                                |
+> | Dojang         | Do jang       | Training hall                                          |
+> | Sabomnim       | Sa bom nim    | Instructor / Master                                    |
+> | Sunbae         | Sun beh       | Senior student                                         |
+> | Gamsahamnida   | Gamsahamnida  | Thank you                                              |
 
 ---
 
 ## (y-) Every Page
 
-| Page                                                                       | What It Covers                           |
-| -------------------------------------------------------------------------- | ---------------------------------------- |
-| [[notes/sports/taekwondo/stances\|(y-) Stances]]                           | Poomsae and sparring stances             |
-| [[notes/sports/taekwondo/front-kick\|(y-) Front Kick]]                     | Ap chagi, the straight-line kick         |
-| [[notes/sports/taekwondo/side-kick\|(y-) Side Kick]]                       | Yeop chagi, the linear power kick        |
-| [[notes/sports/taekwondo/roundhouse-kick\|(y-) Roundhouse Kick]]           | Dollyo chagi, the main scoring kick      |
-| [[notes/sports/taekwondo/axe-kick\|(y-) Axe Kick]]                         | Naeryeo chagi, over the top of the guard |
-| [[notes/sports/taekwondo/combinations\|(y-) Combinations]]                 | Chaining kicks together                  |
-| [[notes/sports/taekwondo/taeguk\|(y-) Taegeuk Poomsae]]                    | The eight WT forms                       |
-| [[notes/sports/taekwondo/philosophy\|(y-) Philosophy]]                     | The "Do" and the tenets                  |
-| [[notes/sports/taekwondo/warmup-routine\|(y-) Flexibility Warm-Up]]        | RAMP protocol before every session       |
-| [[notes/sports/taekwondo/stretching\|(y-) Stretching & Mobility]]          | When and how to stretch, PNF             |
-| [[notes/sports/taekwondo/splits-progression\|(y-) Splits Progression]]     | The 12-week flexibility program          |
-| [[notes/sports/taekwondo/front-splits\|(y-) Front Splits]]                 | Hamstrings and hip flexors               |
-| [[notes/sports/taekwondo/side-splits\|(y-) Side Splits]]                   | Adductors and hip rotation               |
-| [[notes/sports/taekwondo/flexibility-plateaus\|(y-) Flexibility Plateaus]] | Troubleshooting a stalled split          |
-| [[notes/sports/taekwondo/spinning-kicks\|(y-) Spinning Kicks Guide]]       | The universal mechanics of every spin    |
-| [[notes/sports/taekwondo/spinning-back-kick\|(y-) Spinning Back Kick]]     | Dwi chagi, the highest-percentage spin   |
-| [[notes/sports/taekwondo/spinning-hook-kick\|(y-) Spinning Hook Kick]]     | Dwi huryeo chagi, the showstopper        |
-| [[notes/sports/taekwondo/spin-drills\|(y-) Spin Drills]]                   | Balance, spotting, rotational power      |
-| [[notes/sports/taekwondo/sparring\|(y-) Sparring]]                         | Distance, timing, not getting hit        |
-| [[notes/sports/taekwondo/footwork\|(y-) Footwork]]                         | Movement, distance bands, the boundary   |
-| [[notes/sports/taekwondo/cut-kick\|(y-) Cut & Push Kick]]                  | Jamming attacks with the front leg       |
-| [[notes/sports/taekwondo/defense\|(y-) Defense]]                           | Distance, movement, guard, counter       |
-| [[notes/sports/taekwondo/conditioning\|(y-) Conditioning]]                 | Fitness for three two-minute rounds      |
-| [[notes/sports/taekwondo/rules\|(y-) Rules (2026)]]                        | PSS scoring and the 2026 rule changes    |
-| [[notes/sports/taekwondo/2026-season\|(y-) 2026 Season]]                   | Rankings and the road to LA 2028         |
+> [!example]- Show every page
+>
+> | Page                                                                       | What It Covers                           |
+> | -------------------------------------------------------------------------- | ---------------------------------------- |
+> | [[notes/sports/taekwondo/stances\|(y-) Stances]]                           | Poomsae and sparring stances             |
+> | [[notes/sports/taekwondo/front-kick\|(y-) Front Kick]]                     | Ap chagi, the straight-line kick         |
+> | [[notes/sports/taekwondo/side-kick\|(y-) Side Kick]]                       | Yeop chagi, the linear power kick        |
+> | [[notes/sports/taekwondo/roundhouse-kick\|(y-) Roundhouse Kick]]           | Dollyo chagi, the main scoring kick      |
+> | [[notes/sports/taekwondo/axe-kick\|(y-) Axe Kick]]                         | Naeryeo chagi, over the top of the guard |
+> | [[notes/sports/taekwondo/combinations\|(y-) Combinations]]                 | Chaining kicks together                  |
+> | [[notes/sports/taekwondo/taeguk\|(y-) Taegeuk Poomsae]]                    | The eight WT forms                       |
+> | [[notes/sports/taekwondo/philosophy\|(y-) Philosophy]]                     | The "Do" and the tenets                  |
+> | [[notes/sports/taekwondo/warmup-routine\|(y-) Flexibility Warm-Up]]        | RAMP protocol before every session       |
+> | [[notes/sports/taekwondo/stretching\|(y-) Stretching & Mobility]]          | When and how to stretch, PNF             |
+> | [[notes/sports/taekwondo/splits-progression\|(y-) Splits Progression]]     | The 12-week flexibility program          |
+> | [[notes/sports/taekwondo/front-splits\|(y-) Front Splits]]                 | Hamstrings and hip flexors               |
+> | [[notes/sports/taekwondo/side-splits\|(y-) Side Splits]]                   | Adductors and hip rotation               |
+> | [[notes/sports/taekwondo/flexibility-plateaus\|(y-) Flexibility Plateaus]] | Troubleshooting a stalled split          |
+> | [[notes/sports/taekwondo/spinning-kicks\|(y-) Spinning Kicks Guide]]       | The universal mechanics of every spin    |
+> | [[notes/sports/taekwondo/spinning-back-kick\|(y-) Spinning Back Kick]]     | Dwi chagi, the highest-percentage spin   |
+> | [[notes/sports/taekwondo/spinning-hook-kick\|(y-) Spinning Hook Kick]]     | Dwi huryeo chagi, the showstopper        |
+> | [[notes/sports/taekwondo/spin-drills\|(y-) Spin Drills]]                   | Balance, spotting, rotational power      |
+> | [[notes/sports/taekwondo/sparring\|(y-) Sparring]]                         | Distance, timing, not getting hit        |
+> | [[notes/sports/taekwondo/footwork\|(y-) Footwork]]                         | Movement, distance bands, the boundary   |
+> | [[notes/sports/taekwondo/cut-kick\|(y-) Cut & Push Kick]]                  | Jamming attacks with the front leg       |
+> | [[notes/sports/taekwondo/defense\|(y-) Defense]]                           | Distance, movement, guard, counter       |
+> | [[notes/sports/taekwondo/conditioning\|(y-) Conditioning]]                 | Fitness for three two-minute rounds      |
+> | [[notes/sports/taekwondo/rules\|(y-) Rules (2026)]]                        | PSS scoring and the 2026 rule changes    |
+> | [[notes/sports/taekwondo/2026-season\|(y-) 2026 Season]]                   | Rankings and the road to LA 2028         |
 
 ---
 
 ## Sources
 
-- [Kukkiwon (World Taekwondo Headquarters)](http://www.kukkiwon.or.kr/)
-- [World Taekwondo (WT)](http://www.worldtaekwondo.org/)
-- [USA Taekwondo (USATKD)](https://www.usatkd.org/)
+> [!example]- Show sources
+>
+> - [Kukkiwon (World Taekwondo Headquarters)](http://www.kukkiwon.or.kr/)
+> - [World Taekwondo (WT)](http://www.worldtaekwondo.org/)
+> - [USA Taekwondo (USATKD)](https://www.usatkd.org/)
 
 ---
 

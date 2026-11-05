@@ -80,43 +80,49 @@ Coming from [[notes/sports/taekwondo/index|(y) Taekwondo]], the kicks were the f
 
 ## (y-) Fighters worth watching
 
-| Fighter           | Country | What to watch for                                                                                                                                                                               |
-| ----------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Ernesto Hoost     | NED     | Four-time K-1 World Grand Prix champion (1997, 1999, 2000, 2002), nicknamed "Mr. Perfect". Combinations that finish on a low kick.                                                              |
-| Peter Aerts       | NED     | Three K-1 World Grand Prix titles (1994, 1995, 1998). Heavyweight high kicks.                                                                                                                   |
-| Semmy Schilt      | NED     | Four K-1 World Grand Prix titles (2005, 2006, 2007, 2009) and the first Glory heavyweight champion in 2012. Very tall, and used the jab, teep and knees to keep people at the end of his reach. |
-| Giorgio Petrosyan | ITA     | K-1 World MAX champion in 2009 and 2010. The model for defense: small steps, tight blocks, and a counter off every miss.                                                                        |
-| Buakaw            | THA     | K-1 World MAX champion in 2004 and 2006, fighting as Buakaw Por. Pramuk. Muay Thai body kicks and knees under kickboxing rules.                                                                 |
-| Rico Verhoeven    | NED     | Glory heavyweight champion from June 2014 until he gave up the title in November 2025, with thirteen defenses. Volume, pressure and low kicks.                                                  |
+> [!example]- Show fighters
+>
+> | Fighter           | Country | What to watch for                                                                                                                                                                               |
+> | ----------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+> | Ernesto Hoost     | NED     | Four-time K-1 World Grand Prix champion (1997, 1999, 2000, 2002), nicknamed "Mr. Perfect". Combinations that finish on a low kick.                                                              |
+> | Peter Aerts       | NED     | Three K-1 World Grand Prix titles (1994, 1995, 1998). Heavyweight high kicks.                                                                                                                   |
+> | Semmy Schilt      | NED     | Four K-1 World Grand Prix titles (2005, 2006, 2007, 2009) and the first Glory heavyweight champion in 2012. Very tall, and used the jab, teep and knees to keep people at the end of his reach. |
+> | Giorgio Petrosyan | ITA     | K-1 World MAX champion in 2009 and 2010. The model for defense: small steps, tight blocks, and a counter off every miss.                                                                        |
+> | Buakaw            | THA     | K-1 World MAX champion in 2004 and 2006, fighting as Buakaw Por. Pramuk. Muay Thai body kicks and knees under kickboxing rules.                                                                 |
+> | Rico Verhoeven    | NED     | Glory heavyweight champion from June 2014 until he gave up the title in November 2025, with thirteen defenses. Volume, pressure and low kicks.                                                  |
 
 ---
 
 ## (y-) Every page
 
-| Page                                                                    | What it covers                                |
-| ----------------------------------------------------------------------- | --------------------------------------------- |
-| [[notes/sports/kickboxing/hand-wrapping\|(y-) Hand Wrapping]]           | Wrapping step by step, with video tutorials   |
-| [[notes/sports/kickboxing/gear\|(y-) Gear]]                             | Gloves, shin guards, mouthguard, buying order |
-| [[notes/sports/kickboxing/stance-and-guard\|(y-) Stance & Guard]]       | Square stance, high guard, footwork           |
-| [[notes/sports/kickboxing/punches\|(y-) Punches]]                       | The six numbered punches                      |
-| [[notes/sports/kickboxing/kicks\|(y-) Kicks & Knees]]                   | Roundhouse, teep, switch kick, knees          |
-| [[notes/sports/kickboxing/low-kicks\|(y-) Low Kicks & Checking]]        | Attacking and defending the legs              |
-| [[notes/sports/kickboxing/defense\|(y-) Defense]]                       | Blocking, parrying, catching, countering      |
-| [[notes/sports/kickboxing/combinations\|(y-) Combinations]]             | Punches into kicks, Dutch style               |
-| [[notes/sports/kickboxing/bag-and-pads\|(y-) Bag, Pads & Shadowboxing]] | Training in rounds, holding pads              |
-| [[notes/sports/kickboxing/from-taekwondo\|(y-) Coming from Taekwondo]]  | What transfers and what to unlearn            |
-| [[notes/sports/kickboxing/rules\|(y-) Rulesets & Scoring]]              | WAKO, Glory 2026, Muay Thai                   |
+> [!example]- Show every page
+>
+> | Page                                                                    | What it covers                                |
+> | ----------------------------------------------------------------------- | --------------------------------------------- |
+> | [[notes/sports/kickboxing/hand-wrapping\|(y-) Hand Wrapping]]           | Wrapping step by step, with video tutorials   |
+> | [[notes/sports/kickboxing/gear\|(y-) Gear]]                             | Gloves, shin guards, mouthguard, buying order |
+> | [[notes/sports/kickboxing/stance-and-guard\|(y-) Stance & Guard]]       | Square stance, high guard, footwork           |
+> | [[notes/sports/kickboxing/punches\|(y-) Punches]]                       | The six numbered punches                      |
+> | [[notes/sports/kickboxing/kicks\|(y-) Kicks & Knees]]                   | Roundhouse, teep, switch kick, knees          |
+> | [[notes/sports/kickboxing/low-kicks\|(y-) Low Kicks & Checking]]        | Attacking and defending the legs              |
+> | [[notes/sports/kickboxing/defense\|(y-) Defense]]                       | Blocking, parrying, catching, countering      |
+> | [[notes/sports/kickboxing/combinations\|(y-) Combinations]]             | Punches into kicks, Dutch style               |
+> | [[notes/sports/kickboxing/bag-and-pads\|(y-) Bag, Pads & Shadowboxing]] | Training in rounds, holding pads              |
+> | [[notes/sports/kickboxing/from-taekwondo\|(y-) Coming from Taekwondo]]  | What transfers and what to unlearn            |
+> | [[notes/sports/kickboxing/rules\|(y-) Rulesets & Scoring]]              | WAKO, Glory 2026, Muay Thai                   |
 
 ---
 
 ## Sources
 
-- [GLORY: Official Rules (as of March 16, 2026)](https://glorykickboxing.com/rules)
-- [WAKO: World Association of Kickboxing Organizations](https://wako.sport/)
-- [Kickboxing Europe: Disciplines and categories](https://kickboxingeurope.com/kickboxing/disciplines-and-categories/)
-- [Wikipedia: Kickboxing](https://en.wikipedia.org/wiki/Kickboxing)
-- [Wikipedia: K-1 World Grand Prix](https://en.wikipedia.org/wiki/K-1_World_Grand_Prix) and [K-1 World MAX](https://en.wikipedia.org/wiki/K-1_World_MAX) (tournament champions by year)
-- [Wikipedia: Rico Verhoeven](https://en.wikipedia.org/wiki/Rico_Verhoeven)
+> [!example]- Show sources
+>
+> - [GLORY: Official Rules (as of March 16, 2026)](https://glorykickboxing.com/rules)
+> - [WAKO: World Association of Kickboxing Organizations](https://wako.sport/)
+> - [Kickboxing Europe: Disciplines and categories](https://kickboxingeurope.com/kickboxing/disciplines-and-categories/)
+> - [Wikipedia: Kickboxing](https://en.wikipedia.org/wiki/Kickboxing)
+> - [Wikipedia: K-1 World Grand Prix](https://en.wikipedia.org/wiki/K-1_World_Grand_Prix) and [K-1 World MAX](https://en.wikipedia.org/wiki/K-1_World_MAX) (tournament champions by year)
+> - [Wikipedia: Rico Verhoeven](https://en.wikipedia.org/wiki/Rico_Verhoeven)
 
 ---
 
