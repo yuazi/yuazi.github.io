@@ -9,7 +9,7 @@ tags:
 date: 2026-10-23
 ---
 
-[[/notes/lectures/supplychainmanagement/index|Zurück zum SCM-Index]] | [[/notes/lectures/supplychainmanagement/02-einordnung-und-rahmenmodelle|Zurück: (y-02) Einordnung und Rahmenmodelle]]
+[[/notes/lectures/supplychainmanagement/index|Zurück zum SCM-Index]] | [[/notes/lectures/supplychainmanagement/02-einordnung-und-rahmenmodelle|Zurück: (y-02) Einordnung und Rahmenmodelle]] | [[/notes/lectures/supplychainmanagement/04-vertraege-verhandlungen-und-beziehungsmanagement|Weiter: (y-04) Verträge, Verhandlungen und Beziehungsmanagement]]
 
 ## Mentales Modell
 
@@ -327,4 +327,4 @@ Die zweite Folie ordnet die Planungsaufgaben nach Horizont und Akteur. Strategis
 
 ---
 
-[[/notes/lectures/supplychainmanagement/index|Zurück zum SCM-Index]] | [[/notes/lectures/supplychainmanagement/02-einordnung-und-rahmenmodelle|Zurück: (y-02) Einordnung und Rahmenmodelle]]
+[[/notes/lectures/supplychainmanagement/index|Zurück zum SCM-Index]] | [[/notes/lectures/supplychainmanagement/02-einordnung-und-rahmenmodelle|Zurück: (y-02) Einordnung und Rahmenmodelle]] | [[/notes/lectures/supplychainmanagement/04-vertraege-verhandlungen-und-beziehungsmanagement|Weiter: (y-04) Verträge, Verhandlungen und Beziehungsmanagement]]

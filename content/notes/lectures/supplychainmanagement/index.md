@@ -25,6 +25,15 @@ date: 2026-10-20
 - [[/notes/lectures/supplychainmanagement/03-planungsebenen-und-instrumente|(y-03) Planungsebenen und -instrumente]]  
    Configuration, Planning und Execution, das Zielsystem, strategischer Fit zwischen Produktart und Supply-Chain-Struktur (mit Beyond Meat, IKEA und Zara), der Order Penetration Point, mono- und polyzentrische Koordination, Master Planning und die Planning Matrix, zentrale Planungsträger bis zum 4PL und die zentrale Planung bei IKEA.
 
+- [[/notes/lectures/supplychainmanagement/04-vertraege-verhandlungen-und-beziehungsmanagement|(y-04) Verträge, Verhandlungen und Beziehungsmanagement]]  
+   Supply Chain Steuerung und ihre sechs Hebel, Agency-Theorie und mehrstufige Verträge, Erklärungsansätze für Verhandlungen bis zum Ankereffekt, die fünf Verhandlungsstile, BATNA und Taktiken, Bluffen gegen Lügen, KI-Chatbots als Verhandler, Konfliktmanagement, SCRM, die Lieferantensegmentierung bei Coca-Cola und CRM.
+
+- [[/notes/lectures/supplychainmanagement/05-organisation-fuehrung-und-personelle-anforderungen|(y-05) Organisation, Führung und personelle Anforderungen]]  
+   Ablauf- und Aufbauorganisation, die fünf Typen der SCM-Aufbauorganisation nach Kim, Führungstheorie und Supply Chain Leadership mit der Studie von Defee et al., das Berufsbild des SC-Managers nach Livolsi und die Skill-Studien von Thai et al. und Wagner et al.
+
+- [[/notes/lectures/supplychainmanagement/06-konzepte-des-scm-i|(y-06) Konzepte des SCM I]]  
+   17 Konzepte nach dem SCOR-Modell und ihr Bekanntheitsgrad, Collaborative Engineering, Value Added Partnership bei Smart, Fertigungsstrategien und Postponement mit Benetton, Mass Customization, Kanban und die vier Stufen von JIT/JIS.
+
 ## Vorlesungsplan (Stand 22.09.2026)
 
 | Datum      | Einheit | Inhalt                                                           |
