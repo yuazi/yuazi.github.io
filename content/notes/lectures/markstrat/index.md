@@ -16,6 +16,16 @@ date: 2026-10-20
 - [[/notes/lectures/markstrat/00-kickoff|(y-00) Kick-Off Digital Markstrat]]  
    Die drei Teilmodule im Marketing, Ablauf und Ziele des Planspiels, die Markstrat-Welt, Sonite- und Vodite-Spezifikationen, Markennamen, Kundengruppen und Segmente, Medien und Vertriebskanäle, der Share Price Index, Entscheidungen pro Periode, Produktionsplanung mit Rechenbeispiel, Preis, Werbung, Salesforce, Marketing Powerhouse, Budgetregel, G&V und Prüfungstermine.
 
+## Simulationsrunden (Team M)
+
+Die Rundenseiten enthalten die Strategie unseres Teams und sind passwortgeschützt, solange das Spiel läuft.
+
+- [[/notes/lectures/markstrat/simulation/01-runde-1|Runde 1: Ausgangslage nach Periode 0 und Entscheidungen]]  
+   MOST als Gewinnbringer und MOVE zwischen allen Stühlen, Wettbewerb, Segmente und Kanäle nach Periode 0, der Vorschlag aus dem Briefing (MOVE auf \$359, Specialty-Abdeckung, Wahrnehmungsstudien) und was das Team tatsächlich eingegeben hat.
+
+- [[/notes/lectures/markstrat/simulation/02-runde-2|Runde 2: Ergebnis von Periode 1 und F&E-Start]]  
+   Ergebnis von Periode 1 (SPI 1.175, Platz 2), Semantic Scales und MDS, Commercial-Ausgaben im Vergleich, Werbetest und Initiativen, Vorschlag für Runde 2 und das F&E-Projekt PO-MOVE2 für Millennials.
+
 ## Prüfungsübersicht
 
 | Bestandteil                              | Termin     | Gewicht | Hinweise                                                                                         |

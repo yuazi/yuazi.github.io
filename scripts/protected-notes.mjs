@@ -35,6 +35,10 @@ const BUNDLES = [
     name: "qiskit",
     paths: ["content/notes/lectures/qiskit"],
   },
+  {
+    name: "markstrat",
+    paths: ["content/notes/lectures/markstrat/simulation", "content/pictures/markstrat/simulation"],
+  },
 ]
 // Where `publish` writes the encrypted images. Only CI should ever create it.
 const PROTECTED_PICTURES = "content/pictures/protected"
