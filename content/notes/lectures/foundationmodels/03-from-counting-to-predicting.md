@@ -11,7 +11,7 @@ tags:
 date: 2026-11-02
 ---
 
-[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/02-ml-basics|Previous: (y-02) Machine Learning Basics]]
+[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/02-ml-basics|Previous: (y-02) Machine Learning Basics]] | [[/notes/lectures/foundationmodels/04-data-and-tokens|Next: (y-04) Data and Tokens]]
 
 ## Mental Model First
 
@@ -607,4 +607,4 @@ The next lecture covers data and tokens: what models learn from.
 
 ---
 
-[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/02-ml-basics|Previous: (y-02) Machine Learning Basics]]
+[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/02-ml-basics|Previous: (y-02) Machine Learning Basics]] | [[/notes/lectures/foundationmodels/04-data-and-tokens|Next: (y-04) Data and Tokens]]

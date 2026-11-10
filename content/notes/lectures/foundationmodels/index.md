@@ -24,6 +24,9 @@ The material overlaps with the [[/notes/lectures/mlp/index|MPL course]] on trans
 - [[/notes/lectures/foundationmodels/03-from-counting-to-predicting|(y-03) From Counting to Predicting: Statistical Language Models]]  
    Shannon's guessing game, the chain rule, Zipf's and Heaps' laws and why sparsity cannot be avoided, n-gram models with MLE, add-k, interpolation and Kneser-Ney, cross-entropy, perplexity and the link to compression, tokenizer-dependent perplexity, distributional semantics, Bengio's neural LM, word2vec and its biases, RNN language models, the encoder-decoder bottleneck and attention.
 
+- [[/notes/lectures/foundationmodels/04-data-and-tokens|(y-04) Data and Tokens]]  
+   Scale and sources of pretraining text and the coming data shortage, the FineWeb curation pipeline, heuristic and model-based quality filters, harmful content and who filtering hurts, deduplication with Jaccard similarity, MinHash and banding, decontamination and the EU AI Act, data mixtures, annealing and synthetic data, byte-pair encoding by hand, tokenizer families, token costs across languages, digits and glitch tokens, the Byte Latent Transformer, and judging data with small-model ablations.
+
 ## Assessment Map
 
 | Component       | Weight / Gate          | Notes                                                                                                         |
