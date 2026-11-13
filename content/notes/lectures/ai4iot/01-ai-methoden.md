@@ -10,7 +10,7 @@ tags:
 date: 2026-10-27
 ---
 
-[[/notes/lectures/ai4iot/index|Zurück zum AI4IoT-Index]] | [[/notes/lectures/ai4iot/00-kickoff|Zurück: (y-00) Kick-Off und Kernbegriffe]]
+[[/notes/lectures/ai4iot/index|Zurück zum AI4IoT-Index]] | [[/notes/lectures/ai4iot/00-kickoff|Zurück: (y-00) Kick-Off und Kernbegriffe]] | [[/notes/lectures/ai4iot/02-ot-cps|Weiter: (y-02) Grundlagen OT, CPS und Digital Twins]]
 
 ## Mentales Modell
 
@@ -688,4 +688,4 @@ Auch die besten LLMs können nicht zaubern. Halluzinationen scheinen mit den akt
 
 ---
 
-[[/notes/lectures/ai4iot/index|Zurück zum AI4IoT-Index]] | [[/notes/lectures/ai4iot/00-kickoff|Zurück: (y-00) Kick-Off und Kernbegriffe]]
+[[/notes/lectures/ai4iot/index|Zurück zum AI4IoT-Index]] | [[/notes/lectures/ai4iot/00-kickoff|Zurück: (y-00) Kick-Off und Kernbegriffe]] | [[/notes/lectures/ai4iot/02-ot-cps|Weiter: (y-02) Grundlagen OT, CPS und Digital Twins]]

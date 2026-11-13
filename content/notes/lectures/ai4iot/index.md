@@ -19,6 +19,9 @@ date: 2026-10-20
 - [[/notes/lectures/ai4iot/01-ai-methoden|(y-01) AI-Methoden]]  
    Starke und schwache KI, Data Mining und ML, überwachtes, unüberwachtes und bestärkendes Lernen, Strategien gegen Datenmangel, diskriminative Methoden (Abweichungsanalyse, Klassifikation, Clustering, Wirkungsprognose, Assoziationsanalyse), künstliche neuronale Netze, CNNs, GANs, Autoencoder, Diffusion, RNNs und LSTMs, Transformer, Embeddings und Tokens, RAG, Scaling Laws und Test-Time Compute, TinyLLMs für Edge-Geräte, Physical und Agentic AI.
 
+- [[/notes/lectures/ai4iot/02-ot-cps|(y-02) Grundlagen OT, CPS und Digital Twins]]  
+   Prinzipien der Automatisierungstechnik (Leitungsvermittlung, proprietäre Feldbusse, SPS-Logik, Echtzeit), Automatisierungspyramide, Funktionstabelle und KV-Diagramm, KNX, Cyber-physische Systeme nach NIST, die CPS-Gefriertruhe als Digital Twin (Cyberize the Physical, Physicalize the Cyber) und das Schiebetor als Team Work.
+
 ## Prüfungsübersicht
 
 | Bestandteil         | Termin     | Hinweise                                                                            |
