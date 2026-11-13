@@ -34,6 +34,11 @@ date: 2026-10-20
 - [[/notes/lectures/supplychainmanagement/06-konzepte-des-scm-i|(y-06) Konzepte des SCM I]]  
    17 Konzepte nach dem SCOR-Modell und ihr Bekanntheitsgrad, Collaborative Engineering, Value Added Partnership bei Smart, Fertigungsstrategien und Postponement mit Benetton, Mass Customization, Kanban und die vier Stufen von JIT/JIS.
 
+## Übungsnotizen
+
+- [[/notes/lectures/supplychainmanagement/ue-01-beer-game-und-fallstudien|(y-ü01) Beer Game und Fallstudien zur SC-Planung]]  
+   Die Bier-Supply-Chain im Beer Game, die Auswertung je Stufe, der Bullwhip-Effekt und seine vier Ursachen nach Lee, Padmanabhan und Whang, Leitfragen zur Reflexion sowie die Fallstudien BearCo und Netflix gegen Blockbuster.
+
 ## Vorlesungsplan (Stand 22.09.2026)
 
 | Datum      | Einheit | Inhalt                                                           |
