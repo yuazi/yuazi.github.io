@@ -40,6 +40,11 @@ date: 2026-10-20
 - [[/notes/lectures/mitun/07-vermarktung|(y-07) Vermarktung]]  
    Die vier Ebenen der Marketingkonzeption mit Ansoff-Matrix und Segmentierung, Software als Konsum-, Vertrauens- oder Investitionsgut, der erweiterte Marketing-Mix, Feature Fatigue und Pareto-Fokussierung, virales Marketing, Preisfindung per Triangulation und Cost-plus für Cloud-Produkte, Vertriebstrichter und B2B-SaaS-Vertrieb, Freemium und Free Trial (Folien 2025/26).
 
+## Übungsnotizen
+
+- [[/notes/lectures/mitun/ue-uebungsklausur-fotonix|(y-ÜK) Übungsklausur: Fallbeispiel Fotonix]]  
+   Musterlösungen zu allen fünf ÜK-Aufgaben am Fall Fotonix: die sechs Quellen unternehmerischer Gelegenheit, die Effectuation-Schritte 1 bis 9, Value Proposition Canvas, vier verbesserte Bausteine des Business Model Canvas und seine Schwächen, Ambidextrie mit zwei Führungsmaßnahmen, Venture Capital gegen Business Angel sowie Rollen, Netzeffekte und Boundary Resources eines Passbild-Ökosystems.
+
 ## Prüfungsübersicht
 
 | Bestandteil        | Gewicht       | Hinweise                                                                                                |
