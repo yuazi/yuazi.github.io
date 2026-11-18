@@ -27,6 +27,9 @@ The material overlaps with the [[/notes/lectures/mlp/index|MPL course]] on trans
 - [[/notes/lectures/foundationmodels/04-data-and-tokens|(y-04) Data and Tokens]]  
    Scale and sources of pretraining text and the coming data shortage, the FineWeb curation pipeline, heuristic and model-based quality filters, harmful content and who filtering hurts, deduplication with Jaccard similarity, MinHash and banding, decontamination and the EU AI Act, data mixtures, annealing and synthetic data, byte-pair encoding by hand, tokenizer families, token costs across languages, digits and glitch tokens, the Byte Latent Transformer, and judging data with small-model ablations.
 
+- [[/notes/lectures/foundationmodels/05-from-attention-to-modern-llms|(y-05) From Attention to Modern LLMs]]  
+   Attention as weighted averaging computed by hand, kernel regression and least squares as attention, multi-head attention, the transformer block and residual stream, why attention ignores word order, BERT versus GPT (masks, cloze, next token), counting parameters, the modern block (RMSNorm, GELU, SwiGLU, RoPE, GQA, MLA), mixture of experts with total versus active parameters and load balancing, KV-cache arithmetic, lost in the middle, FlashAttention with its online softmax, and sliding-window attention.
+
 ## Assessment Map
 
 | Component       | Weight / Gate          | Notes                                                                                                         |

@@ -11,7 +11,7 @@ tags:
 date: 2026-11-10
 ---
 
-[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/03-from-counting-to-predicting|Previous: (y-03) From Counting to Predicting]]
+[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/03-from-counting-to-predicting|Previous: (y-03) From Counting to Predicting]] | [[/notes/lectures/foundationmodels/05-from-attention-to-modern-llms|Next: (y-05) From Attention to Modern LLMs]]
 
 ## Mental Model First
 
@@ -648,4 +648,4 @@ The next lecture covers architecture, from attention to modern LLMs.
 
 ---
 
-[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/03-from-counting-to-predicting|Previous: (y-03) From Counting to Predicting]]
+[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/03-from-counting-to-predicting|Previous: (y-03) From Counting to Predicting]] | [[/notes/lectures/foundationmodels/05-from-attention-to-modern-llms|Next: (y-05) From Attention to Modern LLMs]]
