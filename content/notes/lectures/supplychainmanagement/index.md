@@ -39,6 +39,9 @@ date: 2026-10-20
 - [[/notes/lectures/supplychainmanagement/ue-01-beer-game-und-fallstudien|(y-ü01) Beer Game und Fallstudien zur SC-Planung]]  
    Die Bier-Supply-Chain im Beer Game, die Auswertung je Stufe, der Bullwhip-Effekt und seine vier Ursachen nach Lee, Padmanabhan und Whang, Leitfragen zur Reflexion sowie die Fallstudien BearCo und Netflix gegen Blockbuster.
 
+- [[/notes/lectures/supplychainmanagement/ue-02-verhandlungsspiel|(y-ü02) Verhandlungsspiel zur SC-Steuerung]]  
+   Definition und Merkmale einer Verhandlung, Verhandlungsformen, die fünf Ablaufschritte, Negotiation Check und Machtmatrix, Battle Plan, Big 5 und Verhandlungsstile, FBI- und Co-Negotiating-Konzept, Reservations- und Aspirationslösung mit ZOPA, Power Based gegen Value Based Negotiating, der Vorbereitungsreport sowie Rollen, Fälle und Leitfragen des Verhandlungsspiels.
+
 ## Vorlesungsplan (Stand 22.09.2026)
 
 | Datum      | Einheit | Inhalt                                                           |
