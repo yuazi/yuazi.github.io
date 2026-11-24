@@ -11,7 +11,7 @@ tags:
 date: 2026-11-18
 ---
 
-[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/04-data-and-tokens|Previous: (y-04) Data and Tokens]]
+[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/04-data-and-tokens|Previous: (y-04) Data and Tokens]] | [[/notes/lectures/foundationmodels/06-pretraining-and-scaling|Next: (y-06) Pretraining and Scaling]]
 
 ## Mental Model First
 
@@ -740,4 +740,4 @@ The next lecture covers pretraining and scaling: how the block learns.
 
 ---
 
-[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/04-data-and-tokens|Previous: (y-04) Data and Tokens]]
+[[/notes/lectures/foundationmodels/index|Back to Foundation Models Index]] | [[/notes/lectures/foundationmodels/04-data-and-tokens|Previous: (y-04) Data and Tokens]] | [[/notes/lectures/foundationmodels/06-pretraining-and-scaling|Next: (y-06) Pretraining and Scaling]]

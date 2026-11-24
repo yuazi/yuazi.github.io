@@ -30,6 +30,9 @@ The material overlaps with the [[/notes/lectures/mlp/index|MPL course]] on trans
 - [[/notes/lectures/foundationmodels/05-from-attention-to-modern-llms|(y-05) From Attention to Modern LLMs]]  
    Attention as weighted averaging computed by hand, kernel regression and least squares as attention, multi-head attention, the transformer block and residual stream, why attention ignores word order, BERT versus GPT (masks, cloze, next token), counting parameters, the modern block (RMSNorm, GELU, SwiGLU, RoPE, GQA, MLA), mixture of experts with total versus active parameters and load balancing, KV-cache arithmetic, lost in the middle, FlashAttention with its online softmax, and sliding-window attention.
 
+- [[/notes/lectures/foundationmodels/06-pretraining-and-scaling|(y-06) Pretraining and Scaling]]  
+   Next-token versus masked-token objectives and why decoders won, concept lattices from BERT, multi-token prediction, training compute with 6ND, AdamW versus Muon, learning-rate schedules and annealing, mixed precision down to FP8, loss spikes and QK-norm, data, tensor, pipeline and expert parallelism, mid-training and context extension with RoPE, power-law scaling, Chinchilla's 20 tokens per parameter and training longer for cheap serving, emergence as a metric effect, long-horizon execution, in-context learning, and evaluating base models.
+
 ## Assessment Map
 
 | Component       | Weight / Gate          | Notes                                                                                                         |
