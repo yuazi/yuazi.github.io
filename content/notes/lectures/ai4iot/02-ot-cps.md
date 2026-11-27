@@ -9,7 +9,7 @@ tags:
 date: 2026-11-11
 ---
 
-[[/notes/lectures/ai4iot/index|Zurück zum AI4IoT-Index]] | [[/notes/lectures/ai4iot/01-ai-methoden|Zurück: (y-01) AI-Methoden]]
+[[/notes/lectures/ai4iot/index|Zurück zum AI4IoT-Index]] | [[/notes/lectures/ai4iot/01-ai-methoden|Zurück: (y-01) AI-Methoden]] | [[/notes/lectures/ai4iot/03-case-wartung-mit-robotern|Weiter: (y-03) Case: Wartung mit Robotern]]
 
 > [!note] Foliengrundlage
 > Der Foliensatz von Prof. Dr. Jens Lachenmaier trägt das Datum 22.10.2025 (Version V01). Laut Semesterplan gehören die Themen zu den Sitzungen "Grundlagen OT" (04.11.2026) und "Grundlagen IIoT und CPS" (11.11.2026).
@@ -184,6 +184,20 @@ Das Prinzip eines CPS zeigt die Vorlesung an einer Gefriertruhe mit drei Element
 
 Die zweite Gruppenarbeit greift das Schiebetor wieder auf. Diesmal wird es als CPS modelliert: Welche Zustände wandern ins Digitale, wie sieht das virtuelle Abbild aus, und wie wirkt die Logik über die Aktoren zurück aufs Tor?
 
+### Ergebnis: Das Tor als CPS
+
+Das Ergebnis der Gruppenarbeit kam als eigenes Dokument ("Tor als CPS") in ILIAS. Es beschreibt das Tor in sieben Bausteinen:
+
+| Baustein                     | Inhalt                                                                                                                                                                                                                                                            |
+| :--------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Business (Kontext und Zweck) | Menschen und Fahrzeuge selektiv und autonom auf ein Werkgelände einlassen, Einlasskontrolle                                                                                                                                                                       |
+| Anforderungen (Management)   | öffnet vollständig in 5 Sekunden; lässt nur Berechtigte durch und hält Nicht-Berechtigte draußen; öffnet, sobald eine Berechtigung erkannt ist; prüft die Berechtigung in 3 Sekunden; schließt nicht, wenn dadurch eine Person in Gefahr kommt; (ist updatefähig) |
+| Informationen                | Ist der Weg frei bzw. steht eine Person im Weg (ja/nein, Gefahrenlage), Berechtigungen und Identifikation, Zustand des Tores, Uhrzeiten                                                                                                                           |
+| Application                  | Berechtigungs-Prüf-Service, Zustands-Ermittlungs-Service, Sicherheits-Service, (Update-Service)                                                                                                                                                                   |
+| Sensoren                     | Lichtschranke, Kamera, Tor-End-Anschlagssensor                                                                                                                                                                                                                    |
+| Aktoren                      | Motor zur Torbewegung                                                                                                                                                                                                                                             |
+| Menschen/User                | Personen, die durch das Tor wollen, Personen, die die Berechtigungen pflegen, Pförtner, (Personen, die das Tor warten)                                                                                                                                            |
+
 ## 15. Ausblick
 
 Die nächste Sitzung behandelt ein strukturiertes Vorgehen zur Entwicklung von CPS.
@@ -227,4 +241,4 @@ Die nächste Sitzung behandelt ein strukturiertes Vorgehen zur Entwicklung von C
 
 ---
 
-[[/notes/lectures/ai4iot/index|Zurück zum AI4IoT-Index]] | [[/notes/lectures/ai4iot/01-ai-methoden|Zurück: (y-01) AI-Methoden]]
+[[/notes/lectures/ai4iot/index|Zurück zum AI4IoT-Index]] | [[/notes/lectures/ai4iot/01-ai-methoden|Zurück: (y-01) AI-Methoden]] | [[/notes/lectures/ai4iot/03-case-wartung-mit-robotern|Weiter: (y-03) Case: Wartung mit Robotern]]

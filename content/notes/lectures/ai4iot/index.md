@@ -20,7 +20,13 @@ date: 2026-10-20
    Starke und schwache KI, Data Mining und ML, überwachtes, unüberwachtes und bestärkendes Lernen, Strategien gegen Datenmangel, diskriminative Methoden (Abweichungsanalyse, Klassifikation, Clustering, Wirkungsprognose, Assoziationsanalyse), künstliche neuronale Netze, CNNs, GANs, Autoencoder, Diffusion, RNNs und LSTMs, Transformer, Embeddings und Tokens, RAG, Scaling Laws und Test-Time Compute, TinyLLMs für Edge-Geräte, Physical und Agentic AI.
 
 - [[/notes/lectures/ai4iot/02-ot-cps|(y-02) Grundlagen OT, CPS und Digital Twins]]  
-   Prinzipien der Automatisierungstechnik (Leitungsvermittlung, proprietäre Feldbusse, SPS-Logik, Echtzeit), Automatisierungspyramide, Funktionstabelle und KV-Diagramm, KNX, Cyber-physische Systeme nach NIST, die CPS-Gefriertruhe als Digital Twin (Cyberize the Physical, Physicalize the Cyber) und das Schiebetor als Team Work.
+   Prinzipien der Automatisierungstechnik (Leitungsvermittlung, proprietäre Feldbusse, SPS-Logik, Echtzeit), Automatisierungspyramide, Funktionstabelle und KV-Diagramm, KNX, Cyber-physische Systeme nach NIST, die CPS-Gefriertruhe als Digital Twin (Cyberize the Physical, Physicalize the Cyber) und das Schiebetor als Team Work, mit dem Ergebnis "Tor als CPS".
+
+- [[/notes/lectures/ai4iot/03-case-wartung-mit-robotern|(y-03) Case: Wartung mit Robotern an abgelegenen Orten]]  
+   Der Fall für die Prüfungsleistung: Einsatzorte von Stromleitungen bis Weltraum, fünf besondere Herausforderungen, die zehn Leitfragen der Aufgabenstellung (Business, Functional und Implementation Viewpoint bis Wirtschaftlichkeit) und wo sie im Kurs vorkommen.
+
+- [[/notes/lectures/ai4iot/04-daten-und-modellbereitstellung|(y-04) Daten- und Modellbereitstellung]]  
+   Die Bausteine von Sensor bis MLOps, vier Anbietertraditionen, OPC UA, MQTT, Kafka und Lambda-Architektur, Konsolidierung, Föderation und Propagation, Data Warehouse, Data Lake und Lakehouse, Data Catalog und Feature Store, Data Fabric und Data Mesh, IDS, Gaia-X, Catena-X und Datengenossenschaften sowie DevOps, DataOps und MLOps.
 
 ## Prüfungsübersicht
 
