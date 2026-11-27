@@ -193,7 +193,7 @@ Auswirkungen auf das Ökosystem: Es wirken indirekte Netzeffekte. Je mehr Kunden
 
 ### b) Vier Mittel für Skalierung über externe Innovationsleistung (2 Punkte)
 
-![[pictures/mitun/06/Lecture06_Pg016_Boundary_Resources.png]]
+![[pictures/mitun/06/Lecture06_Pg017_Boundary_Resources.png]]
 
 <p class="image-caption">Technische und soziale Boundary Resources (Ghazawneh und Henfridsson 2013, Mautsch 2015).</p>
 

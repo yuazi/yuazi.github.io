@@ -13,21 +13,18 @@ date: 2026-10-31
 
 [[/notes/lectures/mitun/index|Zurück zum MITUN-Index]] | [[/notes/lectures/mitun/05-business-plan-und-funding|Zurück: (y-05) Business Plan und Funding]] | [[/notes/lectures/mitun/07-vermarktung|Weiter: (y-07) Vermarktung]]
 
-> [!note] Foliengrundlage
-> Diese Notiz basiert auf dem Foliensatz aus dem Wintersemester 2025/26. Sobald die Folien für 2026/27 vorliegen, wird sie daran angepasst.
-
 ## Mentales Modell
 
-- Wachstum heißt, dass ein Unternehmen größer wird. Skalierung heißt, dass es dabei Skaleneffekte nutzt, sodass der Umsatz schneller steigt als die Kosten. Software ist dafür gut geeignet, aber die Praxis zeigt, dass gerade Vertrieb, Produktentwicklung und Wachstum Startups Probleme machen.
+- Wachstum heißt, dass ein Unternehmen größer wird. Skalierung heißt, dass es dabei Skaleneffekte nutzt, sodass der Umsatz schneller steigt als die Kosten. Software ist dafür gut geeignet. In der Praxis nennen Startups trotzdem Vertrieb, Finanzierung sowie Skalierung und Wachstum als ihre größten Probleme (Bitkom 2025).
 - Fitzgerald u. a. (2017) unterscheiden drei Dimensionen der Skalierung: Produkt, Prozess und Organisation. Qualität, Kosten, Zeit und Softwarefähigkeiten wirken von außen.
 - Beim Produkt helfen eine lose gekoppelte Architektur (Microservices, wenn sie passen) und externe Innovationsleistung über Plattformen mit Boundary Resources wie APIs, SDKs und Entwicklerportalen.
-- Beim Prozess misst man Software Delivery Performance mit den vier DORA-Metriken. DevOps, Continuous Integration und Delivery und Golden Paths verbessern sie. Mehr Entwickler bringen nur dann mehr Leistung, wenn Architektur und Prozesse mitwachsen.
+- Beim Prozess misst man Software Delivery Performance mit den vier DORA-Metriken. DevOps, Continuous Integration und Delivery und Golden Paths verbessern sie. Spotify hat aus seinen Golden Paths sogar ein eigenes Produkt gemacht. Mehr Entwickler bringen nur dann mehr Leistung, wenn Architektur und Prozesse mitwachsen.
 - Bei der Organisation stoßen agile Teams an Grenzen (Brooks's Law, Conway's Law, Zwei-Pizza-Regel). Skalierte Rahmenwerke wie das Spotify-Modell, LeSS und SAFe ordnen viele Teams, und eine gestufte Support-Organisation fängt wachsende Kundenzahlen auf.
 - Tools für Planung, Code, Build, Test, Deployment und Betrieb unterstützen, ersetzen aber keine Prinzipien: "A fool with a tool is still a fool".
 
 ## 1. Inhalt und Lernziele
 
-![[pictures/mitun/06/Lecture06_Pg003_Inhalt_Und_Lernziele.png]]
+![[pictures/mitun/06/Lecture06_Pg005_Inhalt_Und_Lernziele.png]]
 
 <p class="image-caption">Inhalt der Vorlesung.</p>
 
@@ -41,21 +38,25 @@ Das Kapitel hat drei Teile: Allgemeines, die Dimensionen Produkt, Prozess und Or
 
 ### Motivation
 
-![[pictures/mitun/06/Lecture06_Pg006_Motivation.png]]
+![[pictures/mitun/06/Lecture06_Pg007_Motivation.png]]
 
 <p class="image-caption">Wachstumsphase und nachhaltige Skaleneffekte aus Kapitel 1.</p>
 
 Aus [[/notes/lectures/mitun/01-grundlagen|Kapitel 1]] ist die Wachstumsphase bekannt: Der Break-even ist erreicht, Produktion und Vertrieb werden ausgebaut, neue Märkte erschlossen, der Kapitalbedarf steigt. Mögliche Problembereiche sind Kundengewinnung, fehlendes Kapital, aktiver werdende Wettbewerber, die Organisation und die Qualität. Software hat dabei nachhaltige Skaleneffekte: Die First-Copy-Costs verteilen sich auf immer mehr Kopien (Degressionseffekt), und ab einer kritischen Masse steigen die Erlöse überproportional (Skalierungseffekt).
 
-![[pictures/mitun/06/Lecture06_Pg007_Motivation.png]]
+![[pictures/mitun/06/Lecture06_Pg008_Motivation.png]]
 
-<p class="image-caption">Herausforderungen von Startups (PwC 2019) und Stimmen aus der Praxis.</p>
+<p class="image-caption">Herausforderungen von Startups (Bitkom 2025), das "Double Valley of Death" (Europäische Kommission 2025) und Elon Musk zur Serienproduktion (Twitter 2020).</p>
 
-Nach dem Deutschen Startup Monitor 2019 (PwC 2019) sind Vertrieb und Kundengewinnung (55,3%), Produktentwicklung (43,9%), Kapitalbeschaffung (37,9%) und Wachstum (36,3%) die größten aktuellen Herausforderungen der Startups. Elon Musk beschreibt dasselbe für Hardware: Prototypen seien einfach, die Serienproduktion sei 1000% bis 10.000% schwerer. Eine Schlagzeile fragt, ob GPT-5 die Grenzen des Wachstums zeigt.
+Bitkom (2025, S. 9) hat Startups nach ihren größten geschäftlichen Herausforderungen gefragt. Vorn liegen Vertrieb und Kundengewinnung (61 %), Finanzierung und Kapitalbeschaffung (52 %) sowie Skalierung und Wachstum (39 %). Fehlende Nachfrage (13 %) und Wettbewerbsdruck (11 %) spielen eine kleinere Rolle.
+
+Die Europäische Kommission (2025) beschreibt das "Startup Double Valley of Death". Auf dem Weg von Forschung über Prototyp, Produktentwicklung und Kommerzialisierung zur Marktreife gibt es zwei Finanzierungslücken: die Pre-Commercialization Gap zwischen Prototyp und Produktentwicklung und die Scaling Gap in der Kommerzialisierung. In der ersten springen Inkubatoren, Business Angels und Venture Capital ein, in der zweiten fehlt Geld, bis Banken, Kapitalmärkte und öffentliche wie private Beschaffung übernehmen. Das technologische Risiko sinkt dabei von links nach rechts.
+
+Elon Musk beschreibt dasselbe für Hardware: Prototypen seien einfach, die Serienproduktion sei 1000 % bis 10.000 % schwerer. "The machine that makes the machine is vastly harder than the machine itself."
 
 ### Wachstum, Skalierbarkeit und Skalierung
 
-![[pictures/mitun/06/Lecture06_Pg008_Wachstum_Skalierbarkeit_Und_Skalierung.png]]
+![[pictures/mitun/06/Lecture06_Pg009_Wachstum_Skalierbarkeit_Und_Skalierung.png]]
 
 <p class="image-caption">Definitionen von Wachstum, Skalierbarkeit und Skalierung.</p>
 
@@ -68,7 +69,7 @@ Nach dem Deutschen Startup Monitor 2019 (PwC 2019) sind Vertrieb und Kundengewin
 
 ### Determinanten der Skalierung von Geschäftsmodellen
 
-![[pictures/mitun/06/Lecture06_Pg009_Determinanten_Der_Skalierung_Von_Gesch_Ftsmodellen.png]]
+![[pictures/mitun/06/Lecture06_Pg010_Determinanten_Der_Skalierung_Von_Gesch_Ftsmodellen.png]]
 
 <p class="image-caption">Explorative model of business model scalability (nach Stampfl u. a. 2013).</p>
 
@@ -86,7 +87,7 @@ Ein skalierbares Geschäftsmodell führt zu Unternehmenswachstum über zusätzli
 
 ## 3. Dimensionen der Skalierung
 
-![[pictures/mitun/06/Lecture06_Pg011_Dimensionen_Der_Skalierung.png]]
+![[pictures/mitun/06/Lecture06_Pg012_Dimensionen_Der_Skalierung.png]]
 
 <p class="image-caption">Produkt, Prozess und Organisation als Dimensionen der Skalierung (Fitzgerald u. a. 2017).</p>
 
@@ -96,13 +97,13 @@ Fitzgerald u. a. (2017) stellen Produkt, Organisation und Prozess als drei Teile
 
 ### Microservice-Architekturen
 
-![[pictures/mitun/06/Lecture06_Pg013_Microservice_Architekturen.png]]
+![[pictures/mitun/06/Lecture06_Pg014_Microservice_Architekturen.png]]
 
 <p class="image-caption">Monolith und Microservices (Microservices.io 2020, Kwiecien 2019).</p>
 
 Eine Microservice-Architektur strukturiert eine Anwendung als Sammlung von Services, die lose gekoppelt, unabhängig deploybar, um Geschäftsfähigkeiten herum organisiert, im Besitz eines kleinen Teams und gut wart- und testbar sind. Sie erlaubt schnelle, häufige und zuverlässige Auslieferung großer, komplexer Anwendungen und die schrittweise Weiterentwicklung des Technologie-Stacks. Im Monolithen dagegen laufen Oberfläche, Geschäftslogik und Datenbank als eine Instanz. Die Service-Graphen von Amazon und Netflix zeigen, wie komplex solche Landschaften werden. Die Folie warnt vor Antipatterns.
 
-![[pictures/mitun/06/Lecture06_Pg014_Microservice_Architekturen.png]]
+![[pictures/mitun/06/Lecture06_Pg015_Microservice_Architekturen.png]]
 
 <p class="image-caption">Prime Video wechselt von Microservices zum Monolithen (Amazon 2023).</p>
 
@@ -110,7 +111,7 @@ Das Team von Prime Video baute 2023 seinen Dienst zur Überwachung der Audio- un
 
 ### Skalieren über externe Innovationsleistung
 
-![[pictures/mitun/06/Lecture06_Pg015_Skalieren_Ber_Externe_Innovationsleistung.png]]
+![[pictures/mitun/06/Lecture06_Pg016_Skalieren_Ber_Externe_Innovationsleistung.png]]
 
 <p class="image-caption">Verschiebung der treibenden Innovationsquellen (nach Hoch und Freking 2009).</p>
 
@@ -118,7 +119,7 @@ Mit steigenden kumulierten Investitionen in Innovation verschieben sich die trei
 
 ### Boundary Resources
 
-![[pictures/mitun/06/Lecture06_Pg016_Boundary_Resources.png]]
+![[pictures/mitun/06/Lecture06_Pg017_Boundary_Resources.png]]
 
 <p class="image-caption">Boundary Resources als Skalierungsinstrument (Ghazawneh und Henfridsson 2013, Mautsch 2015).</p>
 
@@ -126,19 +127,15 @@ Der Plattformanbieter entwickelt und stellt Boundary Resources bereit, Komplemen
 
 ### Entwicklerportale und öffentliche Roadmaps
 
-![[pictures/mitun/06/Lecture06_Pg017_Entwicklerportale_Und_Ffentliche_Roadmaps.png]]
-
-<p class="image-caption">Entwicklerportale von Mercedes-Benz und Amazon Alexa.</p>
-
 ![[pictures/mitun/06/Lecture06_Pg018_Entwicklerportale_Und_Ffentliche_Roadmaps.png]]
 
-<p class="image-caption">Entwicklerportal von OpenAI (2025).</p>
+<p class="image-caption">Entwicklerportal von OpenAI (2026).</p>
 
 ![[pictures/mitun/06/Lecture06_Pg019_Entwicklerportale_Und_Ffentliche_Roadmaps.png]]
 
-<p class="image-caption">Öffentliche Roadmap von GitHub (2023).</p>
+<p class="image-caption">Öffentliche Roadmap von GitHub (2026).</p>
 
-Beispiele für Boundary Resources: Das Mercedes-Benz-Entwicklerportal bietet APIs etwa zum Fahrzeugstatus mit Sandbox, "Bring your own car" und Business-Zugang. Das Alexa-Portal führt mit Quick-Start-Tutorials, Dokumentation und Code-Beispielen zum ersten Skill. Die OpenAI-Plattform hat einen Developer Quickstart, Modellübersichten und Anleitungen für Text, Bilder, Audio und Agenten. GitHub veröffentlicht seine Roadmap nach Quartalen gegliedert als öffentliches Board.
+Zwei Beispiele für Boundary Resources: Das Entwicklerportal von OpenAI bietet Learning Tracks (Building agents, AI app development vom Konzept bis zur Produktion, Model optimization) und Demo-Apps. GitHub veröffentlicht seine Roadmap nach Quartalen gegliedert als öffentliches Board, von Q1 2025 bis "Future".
 
 ## 5. Prozess
 
@@ -228,11 +225,28 @@ Das DevOps Evolution Model von SAFe zeigt vier Reifestufen. In Modell 1 folgen a
 
 Golden Paths sind ausgetretene Pfade, die etwa Prozesse, Tools oder Technologien für bestimmte Anwendungsfälle bereitstellen, idealerweise als Self-Service. Spotify nutzt sie, um die Fragmentierung seines Software-Ökosystems zu verringern (Spotify 2020). Das STACKIT Maturity Model (2024) beschreibt Reifestufen mit Kriterien je Stufe. Solche Produkt- und Prozessstandards machen Skalierung wiederholbar.
 
+### Vom internen Werkzeug zum Produkt: Spotify Technology
+
+![[pictures/mitun/06/Lecture06_Pg032_Vom_Internen_Werkzeug_Zum_Produkt.png]]
+
+<p class="image-caption">Wie aus Spotifys internem Entwicklerportal Backstage eine eigene Produktmarke wurde (Spotify Technology 2026; Spotify 2025; Music Business Worldwide 2026).</p>
+
+Spotify hat seine Golden Paths in vier Schritten vom internen Werkzeug zum Produkt gemacht:
+
+| Phase                 | Was passiert                                                                                                                                                          |
+| :-------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| intern                | Backstage bündelt die Golden Paths als internes Entwicklerportal, nach eigener Aussage heute für etwa 700 R&D-Squads                                                  |
+| 03/2020: Open Source  | Backstage wird frei verfügbar und an die CNCF übergeben, über 3.000 Unternehmen nutzen es (Stand 2025)                                                                |
+| ab 2023: kommerziell  | Confidence (Experimentierplattform, seit 2023), Portal (gemanagtes Backstage, seit 2024), Premium-Plugins und Support                                                 |
+| 10/2026: eigene Marke | "Spotify Technology" mit Confidence, Portal (Steuerung von KI-Agenten samt KI-Kosten), Xirp (Entwicklungsumgebung für Claude, Gemini und Codex) und Backstage-Plugins |
+
+Der Slogan lautet "Build like Spotify. Proven at Spotify. Now yours." Die Folie ordnet das als Skalierung über Economies of Scope ein: Dieselbe interne Plattform erzeugt einen zweiten Erlösstrom, nach dem bekannten Muster von Amazon Web Services. Die Kehrseite ist, dass aus internen Nutzern zahlende Kunden werden, die eigene Anforderungen an Roadmap, Support und Verfügbarkeit stellen.
+
 ## 6. Organisation
 
 ### Agile Prinzipien und Skalierung
 
-![[pictures/mitun/06/Lecture06_Pg032_Agile_Prinzipien_Und_Skalierung.png]]
+![[pictures/mitun/06/Lecture06_Pg033_Agile_Prinzipien_Und_Skalierung.png]]
 
 <p class="image-caption">Die zwölf Prinzipien des Agilen Manifests und Skalierungseffekte (Beck u. a. 2001).</p>
 
@@ -240,7 +254,7 @@ Die zwölf Prinzipien des Agilen Manifests stellen unter anderem frühe und kont
 
 ### Komplexitätsprobleme beim Skalieren agiler Setups
 
-![[pictures/mitun/06/Lecture06_Pg033_Komplexit_Tsprobleme_Beim_Skalieren_Agiler_Setups.png]]
+![[pictures/mitun/06/Lecture06_Pg034_Komplexit_Tsprobleme_Beim_Skalieren_Agiler_Setups.png]]
 
 <p class="image-caption">Brooks's Law, Conway's Law und die Pizza-Regel (Lighthouse 2020, Conway 1968).</p>
 
@@ -248,7 +262,7 @@ Nach Brooks's Law wächst die Zahl der Beziehungen in einem Team mit $n(n-1)/2$,
 
 ### Spotify-Modell
 
-![[pictures/mitun/06/Lecture06_Pg034_Spotify_Modell.png]]
+![[pictures/mitun/06/Lecture06_Pg035_Spotify_Modell.png]]
 
 <p class="image-caption">Rollen und Einheiten im Spotify-Modell (Bäcklander 2019, Schmiedinger 2020).</p>
 
@@ -263,7 +277,7 @@ Nach Brooks's Law wächst die Zahl der Beziehungen in einem Team mit $n(n-1)/2$,
 
 ### Large Scale Scrum (LeSS)
 
-![[pictures/mitun/06/Lecture06_Pg035_Large_Scale_Scrum_Less.png]]
+![[pictures/mitun/06/Lecture06_Pg036_Large_Scale_Scrum_Less.png]]
 
 <p class="image-caption">Das LeSS-Framework (LeSS 2020).</p>
 
@@ -271,13 +285,13 @@ LeSS überträgt Scrum auf mehrere Feature-Teams, die an einem gemeinsamen Produ
 
 ### Scaled Agile Framework (SAFe)
 
-![[pictures/mitun/06/Lecture06_Pg036_Scaled_Agile_Framework_Safe.png]]
+![[pictures/mitun/06/Lecture06_Pg037_Scaled_Agile_Framework_Safe.png]]
 
 <p class="image-caption">SAFe 6.0 (SAFe 2024).</p>
 
 SAFe organisiert agile Arbeit auf mehreren Ebenen. Auf Portfolioebene stehen Lean Portfolio Management, Portfoliostrategie und Portfolio Backlog mit Epics, die in Value Streams umgesetzt werden. Darunter arbeiten Agile Release Trains (ART) mit Product Management, System Architect und Release Train Engineer. Die agilen Teams liefern in Iterationen über eine Continuous Delivery Pipeline, synchronisiert durch PI Planning, System Demos und Inspect and Adapt, und releasen bei Bedarf. Fundament sind Lean-Agile Leadership sowie Mindset, Werte und Prinzipien.
 
-![[pictures/mitun/06/Lecture06_Pg037_Scaled_Agile_Framework_Safe.png]]
+![[pictures/mitun/06/Lecture06_Pg038_Scaled_Agile_Framework_Safe.png]]
 
 <p class="image-caption">Die zehn SAFe-Prinzipien (SAFe 2020).</p>
 
@@ -285,7 +299,7 @@ Die zehn Prinzipien: wirtschaftliche Sicht einnehmen, Systemdenken anwenden, Var
 
 ### Taxonomie skaliert-agiler Rahmenwerke
 
-![[pictures/mitun/06/Lecture06_Pg038_Taxonomie_Skaliert_Agiler_Rahmenwerke.png]]
+![[pictures/mitun/06/Lecture06_Pg039_Taxonomie_Skaliert_Agiler_Rahmenwerke.png]]
 
 <p class="image-caption">Taxonomie skaliert-agiler Rahmenwerke (nach Turhan u. a. 2024).</p>
 
@@ -300,11 +314,11 @@ Turhan u. a. (2024) ordnen skaliert-agile Rahmenwerke über sechs Dimensionen ei
 | Prozesse                     | Komplexität, Flexibilität, Transparenz                                        |
 | Kontinuierliche Verbesserung | Training, unterstützende Werkzeuge, Metriken, unterstützende Praktiken        |
 
-![[pictures/mitun/06/Lecture06_Pg039_Taxonomie_Skaliert_Agiler_Rahmenwerke.png]]
+![[pictures/mitun/06/Lecture06_Pg040_Taxonomie_Skaliert_Agiler_Rahmenwerke.png]]
 
 <p class="image-caption">Anwendung der Taxonomie auf SAFe.</p>
 
-![[pictures/mitun/06/Lecture06_Pg040_Taxonomie_Skaliert_Agiler_Rahmenwerke.png]]
+![[pictures/mitun/06/Lecture06_Pg041_Taxonomie_Skaliert_Agiler_Rahmenwerke.png]]
 
 <p class="image-caption">Anwendung der Taxonomie auf LeSS.</p>
 
@@ -312,7 +326,7 @@ SAFe hat eine hohe Marktakzeptanz, richtet sich an große Organisationen ohne Be
 
 ### Skalierbare Organisation des Supports
 
-![[pictures/mitun/06/Lecture06_Pg041_Skalierbare_Organisation_Des_Supports.png]]
+![[pictures/mitun/06/Lecture06_Pg042_Skalierbare_Organisation_Des_Supports.png]]
 
 <p class="image-caption">1st, 2nd und 3rd Level Support (Half 2020a, 2020b).</p>
 
@@ -326,7 +340,7 @@ SAFe hat eine hohe Marktakzeptanz, richtet sich an große Organisationen ohne Be
 
 ### Exemplarische DevOps-Toolchain
 
-![[pictures/mitun/06/Lecture06_Pg043_Exemplarische_Devops_Toolchain.png]]
+![[pictures/mitun/06/Lecture06_Pg044_Exemplarische_Devops_Toolchain.png]]
 
 <p class="image-caption">Exemplarische DevOps-Toolchain (Medium 2020).</p>
 
@@ -334,13 +348,13 @@ Für jede Phase der DevOps-Schleife gibt es Werkzeuge, etwa Jira und Confluence 
 
 ### Planung und Design
 
-![[pictures/mitun/06/Lecture06_Pg044_Planung_Und_Design.png]]
+![[pictures/mitun/06/Lecture06_Pg045_Planung_Und_Design.png]]
 
 <p class="image-caption">Jira als Issue Tracker und für das Requirements Management (Atlassian 2020).</p>
 
 Jira schafft Transparenz über Prozessschritte und Teams hinweg. Es erfasst Anforderungen und Issues (Ideen, Epics, User Stories), plant Sprints und Tasks, verfolgt sie nach, bietet Scrum- und Kanban-Boards, überwacht Aufwände und dient als Issue Tracker für Support-Systeme.
 
-![[pictures/mitun/06/Lecture06_Pg045_Planung_Und_Design.png]]
+![[pictures/mitun/06/Lecture06_Pg046_Planung_Und_Design.png]]
 
 <p class="image-caption">Design Systems mit Zeplin oder Figma.</p>
 
@@ -348,13 +362,13 @@ Design-Systeme wie Zeplin oder Figma "skalieren die Kreativität". Sie schaffen 
 
 ### Entwicklung und Versionsverwaltung
 
-![[pictures/mitun/06/Lecture06_Pg046_Entwicklung_Und_Versionsverwaltung.png]]
+![[pictures/mitun/06/Lecture06_Pg047_Entwicklung_Und_Versionsverwaltung.png]]
 
 <p class="image-caption">KI-gestützte Entwicklung mit GitHub Copilot.</p>
 
 GitHub Copilot unterstützt Entwickler mit einem KI-Chat direkt im Editor.
 
-![[pictures/mitun/06/Lecture06_Pg047_Entwicklung_Und_Versionsverwaltung.png]]
+![[pictures/mitun/06/Lecture06_Pg048_Entwicklung_Und_Versionsverwaltung.png]]
 
 <p class="image-caption">Git, GitHub Flow und Trunk-Based Development (GitHub 2020, Hammant u. a. 2020).</p>
 
@@ -362,23 +376,23 @@ Git verwaltet Versionen über Trunks, Branches, Merges und Tags. Im GitHub Flow 
 
 ### Build, Test und Deploy
 
-![[pictures/mitun/06/Lecture06_Pg048_Build_Test_Und_Deploy.png]]
+![[pictures/mitun/06/Lecture06_Pg049_Build_Test_Und_Deploy.png]]
 
 <p class="image-caption">Jenkins, Black Duck und Cypress.</p>
 
-![[pictures/mitun/06/Lecture06_Pg049_Build_Test_Und_Deploy.png]]
+![[pictures/mitun/06/Lecture06_Pg050_Build_Test_Und_Deploy.png]]
 
 <p class="image-caption">End-to-End-Tests mit Cypress.</p>
 
 Jenkins automatisiert CI/CD mit zahlreichen Plugins für die Pipeline. Black Duck analysiert die Software-Zusammensetzung, erkennt Open-Source-Komponenten, prüft Lizenzen und sucht Sicherheitslücken. Cypress ist ein Framework für automatisierte End-to-End-UI-Tests auf verschiedenen Endgeräten.
 
-![[pictures/mitun/06/Lecture06_Pg050_Build_Test_Und_Deploy.png]]
+![[pictures/mitun/06/Lecture06_Pg051_Build_Test_Und_Deploy.png]]
 
 <p class="image-caption">Container mit Docker, Kubernetes und Gardener.</p>
 
 Container teilen sich das Host-Betriebssystem über eine Container Runtime, virtuelle Maschinen bringen jeweils ein eigenes Gastbetriebssystem über einen Hypervisor mit. Beide bieten eine konsistente Laufzeitumgebung und Sandboxing, Container zusätzlich geringen Speicherbedarf und wenig Verwaltungsaufwand (Google 2020). Docker baut, verteilt und startet Container, Kubernetes (K8s) automatisiert Deployment, Skalierung und Verwaltung containerisierter Anwendungen, Gardener verwaltet Kubernetes-Cluster.
 
-![[pictures/mitun/06/Lecture06_Pg051_Build_Test_Und_Deploy.png]]
+![[pictures/mitun/06/Lecture06_Pg052_Build_Test_Und_Deploy.png]]
 
 <p class="image-caption">Infrastructure as Code und das Spektrum der Werkzeuge (Nayak 2019).</p>
 
@@ -386,19 +400,19 @@ Infrastructure as Code verwaltet Infrastruktur (Netze, virtuelle Maschinen, Load
 
 ### All-in-one-Plattformen und Chatbots
 
-![[pictures/mitun/06/Lecture06_Pg053_All_In_One_Plattformen_Und_Chatbots.png]]
+![[pictures/mitun/06/Lecture06_Pg054_All_In_One_Plattformen_Und_Chatbots.png]]
 
 <p class="image-caption">GitLab und Azure DevOps als All-in-one-Plattformen.</p>
 
 Der Trend geht zu All-in-one-DevOps-Plattformen wie GitLab oder Azure DevOps (Boards, Pipelines, Repos, Test Plans, Artifacts, Marketplace). Sie decken unterschiedlich viel ab und sollten für den konkreten Anwendungsfall evaluiert werden. Daneben gibt es Produktmanagement- und Roadmapping-Werkzeuge wie Productboard.
 
-![[pictures/mitun/06/Lecture06_Pg054_All_In_One_Plattformen_Und_Chatbots.png]]
+![[pictures/mitun/06/Lecture06_Pg055_All_In_One_Plattformen_Und_Chatbots.png]]
 
 <p class="image-caption">Chatbots im Support und in der Teamkommunikation.</p>
 
 Chatbots sollen den Supportprozess effizienter machen, etwa Kundenservice-Chats, die Bestellungen stornieren, Statusabfragen per Messenger, Bots in Slack-Kanälen oder Plattformen wie SAP Conversational AI. Die Folie stellt das als offene Frage.
 
-![[pictures/mitun/06/Lecture06_Pg055_All_In_One_Plattformen_Und_Chatbots.png]]
+![[pictures/mitun/06/Lecture06_Pg056_All_In_One_Plattformen_Und_Chatbots.png]]
 
 <p class="image-caption">A fool with a tool is still a fool.</p>
 
@@ -409,7 +423,7 @@ Ohne passende Prinzipien, Prozesse und Kompetenzen skalieren Werkzeuge nichts.
 - Skalierung ist Wachstum unter Ausnutzung von Skaleneffekten. Ein skalierbares Geschäftsmodell steigert die Erlöse schneller als die Kosten.
 - Die Dimensionen sind Produkt, Prozess und Organisation (Fitzgerald u. a. 2017).
 - Produkt: lose gekoppelte Architekturen (Microservices nur, wo sie passen, siehe Prime Video) und externe Innovation über Boundary Resources wie APIs, SDKs, Entwicklerportale und öffentliche Roadmaps.
-- Prozess: Software Delivery Performance wird mit Lead Time, Deployment Frequency, MTTR und Change Fail Percentage gemessen. DevOps, CI/CD, transformationale Führung und Golden Paths verbessern sie, mehr Entwickler allein nicht.
+- Prozess: Software Delivery Performance wird mit Lead Time, Deployment Frequency, MTTR und Change Fail Percentage gemessen. DevOps, CI/CD, transformationale Führung und Golden Paths verbessern sie, mehr Entwickler allein nicht. Spotify verkauft seine Golden Paths inzwischen als Produkt (Economies of Scope).
 - Organisation: Brooks's und Conway's Law begrenzen die Teamgröße. Spotify-Modell, LeSS und SAFe skalieren agile Arbeit, eine Taxonomie hilft beim Vergleich, gestufter Support fängt mehr Kunden auf.
 - Tools unterstützen jede Phase der DevOps-Kette, ersetzen aber keine Prinzipien.
 
@@ -428,7 +442,7 @@ Ohne passende Prinzipien, Prozesse und Kompetenzen skalieren Werkzeuge nichts.
 3. Was sind Boundary Resources? Nennen Sie Beispiele.
 
 > [!success]- Antwort
-> Ressourcen, die ein Plattformanbieter bereitstellt, damit Komplementoren eigene Komplemente entwickeln können. Der Anbieter wechselt zwischen Absicherung und Schaffung. Technische Boundary Resources sind APIs, SDKs, modulare Architekturen, Cloud-Infrastruktur und Billing, soziale sind Dokumentation, Hackathons, Partnerprogramme und Roadmaps. Beispiele sind die Entwicklerportale von Mercedes-Benz, Amazon Alexa und OpenAI und die öffentliche Roadmap von GitHub.
+> Ressourcen, die ein Plattformanbieter bereitstellt, damit Komplementoren eigene Komplemente entwickeln können. Der Anbieter wechselt zwischen Absicherung und Schaffung. Technische Boundary Resources sind APIs, SDKs, modulare Architekturen, Cloud-Infrastruktur und Billing, soziale sind Dokumentation, Hackathons, Partnerprogramme und Roadmaps. Beispiele sind das Entwicklerportal von OpenAI und die öffentliche Roadmap von GitHub.
 
 4. Mit welchen Metriken misst man Software Delivery Performance?
 
@@ -454,6 +468,11 @@ Ohne passende Prinzipien, Prozesse und Kompetenzen skalieren Werkzeuge nichts.
 
 > [!success]- Antwort
 > LeSS skaliert Scrum schlank: mehrere Feature-Teams mit einem Product Owner, einem Backlog und gemeinsamen Events. SAFe ist umfassender, mit Portfolio-Ebene, Agile Release Trains, PI Planning und eigenen Rollen wie dem Release Train Engineer. Es hat hohe Marktakzeptanz und eignet sich für sehr große Organisationen, ist aber komplex und wenig flexibel.
+
+9. Wie hat Spotify seine Golden Paths zu einem Produkt gemacht, und welche Art der Skalierung ist das?
+
+> [!success]- Antwort
+> Backstage bündelte die Golden Paths zunächst als internes Entwicklerportal. 2020 wurde es Open Source und an die CNCF übergeben, ab 2023 kamen kommerzielle Angebote (Confidence, gemanagtes Portal, Premium-Plugins und Support), und seit 10/2026 laufen sie unter der eigenen Marke "Spotify Technology". Das ist Skalierung über Economies of Scope: Dieselbe interne Plattform erzeugt einen zweiten Erlösstrom, wie bei Amazon Web Services. Der Preis: Interne Nutzer werden zu zahlenden Kunden mit eigenen Anforderungen an Roadmap, Support und Verfügbarkeit.
 
 ---
 
