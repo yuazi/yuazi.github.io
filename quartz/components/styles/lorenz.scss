@@ -68,7 +68,7 @@ body.lorenz-focus {
   }
 
   #lorenz-canvas {
-    opacity: 0.5 !important;
+    opacity: 0.5;
     z-index: 0;
   }
 
@@ -130,7 +130,7 @@ body.lorenz-focus {
       justify-content: space-between;
       align-items: baseline;
 
-      label {
+      > :first-child {
         font-size: 0.8rem;
         color: var(--dark);
       }
@@ -217,7 +217,7 @@ body.lorenz-focus {
           background 0.2s;
       }
 
-      &.on {
+      &[aria-pressed="true"] {
         background: var(--secondary);
         border-color: var(--secondary);
 
