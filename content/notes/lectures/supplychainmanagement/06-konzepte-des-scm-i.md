@@ -9,7 +9,7 @@ tags:
 date: 2026-11-07
 ---
 
-[[/notes/lectures/supplychainmanagement/index|Zurück zum SCM-Index]] | [[/notes/lectures/supplychainmanagement/05-organisation-fuehrung-und-personelle-anforderungen|Zurück: (y-05) Organisation, Führung und personelle Anforderungen]]
+[[/notes/lectures/supplychainmanagement/index|Zurück zum SCM-Index]] | [[/notes/lectures/supplychainmanagement/05-organisation-fuehrung-und-personelle-anforderungen|Zurück: (y-05) Organisation, Führung und personelle Anforderungen]] | [[/notes/lectures/supplychainmanagement/07-konzepte-des-scm-ii|Weiter: (y-07) Konzepte des SCM II]]
 
 ## Mentales Modell
 
@@ -341,4 +341,4 @@ Die Grafik zeigt vier Stufen. Mit jeder Stufe entfällt eine Funktion zwischen d
 
 ---
 
-[[/notes/lectures/supplychainmanagement/index|Zurück zum SCM-Index]] | [[/notes/lectures/supplychainmanagement/05-organisation-fuehrung-und-personelle-anforderungen|Zurück: (y-05) Organisation, Führung und personelle Anforderungen]]
+[[/notes/lectures/supplychainmanagement/index|Zurück zum SCM-Index]] | [[/notes/lectures/supplychainmanagement/05-organisation-fuehrung-und-personelle-anforderungen|Zurück: (y-05) Organisation, Führung und personelle Anforderungen]] | [[/notes/lectures/supplychainmanagement/07-konzepte-des-scm-ii|Weiter: (y-07) Konzepte des SCM II]]

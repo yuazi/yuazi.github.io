@@ -34,6 +34,15 @@ date: 2026-10-20
 - [[/notes/lectures/supplychainmanagement/06-konzepte-des-scm-i|(y-06) Konzepte des SCM I]]  
    17 Konzepte nach dem SCOR-Modell und ihr Bekanntheitsgrad, Collaborative Engineering, Value Added Partnership bei Smart, Fertigungsstrategien und Postponement mit Benetton, Mass Customization, Kanban und die vier Stufen von JIT/JIS.
 
+- [[/notes/lectures/supplychainmanagement/07-konzepte-des-scm-ii|(y-07) Konzepte des SCM II]]  
+   Das ECR-Haus, IuK-Technologien von EDI und ERP über APS bis RFID und Blockchain-Tracking, Efficient Replenishment, drei Arten des Cross Dockings, VMI, Konsignation und ihre Ausprägungen, Mutti's InstaFactory, der neunstufige CPFR-Prozess und der Zielerreichungsgrad aller 17 Konzepte.
+
+- [[/notes/lectures/supplychainmanagement/08-kontrollinstrumente|(y-08) Kontrollinstrumente in der Supply Chain]]  
+   Kontrollbegriff und direkte gegen indirekte Handlungskontrolle nach Large, Dynamik, Intransparenz und Komplexität, Kennzahlen (KPI, BPI, PPI) und ihre Gütekriterien, Supply Chain Event Management mit Kaskadenprinzip, Kostenmanagement und Total Cost of Ownership, Performancemanagement und kumulative gegen kollektive Erfolgsbestimmung.
+
+- [[/notes/lectures/supplychainmanagement/09-supply-chain-risikomanagement|(y-09) Supply Chain Risikomanagement]]  
+   Allianz Risk Barometer 2025, Risiko gegen Unsicherheit, die SCRM-Definition nach Ho et al., neun Risikokategorien, der vierstufige Risikomanagement-Prozess mit sechs Mitigationsstrategien, Prewave, die Studien von Fan et al. und El Baz und Ruel, Ericsson nach dem Brand bei Philips und Maßnahmen in der COVID-19-Krise.
+
 ## Übungsnotizen
 
 - [[/notes/lectures/supplychainmanagement/ue-01-beer-game-und-fallstudien|(y-ü01) Beer Game und Fallstudien zur SC-Planung]]  
